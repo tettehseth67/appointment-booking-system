@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+            <a href="index.html">
+                ConsultPro
+            </a>
+            <span>ADMIN PORTAL</span>
+        </div>
+        <!-- Main Navigation -->
+        <nav class="sidebar-navigation">
+            <p class="sidebar-heading">
+                MAIN MENU
+            </p>
+            <a href="../admin/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+            <!-- Dropdown Container -->
+            <div class="sidebar-dropdown">
+                <!-- The checkbox acts as our toggle switch -->
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+                    <!-- The label acts as a clickable trigger button next to the link -->
+                    <label for="appointments-toggle" class="dropdown-trigger">▾</label>
+                </div>
+
+                <!-- Dropdown Content Submenu -->
+                <div class="sidebar-dropdown-content">
+                    <a href="../appointments/show-appointments.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Appointment Details</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="../consultants/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Consultants</span>
+            </a>
+
+            <a href="../services/index.html" class="sidebar-link">
+                <span class="sidebar-icon">◆</span>
+                <span>Services</span>
+            </a>
+
+            <a href="../clients/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Clients</span>
+            </a>
+
+            <a href="../messages/index.html" class="sidebar-link">
+                <span class="sidebar-icon">✉</span>
+                <span>Messages</span>
+                <span class="sidebar-count">
+                    4
+                </span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">
+                MANAGEMENT
+            </p>
+
+            <a href="../reports/index.html" class="sidebar-link">
+                <span class="sidebar-icon">▤</span>
+                <span>Reports</span>
+            </a>
+
+            <a href="../settings/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Settings</span>
+            </a>
+            <a href="../users/index.html" class="sidebar-link active">
+                <span class="sidebar-icon">⚙</span>
+                <span>Users</span>
+            </a>
+        </nav>
+
+        <!-- Sidebar Bottom -->
+        <div class="sidebar-bottom">
+            <a href="index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">
+                    AD
+                </div>
+                <div class="sidebar-user-info">
+                    <strong>Admin User</strong>
+                    <span>Administrator</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="admin-main">
+
+        <header class="admin-header">
+
+            <div>
+                <span class="header-label">
+                    USER MANAGEMENT
+                </span>
+
+                <h1>
+                    Users
+                </h1>
+            </div>
+
+        </header>
+
+        <main class="admin-content">
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            USER MANAGEMENT
+                        </span>
+
+                        <h2>
+                            Edit User
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <form class="admin-form">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label>Full Name</label>
+
+                            <input type="text" value="Michael Anderson">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>Email Address</label>
+
+                            <input type="email" value="michael@consultpro.com">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>Phone Number</label>
+
+                            <input type="tel" value="+1 555 123 4567">
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>Role</label>
+
+                            <select>
+
+                                <option>Administrator</option>
+                                <option selected>Consultant</option>
+                                <option>Client</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label>Status</label>
+
+                            <select>
+
+                                <option selected>Active</option>
+                                <option>Inactive</option>
+                                <option>Suspended</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="dashboard-primary-button">
+                            Save Changes
+                        </button>
+                        <a href="../../users/index.html" class="secondary-button">
+                            Cancel
+                        </a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>

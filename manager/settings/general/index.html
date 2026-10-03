@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Settings | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">CP</div>
+            <div>
+                <h2>ConsultPro</h2>
+                <span>MANAGER PORTAL</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <div class="sidebar-heading">MAIN MENU</div>
+
+            <!-- DASHBOARD -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-dashboard" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⌂</span>
+                        <span>Dashboard</span>
+                    </a>
+                    <label for="manager-dashboard" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../index.html" class="sidebar-sublink">Overview</a>
+                    <a href="../../index.html" class="sidebar-sublink">Recent Activity</a>
+                </div>
+            </div>
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-appointments" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                    </a>
+                    <label for="manager-appointments" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../appointments/index.html" class="sidebar-sublink">Appointment List</a>
+                    <a href="../../appointments/add/index.html" class="sidebar-sublink">Add Appointment</a>
+                    <a href="../../appointments/show/index.html" class="sidebar-sublink">Appointment Details</a>
+                    <a href="../../appointments/edit/index.html" class="sidebar-sublink">Edit Appointment</a>
+                </div>
+            </div>
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-calendar" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">□</span>
+                        <span>Calendar</span>
+                    </a>
+                    <label for="manager-calendar" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../calendar/index.html" class="sidebar-sublink">Calendar</a>
+                    <a href="../../calendar/add/index.html" class="sidebar-sublink">Add Event</a>
+                    <a href="../../calendar/edit/index.html" class="sidebar-sublink">Edit Event</a>
+                    <a href="../../calendar/show/index.html" class="sidebar-sublink">Event Details</a>
+                </div>
+            </div>
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-consultants" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Consultants</span>
+                    </a>
+                    <label for="manager-consultants" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../consultants/index.html" class="sidebar-sublink">Consultant List</a>
+                    <a href="../../consultants/add/index.html" class="sidebar-sublink">Add Consultant</a>
+                    <a href="../../consultants/show/index.html" class="sidebar-sublink">Consultant Details</a>
+                    <a href="../../consultants/edit/index.html" class="sidebar-sublink">Edit Consultant</a>
+                </div>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-services" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+                    </a>
+                    <label for="manager-services" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../services/index.html" class="sidebar-sublink">Service List</a>
+                    <a href="../../services/add/index.html" class="sidebar-sublink">Add Service</a>
+                    <a href="../../services/show/index.html" class="sidebar-sublink">Service Details</a>
+                    <a href="../../services/edit/index.html" class="sidebar-sublink">Edit Service</a>
+                </div>
+            </div>
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-clients" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../clients/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♧</span>
+                        <span>Clients</span>
+                    </a>
+                    <label for="manager-clients" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../clients/index.html" class="sidebar-sublink">Client List</a>
+                    <a href="../../clients/add/index.html" class="sidebar-sublink">Add Client</a>
+                    <a href="../../clients/show/index.html" class="sidebar-sublink">Client Details</a>
+                    <a href="../../clients/edit/index.html" class="sidebar-sublink">Edit Client</a>
+                </div>
+            </div>
+
+            <div class="sidebar-heading">COMMUNICATION</div>
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-messages" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                    </a>
+                    <label for="manager-messages" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../messages/index.html" class="sidebar-sublink">Inbox</a>
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">Sent Messages</a>
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">Compose Message</a>
+                </div>
+            </div>
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-notifications" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                    </a>
+                    <label for="manager-notifications" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../notifications/index.html" class="sidebar-sublink">All Notifications</a>
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">Unread</a>
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">Notification Settings</a>
+                </div>
+            </div>
+
+            <div class="sidebar-heading">ANALYTICS</div>
+
+            <!-- REPORTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-reports" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../reports/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▤</span>
+                        <span>Reports</span>
+                    </a>
+                    <label for="manager-reports" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../reports/index.html" class="sidebar-sublink">Reports Overview</a>
+                    <a href="../../reports/revenue/index.html" class="sidebar-sublink">Revenue Reports</a>
+                    <a href="../../reports/appointments/index.html" class="sidebar-sublink">Appointment Reports</a>
+                    <a href="../../reports/consultants/index.html" class="sidebar-sublink">Consultant Reports</a>
+                    <a href="../../reports/clients/index.html" class="sidebar-sublink">Client Reports</a>
+                </div>
+            </div>
+
+            <div class="sidebar-heading">ACCOUNT</div>
+
+            <!-- SETTINGS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-settings" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+                    </a>
+                    <label for="manager-settings" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="index.html" class="sidebar-sublink active">General Settings</a>
+                    <a href="../profile/index.html" class="sidebar-sublink">Profile Settings</a>
+                    <a href="../security/index.html" class="sidebar-sublink">Security</a>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">M</div>
+
+                <div class="sidebar-user-info">
+                    <strong>Manager</strong>
+                    <span>Manager</span>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+                <button class="sidebar-toggle" type="button">☰</button>
+                <span class="header-label">GENERAL SETTINGS</span>
+            </div>
+
+            <div class="header-right">
+
+                <button class="header-icon-button" type="button">⌕</button>
+                <button class="header-icon-button" type="button">♢</button>
+
+                <div class="header-profile">
+
+                    <div class="header-profile-avatar">Y</div>
+
+                    <div class="header-profile-info">
+                        <strong>Yaw</strong>
+                        <span>Manager</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <div class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">ACCOUNT</span>
+
+                    <h1>General Settings</h1>
+
+                    <p>
+                        Manage general preferences and default settings for
+                        your ConsultPro Manager Portal.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- GENERAL PREFERENCES -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">PREFERENCES</span>
+                        <h2>General Preferences</h2>
+                    </div>
+
+                </div>
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>Portal Name</strong>
+                                </td>
+
+                                <td id="portal-name-value">
+                                    ConsultPro Manager Portal
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button settings-action" data-setting="portalName">
+                                        Edit
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Language</strong>
+                                </td>
+
+                                <td id="language-value">
+                                    English
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button settings-action" data-setting="language">
+                                        Change
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Timezone</strong>
+                                </td>
+
+                                <td id="timezone-value">
+                                    Eastern Time (ET)
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button settings-action" data-setting="timezone">
+                                        Change
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Date Format</strong>
+                                </td>
+
+                                <td id="date-format-value">
+                                    MM/DD/YYYY
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button settings-action" data-setting="dateFormat">
+                                        Change
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Time Format</strong>
+                                </td>
+
+                                <td id="time-format-value">
+                                    12-hour
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button settings-action" data-setting="timeFormat">
+                                        Change
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- APPOINTMENT DEFAULTS -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">APPOINTMENTS</span>
+                        <h2>Appointment Defaults</h2>
+                    </div>
+
+                </div>
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>Default Appointment Duration</strong>
+                                </td>
+
+                                <td id="appointment-duration-value">
+                                    60 minutes
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button settings-action"
+                                        data-setting="appointmentDuration">
+                                        Change
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Booking Buffer</strong>
+                                </td>
+
+                                <td id="booking-buffer-value">
+                                    15 minutes
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button settings-action"
+                                        data-setting="bookingBuffer">
+                                        Change
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Booking Confirmation</strong>
+                                </td>
+
+                                <td id="booking-confirmation-value">
+                                    Automatic
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button settings-action"
+                                        data-setting="bookingConfirmation">
+                                        Change
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Cancellation Notice</strong>
+                                </td>
+
+                                <td id="cancellation-notice-value">
+                                    24 hours
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button settings-action"
+                                        data-setting="cancellationNotice">
+                                        Change
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- NOTIFICATION PREFERENCES -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">NOTIFICATIONS</span>
+                        <h2>Notification Preferences</h2>
+                    </div>
+
+                </div>
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Notification</th>
+                                <th>Channel</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>New Appointment</td>
+                                <td>Email</td>
+
+                                <td>
+                                    <span id="new-appointment-status" class="status-badge status-confirmed">
+                                        Enabled
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button notification-action"
+                                        data-notification="newAppointment">
+                                        Manage
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Appointment Changes</td>
+                                <td>Email</td>
+
+                                <td>
+                                    <span id="appointment-changes-status" class="status-badge status-confirmed">
+                                        Enabled
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button notification-action"
+                                        data-notification="appointmentChanges">
+                                        Manage
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>New Client</td>
+                                <td>Email</td>
+
+                                <td>
+                                    <span id="new-client-status" class="status-badge status-confirmed">
+                                        Enabled
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button notification-action"
+                                        data-notification="newClient">
+                                        Manage
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Weekly Reports</td>
+                                <td>Email</td>
+
+                                <td>
+                                    <span id="weekly-reports-status" class="status-badge status-pending">
+                                        Disabled
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button notification-action"
+                                        data-notification="weeklyReports">
+                                        Manage
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- SYSTEM DEFAULTS -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">SYSTEM</span>
+                        <h2>System Defaults</h2>
+                    </div>
+
+                </div>
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>Default Currency</strong>
+                                </td>
+
+                                <td id="currency-value">
+                                    USD ($)
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button settings-action" data-setting="currency">
+                                        Change
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Default Appointment Status</strong>
+                                </td>
+
+                                <td id="appointment-status-value">
+                                    Confirmed
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button settings-action"
+                                        data-setting="appointmentStatus">
+                                        Change
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Default Client Status</strong>
+                                </td>
+
+                                <td id="client-status-value">
+                                    Active
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button settings-action"
+                                        data-setting="clientStatus">
+                                        Change
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Portal Status</strong>
+                                </td>
+
+                                <td>
+                                    <span id="portal-status-value" class="status-badge status-confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <button type="button" class="edit-button settings-action"
+                                        data-setting="portalStatus">
+                                        Manage
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        const defaultSettings = {
+
+            portalName: "ConsultPro Manager Portal",
+            language: "English",
+            timezone: "Eastern Time (ET)",
+            dateFormat: "MM/DD/YYYY",
+            timeFormat: "12-hour",
+
+            appointmentDuration: "60 minutes",
+            bookingBuffer: "15 minutes",
+            bookingConfirmation: "Automatic",
+            cancellationNotice: "24 hours",
+
+            currency: "USD ($)",
+            appointmentStatus: "Confirmed",
+            clientStatus: "Active",
+            portalStatus: "Active",
+
+            notifications: {
+                newAppointment: true,
+                appointmentChanges: true,
+                newClient: true,
+                weeklyReports: false
+            }
+
+        };
+
+
+        let settings = JSON.parse(
+            localStorage.getItem("consultproGeneralSettings")
+        ) || defaultSettings;
+
+
+        function saveSettings() {
+
+            localStorage.setItem(
+                "consultproGeneralSettings",
+                JSON.stringify(settings)
+            );
+
+        }
+
+
+        function updateSettingDisplay(setting) {
+
+            const elementMap = {
+
+                portalName: "portal-name-value",
+                language: "language-value",
+                timezone: "timezone-value",
+                dateFormat: "date-format-value",
+                timeFormat: "time-format-value",
+
+                appointmentDuration: "appointment-duration-value",
+                bookingBuffer: "booking-buffer-value",
+                bookingConfirmation: "booking-confirmation-value",
+                cancellationNotice: "cancellation-notice-value",
+
+                currency: "currency-value",
+                appointmentStatus: "appointment-status-value",
+                clientStatus: "client-status-value"
+
+            };
+
+
+            const elementId = elementMap[setting];
+
+            if (elementId) {
+
+                const element = document.getElementById(elementId);
+
+                if (element) {
+                    element.textContent = settings[setting];
+                }
+
+            }
+
+
+            if (setting === "portalStatus") {
+
+                const statusElement =
+                    document.getElementById("portal-status-value");
+
+                statusElement.textContent = settings.portalStatus;
+
+                statusElement.className =
+                    settings.portalStatus === "Active"
+                        ? "status-badge status-confirmed"
+                        : "status-badge status-pending";
+
+            }
+
+        }
+
+
+        function updateNotificationDisplay(notification) {
+
+            const elementMap = {
+
+                newAppointment: "new-appointment-status",
+                appointmentChanges: "appointment-changes-status",
+                newClient: "new-client-status",
+                weeklyReports: "weekly-reports-status"
+
+            };
+
+
+            const element =
+                document.getElementById(elementMap[notification]);
+
+
+            if (!element) {
+                return;
+            }
+
+
+            const enabled =
+                settings.notifications[notification];
+
+
+            element.textContent =
+                enabled ? "Enabled" : "Disabled";
+
+
+            element.className =
+                enabled
+                    ? "status-badge status-confirmed"
+                    : "status-badge status-pending";
+
+        }
+
+
+        function askForSetting(setting) {
+
+            const settingInformation = {
+
+                portalName: {
+                    label: "Portal Name",
+                    value: settings.portalName
+                },
+
+                language: {
+                    label: "Language",
+                    value: settings.language
+                },
+
+                timezone: {
+                    label: "Timezone",
+                    value: settings.timezone
+                },
+
+                dateFormat: {
+                    label: "Date Format",
+                    value: settings.dateFormat
+                },
+
+                timeFormat: {
+                    label: "Time Format",
+                    value: settings.timeFormat
+                },
+
+                appointmentDuration: {
+                    label: "Default Appointment Duration",
+                    value: settings.appointmentDuration
+                },
+
+                bookingBuffer: {
+                    label: "Booking Buffer",
+                    value: settings.bookingBuffer
+                },
+
+                bookingConfirmation: {
+                    label: "Booking Confirmation",
+                    value: settings.bookingConfirmation
+                },
+
+                cancellationNotice: {
+                    label: "Cancellation Notice",
+                    value: settings.cancellationNotice
+                },
+
+                currency: {
+                    label: "Default Currency",
+                    value: settings.currency
+                },
+
+                appointmentStatus: {
+                    label: "Default Appointment Status",
+                    value: settings.appointmentStatus
+                },
+
+                clientStatus: {
+                    label: "Default Client Status",
+                    value: settings.clientStatus
+                }
+
+            };
+
+
+            if (setting === "portalStatus") {
+
+                const newStatus =
+                    settings.portalStatus === "Active"
+                        ? "Inactive"
+                        : "Active";
+
+                const confirmed =
+                    confirm(
+                        "Change portal status to " +
+                        newStatus +
+                        "?"
+                    );
+
+
+                if (confirmed) {
+
+                    settings.portalStatus = newStatus;
+
+                    saveSettings();
+                    updateSettingDisplay("portalStatus");
+
+                }
+
+                return;
+
+            }
+
+
+            const information = settingInformation[setting];
+
+
+            if (!information) {
+                return;
+            }
+
+
+            const newValue =
+                prompt(
+                    "Enter " +
+                    information.label +
+                    ":",
+                    information.value
+                );
+
+
+            if (newValue === null) {
+                return;
+            }
+
+
+            if (newValue.trim() === "") {
+
+                alert(
+                    information.label +
+                    " cannot be empty."
+                );
+
+                return;
+
+            }
+
+
+            settings[setting] = newValue.trim();
+
+            saveSettings();
+            updateSettingDisplay(setting);
+
+        }
+
+
+        function manageNotification(notification) {
+
+            const notificationNames = {
+
+                newAppointment: "New Appointment",
+                appointmentChanges: "Appointment Changes",
+                newClient: "New Client",
+                weeklyReports: "Weekly Reports"
+
+            };
+
+
+            const name = notificationNames[notification];
+
+
+            const currentStatus =
+                settings.notifications[notification]
+                    ? "Enabled"
+                    : "Disabled";
+
+
+            const action =
+                confirm(
+                    name +
+                    " notifications are currently " +
+                    currentStatus +
+                    ".\n\n" +
+                    "Press OK to enable them or Cancel to disable them."
+                );
+
+
+            settings.notifications[notification] = action;
+
+            saveSettings();
+            updateNotificationDisplay(notification);
+
+        }
+
+
+        function loadSettings() {
+
+            Object.keys(defaultSettings).forEach(function (setting) {
+
+                if (
+                    setting !== "notifications" &&
+                    settings[setting] !== undefined
+                ) {
+                    updateSettingDisplay(setting);
+                }
+
+            });
+
+
+            Object.keys(settings.notifications).forEach(
+                function (notification) {
+
+                    updateNotificationDisplay(notification);
+
+                }
+            );
+
+        }
+
+
+        document
+            .querySelectorAll(".settings-action")
+            .forEach(function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        const setting =
+                            button.dataset.setting;
+
+                        askForSetting(setting);
+
+                    }
+                );
+
+            });
+
+
+        document
+            .querySelectorAll(".notification-action")
+            .forEach(function (button) {
+
+                button.addEventListener(
+                    "click",
+                    function () {
+
+                        const notification =
+                            button.dataset.notification;
+
+                        manageNotification(notification);
+
+                    }
+                );
+
+            });
+
+
+        loadSettings();
+
+    </script>
+
+</body>
+
+</html>

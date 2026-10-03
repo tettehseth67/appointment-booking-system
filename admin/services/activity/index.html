@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Service Activity | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- ADMIN SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <a href="../../index.html">ConsultPro</a>
+            <span>ADMIN PORTAL</span>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <!-- OVERVIEW -->
+            <p class="sidebar-heading">OVERVIEW</p>
+
+            <a href="../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+
+            <!-- BOOKINGS -->
+            <p class="sidebar-heading">BOOKINGS</p>
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+
+                    <label for="appointments-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../appointments/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>All Appointments</span>
+                    </a>
+
+                    <a href="../../appointments/show-appointments.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Appointment Details</span>
+                    </a>
+
+                    <a href="../../calendar/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">◫</span>
+                        <span>Calendar</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PEOPLE -->
+            <p class="sidebar-heading">PEOPLE</p>
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultants-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Consultants</span>
+                    </a>
+
+                    <label for="consultants-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../consultants/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>All Consultants</span>
+                    </a>
+
+                    <a href="../../consultants/add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">＋</span>
+                        <span>Add Consultant</span>
+                    </a>
+
+                    <a href="../../consultants/activity/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">◷</span>
+                        <span>Consultant Activity</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">◆</span>
+                        <span>Services</span>
+                    </a>
+
+                    <label for="services-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>All Services</span>
+                    </a>
+
+                    <a href="../add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">＋</span>
+                        <span>Add Service</span>
+                    </a>
+
+                    <a href="../activity/index.html" class="sidebar-sublink active">
+                        <span class="sidebar-icon">◷</span>
+                        <span>Service Activity</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="clients-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../clients/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Clients</span>
+                    </a>
+
+                    <label for="clients-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../clients/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Client Directory</span>
+                    </a>
+
+                    <a href="../../clients/add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">＋</span>
+                        <span>Add Client</span>
+                    </a>
+
+                    <a href="../../clients/activity/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">◷</span>
+                        <span>Client Activity</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+            <p class="sidebar-heading">COMMUNICATION</p>
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">4</span>
+                    </a>
+
+                    <label for="messages-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../messages/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Inbox</span>
+                    </a>
+
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↗</span>
+                        <span>Sent Messages</span>
+                    </a>
+
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">＋</span>
+                        <span>Compose Message</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">●</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">4</span>
+                    </a>
+
+                    <label for="notifications-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../notifications/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>All Notifications</span>
+                    </a>
+
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">●</span>
+                        <span>Unread</span>
+                    </a>
+
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Notification Settings</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ANALYTICS -->
+            <p class="sidebar-heading sidebar-heading-space">
+                ANALYTICS
+            </p>
+
+            <!-- REPORTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="reports-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../reports/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▤</span>
+                        <span>Reports</span>
+                    </a>
+
+                    <label for="reports-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../reports/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Overview</span>
+                    </a>
+
+                    <a href="../../reports/appointments/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">▤</span>
+                        <span>Appointment Reports</span>
+                    </a>
+
+                    <a href="../../reports/services/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">▤</span>
+                        <span>Service Reports</span>
+                    </a>
+
+                    <a href="../../reports/consultants/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">▤</span>
+                        <span>Consultant Reports</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SYSTEM -->
+            <p class="sidebar-heading sidebar-heading-space">
+                SYSTEM
+            </p>
+
+            <!-- USER MANAGEMENT -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="users-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../users/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>User Management</span>
+                    </a>
+
+                    <label for="users-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../users/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>All Users</span>
+                    </a>
+
+                    <a href="../../users/add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">＋</span>
+                        <span>Add User</span>
+                    </a>
+
+                    <a href="../../users/activity/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">◷</span>
+                        <span>User Activity</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ROLES & PERMISSIONS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="roles-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../roles/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Roles &amp; Permissions</span>
+                    </a>
+
+                    <label for="roles-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../roles/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>All Roles</span>
+                    </a>
+
+                    <a href="../../roles/add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">＋</span>
+                        <span>Add Role</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACTIVITY LOG -->
+            <a href="../../activitylog/index.html" class="sidebar-link">
+                <span class="sidebar-icon">◷</span>
+                <span>Activity Log</span>
+            </a>
+
+
+            <!-- ACCOUNT -->
+            <p class="sidebar-heading sidebar-heading-space">
+                ACCOUNT
+            </p>
+
+            <!-- SETTINGS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../settings/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+                    </a>
+
+                    <label for="settings-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../settings/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>General Settings</span>
+                    </a>
+
+                    <a href="../../profile.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Profile Settings</span>
+                    </a>
+
+                    <a href="../../settings/security/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">⚿</span>
+                        <span>Security</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    AD
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>Admin User</strong>
+                    <span>Administrator</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ADMIN MAIN -->
+    <div class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <div>
+
+                    <span class="header-label">
+                        ADMINISTRATION
+                    </span>
+
+                    <h1>
+                        Service Activity
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    🔔
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ⚙️
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span>
+                            Yaw
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▼
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../profile.html">
+                            My Profile
+                        </a>
+
+                        <a href="../../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="#">
+                            Change Password
+                        </a>
+
+                        <a href="../../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <hr>
+
+                        <a href="../../../auth/login/index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- CONTENT -->
+        <main class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <div class="dashboard-welcome">
+
+                <div>
+
+                    <span class="header-label">
+                        SERVICES
+                    </span>
+
+                    <h2>
+                        Service Activity
+                    </h2>
+
+                    <p>
+                        Review all recent changes and administrative
+                        actions for this service.
+                    </p>
+
+                </div>
+
+
+                <div class="table-actions">
+
+                    <a href="../show/index.html" class="secondary-button">
+                        ← Service Details
+                    </a>
+
+                    <a href="../edit/index.html" class="edit-button">
+                        Edit Service
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE SUMMARY -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            SERVICE
+                        </span>
+
+                        <h2>
+                            SRV001 — Business Strategy Consultation
+                        </h2>
+
+                    </div>
+
+                    <span class="status-badge status-active">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <tbody>
+
+                            <tr>
+
+                                <th>
+                                    Service ID
+                                </th>
+
+                                <td>
+                                    SRV001
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>
+                                    Category
+                                </th>
+
+                                <td>
+                                    Business
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>
+                                    Current Price
+                                </th>
+
+                                <td>
+                                    $200.00
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>
+                                    Duration
+                                </th>
+
+                                <td>
+                                    60 minutes
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <th>
+                                    Current Status
+                                </th>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- ACTIVITY LOG -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            ACTIVITY LOG
+                        </span>
+
+                        <h2>
+                            Recent Service Activity
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="appointment-filters">
+
+                    <div class="admin-search">
+
+                        <label for="activity-search">
+                            Search Activity
+                        </label>
+
+                        <input type="search" id="activity-search" placeholder="Search activity...">
+
+                    </div>
+
+
+                    <div class="admin-filter">
+
+                        <label for="activity-filter">
+                            Action
+                        </label>
+
+                        <select id="activity-filter" class="admin-filter">
+
+                            <option value="all">
+                                All Actions
+                            </option>
+
+                            <option value="created">
+                                Created
+                            </option>
+
+                            <option value="updated">
+                                Updated
+                            </option>
+
+                            <option value="status">
+                                Status Changed
+                            </option>
+
+                            <option value="price">
+                                Price Updated
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Action
+                                </th>
+
+                                <th>
+                                    Description
+                                </th>
+
+                                <th>
+                                    Performed By
+                                </th>
+
+                                <th>
+                                    Date &amp; Time
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Service Created
+                                </td>
+
+                                <td>
+                                    Business Strategy Consultation
+                                    was added to the service catalog.
+                                </td>
+
+                                <td>
+                                    Admin User
+                                </td>
+
+                                <td>
+                                    Aug 20, 2026<br>
+                                    <small>09:15 AM</small>
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Price Updated
+                                </td>
+
+                                <td>
+                                    Service price changed from
+                                    $175.00 to $200.00.
+                                </td>
+
+                                <td>
+                                    Yaw
+                                </td>
+
+                                <td>
+                                    Sep 5, 2026<br>
+                                    <small>11:30 AM</small>
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Service Updated
+                                </td>
+
+                                <td>
+                                    Service description and duration
+                                    were updated.
+                                </td>
+
+                                <td>
+                                    Admin User
+                                </td>
+
+                                <td>
+                                    Sep 8, 2026<br>
+                                    <small>02:20 PM</small>
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Status Changed
+                                </td>
+
+                                <td>
+                                    Service status changed from
+                                    Inactive to Active.
+                                </td>
+
+                                <td>
+                                    Admin User
+                                </td>
+
+                                <td>
+                                    Sep 10, 2026<br>
+                                    <small>10:05 AM</small>
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Service Updated
+                                </td>
+
+                                <td>
+                                    Assigned consultant and booking
+                                    availability were updated.
+                                </td>
+
+                                <td>
+                                    Yaw
+                                </td>
+
+                                <td>
+                                    Sep 15, 2026<br>
+                                    <small>03:45 PM</small>
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- ACTIVITY SUMMARY -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            ACTIVITY SUMMARY
+                        </span>
+
+                        <h2>
+                            Service History
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-statistics">
+
+                    <div class="admin-stat-card">
+
+                        <span class="stat-label">
+                            TOTAL ACTIVITIES
+                        </span>
+
+                        <strong>
+                            5
+                        </strong>
+
+                        <small>
+                            Recorded actions
+                        </small>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <span class="stat-label">
+                            LAST UPDATED
+                        </span>
+
+                        <strong>
+                            Sep 15
+                        </strong>
+
+                        <small>
+                            2026
+                        </small>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <span class="stat-label">
+                            CREATED BY
+                        </span>
+
+                        <strong>
+                            Admin
+                        </strong>
+
+                        <small>
+                            Admin User
+                        </small>
+
+                    </div>
+
+
+                    <div class="admin-stat-card">
+
+                        <span class="stat-label">
+                            CURRENT STATUS
+                        </span>
+
+                        <strong>
+                            Active
+                        </strong>
+
+                        <small>
+                            Available for booking
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ACTIONS -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            SERVICE ACTIONS
+                        </span>
+
+                        <h2>
+                            Manage Service
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-actions">
+
+                    <a href="../show/index.html" class="secondary-button">
+                        View Service
+                    </a>
+
+                    <a href="../edit/index.html" class="edit-button">
+                        Edit Service
+                    </a>
+
+                    <a href="../index.html" class="secondary-button">
+                        Back to Services
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

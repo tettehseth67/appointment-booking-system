@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Security Settings | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" aria-label="Client navigation">
+
+        <div class="sidebar-brand">
+            <a href="../index.html">ConsultPro</a>
+            <span>CLIENT PORTAL</span>
+        </div>
+
+        <nav class="sidebar-navigation" aria-label="Client navigation">
+
+            <p class="sidebar-heading">MAIN MENU</p>
+
+            <a href="../index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                Dashboard
+            </a>
+
+            <!-- Appointments -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        My Appointments
+                    </a>
+
+                    <label for="appointments-toggle" class="dropdown-trigger" aria-label="Expand appointments menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../appointments/book.html" class="sidebar-sublink">
+                        Book Appointment
+                    </a>
+
+                    <a href="../appointments/history.html" class="sidebar-sublink">
+                        Appointment History
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◆</span>
+                        Services
+                    </a>
+
+                    <label for="services-toggle" class="dropdown-trigger" aria-label="Expand services menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../services/index.html" class="sidebar-sublink">
+                        Available Services
+                    </a>
+
+                    <a href="../services/index.html" class="sidebar-sublink">
+                        My Services
+                    </a>
+
+                </div>
+
+            </div>
+
+            <p class="sidebar-heading">COMMUNICATION</p>
+
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        Messages
+                        <span class="sidebar-count">2</span>
+                    </a>
+
+                    <label for="messages-toggle" class="dropdown-trigger" aria-label="Expand messages menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../messages/sent.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../messages/compose.html" class="sidebar-sublink">
+                        New Message
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Notifications -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">●</span>
+                        Notifications
+                        <span class="sidebar-count">4</span>
+                    </a>
+
+                    <label for="notifications-toggle" class="dropdown-trigger" aria-label="Expand notifications menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../notifications/unread.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../notifications/settings.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+            <p class="sidebar-heading">ACCOUNT</p>
+
+            <!-- Profile -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="profile-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../profile/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">●</span>
+                        My Profile
+                    </a>
+
+                    <label for="profile-toggle" class="dropdown-trigger" aria-label="Expand profile menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../profile/index.html" class="sidebar-sublink">
+                        Profile Details
+                    </a>
+
+                    <a href="../profile/edit/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                    <a href="../profile/change-password/index.html" class="sidebar-sublink">
+                        Change Password
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Settings -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">⚙</span>
+                        Settings
+                    </a>
+
+                    <label for="settings-toggle" class="dropdown-trigger" aria-label="Expand settings menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="security.html" class="sidebar-sublink active" aria-current="page">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- Sidebar Bottom -->
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+                ← Back to Website
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    Y
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>John Davis</strong>
+                    <span>Client</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <div class="admin-main">
+
+        <!-- Header -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle" aria-label="Toggle navigation menu">
+                    ☰
+                </button>
+
+                <div>
+
+                    <span class="header-label">
+                        ACCOUNT SETTINGS
+                    </span>
+
+                    <h1>Security</h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button" aria-label="Notifications">
+                    ♢
+                    <span class="header-notification-dot"></span>
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle" aria-label="Open profile menu">
+
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span>
+                            John Davis
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../profile/edit/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../profile/change-password/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <a href="../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="admin-content">
+
+            <!-- Page Header -->
+            <div class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        ACCOUNT
+                    </span>
+
+                    <h2>
+                        Security Settings
+                    </h2>
+
+                    <p>
+                        Manage your password and protect your ConsultPro
+                        account.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Security Overview -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            SECURITY STATUS
+                        </span>
+
+                        <h2>
+                            Account Security
+                        </h2>
+
+                    </div>
+
+                    <span class="status-badge status-active">
+                        Protected
+                    </span>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Password
+                        </span>
+
+                        <strong>
+                            Last changed 30 days ago
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Two-Factor Authentication
+                        </span>
+
+                        <strong>
+                            Not Enabled
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Active Sessions
+                        </span>
+
+                        <strong>
+                            1 Active Session
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Account Status
+                        </span>
+
+                        <strong class="status-badge status-active">
+                            Active
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Change Password -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            PASSWORD
+                        </span>
+
+                        <h2>
+                            Change Password
+                        </h2>
+
+                        <p>
+                            Use a strong password that you do not use on
+                            another website.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <form class="admin-form">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="current-password">
+                                Current Password
+                            </label>
+
+                            <input type="password" id="current-password" name="current-password"
+                                placeholder="Enter current password" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="new-password">
+                                New Password
+                            </label>
+
+                            <input type="password" id="new-password" name="new-password"
+                                placeholder="Enter new password" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="confirm-password">
+                                Confirm New Password
+                            </label>
+
+                            <input type="password" id="confirm-password" name="confirm-password"
+                                placeholder="Confirm new password" required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="password-requirements">
+
+                        <h3>
+                            Password Requirements
+                        </h3>
+
+                        <ul>
+
+                            <li>
+                                At least 8 characters
+                            </li>
+
+                            <li>
+                                Include at least one uppercase letter
+                            </li>
+
+                            <li>
+                                Include at least one lowercase letter
+                            </li>
+
+                            <li>
+                                Include at least one number
+                            </li>
+
+                            <li>
+                                Avoid using easily guessed information
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="form-actions">
+
+                        <a href="index.html" class="secondary-button">
+                            Cancel
+                        </a>
+
+                        <button type="submit" class="primary-button">
+                            Update Password
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- Two-Factor Authentication -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            EXTRA PROTECTION
+                        </span>
+
+                        <h2>
+                            Two-Factor Authentication
+                        </h2>
+
+                        <p>
+                            Add another layer of protection when signing in
+                            to your account.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-list">
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Two-Factor Authentication
+                            </strong>
+
+                            <p>
+                                Require a verification code in addition to
+                                your password when signing in.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox">
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Active Sessions -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            LOGIN ACTIVITY
+                        </span>
+
+                        <h2>
+                            Active Sessions
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-list">
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Current Browser
+                            </strong>
+
+                            <p>
+                                Windows • Chrome • Current Session
+                            </p>
+
+                        </div>
+
+                        <span class="status-badge status-active">
+                            Active
+                        </span>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Last Login
+                            </strong>
+
+                            <p>
+                                September 18, 2026 at 9:42 AM
+                            </p>
+
+                        </div>
+
+                        <span>
+                            Current Device
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Security Tips -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            SECURITY TIPS
+                        </span>
+
+                        <h2>
+                            Keep Your Account Secure
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="delete-impact-list">
+
+                    <div class="delete-impact-item">
+                        ✓ Use a unique password for your ConsultPro account
+                    </div>
+
+                    <div class="delete-impact-item">
+                        ✓ Never share your password with another person
+                    </div>
+
+                    <div class="delete-impact-item">
+                        ✓ Sign out when using a shared computer
+                    </div>
+
+                    <div class="delete-impact-item">
+                        ✓ Review your account activity regularly
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Actions -->
+            <div class="form-actions">
+
+                <a href="index.html" class="secondary-button">
+                    Back to Settings
+                </a>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications | ConsultPro</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-brand-icon">
+                CP
+            </div>
+
+            <div>
+                <h2>ConsultPro</h2>
+                <span>MANAGER PORTAL</span>
+            </div>
+
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+            <!-- DASHBOARD -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-dashboard" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▦</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <label for="manager-dashboard" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Overview
+                    </a>
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Recent Activity
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-appointments" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                    </a>
+
+                    <label for="manager-appointments" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+
+                    <a href="../appointments/show/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                    <a href="../appointments/edit/index.html" class="sidebar-sublink">
+                        Edit Appointment
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-calendar" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">□</span>
+                        <span>Calendar</span>
+                    </a>
+
+                    <label for="manager-calendar" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                    <a href="../calendar/add/index.html" class="sidebar-sublink">
+                        Add Event
+                    </a>
+
+                    <a href="../calendar/edit/index.html" class="sidebar-sublink">
+                        Edit Event
+                    </a>
+
+                    <a href="../calendar/show/index.html" class="sidebar-sublink">
+                        Event Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-consultants" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Consultants</span>
+                    </a>
+
+                    <label for="manager-consultants" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../consultants/index.html" class="sidebar-sublink">
+                        Consultant List
+                    </a>
+
+                    <a href="../consultants/add/index.html" class="sidebar-sublink">
+                        Add Consultant
+                    </a>
+
+                    <a href="../consultants/show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+
+                    <a href="../consultants/edit/index.html" class="sidebar-sublink">
+                        Edit Consultant
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-services" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+                    </a>
+
+                    <label for="manager-services" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../services/index.html" class="sidebar-sublink">
+                        Service List
+                    </a>
+
+                    <a href="../services/add/index.html" class="sidebar-sublink">
+                        Add Service
+                    </a>
+
+                    <a href="../services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+
+                    <a href="../services/edit/index.html" class="sidebar-sublink">
+                        Edit Service
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-clients" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../clients/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Clients</span>
+                    </a>
+
+                    <label for="manager-clients" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="../clients/add/index.html" class="sidebar-sublink">
+                        Add Client
+                    </a>
+
+                    <a href="../clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                    <a href="../clients/edit/index.html" class="sidebar-sublink">
+                        Edit Client
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-messages" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../messages/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ✉
+                        </span>
+
+                        <span>
+                            Messages
+                        </span>
+
+                        <span class="sidebar-count">
+                            4
+                        </span>
+
+                    </a>
+
+                    <label for="manager-messages" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        Compose Message
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-notifications" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../notifications/index.html" class="sidebar-link active">
+
+                        <span class="sidebar-icon">
+                            ♢
+                        </span>
+
+                        <span>
+                            Notifications
+                        </span>
+
+                        <span class="sidebar-count">
+                            4
+                        </span>
+
+                    </a>
+
+                    <label for="manager-notifications" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../notifications/index.html" class="sidebar-sublink active">
+                        All Notifications
+                    </a>
+
+                    <a href="../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- ANALYTICS -->
+            <div class="sidebar-heading">
+                ANALYTICS
+            </div>
+
+            <!-- REPORTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-reports" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../reports/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▥</span>
+                        <span>Reports</span>
+                    </a>
+
+                    <label for="manager-reports" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../reports/index.html" class="sidebar-sublink">
+                        Reports Overview
+                    </a>
+
+                    <a href="../reports/revenue/index.html" class="sidebar-sublink">
+                        Revenue Reports
+                    </a>
+
+                    <a href="../reports/appointments/index.html" class="sidebar-sublink">
+                        Appointment Reports
+                    </a>
+
+                    <a href="../reports/consultants/index.html" class="sidebar-sublink">
+                        Consultant Reports
+                    </a>
+
+                    <a href="../reports/clients/index.html" class="sidebar-sublink">
+                        Client Reports
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+            <!-- SETTINGS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-settings" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../settings/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+                    </a>
+
+                    <label for="manager-settings" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../settings/general/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../settings/profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+
+                    <a href="../settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">
+                    ←
+                </span>
+
+                <span>
+                    Back to Website
+                </span>
+
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    M
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>
+                        Manager
+                    </strong>
+
+                    <span>
+                        Manager
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    NOTIFICATIONS
+                </span>
+
+            </div>
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ♢
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span class="profile-name">
+                            Yaw
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- CONTENT -->
+        <div class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        COMMUNICATION
+                    </span>
+
+                    <h1>
+                        Notifications
+                    </h1>
+
+                    <p>
+                        Stay up to date with appointments, messages, clients, and system activity.
+                    </p>
+
+                </div>
+
+                <div class="admin-page-actions">
+
+                    <a href="unread/index.html" class="secondary-button">
+                        View Unread
+                    </a>
+
+                    <a href="settings/index.html" class="primary-button">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- STATS -->
+            <section class="dashboard-stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            TOTAL
+                        </span>
+
+                        <strong class="stat-value">
+                            24
+                        </strong>
+
+                        <span class="stat-description">
+                            Notifications
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            UNREAD
+                        </span>
+
+                        <strong class="stat-value">
+                            4
+                        </strong>
+
+                        <span class="stat-description">
+                            Need attention
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            TODAY
+                        </span>
+
+                        <strong class="stat-value">
+                            6
+                        </strong>
+
+                        <span class="stat-description">
+                            New notifications
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            THIS WEEK
+                        </span>
+
+                        <strong class="stat-value">
+                            18
+                        </strong>
+
+                        <span class="stat-description">
+                            Recent activity
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- NOTIFICATIONS PANEL -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            RECENT ACTIVITY
+                        </span>
+
+                        <h2>
+                            All Notifications
+                        </h2>
+
+                    </div>
+
+                    <a href="unread/index.html" class="secondary-button">
+                        View Unread
+                    </a>
+
+                </div>
+
+                <div class="notification-list">
+
+                    <!-- NOTIFICATION 1 -->
+                    <div class="notification-item unread">
+
+                        <div class="notification-icon">
+                            ✓
+                        </div>
+
+                        <div class="notification-content">
+
+                            <strong>
+                                New appointment booked
+                            </strong>
+
+                            <p>
+                                John Davis booked a Business Strategy consultation with David Wilson.
+                            </p>
+
+                            <span class="notification-time">
+                                15 minutes ago
+                            </span>
+
+                        </div>
+
+                        <span class="status-badge status-unread">
+                            Unread
+                        </span>
+
+                    </div>
+
+                    <!-- NOTIFICATION 2 -->
+                    <div class="notification-item unread">
+
+                        <div class="notification-icon">
+                            ✉
+                        </div>
+
+                        <div class="notification-content">
+
+                            <strong>
+                                New message received
+                            </strong>
+
+                            <p>
+                                Anna Miller sent a message requesting to reschedule her consultation.
+                            </p>
+
+                            <span class="notification-time">
+                                1 hour ago
+                            </span>
+
+                        </div>
+
+                        <span class="status-badge status-unread">
+                            Unread
+                        </span>
+
+                    </div>
+
+                    <!-- NOTIFICATION 3 -->
+                    <div class="notification-item unread">
+
+                        <div class="notification-icon">
+                            ⚠
+                        </div>
+
+                        <div class="notification-content">
+
+                            <strong>
+                                Appointment requires attention
+                            </strong>
+
+                            <p>
+                                An upcoming appointment is missing consultant confirmation.
+                            </p>
+
+                            <span class="notification-time">
+                                2 hours ago
+                            </span>
+
+                        </div>
+
+                        <span class="status-badge status-unread">
+                            Unread
+                        </span>
+
+                    </div>
+
+                    <!-- NOTIFICATION 4 -->
+                    <div class="notification-item unread">
+
+                        <div class="notification-icon">
+                            ♙
+                        </div>
+
+                        <div class="notification-content">
+
+                            <strong>
+                                New consultant added
+                            </strong>
+
+                            <p>
+                                Emily Johnson has been added to the consultant directory.
+                            </p>
+
+                            <span class="notification-time">
+                                3 hours ago
+                            </span>
+
+                        </div>
+
+                        <span class="status-badge status-unread">
+                            Unread
+                        </span>
+
+                    </div>
+
+                    <!-- NOTIFICATION 5 -->
+                    <div class="notification-item">
+
+                        <div class="notification-icon">
+                            ✓
+                        </div>
+
+                        <div class="notification-content">
+
+                            <strong>
+                                Appointment completed
+                            </strong>
+
+                            <p>
+                                Michael Brown's consultation with David Wilson has been marked as completed.
+                            </p>
+
+                            <span class="notification-time">
+                                Yesterday
+                            </span>
+
+                        </div>
+
+                        <span class="status-badge status-confirmed">
+                            Read
+                        </span>
+
+                    </div>
+
+                    <!-- NOTIFICATION 6 -->
+                    <div class="notification-item">
+
+                        <div class="notification-icon">
+                            ✉
+                        </div>
+
+                        <div class="notification-content">
+
+                            <strong>
+                                Message sent successfully
+                            </strong>
+
+                            <p>
+                                Your appointment confirmation was delivered to Sarah Wilson.
+                            </p>
+
+                            <span class="notification-time">
+                                Yesterday
+                            </span>
+
+                        </div>
+
+                        <span class="status-badge status-confirmed">
+                            Read
+                        </span>
+
+                    </div>
+
+                    <!-- NOTIFICATION 7 -->
+                    <div class="notification-item">
+
+                        <div class="notification-icon">
+                            □
+                        </div>
+
+                        <div class="notification-content">
+
+                            <strong>
+                                Calendar event updated
+                            </strong>
+
+                            <p>
+                                The consultation schedule for September 30 has been updated.
+                            </p>
+
+                            <span class="notification-time">
+                                September 28, 2026
+                            </span>
+
+                        </div>
+
+                        <span class="status-badge status-confirmed">
+                            Read
+                        </span>
+
+                    </div>
+
+                    <!-- NOTIFICATION 8 -->
+                    <div class="notification-item">
+
+                        <div class="notification-icon">
+                            ♢
+                        </div>
+
+                        <div class="notification-content">
+
+                            <strong>
+                                System settings updated
+                            </strong>
+
+                            <p>
+                                Manager notification preferences were successfully updated.
+                            </p>
+
+                            <span class="notification-time">
+                                September 27, 2026
+                            </span>
+
+                        </div>
+
+                        <span class="status-badge status-confirmed">
+                            Read
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

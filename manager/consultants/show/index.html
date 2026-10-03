@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consultant Details | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="../../index.html" class="sidebar-brand-icon">
+                CP
+            </a>
+
+            <div>
+                <a href="../../index.html">
+                    ConsultPro
+                </a>
+
+                <span>
+                    MANAGER PORTAL
+                </span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-navigation">
+
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+
+            <!-- DASHBOARD -->
+            <a href="../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox">
+
+                <label for="appointments-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◷</span>
+                        <span>Appointments</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../appointments/index.html" class="sidebar-sublink">Appointment List</a>
+                    <a href="../../appointments/add/index.html" class="sidebar-sublink">Add Appointment</a>
+                    <a href="../../appointments/show/index.html" class="sidebar-sublink">Appointment Details</a>
+                    <a href="../../appointments/edit/index.html" class="sidebar-sublink">Edit Appointment</a>
+                </div>
+
+            </div>
+
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="calendar-menu" class="dropdown-checkbox">
+
+                <label for="calendar-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Calendar</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../calendar/index.html" class="sidebar-sublink">Calendar</a>
+                    <a href="../../calendar/add/index.html" class="sidebar-sublink">Add Event</a>
+                </div>
+
+            </div>
+
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultants-menu" class="dropdown-checkbox" checked>
+
+                <label for="consultants-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◉</span>
+                        <span>Consultants</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../index.html" class="sidebar-sublink">Consultant List</a>
+                    <a href="../add/index.html" class="sidebar-sublink">Add Consultant</a>
+                    <a href="index.html" class="sidebar-sublink active">Consultant Details</a>
+                    <a href="../edit/index.html" class="sidebar-sublink">Edit Consultant</a>
+                </div>
+
+            </div>
+
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox">
+
+                <label for="services-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../services/index.html" class="sidebar-sublink">Service List</a>
+                    <a href="../../services/add/index.html" class="sidebar-sublink">Add Service</a>
+                    <a href="../../services/show/index.html" class="sidebar-sublink">Service Details</a>
+                </div>
+
+            </div>
+
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="clients-menu" class="dropdown-checkbox">
+
+                <label for="clients-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◎</span>
+                        <span>Clients</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../clients/index.html" class="sidebar-sublink">Client List</a>
+                    <a href="../../clients/show/index.html" class="sidebar-sublink">Client Details</a>
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox">
+
+                <label for="messages-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">3</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../messages/index.html" class="sidebar-sublink">Inbox</a>
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">Sent Messages</a>
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">Compose Message</a>
+                </div>
+
+            </div>
+
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox">
+
+                <label for="notifications-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">3</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../notifications/index.html" class="sidebar-sublink">All Notifications</a>
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">Unread</a>
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">Notification Settings</a>
+                </div>
+
+            </div>
+
+
+            <!-- ANALYTICS -->
+            <div class="sidebar-heading">
+                ANALYTICS
+            </div>
+
+
+            <!-- REPORTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="reports-menu" class="dropdown-checkbox">
+
+                <label for="reports-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">▤</span>
+                        <span>Reports</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../reports/index.html" class="sidebar-sublink">Reports Overview</a>
+                    <a href="../../reports/revenue/index.html" class="sidebar-sublink">Revenue Reports</a>
+                    <a href="../../reports/appointments/index.html" class="sidebar-sublink">Appointment Reports</a>
+                    <a href="../../reports/consultants/index.html" class="sidebar-sublink">Consultant Reports</a>
+                    <a href="../../reports/clients/index.html" class="sidebar-sublink">Client Reports</a>
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+
+            <!-- SETTINGS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-menu" class="dropdown-checkbox">
+
+                <label for="settings-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../settings/index.html" class="sidebar-sublink">General Settings</a>
+                    <a href="../../settings/profile/index.html" class="sidebar-sublink">Profile Settings</a>
+                    <a href="../../settings/security/index.html" class="sidebar-sublink">Security</a>
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    M
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>Manager</strong>
+                    <span>Manager</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    CONSULTANT DETAILS
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button class="header-icon-button">
+                    ♢
+                    <span class="header-notification-dot"></span>
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button class="profile-toggle">
+
+                        <span class="header-avatar">
+                            M
+                        </span>
+
+                        <span class="profile-name">
+                            Manager
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ⌄
+                        </span>
+
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../settings/profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../../settings/security/index.html">
+                            Security
+                        </a>
+
+                        <a href="../../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <div class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+
+                <div>
+
+                    <h1>
+                        Consultant Details
+                    </h1>
+
+                    <p>
+                        View and manage consultant information and availability.
+                    </p>
+
+                </div>
+
+                <div class="admin-page-header-actions">
+
+                    <a href="../index.html" class="secondary-button">
+                        ← Back to Consultants
+                    </a>
+
+                    <a href="../edit/index.html" class="primary-button">
+                        Edit Consultant
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONSULTANT OVERVIEW -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            CONSULTANT PROFILE
+                        </span>
+
+                        <h2>
+                            David Wilson
+                        </h2>
+
+                    </div>
+
+                    <span class="status-badge status-active">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Consultant ID
+                        </span>
+
+                        <strong>
+                            CN-10021
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Primary Specialty
+                        </span>
+
+                        <strong>
+                            Business Strategy
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Primary Service
+                        </span>
+
+                        <strong>
+                            Business Strategy
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Years of Experience
+                        </span>
+
+                        <strong>
+                            8 Years
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONTACT INFORMATION -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            CONTACT INFORMATION
+                        </span>
+
+                        <h2>
+                            Consultant Contact
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Full Name
+                        </span>
+
+                        <strong>
+                            David Wilson
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Email Address
+                        </span>
+
+                        <strong>
+                            david.wilson@example.com
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Phone Number
+                        </span>
+
+                        <strong>
+                            +1 (555) 381-7426
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Account Status
+                        </span>
+
+                        <strong>
+                            Active
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- AVAILABILITY -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            AVAILABILITY
+                        </span>
+
+                        <h2>
+                            Working Schedule
+                        </h2>
+
+                    </div>
+
+                    <span class="status-badge status-active">
+                        Available
+                    </span>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Monday
+                        </span>
+
+                        <strong>
+                            9:00 AM – 5:00 PM
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Tuesday
+                        </span>
+
+                        <strong>
+                            9:00 AM – 5:00 PM
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Wednesday
+                        </span>
+
+                        <strong>
+                            9:00 AM – 5:00 PM
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Thursday
+                        </span>
+
+                        <strong>
+                            9:00 AM – 5:00 PM
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Friday
+                        </span>
+
+                        <strong>
+                            9:00 AM – 5:00 PM
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROFESSIONAL INFORMATION -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            PROFESSIONAL INFORMATION
+                        </span>
+
+                        <h2>
+                            Consultant Overview
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Total Appointments
+                        </span>
+
+                        <strong>
+                            18
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Current Availability
+                        </span>
+
+                        <strong>
+                            Available
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Primary Specialty
+                        </span>
+
+                        <strong>
+                            Business Strategy
+                        </strong>
+
+                    </div>
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Consultant Since
+                        </span>
+
+                        <strong>
+                            January 2024
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- BIO -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            PROFESSIONAL BIO
+                        </span>
+
+                        <h2>
+                            About David Wilson
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Biography
+                        </span>
+
+                        <strong>
+                            David Wilson is a business strategy consultant
+                            specializing in operational planning, business growth,
+                            process improvement, and long-term strategic development.
+                            He works with clients to identify opportunities,
+                            improve business performance, and develop practical
+                            strategies for sustainable growth.
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ACTIONS -->
+            <section class="form-actions">
+
+                <a href="../index.html" class="secondary-button">
+                    Back to Consultants
+                </a>
+
+                <a href="../edit/index.html" class="primary-button">
+                    Edit Consultant
+                </a>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

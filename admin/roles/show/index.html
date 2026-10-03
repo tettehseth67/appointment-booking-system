@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Role Details | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <a href="../../admin/index.html">
+                ConsultPro
+            </a>
+            <span>ADMIN PORTAL</span>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <p class="sidebar-heading">OVERVIEW</p>
+
+            <a href="../../admin/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <p class="sidebar-heading">BOOKINGS</p>
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+
+                    <label for="appointments-toggle" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../appointments/show-appointments.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Appointment Details</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="../../calendar/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Calendar</span>
+            </a>
+
+            <p class="sidebar-heading">PEOPLE</p>
+
+            <a href="../../consultants/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Consultants</span>
+            </a>
+
+            <a href="../../services/index.html" class="sidebar-link">
+                <span class="sidebar-icon">◆</span>
+                <span>Services</span>
+            </a>
+
+            <a href="../../clients/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Clients</span>
+            </a>
+
+            <p class="sidebar-heading">COMMUNICATION</p>
+
+            <a href="../../messages/index.html" class="sidebar-link">
+                <span class="sidebar-icon">✉</span>
+                <span>Messages</span>
+                <span class="sidebar-count">4</span>
+            </a>
+
+            <a href="../../notifications/index.html" class="sidebar-link">
+                <span class="sidebar-icon">✉</span>
+                <span>Notifications</span>
+                <span class="sidebar-count">4</span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">ANALYTICS</p>
+
+            <a href="../../reports/index.html" class="sidebar-link">
+                <span class="sidebar-icon">▤</span>
+                <span>Reports</span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">SYSTEM</p>
+
+            <a href="../../users/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>User Management</span>
+            </a>
+
+            <a href="../index.html" class="sidebar-link active">
+                <span class="sidebar-icon">⚙</span>
+                <span>Roles &amp; Permissions</span>
+            </a>
+
+            <a href="../../activitylog/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Activity Log</span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">ACCOUNT</p>
+
+            <a href="../../settings/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    AD
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>Admin User</strong>
+                    <span>Administrator</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <div class="admin-main">
+
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <div>
+                    <span class="header-label">SYSTEM</span>
+                    <h1>Role Details</h1>
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    🔔
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ⚙️
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+                        <span class="header-avatar">Y</span>
+                        <span>Yaw</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../profile.html">
+                            My Profile
+                        </a>
+
+                        <a href="../../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="#">
+                            Change Password
+                        </a>
+
+                        <a href="../../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <hr>
+
+                        <a href="../../auth/login/index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="admin-content">
+
+
+            <div class="admin-page-header">
+
+                <div>
+                    <span class="header-label">ROLE MANAGEMENT</span>
+
+                    <h2>Support Staff</h2>
+
+                    <p>
+                        View role information, permissions, and assigned access.
+                    </p>
+                </div>
+
+                <div class="page-header-actions">
+
+                    <a href="../edit/index.html" class="secondary-button">
+                        Edit Role
+                    </a>
+
+                    <a href="../index.html" class="secondary-button">
+                        ← Back to Roles
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ROLE OVERVIEW -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">
+                            ROLE INFORMATION
+                        </span>
+
+                        <h2>Role Overview</h2>
+                    </div>
+
+                    <span class="status-badge status-active">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <div class="admin-panel-content">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label>Role ID</label>
+
+                            <input type="text" value="ROL003" readonly>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Role Name</label>
+
+                            <input type="text" value="Support Staff" readonly>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Role Code</label>
+
+                            <input type="text" value="SUPPORT_STAFF" readonly>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Status</label>
+
+                            <input type="text" value="Active" readonly>
+
+                        </div>
+
+
+                        <div class="form-group form-group-full">
+
+                            <label>Description</label>
+
+                            <textarea rows="4"
+                                readonly>Handles client communication, appointment coordination, and basic administrative tasks.</textarea>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PERMISSIONS -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">
+                            ACCESS CONTROL
+                        </span>
+
+                        <h2>Assigned Permissions</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="admin-panel-content">
+
+                    <div class="admin-table-wrapper">
+
+                        <table class="admin-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>Module</th>
+                                    <th>View</th>
+                                    <th>Create</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody>
+
+                                <tr>
+                                    <td><strong>Dashboard</strong></td>
+                                    <td>✓</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Appointments</strong></td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>—</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Calendar</strong></td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>—</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Consultants</strong></td>
+                                    <td>✓</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Services</strong></td>
+                                    <td>✓</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Clients</strong></td>
+                                    <td>✓</td>
+                                    <td>—</td>
+                                    <td>✓</td>
+                                    <td>—</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Messages</strong></td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Notifications</strong></td>
+                                    <td>✓</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Reports</strong></td>
+                                    <td>✓</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>User Management</strong></td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Roles &amp; Permissions</strong></td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Activity Log</strong></td>
+                                    <td>✓</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
+
+                                <tr>
+                                    <td><strong>Settings</strong></td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ROLE RECORD -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">
+                            RECORD INFORMATION
+                        </span>
+
+                        <h2>Role History</h2>
+                    </div>
+
+                </div>
+
+
+                <div class="admin-panel-content">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label>Created By</label>
+
+                            <input type="text" value="Admin User" readonly>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Created</label>
+
+                            <input type="text" value="August 18, 2026 at 09:42 AM" readonly>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Last Updated By</label>
+
+                            <input type="text" value="Yaw" readonly>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Last Updated</label>
+
+                            <input type="text" value="September 12, 2026 at 02:18 PM" readonly>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ACTIONS -->
+
+            <div class="form-actions">
+
+                <a href="../edit/index.html" class="secondary-button">
+                    Edit Role
+                </a>
+
+                <a href="../index.html" class="secondary-button">
+                    Back to Roles
+                </a>
+                <button type="button" class="delete-role-button" popovertarget="delete-role-modal">
+                    Delete Role
+                </button>
+            </div>
+
+            <!-- DELETE ROLE CONFIRMATION -->
+            <dialog id="delete-role-modal" popover class="admin-panel delete-role-card" aria-modal="true"
+                aria-labelledby="user-delete-title" aria-describedby="user-delete-description">
+                <!-- Warning Context Block -->
+                <div class="delete-warning-box" role="alert">
+                    <span class="warning-icon" aria-hidden="true">⚠</span>
+                    <div>
+                        <h3>Permanently Remove Account?</h3>
+                        <p>You are about to permanently remove this user from the system. This action cannot be undone.
+                        </p>
+                    </div>
+                </div>
+                <!-- Interactive Actions Sub-Footer Grid -->
+                <div class="delete-actions-row">
+                    <button type="button" popovertarget="delete-user-modal" popovertargetaction="hide"
+                        class="secondary-button">
+                        Cancel
+                    </button>
+                    <button
+                        type="button"
+                        id="deleteRoleButton"
+                        class="delete-confirm-button"
+                        >
+                        Confirm Delete
+                    </button>
+                </div>
+            </dialog>
+        </main>
+
+    </div>
+
+</body>
+
+</html>

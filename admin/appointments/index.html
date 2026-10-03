@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments | ConsultPro Admin</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+    <!-- =================================
+            SIDEBAR
+        ================================== -->
+    <aside class="admin-sidebar" aria-label="Admin navigation">
+        <!-- Brand -->
+        <div class="sidebar-brand">
+            <a href="../index.html">
+                ConsultPro
+            </a>
+            <span>
+                ADMIN PORTAL
+            </span>
+        </div>
+        <nav class="sidebar-navigation">
+            <!-- =========================
+                    OVERVIEW
+                ========================== -->
+            <p class="sidebar-heading">
+                OVERVIEW
+            </p>
+            <a href="../index.html" class="sidebar-link" aria-current="page">
+                <span class="sidebar-icon">▦</span>
+                <span>
+                    Dashboard
+                </span>
+            </a>
+            <!-- =========================
+                    BOOKINGS
+                ========================== -->
+            <p class="sidebar-heading">
+                BOOKINGS
+            </p>
+            <!-- Appointments -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../appointments/index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">▣</span>
+                        <span>
+                            Appointments
+                        </span>
+                        <span class="sidebar-count">
+                            12
+                        </span>
+                    </a>
+                    <label for="appointments-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="../appointments/index.html" class="sidebar-sublink active">
+                        All Appointments
+                    </a>
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+                    <a href="../appointments/edit/index.html" class="sidebar-sublink">
+                        Edit Appointment
+                    </a>
+                </div>
+            </div>
+            <!-- Calendar -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="calendar-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">□</span>
+                        <span>
+                            Calendar
+                        </span>
+                    </a>
+                    <label for="calendar-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="../calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+                    <a href="../calendar/add-event/index.html" class="sidebar-sublink">
+                        Add Event
+                    </a>
+                    <a href="../calendar/show-event/index.html" class="sidebar-sublink">
+                        Event Details
+                    </a>
+                    <a href="../calendar/edit-event/index.html" class="sidebar-sublink">
+                        Edit Event
+                    </a>
+                </div>
+            </div>
+            <!-- =========================
+                    PEOPLE
+                ========================== -->
+            <p class="sidebar-heading">
+                PEOPLE
+            </p>
+            <!-- Consultants -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultants-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../../admin/consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>
+                            Consultants
+                        </span>
+                    </a>
+                    <label for="consultants-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="../../admin/consultants/index.html" class="sidebar-sublink">
+                        All Consultants
+                    </a>
+                    <a href="../../admin/consultants/add/index.html" class="sidebar-sublink">
+                        Add Consultant
+                    </a>
+                    <a href="../../admin/consultants/show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+                    <a href="consultants/edit/index.html" class="sidebar-sublink">
+                        Edit Consultant
+                    </a>
+                </div>
+            </div>
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▤</span>
+                        <span>
+                            Services
+                        </span>
+                    </a>
+                    <label for="services-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="services/index.html" class="sidebar-sublink">
+                        All Services
+                    </a>
+                    <a href="services/add/index.html" class="sidebar-sublink">
+                        Add Service
+                    </a>
+                    <a href="services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+                    <a href="services/edit/index.html" class="sidebar-sublink">
+                        Edit Service
+                    </a>
+                </div>
+            </div>
+            <!-- Clients -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="clients-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="clients/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>
+                            Clients
+                        </span>
+                    </a>
+                    <label for="clients-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="clients/index.html" class="sidebar-sublink">
+                        All Clients
+                    </a>
+                    <a href="clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+                    <a href="clients/edit/index.html" class="sidebar-sublink">
+                        Edit Client
+                    </a>
+                </div>
+            </div>
+            <!-- =========================
+                    COMMUNICATION
+                ========================== -->
+            <p class="sidebar-heading">
+                COMMUNICATION
+            </p>
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>
+                            Messages
+                        </span>
+                        <span class="sidebar-count">
+                            4
+                        </span>
+                    </a>
+                    <label for="messages-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+                    <a href="messages/compose/index.html" class="sidebar-sublink">
+                        Compose
+                    </a>
+                    <a href="messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+                    <a href="messages/show/index.html" class="sidebar-sublink">
+                        Message Details
+                    </a>
+                </div>
+            </div>
+            <!-- Notifications -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        <span>
+                            Notifications
+                        </span>
+                        <span class="sidebar-count">
+                            4
+                        </span>
+                    </a>
+                    <label for="notifications-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+                    <a href="notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+                    <a href="notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+                </div>
+            </div>
+            <!-- =========================
+                    ANALYTICS
+                ========================== -->
+            <p class="sidebar-heading">
+                ANALYTICS
+            </p>
+            <!-- Reports -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="reports-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="reports/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▥</span>
+                        <span>
+                            Reports
+                        </span>
+                    </a>
+                    <label for="reports-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="reports/index.html" class="sidebar-sublink">
+                        Overview
+                    </a>
+                    <a href="reports/revenue/index.html" class="sidebar-sublink">
+                        Revenue
+                    </a>
+                    <a href="reports/appointments/index.html" class="sidebar-sublink">
+                        Appointments
+                    </a>
+                    <a href="reports/consultants/index.html" class="sidebar-sublink">
+                        Consultants
+                    </a>
+                    <a href="reports/clients/index.html" class="sidebar-sublink">
+                        Clients
+                    </a>
+                </div>
+            </div>
+            <!-- =========================
+                    SYSTEM
+                ========================== -->
+            <p class="sidebar-heading">
+                SYSTEM
+            </p>
+            <!-- Users -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="users-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="users/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>
+                            User Management
+                        </span>
+                    </a>
+                    <label for="users-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="users/index.html" class="sidebar-sublink">
+                        All Users
+                    </a>
+                    <a href="users/add/index.html" class="sidebar-sublink">
+                        Add User
+                    </a>
+                    <a href="users/show/index.html" class="sidebar-sublink">
+                        User Details
+                    </a>
+                    <a href="users/edit/index.html" class="sidebar-sublink">
+                        Edit User
+                    </a>
+                </div>
+            </div>
+            <!-- Roles -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="roles-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="roles/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        <span>
+                            Roles &amp; Permissions
+                        </span>
+                    </a>
+                    <label for="roles-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="roles/index.html" class="sidebar-sublink">
+                        All Roles
+                    </a>
+                    <a href="roles/add/index.html" class="sidebar-sublink">
+                        Add Role
+                    </a>
+                    <a href="roles/show/index.html" class="sidebar-sublink">
+                        Role Details
+                    </a>
+                    <a href="roles/edit/index.html" class="sidebar-sublink">
+                        Edit Role
+                    </a>
+                </div>
+            </div>
+            <!-- Activity Log -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="activity-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="activitylog/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◷</span>
+                        <span>
+                            Activity Log
+                        </span>
+                    </a>
+                    <label for="activity-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="activitylog/index.html" class="sidebar-sublink">
+                        All Activity
+                    </a>
+                    <a href="activitylog/show/index.html" class="sidebar-sublink">
+                        Activity Details
+                    </a>
+                </div>
+            </div>
+            <!-- =========================
+                    ACCOUNT
+                ========================== -->
+            <p class="sidebar-heading">
+                ACCOUNT
+            </p>
+            <!-- Settings -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="settings/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>
+                            Settings
+                        </span>
+                    </a>
+                    <label for="settings-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+                    <a href="settings/profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+                    <a href="settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- =========================
+                SIDEBAR BOTTOM
+            ========================== -->
+        <div class="sidebar-bottom">
+            <a href="../index.html" class="sidebar-link">
+                <span class="sidebar-icon">
+                    ←
+                </span>
+                <span>
+                    Back to Website
+                </span>
+            </a>
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">
+                    Y
+                </div>
+                <div class="sidebar-user-info">
+                    <strong>
+                        Yaw
+                    </strong>
+                    <span>
+                        Administrator
+                    </span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- =================================
+            MAIN CONTENT
+        ================================== -->
+    <div class="admin-main">
+        <!-- HEADER -->
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+                <div>
+                    <span class="header-label">
+                        APPOINTMENT MANAGEMENT
+                    </span>
+                    <h1>Appointments</h1>
+                </div>
+            </div>
+            <div class="header-right">
+                <button type="button" class="header-icon-button">
+                    🔔
+                </button>
+                <button type="button" class="header-icon-button">
+                    ⚙️
+                </button>
+                <div class="profile-dropdown">
+                    <button type="button" class="profile-toggle">
+                        <span class="header-avatar">
+                            Y
+                        </span>
+                        <span>Yaw</span>
+                        <span class="dropdown-arrow">
+                            ▼
+                        </span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="profile.html">
+                            My Profile
+                        </a>
+                        <a href="settings.html">
+                            Account Settings
+                        </a>
+                        <a href="#">
+                            Change Password
+                        </a>
+                        <a href="notifications.html">
+                            Notifications
+                        </a>
+                        <hr>
+                        <a href="../../auth/login.html">
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- PAGE CONTENT -->
+        <main class="admin-content">
+            <!-- PAGE TOP -->
+            <section class="dashboard-welcome">
+                <div>
+                    <h2>
+                        Appointment Management
+                    </h2>
+                    <p>
+                        Manage, track and organize all consultation bookings.
+                    </p>
+                </div>
+                <div class="appointment-action-buttons">
+                    <a href="../appointments/add/index.html" class="dashboard-primary-button">
+                        + New Appointment
+                    </a>
+                    <a href="#" class="secondary-button">
+                        Export
+                    </a>
+                    <a href="#" class="secondary-button">
+                        Print
+                    </a>
+                </div>
+            </section>
+            <!-- STATS -->
+            <section class="dashboard-statistics">
+                <div class="admin-stat-card">
+                    <div class="admin-stat-top">
+                        <span class="admin-stat-title">
+                            Total Appointments
+                        </span>
+                        <div class="admin-stat-icon">
+                            ▣
+                        </div>
+                    </div>
+                    <strong class="admin-stat-number">
+                        24
+                    </strong>
+                    <span class="admin-stat-description">
+                        All bookings
+                    </span>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="admin-stat-top">
+                        <span class="admin-stat-title">
+                            Pending
+                        </span>
+                        <div class="admin-stat-icon">
+                            ⏳
+                        </div>
+                    </div>
+                    <strong class="admin-stat-number">
+                        5
+                    </strong>
+                    <span class="admin-stat-description">
+                        Awaiting confirmation
+                    </span>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="admin-stat-top">
+                        <span class="admin-stat-title">
+                            Confirmed
+                        </span>
+                        <div class="admin-stat-icon">
+                            ✓
+                        </div>
+                    </div>
+                    <strong class="admin-stat-number">
+                        12
+                    </strong>
+                    <span class="admin-stat-description">
+                        Confirmed appointments
+                    </span>
+                </div>
+                <div class="admin-stat-card">
+                    <div class="admin-stat-top">
+                        <span class="admin-stat-title">
+                            Completed
+                        </span>
+                        <div class="admin-stat-icon">
+                            ★
+                        </div>
+                    </div>
+                    <strong class="admin-stat-number">
+                        7
+                    </strong>
+                    <span class="admin-stat-description">
+                        Successfully completed
+                    </span>
+                </div>
+            </section>
+
+            <!-- APPOINTMENTS TABLE PANEL -->
+            <section class="admin-panel">
+                <div class="admin-panel-header">
+                    <div>
+                        <span class="panel-label">
+                            BOOKINGS
+                        </span>
+                        <h2>
+                            All Appointments
+                        </h2>
+                    </div>
+                </div>
+                <!-- FILTERS -->
+                <div class="appointment-filters">
+                    <div class="admin-search">
+                        <label for="searchAppointment">
+                            Search Appointment
+                        </label>
+                        <input type="search" id="searchAppointment" placeholder="Search by client reference">
+                    </div>
+                    <div class="admin-filter">
+                        <label for="status">
+                            Status
+                        </label>
+                        <select name="status" id="status">
+                            <option value="">All Statuses</option>
+                            <option value="">Pending</option>
+                            <option value="">Confirmed</option>
+                            <option value="">Completed</option>
+                            <option value="">Cancelled</option>
+                        </select>
+                    </div>
+                    <div class="admin-filter">
+                        <label for="service">
+                            Service
+                        </label>
+                        <select name="service" id="service">
+                            <option value="">All Services</option>
+                            <option value="">Business Strategy</option>
+                            <option value="">AI Automation</option>
+                            <option value="">Marketing Strategy</option>
+                        </select>
+                    </div>
+                    <div class="admin-filter">
+                        <label for="date">
+                            Date
+                        </label>
+                        <input type="date" id="date">
+                    </div>
+                </div>
+                <!-- TABLE -->
+                <div class="admin-table-wrapper">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Reference</th>
+                                <th>Client</th>
+                                <th>Service</th>
+                                <th>Consultant</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong class="booking-reference">
+                                        CP-482931
+                                    </strong>
+                                </td>
+                                <td>John Davis</td>
+                                <td>Business Strategy</td>
+                                <td>Micheal Anderson</td>
+                                <td>Sep 12, 2026</td>
+                                <td>10:00 AM</td>
+                                <td>
+                                    <span class="status-confirmed">
+                                        Confirmed
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="table-actions">
+                                        <a href="../appointments/show/index.html" class="view-button">
+                                            View
+                                        </a>
+                                        <a href="#" class="edit-button">
+                                            Edit
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong class="booking-reference">
+                                        CP-731204
+                                    </strong>
+                                </td>
+                                <td>Anna Miller</td>
+                                <td>AI Automation</td>
+                                <td>David Thompson</td>
+                                <td>Sep 13, 2026</td>
+                                <td>01:00 PM</td>
+                                <td>
+                                    <span class="status-confirmed">
+                                        Pending
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="table-actions">
+                                        <a href="../appointments/show/index.html" class="view-button">
+                                            View
+                                        </a>
+                                        <a href="#" class="edit-button">
+                                            Edit
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong class="booking-reference">
+                                        CP-915620
+                                    </strong>
+                                </td>
+                                <td>Robert Wilson</td>
+                                <td>Career Consulting</td>
+                                <td>Sarah Williams</td>
+                                <td>Sep 14, 2026</td>
+                                <td>11:00 AM</td>
+                                <td>
+                                    <span class="status-confirmed">
+                                        Confirmed
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="table-actions">
+                                        <a href="../appointments/show/index.html" class="view-button">
+                                            View
+                                        </a>
+                                        <a href="#" class="edit-button">
+                                            Edit
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong class="booking-reference">
+                                        CP-346718
+                                    </strong>
+                                </td>
+                                <td>Sarah Lewis</td>
+                                <td>Marketing Strategy</td>
+                                <td>Jennifer Lee</td>
+                                <td>Sep 15, 2026</td>
+                                <td>02:00 AM</td>
+                                <td>
+                                    <span class="status-confirmed">
+                                        Completed
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="table-actions">
+                                        <a href="../appointments/show/index.html" class="view-button">
+                                            View
+                                        </a>
+                                        <a href="#" class="edit-button">
+                                            Edit
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- PAGINATION -->
+                <div class="pagination">
+                    <a href="#">Previous</a>
+
+                    <a href="#" class="active-page">
+                        1
+                    </a>
+
+                    <a href="#">
+                        2
+                    </a>
+
+                    <a href="#">
+                        3
+                    </a>
+
+                    <a href="#">
+                        Next
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="admin-footer">
+            <p>
+                &copy; 2026 ConsultPro. All Rights Reserved.
+            </p>
+            <span>
+                Appointment Management
+            </span>
+        </footer>
+    </div>
+</body>
+
+</html>

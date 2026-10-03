@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notifications | ConsultPro Client Portal</title>
+
+    <link rel="stylesheet" href="../../admin/admin-dashboard.css">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <h2>ConsultPro</h2>
+            <span>CLIENT PORTAL</span>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+            <div class="sidebar-heading">MAIN MENU</div>
+
+            <a href="../index.html" class="sidebar-link">
+                <span class="sidebar-icon">▣</span>
+                <span>Dashboard</span>
+            </a>
+
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../appointments/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">◷</span>
+
+                        <span>My Appointments</span>
+
+                    </a>
+
+                    <label for="appointments-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">
+                        Book Appointment
+                    </a>
+
+                    <a href="../appointments/history/index.html" class="sidebar-sublink">
+                        Appointment History
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▤</span>
+                        <span>Services</span>
+                    </a>
+
+                    <label for="services-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../services/index.html" class="sidebar-sublink">
+                        Available Services
+                    </a>
+
+                    <a href="../services/index.html" class="sidebar-sublink">
+                        My Services
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">COMMUNICATION</div>
+
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                    </a>
+
+                    <label for="messages-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        New Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                    </a>
+
+                    <label for="notifications-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        All Notifications
+                    </a>
+
+                    <a href="unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">ACCOUNT</div>
+
+
+            <!-- PROFILE -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="profile-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../profile/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◯</span>
+                        <span>My Profile</span>
+                    </a>
+
+                    <label for="profile-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../profile/index.html" class="sidebar-sublink">
+                        Profile Details
+                    </a>
+
+                    <a href="../profile/edit/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                    <a href="../profile/change-password/index.html" class="sidebar-sublink">
+                        Change Password
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SETTINGS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../settings/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+                    </a>
+
+                    <label for="settings-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    Y
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>John Davis</strong>
+
+                    <span>Client</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    NOTIFICATIONS
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button class="header-icon-button">
+                    ♢
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button class="profile-toggle">
+
+                        <span class="header-avatar">
+                            JD
+                        </span>
+
+                        <span class="profile-name">
+                            John Davis
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../profile/edit/index.html">
+                            Edit Profile
+                        </a>
+
+                        <a href="../profile/change-password/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="index.html">
+                            Notifications
+                        </a>
+
+                        <a href="../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <div class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        COMMUNICATION
+                    </span>
+
+                    <h1>
+                        Notifications
+                    </h1>
+
+                    <p>
+                        Stay updated with your appointments, messages, and account activity.
+                    </p>
+
+                </div>
+
+
+                <div class="admin-page-actions">
+
+                    <a href="unread/index.html" class="secondary-button">
+                        View Unread
+                    </a>
+
+                    <a href="settings/index.html" class="primary-button">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- STATS -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Total Notifications
+                        </span>
+
+                        <strong class="stat-value">
+                            18
+                        </strong>
+
+                        <span class="stat-change">
+                            All notifications
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Unread
+                        </span>
+
+                        <strong class="stat-value">
+                            4
+                        </strong>
+
+                        <span class="stat-change">
+                            Require attention
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Appointments
+                        </span>
+
+                        <strong class="stat-value">
+                            8
+                        </strong>
+
+                        <span class="stat-change">
+                            Appointment updates
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Messages
+                        </span>
+
+                        <strong class="stat-value">
+                            6
+                        </strong>
+
+                        <span class="stat-change">
+                            Message activity
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- NOTIFICATIONS PANEL -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <h2>
+                            Recent Notifications
+                        </h2>
+
+                        <p>
+                            Your latest account and appointment updates.
+                        </p>
+
+                    </div>
+
+                    <a href="unread/index.html" class="secondary-button">
+                        View Unread
+                    </a>
+
+                </div>
+
+
+                <div class="notification-list">
+
+
+                    <!-- NOTIFICATION 1 -->
+                    <div class="notification-item unread">
+
+                        <div class="notification-icon">
+                            ✓
+                        </div>
+
+                        <div class="notification-content">
+
+                            <div class="notification-header">
+
+                                <h3>
+                                    Appointment Confirmed
+                                </h3>
+
+                                <span class="status-badge status-active">
+                                    Unread
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Your appointment with David Wilson for Business Strategy
+                                has been confirmed for October 05, 2026 at 10:00 AM.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    September 18, 2026 · 10:30 AM
+                                </span>
+
+                                <span>
+                                    Appointment CP-482931
+                                </span>
+
+                            </div>
+
+                            <div class="table-actions">
+
+                                <a href="../appointments/show/index.html" class="edit-button">
+                                    View Appointment
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NOTIFICATION 2 -->
+                    <div class="notification-item unread">
+
+                        <div class="notification-icon">
+                            ✉
+                        </div>
+
+                        <div class="notification-content">
+
+                            <div class="notification-header">
+
+                                <h3>
+                                    New Message from David Wilson
+                                </h3>
+
+                                <span class="status-badge status-active">
+                                    Unread
+                                </span>
+
+                            </div>
+
+                            <p>
+                                David Wilson sent you a new message about preparing
+                                for your upcoming consultation.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    September 18, 2026 · 10:25 AM
+                                </span>
+
+                                <span>
+                                    Message
+                                </span>
+
+                            </div>
+
+                            <div class="table-actions">
+
+                                <a href="../messages/show/index.html" class="edit-button">
+                                    View Message
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NOTIFICATION 3 -->
+                    <div class="notification-item unread">
+
+                        <div class="notification-icon">
+                            ◷
+                        </div>
+
+                        <div class="notification-content">
+
+                            <div class="notification-header">
+
+                                <h3>
+                                    Appointment Reminder
+                                </h3>
+
+                                <span class="status-badge status-active">
+                                    Unread
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Reminder: your Business Strategy consultation with
+                                David Wilson is scheduled for October 05, 2026 at 10:00 AM.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    September 17, 2026 · 8:00 AM
+                                </span>
+
+                                <span>
+                                    Appointment Reminder
+                                </span>
+
+                            </div>
+
+                            <div class="table-actions">
+
+                                <a href="../appointments/show/index.html" class="edit-button">
+                                    View Appointment
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NOTIFICATION 4 -->
+                    <div class="notification-item unread">
+
+                        <div class="notification-icon">
+                            $
+                        </div>
+
+                        <div class="notification-content">
+
+                            <div class="notification-header">
+
+                                <h3>
+                                    Payment Received
+                                </h3>
+
+                                <span class="status-badge status-active">
+                                    Unread
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Your payment of $150.00 for Business Strategy has
+                                been successfully received.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    September 16, 2026 · 2:15 PM
+                                </span>
+
+                                <span>
+                                    Payment
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NOTIFICATION 5 -->
+                    <div class="notification-item">
+
+                        <div class="notification-icon">
+                            ✓
+                        </div>
+
+                        <div class="notification-content">
+
+                            <div class="notification-header">
+
+                                <h3>
+                                    Appointment Request Received
+                                </h3>
+
+                                <span class="status-badge status-pending">
+                                    Read
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Your appointment request for Career Consultation with
+                                Sarah Wilson has been received and is awaiting confirmation.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    September 15, 2026 · 3:40 PM
+                                </span>
+
+                                <span>
+                                    Appointment CP-483102
+                                </span>
+
+                            </div>
+
+                            <div class="table-actions">
+
+                                <a href="../appointments/show/index.html" class="edit-button">
+                                    View Appointment
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NOTIFICATION 6 -->
+                    <div class="notification-item">
+
+                        <div class="notification-icon">
+                            ✉
+                        </div>
+
+                        <div class="notification-content">
+
+                            <div class="notification-header">
+
+                                <h3>
+                                    Appointment Confirmation Message
+                                </h3>
+
+                                <span class="status-badge status-pending">
+                                    Read
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Sarah Wilson sent you a message regarding your
+                                upcoming Career Consultation.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    September 14, 2026 · 11:20 AM
+                                </span>
+
+                                <span>
+                                    Message
+                                </span>
+
+                            </div>
+
+                            <div class="table-actions">
+
+                                <a href="../messages/show/index.html" class="edit-button">
+                                    View Message
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NOTIFICATION 7 -->
+                    <div class="notification-item">
+
+                        <div class="notification-icon">
+                            ★
+                        </div>
+
+                        <div class="notification-content">
+
+                            <div class="notification-header">
+
+                                <h3>
+                                    Consultation Completed
+                                </h3>
+
+                                <span class="status-badge status-pending">
+                                    Read
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Your Business Strategy consultation with David Wilson
+                                has been marked as completed.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    September 12, 2026 · 12:15 PM
+                                </span>
+
+                                <span>
+                                    Appointment CP-391827
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NOTIFICATION 8 -->
+                    <div class="notification-item">
+
+                        <div class="notification-icon">
+                            ⚙
+                        </div>
+
+                        <div class="notification-content">
+
+                            <div class="notification-header">
+
+                                <h3>
+                                    Profile Updated
+                                </h3>
+
+                                <span class="status-badge status-pending">
+                                    Read
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Your ConsultPro profile information was successfully updated.
+                            </p>
+
+                            <div class="notification-meta">
+
+                                <span>
+                                    September 10, 2026 · 4:35 PM
+                                </span>
+
+                                <span>
+                                    Account
+                                </span>
+
+                            </div>
+
+                            <div class="table-actions">
+
+                                <a href="../profile/index.html" class="edit-button">
+                                    View Profile
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PAGINATION -->
+            <div class="pagination">
+
+                <div class="pagination-info">
+                    Showing 1–8 of 18 notifications
+                </div>
+
+                <div class="pagination-controls">
+
+                    <a href="#" class="pagination-button disabled">
+                        Previous
+                    </a>
+
+                    <a href="#" class="pagination-button active">
+                        1
+                    </a>
+
+                    <a href="#" class="pagination-button">
+                        2
+                    </a>
+
+                    <a href="#" class="pagination-button">
+                        3
+                    </a>
+
+                    <a href="#" class="pagination-button">
+                        Next
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK ACTIONS -->
+            <section class="settings-cards">
+
+                <div class="settings-card">
+
+                    <div class="settings-card-icon">
+                        ✓
+                    </div>
+
+                    <div class="settings-card-content">
+
+                        <h3>
+                            Unread Notifications
+                        </h3>
+
+                        <p>
+                            View notifications that still require your attention.
+                        </p>
+
+                        <a href="unread/index.html">
+                            View Unread →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-card">
+
+                    <div class="settings-card-icon">
+                        ⚙
+                    </div>
+
+                    <div class="settings-card-content">
+
+                        <h3>
+                            Notification Settings
+                        </h3>
+
+                        <p>
+                            Choose which notifications you would like to receive.
+                        </p>
+
+                        <a href="settings/index.html">
+                            Manage Settings →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | ConsultPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Consult<span>Pro</span></a>
+            </div>
+
+            <button type="button" class="menu-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="team.html">Consultants</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Booking Hero -->
+    <section class="booking-hero">
+        <div class="container">
+            <p class="section-label">APPOINTMENT BOOKING</p>
+
+            <h1>Book Your Consultation</h1>
+
+            <p>
+                Select your service, choose a consultant, and reserve your preferred
+                time.
+            </p>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-container">
+                <!-- Form -->
+                <div class="booking-form-wrapper">
+                    <h2>Appointment Details</h2>
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="service">Consulting Service</label>
+                            <select id="service">
+                                <option>Select Service</option>
+                                <option>Business Strategy</option>
+                                <option>Career Consulting</option>
+                                <option>AI &amp; Automation Consulting</option>
+                                <option>Marketing Strategy</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="consultant">Consultant</label>
+                            <select id="consultant">
+                                <option>Select Consultant</option>
+                                <option>Michael Anderson</option>
+                                <option>Sarah Williams</option>
+                                <option>David Thompson</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Available Time Slots</label>
+                            <div class="time-slots">
+                                <button type="button" class="time-slot">09:00 AM</button>
+                                <button type="button" class="time-slot">10:00 AM</button>
+                                <button type="button" class="time-slot">11:00 AM</button>
+
+                                <button type="button" class="time-slot">01:00 PM</button>
+                                <button type="button" class="time-slot">02:00 PM</button>
+                                <button type="button" class="time-slot">03:00 PM</button>
+                            </div>
+                        </div>
+
+                        <h3 class="client-title">Client Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" placeholder="Enter full name" name="fullName" id="fullName">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" placeholder="Enter email address" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" placeholder="Enter phone number" name="phone" id="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" placeholder="Company name" name="company" id="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Consultation Notes</label>
+                            <textarea rows="5" placeholder="Tell us about your goals or challenges..."
+                                id="notes"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary booking-btn">
+                            Book Appointment
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Summary Card -->
+                <div class="booking-summary">
+                    <h3>Booking Summary</h3>
+
+                    <div class="summary-item">
+                        <span>Service</span>
+                        <strong>Business Strategy</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Consultant</span>
+                        <strong>Michael Anderson</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Duration</span>
+                        <strong>60 Minutes</strong>
+                    </div>
+
+                    <div class="summary-item">
+                        <span>Price</span>
+                        <strong>$150</strong>
+                    </div>
+
+                    <div class="summary-note">
+                        Once submitted, our team will confirm your appointment by email.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <a href="index.html"> Consult<span>Pro</span> </a>
+                </div>
+
+                <p>
+                    Professional consulting designed to help you make better decisions
+                    and achieve meaningful results.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="team.html">Consultants</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Services</h3>
+
+                <ul>
+                    <li><a href="services.html">Business Strategy</a></li>
+                    <li><a href="services.html">Career Consulting</a></li>
+                    <li><a href="services.html">AI &amp; Automation</a></li>
+                    <li><a href="services.html">Marketing Strategy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+
+                <ul>
+                    <li>Email: hello@consultpro.com</li>
+                    <li>Phone: +1 (555) 123-4567</li>
+                    <li>Monday – Friday</li>
+                    <li>9:00 AM – 5:00 PM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 ConsultPro. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

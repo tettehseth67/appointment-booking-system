@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users | ConsultPro</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+            <a href="index.html">
+                ConsultPro
+            </a>
+            <span>ADMIN PORTAL</span>
+        </div>
+        <!-- Main Navigation -->
+        <nav class="sidebar-navigation">
+            <p class="sidebar-heading">
+                MAIN MENU
+            </p>
+            <a href="../admin/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+            <!-- Dropdown Container -->
+            <div class="sidebar-dropdown">
+                <!-- The checkbox acts as our toggle switch -->
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+                    <!-- The label acts as a clickable trigger button next to the link -->
+                    <label for="appointments-toggle" class="dropdown-trigger">▾</label>
+                </div>
+
+                <!-- Dropdown Content Submenu -->
+                <div class="sidebar-dropdown-content">
+                    <a href="../appointments/show-appointments.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Appointment Details</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="../consultants/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Consultants</span>
+            </a>
+
+            <a href="../services/index.html" class="sidebar-link">
+                <span class="sidebar-icon">◆</span>
+                <span>Services</span>
+            </a>
+
+            <a href="../clients/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Clients</span>
+            </a>
+            <p class="sidebar-heading">
+                COMMUNICATION
+            </p>
+            <a href="../messages/index.html" class="sidebar-link">
+                <span class="sidebar-icon">✉</span>
+                <span>Messages</span>
+                <span class="sidebar-count">
+                    4
+                </span>
+            </a>
+            <a href="../notifications/index.html" class="sidebar-link">
+                <span class="sidebar-icon">✉</span>
+                <span>Notifications</span>
+                <span class="sidebar-count">
+                    4
+                </span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">
+                ANALYTICS
+            </p>
+
+            <a href="../reports/index.html" class="sidebar-link">
+                <span class="sidebar-icon">▤</span>
+                <span>Reports</span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">
+                SYSTEM
+            </p>
+
+            <a href="../users/index.html" class="sidebar-link active">
+                <span class="sidebar-icon">⚙</span>
+                <span>User Management</span>
+            </a>
+            <a href="../roles/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Roles &amp; Permissions</span>
+            </a>
+            <a href="../activitylog/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Activity Log</span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">
+                ACCOUNT
+            </p>
+
+            <a href="../settings/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Settings</span>
+            </a>
+        </nav>
+
+        <!-- Sidebar Bottom -->
+        <div class="sidebar-bottom">
+            <a href="index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">
+                    AD
+                </div>
+                <div class="sidebar-user-info">
+                    <strong>Admin User</strong>
+                    <span>Administrator</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="admin-main">
+
+<header class="admin-header">
+    <div class="admin-header-left">
+        <button type="button" class="sidebar-toggle">
+            ☰
+        </button>
+        <div>
+            <span class="header-label">
+                USER MANAGEMENT
+            </span>
+            <h1>Users</h1>
+        </div>
+    </div>
+    <div class="header-right">
+        <button type="button" class="header-icon-button">
+            🔔
+        </button>
+        <button type="button" class="header-icon-button">
+            ⚙️
+        </button>
+        <div class="profile-dropdown">
+            <button type="button" class="profile-toggle">
+                <span class="header-avatar">
+                    Y
+                </span>
+                <span>Yaw</span>
+                <span class="dropdown-arrow">
+                    ▼
+                </span>
+            </button>
+            <div class="dropdown-menu">
+                <a href="../profile.html">
+                    My Profile
+                </a>
+                <a href="settings.html">
+                    Account Settings
+                </a>
+                <a href="#">
+                    Change Password
+                </a>
+                <a href="notifications.html">
+                    Notifications
+                </a>
+                <hr>
+                <a href="../../auth/login.html">
+                    Logout
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <main class="admin-content">
+
+            <section class="dashboard-welcome">
+
+                <div>
+
+                    <h2>
+                        System Users
+                    </h2>
+
+                    <p>
+                        Manage administrators, consultants and clients.
+                    </p>
+
+                </div>
+
+                <a href="../users/add/index.html" class="dashboard-primary-button">
+                    + Add User
+                </a>
+
+            </section>
+
+            <!-- STATS -->
+
+            <section class="dashboard-statistics">
+
+                <div class="admin-stat-card">
+                    <span class="admin-stat-title">Total Users</span>
+                    <strong class="admin-stat-number">35</strong>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span class="admin-stat-title">Administrators</span>
+                    <strong class="admin-stat-number">3</strong>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span class="admin-stat-title">Consultants</span>
+                    <strong class="admin-stat-number">8</strong>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span class="admin-stat-title">Clients</span>
+                    <strong class="admin-stat-number">24</strong>
+                </div>
+
+            </section>
+
+            <!-- TABLE -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">
+                            USER DIRECTORY
+                        </span>
+
+                        <h2>
+                            All Users
+                        </h2>
+                    </div>
+
+                </div>
+
+                <div class="appointment-filters">
+
+                    <div class="admin-search">
+                        <label>Search User</label>
+                        <input type="search" placeholder="Search name or email">
+                    </div>
+
+                    <div class="admin-filter">
+                        <label>Role</label>
+                        <select>
+                            <option>All Roles</option>
+                            <option>Administrator</option>
+                            <option>Consultant</option>
+                            <option>Client</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Last Login</th>
+                                <th>Actions</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>USR001</td>
+                                <td>Admin User</td>
+                                <td>admin@consultpro.com</td>
+                                <td>Administrator</td>
+
+                                <td>
+                                    <span class="status confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>Today</td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="../users/show/index.html" class="view-button">
+                                            View
+                                        </a>
+
+                                        <a href="../users/edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>USR002</td>
+                                <td>Michael Anderson</td>
+                                <td>michael@consultpro.com</td>
+                                <td>Consultant</td>
+
+                                <td>
+                                    <span class="status confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>Yesterday</td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="../users/show/index.html" class="view-button">
+                                            View
+                                        </a>
+
+                                        <a href="../users/edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

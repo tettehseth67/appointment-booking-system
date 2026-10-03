@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services | ConsultPro</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- =========================
+         CONSULTANT SIDEBAR
+    ========================== -->
+
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">CP</div>
+
+            <div>
+                <h2>ConsultPro</h2>
+                <span>CONSULTANT PORTAL</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <div class="sidebar-heading">MAIN MENU</div>
+
+            <!-- Dashboard -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-dashboard" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▦</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <label for="consultant-dashboard" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../index.html" class="sidebar-sublink">
+                        Overview
+                    </a>
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Recent Activity
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- My Appointments -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-appointments" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../appointments/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">▣</span>
+                        <span>My Appointments</span>
+
+                    </a>
+
+                    <label for="consultant-appointments" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../appointments/details/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment History
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar-heading">SCHEDULE</div>
+
+            <!-- My Calendar -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-calendar" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../calendar/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">□</span>
+                        <span>My Calendar</span>
+
+                    </a>
+
+                    <label for="consultant-calendar" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                    <a href="../availability/index.html" class="sidebar-sublink">
+                        Add Availability
+                    </a>
+
+                    <a href="../availability/index.html" class="sidebar-sublink">
+                        Availability
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Availability -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-availability" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../availability/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">□</span>
+                        <span>Availability</span>
+
+                    </a>
+
+                    <label for="consultant-availability" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../availability/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- My Clients -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-clients" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../clients/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♙</span>
+                        <span>My Clients</span>
+
+                    </a>
+
+                    <label for="consultant-clients" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="../clients/details/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-services" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="index.html" class="sidebar-link active">
+
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+
+                    </a>
+
+                    <label for="consultant-services" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        My Services
+                    </a>
+
+                    <a href="show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar-heading">COMMUNICATION</div>
+
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-messages" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../messages/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">3</span>
+
+                    </a>
+
+                    <label for="consultant-messages" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        New Message
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Notifications -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-notifications" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../notifications/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">3</span>
+
+                    </a>
+
+                    <label for="consultant-notifications" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar-heading">ACCOUNT</div>
+
+            <!-- My Profile -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-profile" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../account/profile/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♙</span>
+                        <span>My Profile</span>
+
+                    </a>
+
+                    <label for="consultant-profile" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../account/profile/index.html" class="sidebar-sublink">
+                        Profile Details
+                    </a>
+
+                    <a href="../account/edit-profile/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Settings -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-settings" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../account/settings/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+
+                    </a>
+
+                    <label for="consultant-settings" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../account/settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../account/change-password/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    D
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>David Wilson</strong>
+                    <span>Consultant</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="admin-main">
+
+        <!-- HEADER -->
+
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    SERVICES
+                </span>
+
+            </div>
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ♢
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <div class="profile-toggle">
+
+                        <div class="header-avatar">
+                            D
+                        </div>
+
+                        <span>David Wilson</span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <section class="admin-content">
+
+            <!-- PAGE HEADER -->
+
+            <div class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        SERVICES
+                    </span>
+
+                    <h1>
+                        My Services
+                    </h1>
+
+                    <p>
+                        View and manage the consulting services you offer to clients.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE SUMMARY -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            SERVICE OVERVIEW
+                        </span>
+
+                        <h2>
+                            My Consulting Services
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-card-label">
+                            TOTAL SERVICES
+                        </div>
+
+                        <div class="stat-card-value">
+                            5
+                        </div>
+
+                        <div class="stat-card-description">
+                            Services currently offered
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-card-label">
+                            ACTIVE
+                        </div>
+
+                        <div class="stat-card-value">
+                            4
+                        </div>
+
+                        <div class="stat-card-description">
+                            Available for booking
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-card-label">
+                            BOOKINGS
+                        </div>
+
+                        <div class="stat-card-value">
+                            24
+                        </div>
+
+                        <div class="stat-card-description">
+                            Appointments this period
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-card-label">
+                            TOP SERVICE
+                        </div>
+
+                        <div class="stat-card-value">
+                            12
+                        </div>
+
+                        <div class="stat-card-description">
+                            Business Strategy bookings
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SERVICES TABLE -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            MY SERVICES
+                        </span>
+
+                        <h2>
+                            Available Services
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Service
+                                </th>
+
+                                <th>
+                                    Description
+                                </th>
+
+                                <th>
+                                    Duration
+                                </th>
+
+                                <th>
+                                    Price
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Actions
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Business Strategy
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Strategic planning and business growth consulting.
+                                </td>
+
+                                <td>
+                                    60 Minutes
+                                </td>
+
+                                <td>
+                                    $150.00
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Business Consultation
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    One-on-one consultation for business challenges.
+                                </td>
+
+                                <td>
+                                    45 Minutes
+                                </td>
+
+                                <td>
+                                    $100.00
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Process Optimization
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Review and improve business processes and workflows.
+                                </td>
+
+                                <td>
+                                    60 Minutes
+                                </td>
+
+                                <td>
+                                    $125.00
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Business Development
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Guidance for business development and growth opportunities.
+                                </td>
+
+                                <td>
+                                    60 Minutes
+                                </td>
+
+                                <td>
+                                    $140.00
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Executive Advisory
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Executive-level advisory and decision-making support.
+                                </td>
+
+                                <td>
+                                    90 Minutes
+                                </td>
+
+                                <td>
+                                    $200.00
+                                </td>
+
+                                <td>
+                                    <span class="status-badge">
+                                        Inactive
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

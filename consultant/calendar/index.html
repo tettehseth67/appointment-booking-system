@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar | ConsultPro Consultant Portal</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- ================================
+        SIDEBAR
+    ================================= -->
+
+    <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">
+                CP
+            </div>
+
+            <div>
+                <h2>ConsultPro</h2>
+                <span>CONSULTANT PORTAL</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+            <!-- Dashboard -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="dashboard-toggle" class="dropdown-checkbox">
+
+                <label for="dashboard-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">▦</span>
+                        <span>Dashboard</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Overview
+                    </a>
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Recent Activity
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- My Appointments -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <label for="appointments-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../appointments/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">▣</span>
+                        <span>My Appointments</span>
+                        <span class="sidebar-count">12</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../appointments/upcoming/index.html" class="sidebar-sublink">
+                        Upcoming Appointments
+                    </a>
+
+                    <a href="../appointments/completed/index.html" class="sidebar-sublink">
+                        Completed Appointments
+                    </a>
+
+                    <a href="../appointments/details/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SCHEDULE -->
+
+            <div class="sidebar-heading">
+                SCHEDULE
+            </div>
+
+
+            <!-- My Calendar -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="calendar-toggle" class="dropdown-checkbox" checked>
+
+                <label for="calendar-toggle" class="sidebar-link-wrapper">
+
+                    <a href="index.html" class="sidebar-link active">
+
+                        <span class="sidebar-icon">▦</span>
+                        <span>My Calendar</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        Calendar
+                    </a>
+
+                    <a href="../availability/index.html" class="sidebar-sublink">
+                        Add Availability
+                    </a>
+
+                    <a href="../availability/index.html" class="sidebar-sublink">
+                        Availability
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- My Clients -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="clients-toggle" class="dropdown-checkbox">
+
+                <label for="clients-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../clients/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♙</span>
+                        <span>My Clients</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="../clients/details/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Services -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+
+                <label for="services-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../../admin/services/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">◆</span>
+                        <span>Services</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../admin/services/index.html" class="sidebar-sublink">
+                        Service List
+                    </a>
+
+                    <a href="../../admin/services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+
+            <!-- Messages -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+
+                <label for="messages-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../messages/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">3</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        New Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notifications -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+
+                <label for="notifications-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../notifications/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">3</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+
+            <!-- My Profile -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="profile-toggle" class="dropdown-checkbox">
+
+                <label for="profile-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../account/profile/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">◉</span>
+                        <span>My Profile</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../account/profile/index.html" class="sidebar-sublink">
+                        Profile Details
+                    </a>
+
+                    <a href="../account/edit-profile/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Settings -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox">
+
+                <label for="settings-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../account/settings/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../account/settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../account/change-password/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+
+            </a>
+
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    D
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>David Wilson</strong>
+                    <span>Consultant</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+    <!-- ================================
+        MAIN CONTENT
+    ================================= -->
+
+    <main class="admin-main">
+
+
+        <!-- HEADER -->
+
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle" type="button" aria-label="Open navigation menu">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    SCHEDULE
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button" type="button" aria-label="View notifications">
+                    ♢
+                </button>
+
+                <button class="header-icon-button" type="button" aria-label="Open settings">
+                    ⚙
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button class="profile-toggle" type="button" aria-label="Open David Wilson profile menu">
+
+                        <span class="header-avatar">
+                            D
+                        </span>
+
+                        <span>
+                            David Wilson
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../account/profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../account/settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../account/change-password/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <a href="../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <div class="admin-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <section class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        SCHEDULE
+                    </span>
+
+                    <h1>
+                        Calendar
+                    </h1>
+
+                    <p>
+                        Manage your appointments and schedule.
+                    </p>
+
+                </div>
+
+
+                <div class="admin-page-actions">
+
+                    <a href="../availability/index.html" class="dashboard-primary-button">
+
+                        + Manage Availability
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- CALENDAR PANEL -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            MY CALENDAR
+                        </span>
+
+                        <h2>
+                            September 2026
+                        </h2>
+
+                    </div>
+
+
+                    <div class="calendar-actions">
+
+                        <button type="button" class="secondary-button">
+                            Previous
+                        </button>
+
+                        <button type="button" class="secondary-button">
+                            Today
+                        </button>
+
+                        <button type="button" class="secondary-button">
+                            Next
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CALENDAR -->
+
+                <div class="calendar-container">
+
+                    <div class="calendar-weekdays">
+
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+
+                    </div>
+
+
+                    <div class="calendar-grid">
+
+
+                        <!-- PREVIOUS MONTH -->
+
+                        <div class="calendar-day muted">
+                            <span class="calendar-date">30</span>
+                        </div>
+
+                        <div class="calendar-day muted">
+                            <span class="calendar-date">31</span>
+                        </div>
+
+
+                        <!-- SEPTEMBER -->
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">1</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">2</span>
+                        </div>
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                3
+                            </span>
+
+                            <div class="calendar-event">
+                                10:00 AM<br>
+                                Business Strategy
+                            </div>
+
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">4</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">5</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">6</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">7</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">8</span>
+                        </div>
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                9
+                            </span>
+
+                            <div class="calendar-event">
+                                2:00 PM<br>
+                                Career Coaching
+                            </div>
+
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">10</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">11</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">12</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">13</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">14</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">15</span>
+                        </div>
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                16
+                            </span>
+
+                            <div class="calendar-event">
+                                11:00 AM<br>
+                                Business Strategy
+                            </div>
+
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">17</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">18</span>
+                        </div>
+
+                        <div class="calendar-day today">
+
+                            <span class="calendar-date">
+                                19
+                            </span>
+
+                            <div class="calendar-event">
+                                10:00 AM<br>
+                                Leadership Coaching
+                            </div>
+
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">20</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">21</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">22</span>
+                        </div>
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                23
+                            </span>
+
+                            <div class="calendar-event">
+                                1:00 PM<br>
+                                Career Coaching
+                            </div>
+
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">24</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">25</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">26</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">27</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">28</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">29</span>
+                        </div>
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">30</span>
+                        </div>
+
+
+                        <!-- OCTOBER -->
+
+                        <div class="calendar-day muted">
+                            <span class="calendar-date">1</span>
+                        </div>
+
+                        <div class="calendar-day muted">
+                            <span class="calendar-date">2</span>
+                        </div>
+
+                        <div class="calendar-day muted">
+                            <span class="calendar-date">3</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CALENDAR LEGEND -->
+
+                <div class="calendar-legend">
+
+                    <div class="calendar-legend-item">
+
+                        <span class="calendar-legend-dot"></span>
+
+                        <span>
+                            Appointment
+                        </span>
+
+                    </div>
+
+
+                    <div class="calendar-legend-item">
+
+                        <span class="calendar-legend-today"></span>
+
+                        <span>
+                            Today
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- UPCOMING APPOINTMENTS -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            UPCOMING
+                        </span>
+
+                        <h2>
+                            Upcoming Appointments
+                        </h2>
+
+                    </div>
+
+                    <a href="../appointments/index.html" class="secondary-button">
+                        View All
+                    </a>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Appointment</th>
+                                <th>Client</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <tr>
+
+                                <td>
+                                    Business Strategy
+                                </td>
+
+                                <td>
+                                    John Davis
+                                </td>
+
+                                <td>
+                                    Sep 22, 2026
+                                </td>
+
+                                <td>
+                                    10:00 AM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge confirmed">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="../appointments/details/index.html" class="view-button"
+                                            aria-label="View Business Strategy appointment for John Davis">
+                                            View
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Career Coaching
+                                </td>
+
+                                <td>
+                                    Anna Miller
+                                </td>
+
+                                <td>
+                                    Sep 23, 2026
+                                </td>
+
+                                <td>
+                                    1:00 PM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge confirmed">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="../appointments/details/index.html" class="view-button"
+                                            aria-label="View Career Coaching appointment for Anna Miller">
+                                            View
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Leadership Coaching
+                                </td>
+
+                                <td>
+                                    Michael Brown
+                                </td>
+
+                                <td>
+                                    Sep 25, 2026
+                                </td>
+
+                                <td>
+                                    11:00 AM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge pending">
+                                        Pending
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="../appointments/details/index.html" class="view-button"
+                                            aria-label="View Leadership Coaching appointment for Michael Brown">
+                                            View
+                                        </a>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

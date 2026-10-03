@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calendar | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- ================================
+        SIDEBAR
+    ================================= -->
+
+    <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+            <a href="index.html">
+                ConsultPro
+            </a>
+
+            <span>
+                ADMIN PORTAL
+            </span>
+        </div>
+        <nav class="sidebar-navigation">
+            <p class="sidebar-heading">
+                OVERVIEW
+            </p>
+
+            <a href="../admin/index.html" class="sidebar-link">
+                Dashboard
+            </a>
+
+            <p class="sidebar-heading">
+                BOOKINGS
+            </p>
+
+            <a href="appointments.html" class="sidebar-link">
+                Appointments
+            </a>
+
+            <a href="calendar.html" class="sidebar-link active">
+                Calendar
+            </a>
+
+
+            <p class="sidebar-heading">
+                PEOPLE
+            </p>
+
+            <a href="clients.html" class="sidebar-link">
+                Clients
+            </a>
+
+            <a href="consultants.html" class="sidebar-link">
+                Consultants
+            </a>
+
+
+            <p class="sidebar-heading">
+                COMMUNICATION
+            </p>
+
+            <a href="messages.html" class="sidebar-link">
+                Messages
+            </a>
+
+            <a href="notifications.html" class="sidebar-link">
+                Notifications
+            </a>
+
+
+            <p class="sidebar-heading">
+                REPORTING
+            </p>
+
+            <a href="reports.html" class="sidebar-link">
+                Reports
+            </a>
+
+
+            <p class="sidebar-heading">
+                ADMINISTRATION
+            </p>
+
+            <a href="users.html" class="sidebar-link">
+                Users
+            </a>
+
+            <a href="roles.html" class="sidebar-link">
+                Roles &amp; Permissions
+            </a>
+
+            <a href="activity-log.html" class="sidebar-link">
+                Activity Log
+            </a>
+
+
+            <p class="sidebar-heading">
+                SYSTEM
+            </p>
+
+            <a href="settings.html" class="sidebar-link">
+                Settings
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- ================================
+        MAIN CONTENT
+    ================================= -->
+
+    <div class="admin-main">
+        <!-- HEADER -->
+
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button type="button" class="sidebar-toggle" aria-label="Toggle sidebar">
+                    ☰
+                </button>
+                <div>
+                    <span class="header-label">
+                        BOOKINGS
+                    </span>
+
+                    <h1>
+                        Calendar
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button" aria-label="Notifications">
+                    🔔
+                </button>
+
+                <button type="button" class="header-icon-button" aria-label="Settings">
+                    ⚙️
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+
+                        <div class="header-avatar">
+                            Y
+                        </div>
+
+                        <span>
+                            Yaw
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▼
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="profile.html">
+                            My Profile
+                        </a>
+
+                        <a href="settings.html">
+                            Account Settings
+                        </a>
+
+                        <a href="#">
+                            Change Password
+                        </a>
+
+                        <a href="notifications.html">
+                            Notifications
+                        </a>
+
+                        <hr>
+
+                        <a href="../../auth/login.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================================
+            PAGE CONTENT
+        ================================= -->
+
+        <main class="admin-content">
+            <section class="dashboard-welcome">
+                <div>
+                    <h2>Event Details</h2>
+                    <p>View complete event information.</p>
+                </div>
+            </section>
+
+            <section class="admin-panel">
+                <div class="admin-panel-header">
+                    <div>
+                        <span class="panel-label">EVENT DETAILS</span>
+                        <h2>Monthly Team Meeting</h2>
+                    </div>
+                </div>
+
+                <div class="detail-information-list">
+
+                    <div class="detail-information-item">
+                        <span class="detail-label">EVENT TYPE</span>
+                        <strong>Meeting</strong>
+                    </div>
+
+                    <div class="detail-information-item">
+                        <span class="detail-label">DATE</span>
+                        <strong>September 25, 2026</strong>
+                    </div>
+
+                    <div class="detail-information-item">
+                        <span class="detail-label">START TIME</span>
+                        <strong>09:00 AM</strong>
+                    </div>
+
+                    <div class="detail-information-item">
+                        <span class="detail-label">END TIME</span>
+                        <strong>10:30 AM</strong>
+                    </div>
+
+                    <div class="detail-information-item">
+                        <span class="detail-label">LOCATION</span>
+                        <strong>Conference Room A</strong>
+                    </div>
+
+                    <div class="detail-information-item">
+                        <span class="detail-label">ATTENDEES</span>
+                        <strong>12 Members</strong>
+                    </div>
+
+                </div>
+
+                <div class="event-description">
+                    <h3>Description</h3>
+                    <p>
+                        Monthly strategy meeting with consultants and management.
+                    </p>
+                </div>
+
+            </section>
+
+            <div class="form-actions">
+                <a href="../edit-event/index.html" class="edit-button">
+                    Edit Event
+                </a>
+
+                <a href="../delete-event/index.html" class="delete-button">
+                    Delete Event
+                </a>
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- JS SCRIPT -->
+    <script src="../../js/calendar.js"></script>
+</body>
+
+</html>

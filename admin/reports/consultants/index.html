@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultant Reports | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- ADMIN SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <a href="../../index.html">
+                ConsultPro
+            </a>
+            <span>ADMIN PORTAL</span>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <p class="sidebar-heading">
+                OVERVIEW
+            </p>
+
+            <a href="../../../admin/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <p class="sidebar-heading">
+                BOOKINGS
+            </p>
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+
+                    <label for="appointments-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../../appointments/show-appointments.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Appointment Details</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="../../../calendar/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Calendar</span>
+            </a>
+
+            <p class="sidebar-heading">
+                PEOPLE
+            </p>
+
+            <a href="../../../consultants/index.html" class="sidebar-link active">
+                <span class="sidebar-icon">♙</span>
+                <span>Consultants</span>
+            </a>
+
+            <a href="../../../services/index.html" class="sidebar-link">
+                <span class="sidebar-icon">◆</span>
+                <span>Services</span>
+            </a>
+
+            <a href="../../../clients/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Clients</span>
+            </a>
+
+            <p class="sidebar-heading">
+                COMMUNICATION
+            </p>
+
+            <a href="../../../messages/index.html" class="sidebar-link">
+                <span class="sidebar-icon">✉</span>
+                <span>Messages</span>
+                <span class="sidebar-count">4</span>
+            </a>
+
+            <a href="../../../notifications/index.html" class="sidebar-link">
+                <span class="sidebar-icon">✉</span>
+                <span>Notifications</span>
+                <span class="sidebar-count">4</span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">
+                ANALYTICS
+            </p>
+
+            <a href="../../index.html" class="sidebar-link active">
+                <span class="sidebar-icon">▤</span>
+                <span>Reports</span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">
+                SYSTEM
+            </p>
+
+            <a href="../../../users/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>User Management</span>
+            </a>
+
+            <a href="../../../roles/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Roles &amp; Permissions</span>
+            </a>
+
+            <a href="../../../activitylog/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Activity Log</span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">
+                ACCOUNT
+            </p>
+
+            <a href="../../../settings/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    AD
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>Admin User</strong>
+                    <span>Administrator</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- ADMIN MAIN AREA -->
+    <div class="admin-main">
+
+        <!-- TOP HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <div>
+
+                    <span class="header-label">
+                        ANALYTICS
+                    </span>
+
+                    <h1>Consultant Reports</h1>
+
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    🔔
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ⚙️
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span>Yaw</span>
+
+                        <span class="dropdown-arrow">
+                            ▼
+                        </span>
+
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../../profile.html">
+                            My Profile
+                        </a>
+
+                        <a href="../../../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="#">
+                            Change Password
+                        </a>
+
+                        <a href="../../../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <hr>
+
+                        <a href="../../../auth/login/index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- CONTENT -->
+        <main class="admin-content">
+
+            <!-- PAGE INTRO -->
+            <div class="dashboard-welcome">
+
+                <div>
+
+                    <span class="header-label">
+                        REPORTS
+                    </span>
+
+                    <h2>Consultant Performance</h2>
+
+                    <p>
+                        Track consultant appointments, completion rates,
+                        client activity, and revenue performance.
+                    </p>
+
+                </div>
+
+                <a href="../../index.html" class="secondary-button">
+                    ← Back to Reports
+                </a>
+
+            </div>
+
+            <!-- SUMMARY CARDS -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            TOTAL CONSULTANTS
+                        </span>
+
+                        <strong class="stat-value">
+                            18
+                        </strong>
+
+                        <span class="stat-change positive">
+                            16 active consultants
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            TOTAL APPOINTMENTS
+                        </span>
+
+                        <strong class="stat-value">
+                            248
+                        </strong>
+
+                        <span class="stat-change positive">
+                            +12.5% this month
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            COMPLETED
+                        </span>
+
+                        <strong class="stat-value">
+                            196
+                        </strong>
+
+                        <span class="stat-change positive">
+                            79.0% completion rate
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            CONSULTANT REVENUE
+                        </span>
+
+                        <strong class="stat-value">
+                            $42,850
+                        </strong>
+
+                        <span class="stat-change positive">
+                            +8.4% this month
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FILTERS -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            REPORT FILTERS
+                        </span>
+
+                        <h2>Consultant Activity</h2>
+
+                    </div>
+
+                </div>
+
+                <div class="appointment-filters">
+
+                    <div class="admin-search">
+
+                        <label for="consultant-search">
+                            Search
+                        </label>
+
+                        <input type="search" id="consultant-search" placeholder="Search consultants...">
+
+                    </div>
+
+                    <div class="admin-filter">
+
+                        <label for="status-filter">
+                            Status
+                        </label>
+
+                        <select id="status-filter">
+
+                            <option value="">
+                                All Consultants
+                            </option>
+
+                            <option value="active">
+                                Active
+                            </option>
+
+                            <option value="inactive">
+                                Inactive
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="admin-filter">
+
+                        <label for="period-filter">
+                            Period
+                        </label>
+
+                        <select id="period-filter">
+
+                            <option value="month">
+                                This Month
+                            </option>
+
+                            <option value="last-month">
+                                Last Month
+                            </option>
+
+                            <option value="quarter">
+                                This Quarter
+                            </option>
+
+                            <option value="year">
+                                This Year
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <button type="button" class="primary-button">
+                        Generate Report
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- CONSULTANT PERFORMANCE -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            CONSULTANT PERFORMANCE
+                        </span>
+
+                        <h2>Performance Overview</h2>
+
+                    </div>
+
+                    <span class="panel-label">
+                        18 CONSULTANTS
+                    </span>
+
+                </div>
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Consultant
+                                </th>
+
+                                <th>
+                                    Category
+                                </th>
+
+                                <th>
+                                    Appointments
+                                </th>
+
+                                <th>
+                                    Completed
+                                </th>
+
+                                <th>
+                                    Cancelled
+                                </th>
+
+                                <th>
+                                    Completion Rate
+                                </th>
+
+                                <th>
+                                    Revenue
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    Sarah Williams
+                                </td>
+
+                                <td>
+                                    Business
+                                </td>
+
+                                <td>
+                                    58
+                                </td>
+
+                                <td>
+                                    48
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+                                    82.8%
+                                </td>
+
+                                <td>
+                                    $10,200
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    David Brown
+                                </td>
+
+                                <td>
+                                    Marketing
+                                </td>
+
+                                <td>
+                                    52
+                                </td>
+
+                                <td>
+                                    42
+                                </td>
+
+                                <td>
+                                    4
+                                </td>
+
+                                <td>
+                                    80.8%
+                                </td>
+
+                                <td>
+                                    $7,800
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    James Anderson
+                                </td>
+
+                                <td>
+                                    Technology
+                                </td>
+
+                                <td>
+                                    46
+                                </td>
+
+                                <td>
+                                    38
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    82.6%
+                                </td>
+
+                                <td>
+                                    $9,500
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Lisa Martinez
+                                </td>
+
+                                <td>
+                                    Finance
+                                </td>
+
+                                <td>
+                                    41
+                                </td>
+
+                                <td>
+                                    33
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+                                    80.5%
+                                </td>
+
+                                <td>
+                                    $8,175
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>
+                                    Michael Carter
+                                </td>
+
+                                <td>
+                                    Business
+                                </td>
+
+                                <td>
+                                    31
+                                </td>
+
+                                <td>
+                                    25
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    80.6%
+                                </td>
+
+                                <td>
+                                    $5,250
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-pending">
+                                        Inactive
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- PAGINATION -->
+                <div class="pagination">
+
+                    <button type="button" class="pagination-button" aria-label="Previous page">
+                        ←
+                    </button>
+
+                    <button type="button" class="pagination-button active" aria-current="page">
+                        1
+                    </button>
+
+                    <button type="button" class="pagination-button">
+                        2
+                    </button>
+
+                    <button type="button" class="pagination-button">
+                        3
+                    </button>
+
+                    <button type="button" class="pagination-button" aria-label="Next page">
+                        →
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

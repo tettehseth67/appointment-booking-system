@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unread Notifications | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">CP</div>
+            <div>
+                <h2>ConsultPro</h2>
+                <span>RECEPTIONIST PORTAL</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <div class="sidebar-heading">MAIN MENU</div>
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="dashboard-menu" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../../index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⌂</span>
+                        <span>Dashboard</span>
+                    </a>
+                    <label for="dashboard-menu" class="dropdown-trigger">▾</label>
+                </div>
+            </div>
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◷</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+                    <label for="appointments-menu" class="dropdown-trigger">▾</label>
+                </div>
+            </div>
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="calendar-menu" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../../calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▦</span>
+                        <span>Calendar</span>
+                    </a>
+                    <label for="calendar-menu" class="dropdown-trigger">▾</label>
+                </div>
+            </div>
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultants-menu" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../../consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Consultants</span>
+                    </a>
+                    <label for="consultants-menu" class="dropdown-trigger">▾</label>
+                </div>
+            </div>
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="clients-menu" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../../clients/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♧</span>
+                        <span>Clients</span>
+                    </a>
+                    <label for="clients-menu" class="dropdown-trigger">▾</label>
+                </div>
+            </div>
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▤</span>
+                        <span>Services</span>
+                    </a>
+                    <label for="services-menu" class="dropdown-trigger">▾</label>
+                </div>
+            </div>
+
+            <div class="sidebar-heading">COMMUNICATION</div>
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">4</span>
+                    </a>
+                    <label for="messages-menu" class="dropdown-trigger">▾</label>
+                </div>
+            </div>
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox" checked>
+                <div class="sidebar-link-wrapper">
+                    <a href="../index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">3</span>
+                    </a>
+                    <label for="notifications-menu" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        Unread
+                    </a>
+
+                    <a href="../settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar-heading">ACCOUNT</div>
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="profile-menu" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../../profile/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Profile</span>
+                    </a>
+                    <label for="profile-menu" class="dropdown-trigger">▾</label>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">R</div>
+                <div class="sidebar-user-info">
+                    <strong>Receptionist</strong>
+                    <span>Receptionist</span>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <div class="admin-main">
+
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+                <button class="sidebar-toggle">☰</button>
+                <span class="header-label">UNREAD NOTIFICATIONS</span>
+            </div>
+
+            <div class="header-right">
+
+                <button class="header-icon-button">⌕</button>
+
+                <button class="header-icon-button">
+                    ♢
+                    <span class="header-notification-dot"></span>
+                </button>
+
+            </div>
+
+        </header>
+
+        <main class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+
+                <div>
+                    <span class="panel-label">COMMUNICATION</span>
+
+                    <h1>Unread Notifications</h1>
+
+                    <p>
+                        Review notifications that require your attention.
+                    </p>
+                </div>
+
+                <div class="admin-page-actions">
+
+                    <a href="../index.html" class="secondary-button">
+                        All Notifications
+                    </a>
+
+                    <a href="#" class="primary-button">
+                        Mark All Read
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- SUMMARY -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+                    <div>
+                        <span class="panel-label">SUMMARY</span>
+                        <h2>Unread Overview</h2>
+                    </div>
+                </div>
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <div class="stat-card-content">
+                            <span class="stat-label">Unread Notifications</span>
+                            <strong class="stat-value">3</strong>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-card-content">
+                        <span class="stat-label">Appointments</span>
+                        <strong class="stat-value">2</strong>
+                    </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-card-content">
+                            <span class="stat-label">Messages</span>
+                            <strong class="stat-value">1</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- UNREAD NOTIFICATIONS -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">UNREAD</span>
+                        <h2>Notifications Requiring Attention</h2>
+                    </div>
+
+                </div>
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+                            <tr>
+                                <th>Notification</th>
+                                <th>Category</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>New Appointment Request</strong><br>
+                                    John Davis requested a Business Strategy consultation.
+                                </td>
+                                <td>Appointments</td>
+                                <td>Sep 24, 2026</td>
+                                <td>
+                                    <span class="status-badge status-pending">
+                                        Unread
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="../../appointments/show/index.html">
+                                        View
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>New Message Received</strong><br>
+                                    John Davis sent a message regarding his booking.
+                                </td>
+                                <td>Messages</td>
+                                <td>Sep 24, 2026</td>
+                                <td>
+                                    <span class="status-badge status-pending">
+                                        Unread
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="../../messages/view/index.html">
+                                        View
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Appointment Rescheduled</strong><br>
+                                    Anna Miller changed her consultation time.
+                                </td>
+                                <td>Appointments</td>
+                                <td>Sep 23, 2026</td>
+                                <td>
+                                    <span class="status-badge status-pending">
+                                        Unread
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="../../appointments/show/index.html">
+                                        View
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

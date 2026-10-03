@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Activity Log | ConsultPro</title>
+    <link rel="stylesheet" href="../../style.css" >
+</head>
+
+<body class="admin-body">
+    <aside class="admin-sidebar" aria-label="Admin navigation">
+        <!-- Brand -->
+        <div class="sidebar-brand">
+            <a href="index.html"> ConsultPro </a>
+            <span> ADMIN PORTAL </span>
+        </div>
+        <nav class="sidebar-navigation">
+            <!-- =========================
+                    OVERVIEW
+                ========================== -->
+            <p class="sidebar-heading">OVERVIEW</p>
+            <a href="../index.html" class="sidebar-link" aria-current="page">
+                <span class="sidebar-icon">▦</span>
+                <span> Dashboard </span>
+            </a>
+            <!-- =========================
+                    BOOKINGS
+                ========================== -->
+            <p class="sidebar-heading">BOOKINGS</p>
+            <!-- Appointments -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span> Appointments </span>
+                        <span class="sidebar-count"> 12 </span>
+                    </a>
+                    <label for="appointments-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        All Appointments
+                    </a>
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+                    <a href="../appointments/edit/index.html" class="sidebar-sublink">
+                        Edit Appointment
+                    </a>
+                </div>
+            </div>
+            <!-- Calendar -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="calendar-toggle" class="dropdown-checkbox" >
+                <div class="sidebar-link-wrapper">
+                    <a href="calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">□</span>
+                        <span> Calendar </span>
+                    </a>
+                    <label for="calendar-toggle" class="dropdown-trigger"> ▾ </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="calendar/index.html" class="sidebar-sublink"> Calendar </a>
+                    <a href="calendar/add-event/index.html" class="sidebar-sublink">
+                        Add Event
+                    </a>
+                    <a href="calendar/show-event/index.html" class="sidebar-sublink">
+                        Event Details
+                    </a>
+                    <a href="calendar/edit-event/index.html" class="sidebar-sublink">
+                        Edit Event
+                    </a>
+                </div>
+            </div>
+            <!-- =========================
+                    PEOPLE
+                ========================== -->
+            <p class="sidebar-heading">PEOPLE</p>
+            <!-- Consultants -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultants-toggle" class="dropdown-checkbox" >
+                <div class="sidebar-link-wrapper">
+                    <a href="consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span> Consultants </span>
+                    </a>
+                    <label for="consultants-toggle" class="dropdown-trigger"> ▾ </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="consultants/index.html" class="sidebar-sublink">
+                        All Consultants
+                    </a>
+                    <a href="consultants/add/index.html" class="sidebar-sublink">
+                        Add Consultant
+                    </a>
+                    <a href="consultants/show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+                    <a href="consultants/edit/index.html" class="sidebar-sublink">
+                        Edit Consultant
+                    </a>
+                </div>
+            </div>
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox" >
+                <div class="sidebar-link-wrapper">
+                    <a href="services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▤</span>
+                        <span> Services </span>
+                    </a>
+                    <label for="services-toggle" class="dropdown-trigger"> ▾ </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="services/index.html" class="sidebar-sublink">
+                        All Services
+                    </a>
+                    <a href="services/add/index.html" class="sidebar-sublink">
+                        Add Service
+                    </a>
+                    <a href="services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+                    <a href="services/edit/index.html" class="sidebar-sublink">
+                        Edit Service
+                    </a>
+                </div>
+            </div>
+            <!-- Clients -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="clients-toggle" class="dropdown-checkbox" >
+                <div class="sidebar-link-wrapper">
+                    <a href="clients/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span> Clients </span>
+                    </a>
+                    <label for="clients-toggle" class="dropdown-trigger"> ▾ </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="clients/index.html" class="sidebar-sublink">
+                        All Clients
+                    </a>
+                    <a href="clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+                    <a href="clients/edit/index.html" class="sidebar-sublink">
+                        Edit Client
+                    </a>
+                </div>
+            </div>
+            <!-- =========================
+                    COMMUNICATION
+                ========================== -->
+            <p class="sidebar-heading">COMMUNICATION</p>
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span> Messages </span>
+                        <span class="sidebar-count"> 4 </span>
+                    </a>
+                    <label for="messages-toggle" class="dropdown-trigger"> ▾ </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="messages/index.html" class="sidebar-sublink"> Inbox </a>
+                    <a href="messages/compose/index.html" class="sidebar-sublink">
+                        Compose
+                    </a>
+                    <a href="messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="messages/show/index.html" class="sidebar-sublink">
+                        Message Details
+                    </a>
+                </div>
+            </div>
+
+            <!-- Notifications -->
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+
+                        <span> Notifications </span>
+
+                        <span class="sidebar-count"> 4 </span>
+                    </a>
+
+                    <label for="notifications-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+                </div>
+            </div>
+
+            <!-- =========================
+                     ANALYTICS
+                ========================== -->
+
+            <p class="sidebar-heading">ANALYTICS</p>
+
+            <!-- Reports -->
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="reports-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="reports/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▥</span>
+
+                        <span> Reports </span>
+                    </a>
+
+                    <label for="reports-toggle" class="dropdown-trigger"> ▾ </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="reports/index.html" class="sidebar-sublink"> Overview </a>
+
+                    <a href="reports/revenue/index.html" class="sidebar-sublink">
+                        Revenue
+                    </a>
+
+                    <a href="reports/appointments/index.html" class="sidebar-sublink">
+                        Appointments
+                    </a>
+
+                    <a href="reports/consultants/index.html" class="sidebar-sublink">
+                        Consultants
+                    </a>
+
+                    <a href="reports/clients/index.html" class="sidebar-sublink">
+                        Clients
+                    </a>
+                </div>
+            </div>
+
+            <!-- =========================
+                     SYSTEM
+                ========================== -->
+
+            <p class="sidebar-heading">SYSTEM</p>
+
+            <!-- Users -->
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="users-toggle" class="dropdown-checkbox" >
+
+                <div class="sidebar-link-wrapper">
+                    <a href="users/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+
+                        <span> User Management </span>
+                    </a>
+
+                    <label for="users-toggle" class="dropdown-trigger"> ▾ </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="users/index.html" class="sidebar-sublink"> All Users </a>
+
+                    <a href="users/add/index.html" class="sidebar-sublink">
+                        Add User
+                    </a>
+
+                    <a href="users/show/index.html" class="sidebar-sublink">
+                        User Details
+                    </a>
+
+                    <a href="users/edit/index.html" class="sidebar-sublink">
+                        Edit User
+                    </a>
+                </div>
+            </div>
+
+            <!-- Roles -->
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="roles-toggle" class="dropdown-checkbox" >
+
+                <div class="sidebar-link-wrapper">
+                    <a href="roles/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+
+                        <span> Roles &amp; Permissions </span>
+                    </a>
+
+                    <label for="roles-toggle" class="dropdown-trigger"> ▾ </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="roles/index.html" class="sidebar-sublink"> All Roles </a>
+
+                    <a href="roles/add/index.html" class="sidebar-sublink">
+                        Add Role
+                    </a>
+
+                    <a href="roles/show/index.html" class="sidebar-sublink">
+                        Role Details
+                    </a>
+
+                    <a href="roles/edit/index.html" class="sidebar-sublink">
+                        Edit Role
+                    </a>
+                </div>
+            </div>
+
+            <!-- Activity Log -->
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="activity-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="activitylog/index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">◷</span>
+
+                        <span> Activity Log </span>
+                    </a>
+
+                    <label for="activity-toggle" class="dropdown-trigger"> ▾ </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="activitylog/index.html" class="sidebar-sublink">
+                        All Activity
+                    </a>
+
+                    <a href="activitylog/show/index.html" class="sidebar-sublink">
+                        Activity Details
+                    </a>
+                </div>
+            </div>
+
+            <!-- =========================
+                     ACCOUNT
+                ========================== -->
+
+            <p class="sidebar-heading">ACCOUNT</p>
+
+            <!-- Settings -->
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="settings/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+
+                        <span> Settings </span>
+                    </a>
+
+                    <label for="settings-toggle" class="dropdown-trigger"> ▾ </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+                    <a href="settings/profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+
+                    <a href="settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- =========================
+                 SIDEBAR BOTTOM
+            ========================== -->
+
+        <div class="sidebar-bottom">
+            <a href="../index.html" class="sidebar-link">
+                <span class="sidebar-icon"> ← </span>
+
+                <span> Back to Website </span>
+            </a>
+
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">Y</div>
+
+                <div class="sidebar-user-info">
+                    <strong> Yaw </strong>
+
+                    <span> Administrator </span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="admin-main">
+        <header class="admin-header">
+            <div>
+                <span class="header-label"> SYSTEM MONITORING </span>
+
+                <h1>Activity Log</h1>
+            </div>
+        </header>
+
+        <main class="admin-content">
+            <!-- STATISTICS -->
+
+            <section class="dashboard-statistics">
+                <div class="admin-stat-card">
+                    <span class="admin-stat-title">Today's Activities</span>
+                    <strong class="admin-stat-number">145</strong>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span class="admin-stat-title">Appointments</span>
+                    <strong class="admin-stat-number">52</strong>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span class="admin-stat-title">User Actions</span>
+                    <strong class="admin-stat-number">67</strong>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span class="admin-stat-title">System Events</span>
+                    <strong class="admin-stat-number">26</strong>
+                </div>
+            </section>
+
+            <!-- FILTERS -->
+
+            <section class="admin-panel">
+                <div class="admin-panel-header">
+                    <div>
+                        <span class="panel-label"> FILTER ACTIVITY </span>
+
+                        <h2>Audit Trail</h2>
+                    </div>
+                </div>
+
+                <div class="appointment-filters">
+                    <div class="admin-search">
+                        <label>Search Activity</label>
+                        <input type="search" placeholder="Search actions or users" >
+                    </div>
+
+                    <div class="admin-filter">
+                        <label>Category</label>
+
+                        <select>
+                            <option>All Activities</option>
+                            <option>Appointments</option>
+                            <option>Clients</option>
+                            <option>Messages</option>
+                            <option>Users</option>
+                            <option>System</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TIMELINE -->
+
+            <section class="activity-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-badge appointment">A</div>
+
+                    <div class="timeline-content">
+                        <h4>Appointment Created</h4>
+
+                        <p>John Davis booked a Business Strategy Consultation.</p>
+
+                        <span> Today • 10:45 AM </span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-badge user">U</div>
+
+                    <div class="timeline-content">
+                        <h4>User Updated</h4>
+
+                        <p>Administrator updated consultant profile information.</p>
+
+                        <span> Today • 9:20 AM </span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-badge message">M</div>
+
+                    <div class="timeline-content">
+                        <h4>Message Received</h4>
+
+                        <p>New contact form inquiry received.</p>
+
+                        <span> Today • 8:15 AM </span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-badge system">S</div>
+
+                    <div class="timeline-content">
+                        <h4>System Settings Updated</h4>
+
+                        <p>Appointment reminder notifications modified.</p>
+
+                        <span> Yesterday • 4:10 PM </span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="pagination">
+                <a href="#">Previous</a>
+                <a href="#" class="active-page"> 1 </a>
+                <a href="#"> 2 </a>
+                <a href="#"> 3 </a>
+                <a href="#"> Next </a>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

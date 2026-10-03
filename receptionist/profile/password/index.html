@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Password | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">CP</div>
+            <a href="../../index.html">ConsultPro</a>
+            <span>RECEPTIONIST PORTAL</span>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <div class="sidebar-heading">MAIN MENU</div>
+
+            <!-- DASHBOARD -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="dashboard-menu" class="dropdown-checkbox">
+
+                <label for="dashboard-menu" class="sidebar-link-wrapper">
+                    <a href="../../index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⌂</span>
+                        <span>Dashboard</span>
+                    </a>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../index.html" class="sidebar-sublink">Overview</a>
+                    <a href="../../today/index.html" class="sidebar-sublink">Today's Schedule</a>
+                </div>
+            </div>
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox">
+
+                <label for="appointments-menu" class="sidebar-link-wrapper">
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../appointments/index.html" class="sidebar-sublink">Appointment List</a>
+                    <a href="../../appointments/add/index.html" class="sidebar-sublink">Add Appointment</a>
+                    <a href="../../appointments/show/index.html" class="sidebar-sublink">Appointment Details</a>
+                    <a href="../../appointments/edit/index.html" class="sidebar-sublink">Edit Appointment</a>
+                </div>
+            </div>
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="calendar-menu" class="dropdown-checkbox">
+
+                <label for="calendar-menu" class="sidebar-link-wrapper">
+                    <a href="../../calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▦</span>
+                        <span>Calendar</span>
+                    </a>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../calendar/index.html" class="sidebar-sublink">Calendar</a>
+                    <a href="../../calendar/add/index.html" class="sidebar-sublink">Add Event</a>
+                    <a href="../../calendar/edit/index.html" class="sidebar-sublink">Edit Event</a>
+                    <a href="../../calendar/show/index.html" class="sidebar-sublink">Event Details</a>
+                </div>
+            </div>
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultants-menu" class="dropdown-checkbox">
+
+                <label for="consultants-menu" class="sidebar-link-wrapper">
+                    <a href="../../consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Consultants</span>
+                    </a>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../consultants/index.html" class="sidebar-sublink">Consultant List</a>
+                    <a href="../../consultants/show/index.html" class="sidebar-sublink">Consultant Details</a>
+                </div>
+            </div>
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="clients-menu" class="dropdown-checkbox">
+
+                <label for="clients-menu" class="sidebar-link-wrapper">
+                    <a href="../../clients/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Clients</span>
+                    </a>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../clients/index.html" class="sidebar-sublink">Client List</a>
+                    <a href="../../clients/add/index.html" class="sidebar-sublink">Add Client</a>
+                    <a href="../../clients/show/index.html" class="sidebar-sublink">Client Details</a>
+                    <a href="../../clients/edit/index.html" class="sidebar-sublink">Edit Client</a>
+                </div>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox">
+
+                <label for="services-menu" class="sidebar-link-wrapper">
+                    <a href="../../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+                    </a>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../services/index.html" class="sidebar-sublink">Service List</a>
+                    <a href="../../services/show/index.html" class="sidebar-sublink">Service Details</a>
+                </div>
+            </div>
+
+            <div class="sidebar-heading">COMMUNICATION</div>
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox">
+
+                <label for="messages-menu" class="sidebar-link-wrapper">
+                    <a href="../../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">4</span>
+                    </a>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../messages/index.html" class="sidebar-sublink">Inbox</a>
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">Sent Messages</a>
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">Compose Message</a>
+                </div>
+            </div>
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox">
+
+                <label for="notifications-menu" class="sidebar-link-wrapper">
+                    <a href="../../notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">3</span>
+                    </a>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../notifications/index.html" class="sidebar-sublink">All Notifications</a>
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">Unread</a>
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">Notification Settings</a>
+                </div>
+            </div>
+
+            <div class="sidebar-heading">ACCOUNT</div>
+
+            <!-- PROFILE -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="profile-menu" class="dropdown-checkbox" checked>
+
+                <label for="profile-menu" class="sidebar-link-wrapper">
+                    <a href="../index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">◎</span>
+                        <span>Profile</span>
+                    </a>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../index.html" class="sidebar-sublink">Profile Settings</a>
+                    <a href="../edit/index.html" class="sidebar-sublink">Edit Profile</a>
+                    <a href="index.html" class="sidebar-sublink active">Change Password</a>
+                    <a href="../settings/index.html" class="sidebar-sublink">Settings</a>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">R</div>
+
+                <div class="sidebar-user-info">
+                    <strong>Receptionist</strong>
+                    <span>Receptionist</span>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+                <button class="sidebar-toggle">☰</button>
+                <span class="header-label">CHANGE PASSWORD</span>
+            </div>
+
+            <div class="header-right">
+
+                <button class="header-icon-button">⌕</button>
+
+                <button class="header-icon-button">
+                    ♢
+                    <span class="header-notification-dot"></span>
+                </button>
+
+                <div class="header-profile">
+
+                    <button class="profile-toggle">
+
+                        <span class="header-profile-avatar">R</span>
+
+                        <span class="header-profile-info">
+                            <strong>Receptionist</strong>
+                            <small>Receptionist</small>
+                        </span>
+
+                        <span class="dropdown-arrow">⌄</span>
+
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="../index.html">Profile</a>
+                        <a href="../settings/index.html">Settings</a>
+                        <a href="../../../index.html">Logout</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- CONTENT -->
+        <div class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+
+                <div>
+                    <span class="panel-label">ACCOUNT</span>
+
+                    <h1>Change Password</h1>
+
+                    <p>
+                        Update your ConsultPro account password to keep your account secure.
+                    </p>
+                </div>
+
+                <div class="admin-page-actions">
+                    <a href="../index.html" class="secondary-button">
+                        Back to Profile
+                    </a>
+                </div>
+
+            </section>
+
+            <!-- PASSWORD FORM -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <h2>Password Security</h2>
+                        <p>Enter your current password and choose a new password.</p>
+                    </div>
+
+                </div>
+
+                <form class="admin-form">
+
+                    <div class="form-group">
+
+                        <label class="form-label" for="current-password">
+                            Current Password
+                        </label>
+
+                        <input type="password" id="current-password" class="form-input"
+                            placeholder="Enter your current password">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label class="form-label" for="new-password">
+                            New Password
+                        </label>
+
+                        <input type="password" id="new-password" class="form-input"
+                            placeholder="Enter your new password">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label class="form-label" for="confirm-password">
+                            Confirm New Password
+                        </label>
+
+                        <input type="password" id="confirm-password" class="form-input"
+                            placeholder="Confirm your new password">
+
+                    </div>
+
+                    <div class="admin-page-actions">
+
+                        <a href="../index.html" class="secondary-button">
+                            Cancel
+                        </a>
+
+                        <button type="submit" class="primary-button">
+                            Update Password
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+            <!-- PASSWORD REQUIREMENTS -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <h2>Password Requirements</h2>
+                        <p>Your new password should meet the following requirements.</p>
+                    </div>
+
+                </div>
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <tbody>
+
+                            <tr>
+                                <td><strong>Minimum Length</strong></td>
+                                <td>At least 8 characters</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Uppercase Letter</strong></td>
+                                <td>At least one uppercase letter</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Lowercase Letter</strong></td>
+                                <td>At least one lowercase letter</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Number</strong></td>
+                                <td>At least one number</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Special Character</strong></td>
+                                <td>At least one special character</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- SECURITY INFORMATION -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <h2>Security Information</h2>
+                        <p>Additional information about your account security.</p>
+                    </div>
+
+                </div>
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <tbody>
+
+                            <tr>
+                                <td><strong>Two-Factor Authentication</strong></td>
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Enabled
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Last Password Change</strong></td>
+                                <td>August 12, 2026</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Last Login</strong></td>
+                                <td>September 24, 2026 at 8:02 AM</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Active Sessions</strong></td>
+                                <td>1 Active Session</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+            <!-- SECURITY NOTICE -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <h2>Security Notice</h2>
+
+                        <p>
+                            Never share your ConsultPro password with another person.
+                            If you believe your account has been compromised, contact
+                            the system administrator immediately.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

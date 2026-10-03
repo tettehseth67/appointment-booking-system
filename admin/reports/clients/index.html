@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Client Reports | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <a href="../../index.html">
+                ConsultPro
+            </a>
+            <span>ADMIN PORTAL</span>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <p class="sidebar-heading">OVERVIEW</p>
+
+            <a href="../../admin/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <p class="sidebar-heading">BOOKINGS</p>
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+
+                    <label for="appointments-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../appointments/show-appointments.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Appointment Details</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="../../calendar/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Calendar</span>
+            </a>
+
+            <p class="sidebar-heading">PEOPLE</p>
+
+            <a href="../../consultants/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Consultants</span>
+            </a>
+
+            <a href="../../services/index.html" class="sidebar-link">
+                <span class="sidebar-icon">◆</span>
+                <span>Services</span>
+            </a>
+
+            <a href="../../clients/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Clients</span>
+            </a>
+
+            <p class="sidebar-heading">COMMUNICATION</p>
+
+            <a href="../../messages/index.html" class="sidebar-link">
+                <span class="sidebar-icon">✉</span>
+                <span>Messages</span>
+                <span class="sidebar-count">4</span>
+            </a>
+
+            <a href="../../notifications/index.html" class="sidebar-link">
+                <span class="sidebar-icon">✉</span>
+                <span>Notifications</span>
+                <span class="sidebar-count">4</span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">
+                ANALYTICS
+            </p>
+
+            <a href="../index.html" class="sidebar-link active">
+                <span class="sidebar-icon">▤</span>
+                <span>Reports</span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">
+                SYSTEM
+            </p>
+
+            <a href="../../users/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>User Management</span>
+            </a>
+
+            <a href="../../roles/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Roles &amp; Permissions</span>
+            </a>
+
+            <a href="../../activitylog/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Activity Log</span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">
+                ACCOUNT
+            </p>
+
+            <a href="../../settings/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    AD
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>Admin User</strong>
+                    <span>Administrator</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <div class="admin-main">
+
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <div>
+                    <span class="header-label">
+                        ANALYTICS
+                    </span>
+
+                    <h1>
+                        Client Reports
+                    </h1>
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    🔔
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ⚙️
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span>
+                            Yaw
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▼
+                        </span>
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../profile.html">
+                            My Profile
+                        </a>
+
+                        <a href="../../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="#">
+                            Change Password
+                        </a>
+
+                        <a href="../../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <hr>
+
+                        <a href="../../auth/login/index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="admin-content">
+
+            <div class="admin-page-header">
+
+                <div>
+                    <span class="header-label">
+                        CLIENT ANALYTICS
+                    </span>
+
+                    <h2>
+                        Client Reports
+                    </h2>
+
+                    <p>
+                        Review client activity, appointments, and spending.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- SUMMARY CARDS -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            TOTAL CLIENTS
+                        </span>
+
+                        <span class="stat-value">
+                            186
+                        </span>
+
+                        <span class="stat-change positive">
+                            +12 this month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            ACTIVE CLIENTS
+                        </span>
+
+                        <span class="stat-value">
+                            154
+                        </span>
+
+                        <span class="stat-change">
+                            82.8% of total clients
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            NEW CLIENTS
+                        </span>
+
+                        <span class="stat-value">
+                            12
+                        </span>
+
+                        <span class="stat-change positive">
+                            +8.4% from last month
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            CLIENT APPOINTMENTS
+                        </span>
+
+                        <span class="stat-value">
+                            248
+                        </span>
+
+                        <span class="stat-change">
+                            Current reporting period
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FILTERS -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">
+                            FILTER REPORT
+                        </span>
+
+                        <h2>
+                            Client Activity
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="admin-panel-content">
+
+                    <div class="appointment-filters">
+
+                        <div class="admin-search">
+
+                            <label for="client-search">
+                                Search Clients
+                            </label>
+
+                            <input type="search" id="client-search" name="client-search"
+                                placeholder="Search by client name or email...">
+
+                        </div>
+
+
+                        <div class="admin-filter">
+
+                            <label for="client-status">
+                                Client Status
+                            </label>
+
+                            <select id="client-status" name="client-status">
+                                <option value="">
+                                    All Statuses
+                                </option>
+
+                                <option value="active">
+                                    Active
+                                </option>
+
+                                <option value="inactive">
+                                    Inactive
+                                </option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="admin-filter">
+
+                            <label for="report-period">
+                                Period
+                            </label>
+
+                            <select id="report-period" name="report-period">
+                                <option value="month">
+                                    This Month
+                                </option>
+
+                                <option value="quarter">
+                                    This Quarter
+                                </option>
+
+                                <option value="year">
+                                    This Year
+                                </option>
+
+                                <option value="all">
+                                    All Time
+                                </option>
+                            </select>
+
+                        </div>
+
+
+                        <button type="button" class="primary-button">
+                            Generate Report
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CLIENT REPORT TABLE -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">
+                            CLIENT PERFORMANCE
+                        </span>
+
+                        <h2>
+                            Client Activity Report
+                        </h2>
+                    </div>
+
+                    <span class="stat-change">
+                        186 clients
+                    </span>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Client</th>
+                                <th>Email</th>
+                                <th>Appointments</th>
+                                <th>Completed</th>
+                                <th>Cancelled</th>
+                                <th>Last Appointment</th>
+                                <th>Total Spent</th>
+                                <th>Status</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Michael Johnson
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    michael.johnson@example.com
+                                </td>
+
+                                <td>
+                                    12
+                                </td>
+
+                                <td>
+                                    10
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    Sep 16, 2026
+                                </td>
+
+                                <td>
+                                    $2,150
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Emily Davis
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    emily.davis@example.com
+                                </td>
+
+                                <td>
+                                    9
+                                </td>
+
+                                <td>
+                                    7
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    Sep 16, 2026
+                                </td>
+
+                                <td>
+                                    $1,350
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Robert Wilson
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    robert.wilson@example.com
+                                </td>
+
+                                <td>
+                                    8
+                                </td>
+
+                                <td>
+                                    7
+                                </td>
+
+                                <td>
+                                    0
+                                </td>
+
+                                <td>
+                                    Sep 15, 2026
+                                </td>
+
+                                <td>
+                                    $1,400
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Jessica Taylor
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    jessica.taylor@example.com
+                                </td>
+
+                                <td>
+                                    6
+                                </td>
+
+                                <td>
+                                    4
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    Sep 15, 2026
+                                </td>
+
+                                <td>
+                                    $1,000
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Daniel Martinez
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    daniel.martinez@example.com
+                                </td>
+
+                                <td>
+                                    5
+                                </td>
+
+                                <td>
+                                    4
+                                </td>
+
+                                <td>
+                                    0
+                                </td>
+
+                                <td>
+                                    Sep 14, 2026
+                                </td>
+
+                                <td>
+                                    $750
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-cancelled">
+                                        Inactive
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Olivia Anderson
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    olivia.anderson@example.com
+                                </td>
+
+                                <td>
+                                    11
+                                </td>
+
+                                <td>
+                                    9
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    Sep 13, 2026
+                                </td>
+
+                                <td>
+                                    $1,875
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        William Thomas
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    william.thomas@example.com
+                                </td>
+
+                                <td>
+                                    7
+                                </td>
+
+                                <td>
+                                    6
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    Sep 12, 2026
+                                </td>
+
+                                <td>
+                                    $1,125
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Sophia Brown
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    sophia.brown@example.com
+                                </td>
+
+                                <td>
+                                    4
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+                                    0
+                                </td>
+
+                                <td>
+                                    Sep 11, 2026
+                                </td>
+
+                                <td>
+                                    $600
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- PAGINATION -->
+
+                <div class="pagination">
+
+                    <button type="button" class="pagination-button" aria-label="Previous page">
+                        ‹
+                    </button>
+
+                    <button type="button" class="pagination-button active">
+                        1
+                    </button>
+
+                    <button type="button" class="pagination-button">
+                        2
+                    </button>
+
+                    <button type="button" class="pagination-button">
+                        3
+                    </button>
+
+                    <button type="button" class="pagination-button">
+                        4
+                    </button>
+
+                    <button type="button" class="pagination-button">
+                        5
+                    </button>
+
+                    <button type="button" class="pagination-button" aria-label="Next page">
+                        ›
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

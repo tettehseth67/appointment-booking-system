@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calendar | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../style.css">
+
+</head>
+
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="../index.html">
+
+                <div class="sidebar-brand-icon">
+                    CP
+                </div>
+
+                <div>
+                    <strong>
+                        ConsultPro
+                    </strong>
+
+                    <span>
+                        MANAGER PORTAL
+                    </span>
+                </div>
+
+            </a>
+
+        </div>
+
+        <!-- SIDEBAR NAVIGATION -->
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+            <!-- DASHBOARD -->
+
+            <div class="sidebar-link-wrapper">
+
+                <a href="../index.html" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ▦
+                    </span>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- APPOINTMENTS -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <label for="appointments-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        □
+                    </span>
+
+                    <span>
+                        Appointments
+                    </span>
+
+                    <span class="sidebar-count">
+                        12
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+
+                    <a href="../appointments/show/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                    <a href="../appointments/edit/index.html" class="sidebar-sublink">
+                        Edit Appointment
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="calendar-toggle" class="dropdown-checkbox">
+
+                    <label for="calendar-toggle" class="sidebar-link active">
+
+                        <span class="sidebar-icon">
+                            ▣
+                        </span>
+
+                        <span>
+                            Calendar
+                        </span>
+                        <span class="dropdown-trigger">
+                            ▾
+                        </span>
+                    </label>
+                    <div class="sidebar-dropdown-content">
+                        <a href="../calendar/index.html" class="sidebar-sublink active">
+                            Calendar List
+                        </a>
+                        <a href="../calendar/add/index.html" class="sidebar-sublink">
+                            Add Calendar
+                        </a>
+                        <a href="../calendar/edit/index.html" class="sidebar-sublink">
+                            Edit Calendar
+                        </a>
+                    </div>
+            </div>
+
+            <!-- CONSULTANTS -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultants-toggle" class="dropdown-checkbox">
+
+                <label for="consultants-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ◉
+                    </span>
+
+                    <span>
+                        Consultants
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../consultants/index.html" class="sidebar-sublink">
+                        Consultant List
+                    </a>
+
+                    <a href="../consultants/add/index.html" class="sidebar-sublink">
+                        Add Consultant
+                    </a>
+
+                    <a href="../consultants/show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+
+                    <a href="../consultants/edit/index.html" class="sidebar-sublink">
+                        Edit Consultant
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+
+                <label for="services-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ◈
+                    </span>
+
+                    <span>
+                        Services
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../services/index.html" class="sidebar-sublink">
+                        Service List
+                    </a>
+
+                    <a href="../services/add/index.html" class="sidebar-sublink">
+                        Add Service
+                    </a>
+
+                    <a href="../services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+
+                    <a href="../services/edit/index.html" class="sidebar-sublink">
+                        Edit Service
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLIENTS -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="clients-toggle" class="dropdown-checkbox">
+
+                <label for="clients-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ◎
+                    </span>
+
+                    <span>
+                        Clients
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="../clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                    <a href="../clients/add/index.html" class="sidebar-sublink">
+                        Add Client
+                    </a>
+
+                    <a href="../clients/edit/index.html" class="sidebar-sublink">
+                        Edit Client
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COMMUNICATION -->
+
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+
+            <!-- MESSAGES -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+
+                <label for="messages-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ✉
+                    </span>
+
+                    <span>
+                        Messages
+                    </span>
+
+                    <span class="sidebar-count">
+                        4
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        Compose Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOTIFICATIONS -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+
+                <label for="notifications-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ♢
+                    </span>
+
+                    <span>
+                        Notifications
+                    </span>
+
+                    <span class="sidebar-count">
+                        4
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ANALYTICS -->
+
+            <div class="sidebar-heading">
+                ANALYTICS
+            </div>
+
+
+            <!-- REPORTS -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="reports-toggle" class="dropdown-checkbox">
+
+                <label for="reports-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ▤
+                    </span>
+
+                    <span>
+                        Reports
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../reports/index.html" class="sidebar-sublink">
+                        Reports Overview
+                    </a>
+
+                    <a href="../reports/revenue/index.html" class="sidebar-sublink">
+                        Revenue Report
+                    </a>
+
+                    <a href="../reports/appointments/index.html" class="sidebar-sublink">
+                        Appointment Report
+                    </a>
+
+                    <a href="../reports/consultants/index.html" class="sidebar-sublink">
+                        Consultant Report
+                    </a>
+
+                    <a href="../reports/clients/index.html" class="sidebar-sublink">
+                        Client Report
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACCOUNT -->
+
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+
+            <!-- SETTINGS -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox">
+
+                <label for="settings-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ⚙
+                    </span>
+
+                    <span>
+                        Settings
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../settings/profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+
+                    <a href="../settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">
+                    ←
+                </span>
+
+                <span>
+                    Back to Website
+                </span>
+
+            </a>
+
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    Y
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>
+                        Yaw
+                    </strong>
+
+                    <span>
+                        Manager
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+
+    <main class="admin-main">
+
+
+        <!-- HEADER -->
+
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle" type="button">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    CALENDAR
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button" type="button">
+                    ⌕
+                </button>
+
+
+                <button class="header-icon-button" type="button">
+
+                    ♢
+
+                    <span class="header-notification-dot"></span>
+
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button class="profile-toggle" type="button">
+
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span class="profile-name">
+                            Yaw
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../settings/profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../settings/security/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <a href="../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- CONTENT -->
+
+        <div class="admin-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <section class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        SCHEDULE
+                    </span>
+
+                    <h1>
+                        Calendar
+                    </h1>
+
+                    <p>
+                        View and manage appointments, events, and consultant schedules.
+                    </p>
+
+                </div>
+
+
+                <div class="admin-page-actions">
+
+                    <a href="add/index.html" class="primary-button">
+                        + Add Event
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- STATISTICS -->
+
+            <section class="dashboard-stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-header">
+
+                        <span class="stat-label">
+                            TOTAL EVENTS
+                        </span>
+
+                        <div class="stat-icon">
+                            □
+                        </div>
+
+                    </div>
+
+                    <div class="stat-value">
+                        24
+                    </div>
+
+                    <div class="stat-footer">
+                        Scheduled this month
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-header">
+
+                        <span class="stat-label">
+                            TODAY'S APPOINTMENTS
+                        </span>
+
+                        <div class="stat-icon">
+                            ◷
+                        </div>
+
+                    </div>
+
+                    <div class="stat-value">
+                        5
+                    </div>
+
+                    <div class="stat-footer">
+                        Appointments scheduled today
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-header">
+
+                        <span class="stat-label">
+                            THIS WEEK
+                        </span>
+
+                        <div class="stat-icon">
+                            ▣
+                        </div>
+
+                    </div>
+
+                    <div class="stat-value">
+                        12
+                    </div>
+
+                    <div class="stat-footer">
+                        Upcoming appointments
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-header">
+
+                        <span class="stat-label">
+                            AVAILABLE SLOTS
+                        </span>
+
+                        <div class="stat-icon">
+                            +
+                        </div>
+
+                    </div>
+
+                    <div class="stat-value">
+                        18
+                    </div>
+
+                    <div class="stat-footer">
+                        Available booking slots
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- CALENDAR -->
+
+            <section class="admin-panel">
+
+
+                <!-- CALENDAR HEADER -->
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            MONTHLY SCHEDULE
+                        </span>
+
+                        <h2>
+                            September 2026
+                        </h2>
+
+                    </div>
+
+
+                    <div class="calendar-navigation">
+
+                        <button type="button" class="secondary-button">
+                            ← Previous
+                        </button>
+
+                        <button type="button" class="secondary-button">
+                            Today
+                        </button>
+
+                        <button type="button" class="secondary-button">
+                            Next →
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CALENDAR GRID -->
+
+                <div class="calendar-wrapper">
+
+                    <div class="calendar-grid">
+
+
+                        <!-- WEEKDAYS -->
+
+                        <div class="calendar-day-header">
+                            Sun
+                        </div>
+
+                        <div class="calendar-day-header">
+                            Mon
+                        </div>
+
+                        <div class="calendar-day-header">
+                            Tue
+                        </div>
+
+                        <div class="calendar-day-header">
+                            Wed
+                        </div>
+
+                        <div class="calendar-day-header">
+                            Thu
+                        </div>
+
+                        <div class="calendar-day-header">
+                            Fri
+                        </div>
+
+                        <div class="calendar-day-header">
+                            Sat
+                        </div>
+
+
+
+                        <!-- AUGUST -->
+
+                        <div class="calendar-day calendar-day-muted">
+                            <span class="calendar-date">30</span>
+                        </div>
+
+                        <div class="calendar-day calendar-day-muted">
+                            <span class="calendar-date">31</span>
+                        </div>
+
+
+
+                        <!-- SEPTEMBER -->
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">1</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                2
+                            </span>
+
+                            <div class="calendar-event status-confirmed">
+                                John Davis
+                            </div>
+
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">3</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                4
+                            </span>
+
+                            <div class="calendar-event status-pending">
+                                Anna Miller
+                            </div>
+
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">5</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">6</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">7</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                8
+                            </span>
+
+                            <div class="calendar-event status-confirmed">
+                                Michael Brown
+                            </div>
+
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">9</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                10
+                            </span>
+
+                            <div class="calendar-event status-confirmed">
+                                Sarah Wilson
+                            </div>
+
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">11</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                12
+                            </span>
+
+                            <div class="calendar-event status-confirmed">
+                                John Davis
+                            </div>
+
+                            <div class="calendar-event status-pending">
+                                Anna Miller
+                            </div>
+
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">13</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">14</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                15
+                            </span>
+
+                            <div class="calendar-event status-confirmed">
+                                Robert Williams
+                            </div>
+
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">16</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                17
+                            </span>
+
+                            <div class="calendar-event status-confirmed">
+                                Sarah Wilson
+                            </div>
+
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">18</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">19</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">20</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                21
+                            </span>
+
+                            <div class="calendar-event status-confirmed">
+                                John Davis
+                            </div>
+
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">22</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                23
+                            </span>
+
+                            <div class="calendar-event status-confirmed">
+                                Michael Brown
+                            </div>
+
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">24</span>
+                        </div>
+
+
+                        <!-- TODAY -->
+
+                        <div class="calendar-day calendar-day-today">
+
+                            <span class="calendar-date">
+                                25
+                            </span>
+
+                            <div class="calendar-event status-confirmed">
+                                John Davis
+                            </div>
+
+                            <div class="calendar-event status-pending">
+                                Sarah Wilson
+                            </div>
+
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">26</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">27</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                28
+                            </span>
+
+                            <div class="calendar-event status-confirmed">
+                                Anna Miller
+                            </div>
+
+                        </div>
+
+
+                        <div class="calendar-day">
+                            <span class="calendar-date">29</span>
+                        </div>
+
+
+                        <div class="calendar-day">
+
+                            <span class="calendar-date">
+                                30
+                            </span>
+
+                            <div class="calendar-event status-confirmed">
+                                Robert Williams
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- OCTOBER -->
+
+                        <div class="calendar-day calendar-day-muted">
+                            <span class="calendar-date">1</span>
+                        </div>
+
+                        <div class="calendar-day calendar-day-muted">
+                            <span class="calendar-date">2</span>
+                        </div>
+
+                        <div class="calendar-day calendar-day-muted">
+                            <span class="calendar-date">3</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- LEGEND -->
+
+                <div class="calendar-legend">
+
+                    <div class="calendar-legend-item">
+
+                        <span class="calendar-legend-dot status-confirmed"></span>
+
+                        <span>
+                            Confirmed
+                        </span>
+
+                    </div>
+
+
+                    <div class="calendar-legend-item">
+
+                        <span class="calendar-legend-dot status-pending"></span>
+
+                        <span>
+                            Pending
+                        </span>
+
+                    </div>
+
+
+                    <div class="calendar-legend-item">
+
+                        <span class="calendar-legend-dot status-completed"></span>
+
+                        <span>
+                            Completed
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- TODAY'S SCHEDULE -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            TODAY
+                        </span>
+
+                        <h2>
+                            Today's Schedule
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            09:00 AM
+                        </span>
+
+                        <strong>
+                            John Davis
+                        </strong>
+
+                        <span>
+                            Business Strategy
+                        </span>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            10:30 AM
+                        </span>
+
+                        <strong>
+                            Anna Miller
+                        </strong>
+
+                        <span>
+                            Financial Consulting
+                        </span>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            12:00 PM
+                        </span>
+
+                        <strong>
+                            Michael Brown
+                        </strong>
+
+                        <span>
+                            Business Planning
+                        </span>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            02:00 PM
+                        </span>
+
+                        <strong>
+                            Sarah Wilson
+                        </strong>
+
+                        <span>
+                            Career Consulting
+                        </span>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            04:00 PM
+                        </span>
+
+                        <strong>
+                            Robert Williams
+                        </strong>
+
+                        <span>
+                            Leadership Coaching
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- UPCOMING APPOINTMENTS -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            UPCOMING
+                        </span>
+
+                        <h2>
+                            Upcoming Appointments
+                        </h2>
+
+                    </div>
+
+
+                    <a href="../appointments/index.html" class="secondary-button">
+                        View All
+                    </a>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Appointment
+                                </th>
+
+                                <th>
+                                    Client
+                                </th>
+
+                                <th>
+                                    Consultant
+                                </th>
+
+                                <th>
+                                    Date &amp; Time
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Actions
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        CP-482931
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    John Davis
+                                </td>
+
+                                <td>
+                                    David Wilson
+                                </td>
+
+                                <td>
+                                    Sep 25, 2026<br>
+                                    09:00 AM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-confirmed">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="../appointments/show/index.html" class="table-action">
+                                            View
+                                        </a>
+
+                                        <a href="../appointments/edit/index.html" class="table-action">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        CP-731204
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Anna Miller
+                                </td>
+
+                                <td>
+                                    Laura Bennett
+                                </td>
+
+                                <td>
+                                    Sep 25, 2026<br>
+                                    10:30 AM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-pending">
+                                        Pending
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="../appointments/show/index.html" class="table-action">
+                                            View
+                                        </a>
+
+                                        <a href="../appointments/edit/index.html" class="table-action">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        CP-614820
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Michael Brown
+                                </td>
+
+                                <td>
+                                    Michael Roberts
+                                </td>
+
+                                <td>
+                                    Sep 26, 2026<br>
+                                    12:00 PM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-confirmed">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="../appointments/show/index.html" class="table-action">
+                                            View
+                                        </a>
+
+                                        <a href="../appointments/edit/index.html" class="table-action">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        CP-928315
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Sarah Wilson
+                                </td>
+
+                                <td>
+                                    David Wilson
+                                </td>
+
+                                <td>
+                                    Sep 28, 2026<br>
+                                    02:00 PM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-confirmed">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="../appointments/show/index.html" class="table-action">
+                                            View
+                                        </a>
+
+                                        <a href="../appointments/edit/index.html" class="table-action">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        CP-305721
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Robert Williams
+                                </td>
+
+                                <td>
+                                    Laura Bennett
+                                </td>
+
+                                <td>
+                                    Sep 30, 2026<br>
+                                    04:00 PM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-confirmed">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="../appointments/show/index.html" class="table-action">
+                                            View
+                                        </a>
+
+                                        <a href="../appointments/edit/index.html" class="table-action">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+<!-- DELETE EVENT CONFIRMATION MODAL -->
+<div class="confirmation-modal">
+    <div class="confirmation-modal-overlay"></div>
+    <div class="confirmation-modal-content">
+        <div class="confirmation-modal-icon"> ! </div>
+        <div class="confirmation-modal-body">
+            <h2>Delete Event?</h2>
+            <p> Are you sure you want to delete this event? </p>
+            <p class="confirmation-modal-warning"> This action cannot be undone. </p>
+        </div>
+        <div class="confirmation-modal-actions"> <button type="button" class="secondary-button"> Cancel </button>
+            <button type="button" class="danger-button"> Delete Event </button>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/services.js"></script>
+</body>
+
+</html>

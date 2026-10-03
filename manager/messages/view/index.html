@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Details | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-brand-icon">
+                CP
+            </div>
+
+            <div>
+                <h2>ConsultPro</h2>
+                <span>MANAGER PORTAL</span>
+            </div>
+
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+            <!-- DASHBOARD -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-dashboard" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▦</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <label for="manager-dashboard" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../index.html" class="sidebar-sublink">
+                        Overview
+                    </a>
+
+                    <a href="../../index.html" class="sidebar-sublink">
+                        Recent Activity
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-appointments" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                    </a>
+
+                    <label for="manager-appointments" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../../appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+
+                    <a href="../../appointments/show/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                    <a href="../../appointments/edit/index.html" class="sidebar-sublink">
+                        Edit Appointment
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-calendar" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">□</span>
+                        <span>Calendar</span>
+                    </a>
+
+                    <label for="manager-calendar" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                    <a href="../../calendar/add/index.html" class="sidebar-sublink">
+                        Add Event
+                    </a>
+
+                    <a href="../../calendar/edit/index.html" class="sidebar-sublink">
+                        Edit Event
+                    </a>
+
+                    <a href="../../calendar/show/index.html" class="sidebar-sublink">
+                        Event Details
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-consultants" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Consultants</span>
+                    </a>
+
+                    <label for="manager-consultants" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../consultants/index.html" class="sidebar-sublink">
+                        Consultant List
+                    </a>
+
+                    <a href="../../consultants/add/index.html" class="sidebar-sublink">
+                        Add Consultant
+                    </a>
+
+                    <a href="../../consultants/show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+
+                    <a href="../../consultants/edit/index.html" class="sidebar-sublink">
+                        Edit Consultant
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-services" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+                    </a>
+
+                    <label for="manager-services" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../services/index.html" class="sidebar-sublink">
+                        Service List
+                    </a>
+
+                    <a href="../../services/add/index.html" class="sidebar-sublink">
+                        Add Service
+                    </a>
+
+                    <a href="../../services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+
+                    <a href="../../services/edit/index.html" class="sidebar-sublink">
+                        Edit Service
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-clients" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../clients/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Clients</span>
+                    </a>
+
+                    <label for="manager-clients" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="../../clients/add/index.html" class="sidebar-sublink">
+                        Add Client
+                    </a>
+
+                    <a href="../../clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                    <a href="../../clients/edit/index.html" class="sidebar-sublink">
+                        Edit Client
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-messages" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../index.html" class="sidebar-link active">
+
+                        <span class="sidebar-icon">
+                            ✉
+                        </span>
+
+                        <span>
+                            Messages
+                        </span>
+
+                        <span class="sidebar-count">
+                            4
+                        </span>
+
+                    </a>
+
+                    <label for="manager-messages" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../compose/index.html" class="sidebar-sublink">
+                        Compose Message
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-notifications" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">4</span>
+                    </a>
+
+                    <label for="manager-notifications" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- ANALYTICS -->
+            <div class="sidebar-heading">
+                ANALYTICS
+            </div>
+
+            <!-- REPORTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-reports" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../reports/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▥</span>
+                        <span>Reports</span>
+                    </a>
+
+                    <label for="manager-reports" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../reports/index.html" class="sidebar-sublink">
+                        Reports Overview
+                    </a>
+
+                    <a href="../../reports/revenue/index.html" class="sidebar-sublink">
+                        Revenue Reports
+                    </a>
+
+                    <a href="../../reports/appointments/index.html" class="sidebar-sublink">
+                        Appointment Reports
+                    </a>
+
+                    <a href="../../reports/consultants/index.html" class="sidebar-sublink">
+                        Consultant Reports
+                    </a>
+
+                    <a href="../../reports/clients/index.html" class="sidebar-sublink">
+                        Client Reports
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+            <!-- SETTINGS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-settings" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../settings/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+                    </a>
+
+                    <label for="manager-settings" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../settings/general/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../../settings/profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+
+                    <a href="../../settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">
+                    ←
+                </span>
+
+                <span>
+                    Back to Website
+                </span>
+
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    M
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>
+                        Manager
+                    </strong>
+
+                    <span>
+                        Manager
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    MESSAGE DETAILS
+                </span>
+
+            </div>
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ♢
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span class="profile-name">
+                            Yaw
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- CONTENT -->
+        <div class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        COMMUNICATION
+                    </span>
+
+                    <h1>
+                        Message Details
+                    </h1>
+
+                    <p>
+                        View and manage the selected message.
+                    </p>
+
+                </div>
+
+                <div class="admin-page-actions">
+
+                    <a href="../index.html" class="secondary-button">
+                        Back to Inbox
+                    </a>
+
+                    <a href="../compose/index.html" class="primary-button">
+                        New Message
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- MESSAGE -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            MESSAGE
+                        </span>
+
+                        <h2>
+                            Question About Our Next Consultation
+                        </h2>
+
+                    </div>
+
+                    <span class="status-badge status-unread">
+                        Unread
+                    </span>
+
+                </div>
+
+                <div class="message-details">
+
+                    <div class="message-meta">
+
+                        <div class="message-sender">
+
+                            <div class="message-avatar">
+                                JD
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    John Davis
+                                </strong>
+
+                                <span>
+                                    Client
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="message-date">
+
+                            <span>
+                                September 25, 2026
+                            </span>
+
+                            <span>
+                                09:15 AM
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="message-info">
+
+                        <div>
+
+                            <span class="panel-label">
+                                FROM
+                            </span>
+
+                            <p>
+                                John Davis
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <span class="panel-label">
+                                EMAIL
+                            </span>
+
+                            <p>
+                                john.davis@example.com
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <span class="panel-label">
+                                SUBJECT
+                            </span>
+
+                            <p>
+                                Question About Our Next Consultation
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="message-body">
+
+                        <p>
+                            Hello Manager,
+                        </p>
+
+                        <p>
+                            I wanted to confirm the details for our upcoming consultation. Could you please let me know
+                            if there is anything I need to prepare before the appointment?
+                        </p>
+
+                        <p>
+                            I would also like to discuss a few additional topics during the session if there is enough
+                            time.
+                        </p>
+
+                        <p>
+                            Thank you, and I look forward to our consultation.
+                        </p>
+
+                        <p>
+                            Best regards,<br>
+                            John Davis
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="form-actions">
+
+                    <a href="../compose/index.html" class="primary-button">
+                        Reply
+                    </a>
+
+                    <button type="button" class="secondary-button">
+                        Mark as Read
+                    </button>
+
+                    <button type="button" class="edit-button table-action-danger">
+                        Delete
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- MESSAGE ACTIVITY -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            ACTIVITY
+                        </span>
+
+                        <h2>
+                            Message Activity
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="activity-list">
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Message received
+                            </strong>
+
+                            <p>
+                                September 25, 2026 at 09:15 AM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon">
+                            •
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Message opened
+                            </strong>
+
+                            <p>
+                                Message is currently marked as unread.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

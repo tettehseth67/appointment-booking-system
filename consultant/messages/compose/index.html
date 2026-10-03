@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compose Message | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">
+                CP
+            </div>
+
+            <div>
+                <h2>ConsultPro</h2>
+                <span>CONSULTANT PORTAL</span>
+            </div>
+
+        </div>
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+
+            <span class="sidebar-heading">
+                MAIN MENU
+            </span>
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="dashboard-toggle" class="dropdown-checkbox">
+
+                <label for="dashboard-toggle" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ▦
+                        </span>
+
+                        Dashboard
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../index.html" class="sidebar-sublink">
+                        Dashboard
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <label for="appointments-toggle" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ◷
+                        </span>
+
+                        My Appointments
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../appointments/index.html" class="sidebar-sublink">
+                        All Appointments
+                    </a>
+
+                    <a href="../../appointments/upcoming/index.html" class="sidebar-sublink">
+                        Upcoming
+                    </a>
+
+                    <a href="../../appointments/completed/index.html" class="sidebar-sublink">
+                        Completed
+                    </a>
+
+                    <a href="../../appointments/details/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SCHEDULE -->
+
+            <span class="sidebar-heading">
+                SCHEDULE
+            </span>
+
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="calendar-toggle" class="dropdown-checkbox">
+
+                <label for="calendar-toggle" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ▣
+                        </span>
+
+                        My Calendar
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="availability-toggle" class="dropdown-checkbox">
+
+                <label for="availability-toggle" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ✓
+                        </span>
+
+                        Availability
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../availability/index.html" class="sidebar-sublink">
+                        My Availability
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="clients-toggle" class="dropdown-checkbox">
+
+                <label for="clients-toggle" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ♙
+                        </span>
+
+                        My Clients
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../clients/index.html" class="sidebar-sublink">
+                        All Clients
+                    </a>
+
+                    <a href="../../clients/details/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+
+                <label for="services-toggle" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ◈
+                        </span>
+
+                        Services
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../../admin/services/index.html" class="sidebar-sublink">
+                        Services
+                    </a>
+
+                    <a href="../../../admin/services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+
+            <span class="sidebar-heading">
+                COMMUNICATION
+            </span>
+
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox" checked>
+
+                <label for="messages-toggle" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link active">
+
+                        <span class="sidebar-icon">
+                            ✉
+                        </span>
+
+                        Messages
+
+                        <span class="sidebar-count">
+                            3
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../compose/index.html" class="sidebar-sublink active">
+                        Compose Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+
+                <label for="notifications-toggle" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ♢
+                        </span>
+
+                        Notifications
+
+                        <span class="sidebar-count">
+                            3
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+
+            <span class="sidebar-heading">
+                ACCOUNT
+            </span>
+
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="profile-toggle" class="dropdown-checkbox">
+
+                <label for="profile-toggle" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ◎
+                        </span>
+
+                        My Profile
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../account/profile/index.html" class="sidebar-sublink">
+                        Profile
+                    </a>
+
+                    <a href="../../account/edit-profile/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox">
+
+                <label for="settings-toggle" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ⚙
+                        </span>
+
+                        Settings
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </span>
+
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../account/settings/index.html" class="sidebar-sublink">
+                        Settings
+                    </a>
+
+                    <a href="../../account/change-password/index.html" class="sidebar-sublink">
+                        Change Password
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">
+                    ←
+                </span>
+
+                Back to Website
+
+            </a>
+
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    D
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>
+                        David Wilson
+                    </strong>
+                    <span>
+                        Consultant
+                    </span>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- MAIN CONTENT -->
+    <div class="admin-main">
+        <header class="admin-header">
+            <div class="admin-header-left"> <button class="sidebar-toggle" type="button"> ☰ </button>
+                <div class="header-label"> CONSULTANT PORTAL </div>
+            </div>
+            <div class="header-right"> <button class="header-icon-button" type="button"> 🔔 </button>
+                <div class="profile-dropdown"> <button class="profile-toggle" type="button"> <span
+                            class="header-avatar">Y</span> <span> <strong>Yaw</strong> <small>Consultant</small> </span>
+                        <span class="dropdown-arrow">⌄</span> </button>
+                    <div class="dropdown-menu"> <a href="../../account/profile/index.html">My Profile</a> <a
+                            href="../../account/settings/index.html">Account Settings</a> <a
+                            href="../../notifications/index.html">Notifications</a> <a href="#">Logout</a> </div>
+                </div>
+            </div>
+        </header>
+        <main class="admin-content">
+            <div class="admin-page-header">
+                <div> <span class="panel-label">COMMUNICATION</span>
+                    <h1>Compose Message</h1>
+                    <p> Send a message directly to one of your clients. </p>
+                </div> <a href="../index.html" class="secondary-button"> ← Back to Inbox </a>
+            </div>
+            <section class="admin-panel">
+                <div class="admin-panel-header">
+                    <div> <span class="panel-label">NEW MESSAGE</span>
+                        <h2>Write Message</h2>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-grid">
+                        <div class="form-group"> <label for="recipient"> Recipient </label> <select id="recipient"
+                                name="recipient" required>
+                                <option value=""> Select client </option>
+                                <option value="john-davis"> John Davis </option>
+                                <option value="anna-miller"> Anna Miller </option>
+                                <option value="michael-brown"> Michael Brown </option>
+                                <option value="sarah-wilson"> Sarah Wilson </option>
+                            </select> </div>
+                        <div class="form-group"> <label for="subject"> Subject </label> <input type="text" id="subject"
+                                name="subject" placeholder="Enter message subject" required> </div>
+                    </div>
+                    <div class="form-group"> <label for="message"> Message </label> <textarea id="message"
+                            name="message" rows="10" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <div class="form-actions"> <a href="../index.html" class="secondary-button"> Cancel </a> <button
+                            type="submit" class="dashboard-primary-button"> Send Message </button> </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

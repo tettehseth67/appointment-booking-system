@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>View Message | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../admin/admin-dashboard.css">
+
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body class="admin-body">
+
+
+    <!-- =========================
+        SIDEBAR
+    ========================== -->
+
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="../../index.html">
+                ConsultPro
+            </a>
+
+            <span>
+                CLIENT PORTAL
+            </span>
+
+        </div>
+
+
+        <nav class="sidebar-navigation">
+
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+
+            <!-- Dashboard -->
+
+            <a href="../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <!-- Appointments -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../appointments/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">▣</span>
+                        <span>My Appointments</span>
+
+                    </a>
+
+                    <label for="appointments-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../../appointments/book.html" class="sidebar-sublink">
+                        Book Appointment
+                    </a>
+
+                    <a href="../../appointments/history.html" class="sidebar-sublink">
+                        Appointment History
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Services -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../services/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">▦</span>
+                        <span>Services</span>
+
+                    </a>
+
+                    <label for="services-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../services/index.html" class="sidebar-sublink">
+                        Available Services
+                    </a>
+
+                    <a href="../../services/index.html" class="sidebar-sublink">
+                        My Services
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+
+            <!-- Messages -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../messages/index.html" class="sidebar-link active">
+
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+
+                        <span class="sidebar-count">
+                            2
+                        </span>
+
+                    </a>
+
+                    <label for="messages-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">
+                        New Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notifications -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../notifications/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">🔔</span>
+                        <span>Notifications</span>
+
+                        <span class="sidebar-count">
+                            4
+                        </span>
+
+                    </a>
+
+                    <label for="notifications-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../../notifications/unread.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../../notifications/settings.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+
+            <!-- Profile -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="profile-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../profile/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♙</span>
+                        <span>My Profile</span>
+
+                    </a>
+
+                    <label for="profile-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../profile/index.html" class="sidebar-sublink">
+                        Profile Details
+                    </a>
+
+                    <a href="../../profile/edit/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                    <a href="../../profile/change-password/index.html" class="sidebar-sublink">
+                        Change Password
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Settings -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../settings/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+
+                    </a>
+
+                    <label for="settings-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../../settings/security.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+
+            </a>
+
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    JD
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>
+                        John Davis
+                    </strong>
+
+                    <span>
+                        Client
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =========================
+        MAIN CONTENT
+    ========================== -->
+
+    <main class="admin-main">
+
+
+        <!-- HEADER -->
+
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    View Message
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button">
+                    🔔
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button class="profile-toggle">
+
+                        <span class="header-avatar">
+                            JD
+                        </span>
+
+                        <span class="profile-name">
+                            John Davis
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../../profile/edit/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../../profile/change-password/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="../../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <a href="../../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =========================
+            PAGE CONTENT
+        ========================== -->
+
+        <section class="admin-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="admin-page-header">
+
+                <div>
+
+                    <h1>
+                        Message Details
+                    </h1>
+
+                    <p>
+                        View your conversation with the consultant.
+                    </p>
+
+                </div>
+
+
+                <a href="../../messages/index.html" class="secondary-button">
+
+                    ← Back to Inbox
+
+                </a>
+
+            </div>
+
+
+
+            <!-- MESSAGE DETAILS -->
+
+            <div class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            MESSAGE
+                        </span>
+
+                        <h2>
+                            Preparing for your consultation
+                        </h2>
+
+                    </div>
+
+
+                    <span class="status-badge status-pending">
+                        Unread
+                    </span>
+
+                </div>
+
+
+
+                <!-- SENDER -->
+
+                <div class="profile-settings-header">
+
+                    <div class="profile-settings-avatar">
+                        DW
+                    </div>
+
+
+                    <div>
+
+                        <h2>
+                            David Wilson
+                        </h2>
+
+                        <p>
+                            Business Strategy Consultant
+                        </p>
+
+                        <span>
+                            September 18, 2026 at 10:25 AM
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- MESSAGE INFORMATION -->
+
+                <div class="settings-list">
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                From
+                            </strong>
+
+                            <span>
+                                David Wilson
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                To
+                            </strong>
+
+                            <span>
+                                John Davis
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Appointment
+                            </strong>
+
+                            <span>
+                                CP-482931 — Business Strategy
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Date
+                            </strong>
+
+                            <span>
+                                September 20, 2026 at 10:00 AM
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MESSAGE BODY -->
+
+            <div class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            MESSAGE CONTENT
+                        </span>
+
+                        <h2>
+                            Preparing for your consultation
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-about">
+
+                    <p>
+                        Hello John,
+                    </p>
+
+                    <p>
+                        I am looking forward to our upcoming Business
+                        Strategy consultation on September 20.
+                    </p>
+
+                    <p>
+                        To help us make the most of our time together,
+                        please think about the main business challenges
+                        you would like us to discuss during the session.
+                    </p>
+
+                    <p>
+                        If you have any documents or information that
+                        may be useful for the consultation, please have
+                        them available before our meeting.
+                    </p>
+
+                    <p>
+                        If you have any questions before the appointment,
+                        feel free to send me a message.
+                    </p>
+
+                    <p>
+                        Best regards,<br>
+                        David Wilson
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- APPOINTMENT -->
+
+            <div class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            RELATED APPOINTMENT
+                        </span>
+
+                        <h2>
+                            CP-482931
+                        </h2>
+
+                    </div>
+
+                    <span class="status-badge status-active">
+                        Confirmed
+                    </span>
+
+                </div>
+
+
+                <div class="settings-list">
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Service
+                            </strong>
+
+                            <span>
+                                Business Strategy
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Consultant
+                            </strong>
+
+                            <span>
+                                David Wilson
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Appointment
+                            </strong>
+
+                            <span>
+                                September 20, 2026 — 10:00 AM
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-actions">
+
+                    <a href="../../appointments/show/index.html" class="secondary-button">
+
+                        View Appointment
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ACTIONS -->
+
+            <div class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            MESSAGE ACTIONS
+                        </span>
+
+                        <h2>
+                            Continue Conversation
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-cards">
+
+
+                    <a href="../../messages/reply/index.html" class="settings-card">
+
+                        <div class="settings-card-icon">
+                            ↩
+                        </div>
+
+                        <div class="settings-card-content">
+
+                            <h3>
+                                Reply
+                            </h3>
+
+                            <p>
+                                Send a reply to David Wilson.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="../../messages/compose/index.html" class="settings-card">
+
+                        <div class="settings-card-icon">
+                            ✉
+                        </div>
+
+                        <div class="settings-card-content">
+
+                            <h3>
+                                New Message
+                            </h3>
+
+                            <p>
+                                Start a new conversation.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="../../messages/index.html" class="settings-card">
+
+                        <div class="settings-card-icon">
+                            ←
+                        </div>
+
+                        <div class="settings-card-content">
+
+                            <h3>
+                                Back to Inbox
+                            </h3>
+
+                            <p>
+                                Return to your message inbox.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>

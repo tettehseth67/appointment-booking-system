@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+            <h2>ConsultPro</h2>
+            <span>CLIENT PORTAL</span>
+        </div>
+        <nav class="sidebar-navigation">
+            <p class="sidebar-heading">MAIN MENU</p>
+            <!-- Dashboard -->
+            <a href="../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+            <!-- My Appointments -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="client-appointments" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>My Appointments</span>
+                    </a>
+                    <label for="client-appointments" class="dropdown-trigger">▾</label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">
+                        Book Appointment
+                    </a>
+                    <a href="../appointments/show/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+                </div>
+            </div>
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="client-services" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◆</span>
+                        <span>Services</span>
+                    </a>
+                    <label for="client-services" class="dropdown-trigger">▾</label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="../services/index.html" class="sidebar-sublink">
+                        Available Services
+                    </a>
+                    <a href="../consultants/index.html" class="sidebar-sublink">
+                        Consultants
+                    </a>
+                </div>
+            </div>
+            <p class="sidebar-heading">COMMUNICATION</p>
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="client-messages" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                    </a>
+                    <label for="client-messages" class="dropdown-trigger">▾</label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        New Message
+                    </a>
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+                </div>
+            </div>
+            <!-- Notifications -->
+            <a href="../notifications/index.html" class="sidebar-link">
+                <span class="sidebar-icon">🔔</span>
+                <span>Notifications</span>
+            </a>
+            <p class="sidebar-heading">ACCOUNT</p>
+            <!-- Profile -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="client-profile" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">👤</span>
+                        <span>My Profile</span>
+                    </a>
+                    <label for="client-profile" class="dropdown-trigger">▾</label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="../index.html" class="sidebar-sublink">
+                        Profile Details
+                    </a>
+                    <a href="../client/profile/edit/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+                    <a href="../client/profile/change-password/index.html" class="sidebar-sublink">
+                        Change Password
+                    </a>
+                    <a href="../settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </aside>
+
+    <div class="admin-main">
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+                <div>
+                    <span class="header-label">
+                        ACCOUNT SETTINGS
+                    </span>
+                    <h1>My Profile</h1>
+                </div>
+            </div>
+            <div class="header-right">
+                <button type="button" class="header-icon-button">
+                    🔔
+                </button>
+                <button type="button" class="header-icon-button">
+                    ⚙️
+                </button>
+                <div class="profile-dropdown">
+                    <button type="button" class="profile-toggle">
+                        <span class="header-avatar">
+                            Y
+                        </span>
+                        <span>Yaw</span>
+                        <span class="dropdown-arrow">
+                            ▼
+                        </span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="profile.html">
+                            My Profile
+                        </a>
+                        <a href="settings.html">
+                            Account Settings
+                        </a>
+                        <a href="#">
+                            Change Password
+                        </a>
+                        <a href="notifications.html">
+                            Notifications
+                        </a>
+                        <hr>
+                        <a href="../../auth/login.html">
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="admin-content">
+            <section class="admin-content">
+
+                <div class="admin-page-header">
+
+                    <div>
+                        <h1>Edit Profile</h1>
+                        <p>Update your account information.</p>
+                    </div>
+
+                    <a href="../index.html" class="secondary-button">
+                        Back to Profile
+                    </a>
+
+                </div>
+
+                <div class="admin-panel">
+
+                    <form class="settings-form">
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" value="John">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" value="Davis">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" value="john@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" value="+1 555 123 4567">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Job Title</label>
+                                <input type="text" value="Business Owner">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Location</label>
+                                <input type="text" value="New York">
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label>Bio</label>
+                            <textarea rows="5">
+            Experienced business owner and consulting client.
+                            </textarea>
+                        </div>
+
+                        <div class="form-actions">
+
+                            <button type="submit" class="primary-button">
+                                Save Changes
+                            </button>
+
+                            <button type="reset" class="secondary-button">
+                                Cancel
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

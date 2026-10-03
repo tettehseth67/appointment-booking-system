@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultant Details | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <a href="../../index.html">ConsultPro</a>
+            <span>ADMIN PORTAL</span>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <p class="sidebar-heading">OVERVIEW</p>
+
+            <a href="../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <p class="sidebar-heading">BOOKINGS</p>
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+
+                    <label for="appointments-toggle" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../appointments/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">☷</span>
+                        <span>Appointment List</span>
+                    </a>
+
+                    <a href="../../appointments/add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">+</span>
+                        <span>Add Appointment</span>
+                    </a>
+
+                    <a href="../../appointments/show/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Appointment Details</span>
+                    </a>
+                </div>
+            </div>
+
+            <p class="sidebar-heading">PEOPLE</p>
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultants-toggle" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Consultants</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+
+                    <label for="consultants-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">☷</span>
+                        <span>Consultant List</span>
+                    </a>
+
+                    <a href="../add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">+</span>
+                        <span>Add Consultant</span>
+                    </a>
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Consultant Details</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../services/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+
+                    </a>
+
+                    <label for="services-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../services/index.html" class="sidebar-sublink">
+
+                        <span class="sidebar-icon">☷</span>
+                        <span>Service List</span>
+
+                    </a>
+
+                    <a href="../../services/add/index.html" class="sidebar-sublink">
+
+                        <span class="sidebar-icon">＋</span>
+                        <span>Add Service</span>
+
+                    </a>
+
+                    <a href="../../services/show/index.html" class="sidebar-sublink">
+
+                        <span class="sidebar-icon">◉</span>
+                        <span>Service Details</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="clients-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../clients/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♙</span>
+                        <span>Clients</span>
+
+                    </a>
+
+                    <label for="clients-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../clients/index.html" class="sidebar-sublink">
+
+                        <span class="sidebar-icon">☷</span>
+                        <span>Client List</span>
+
+                    </a>
+
+                    <a href="../../clients/show/index.html" class="sidebar-sublink">
+
+                        <span class="sidebar-icon">◉</span>
+                        <span>Client Details</span>
+
+                    </a>
+
+                    <a href="../../clients/edit/index.html" class="sidebar-sublink">
+
+                        <span class="sidebar-icon">✎</span>
+                        <span>Edit Client</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <p class="sidebar-heading">COMMUNICATION</p>
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../messages/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">4</span>
+
+                    </a>
+
+                    <label for="messages-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../messages/index.html" class="sidebar-sublink">
+
+                        <span class="sidebar-icon">☷</span>
+                        <span>Inbox</span>
+
+                    </a>
+
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">
+
+                        <span class="sidebar-icon">➤</span>
+                        <span>Sent Messages</span>
+
+                    </a>
+
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">
+
+                        <span class="sidebar-icon">＋</span>
+                        <span>Compose Message</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../notifications/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">4</span>
+
+                    </a>
+
+                    <label for="notifications-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../notifications/index.html" class="sidebar-sublink">
+
+                        <span class="sidebar-icon">☷</span>
+                        <span>All Notifications</span>
+
+                    </a>
+
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">
+
+                        <span class="sidebar-icon">●</span>
+                        <span>Unread</span>
+
+                    </a>
+
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">
+
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Notification Settings</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    AD
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>Admin User</strong>
+                    <span>Administrator</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <div class="admin-main">
+
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <div>
+
+                    <span class="header-label">
+                        CONSULTANT MANAGEMENT
+                    </span>
+
+                    <h1>Consultant Details</h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    🔔
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ⚙️
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span>Yaw</span>
+
+                        <span class="dropdown-arrow">
+                            ▼
+                        </span>
+
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../../settings/profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../../../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../../../settings/security/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="../../../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <hr>
+
+                        <a href="../../../auth/login.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="admin-content">
+
+            <section class="dashboard-welcome">
+
+                <div>
+
+                    <h2>
+                        Michael Anderson
+                    </h2>
+
+                    <p>
+                        View consultant information, availability and performance.
+                    </p>
+
+                </div>
+
+                <a href="../index.html" class="dashboard-primary-button">
+
+                    ← Consultant List
+
+                </a>
+
+            </section>
+
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            CONSULTANT PROFILE
+                        </span>
+
+                        <h3>
+                            Michael Anderson
+                        </h3>
+
+                    </div>
+
+                    <a href="../edit/index.html" class="dashboard-primary-button">
+
+                        Edit Consultant
+
+                    </a>
+
+                </div>
+
+
+                <div class="admin-panel-body">
+
+                    <div class="consultant-details">
+
+                        <div class="consultant-profile-header">
+
+                            <div class="consultant-avatar-1">
+                                MA
+                            </div>
+
+                            <div>
+
+                                <h2>
+                                    Michael Anderson
+                                </h2>
+
+                                <span class="consultant-role">
+                                    Business Strategy Consultant
+                                </span>
+
+                                <span class="availability available">
+                                    Available
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-section">
+
+                            <div class="form-section-header">
+
+                                <span class="panel-label">
+                                    PERSONAL DETAILS
+                                </span>
+
+                                <h3>
+                                    Contact Information
+                                </h3>
+
+                            </div>
+
+                            <div class="info-list">
+
+                                <div class="info-group">
+                                    <strong class="info-label">
+                                        Email:
+                                    </strong>
+
+                                    <span class="info-text">
+                                        michael@consultpro.com
+                                    </span>
+                                </div>
+
+                                <div class="info-group">
+                                    <strong class="info-label">
+                                        Phone:
+                                    </strong>
+
+                                    <span class="info-text">
+                                        +1 555 445 9912
+                                    </span>
+                                </div>
+
+                                <div class="info-group">
+                                    <strong class="info-label">
+                                        Consultant ID:
+                                    </strong>
+
+                                    <span class="info-text">
+                                        CON-00124
+                                    </span>
+                                </div>
+
+                                <div class="info-group">
+                                    <strong class="info-label">
+                                        Status:
+                                    </strong>
+
+                                    <span class="availability available">
+                                        Active
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-section">
+
+                            <div class="form-section-header">
+
+                                <span class="panel-label">
+                                    PROFESSIONAL DETAILS
+                                </span>
+
+                                <h3>
+                                    Consultant Information
+                                </h3>
+
+                            </div>
+
+                            <div class="info-list">
+
+                                <div class="info-group">
+                                    <strong class="info-label">
+                                        Specialization:
+                                    </strong>
+
+                                    <span class="info-text">
+                                        Business Strategy
+                                    </span>
+                                </div>
+
+                                <div class="info-group">
+                                    <strong class="info-label">
+                                        Department:
+                                    </strong>
+
+                                    <span class="info-text">
+                                        Business Consulting
+                                    </span>
+                                </div>
+
+                                <div class="info-group">
+                                    <strong class="info-label">
+                                        Experience:
+                                    </strong>
+
+                                    <span class="info-text">
+                                        10 Years
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-section">
+
+                            <div class="form-section-header">
+
+                                <span class="panel-label">
+                                    AVAILABILITY
+                                </span>
+
+                                <h3>
+                                    Working Schedule
+                                </h3>
+
+                            </div>
+
+                            <div class="info-list">
+
+                                <div class="info-group">
+                                    <strong class="info-label">
+                                        Working Hours:
+                                    </strong>
+
+                                    <span class="info-text">
+                                        9:00 AM – 5:00 PM
+                                    </span>
+                                </div>
+
+                                <div class="info-group">
+                                    <strong class="info-label">
+                                        Availability:
+                                    </strong>
+
+                                    <span class="info-text">
+                                        Monday – Friday
+                                    </span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-section">
+
+                            <div class="form-section-header">
+
+                                <span class="panel-label">
+                                    PERFORMANCE
+                                </span>
+
+                                <h3>
+                                    Consultant Activity
+                                </h3>
+
+                            </div>
+
+                            <div class="dashboard-statistics">
+
+                                <div class="admin-stat-card">
+
+                                    <span class="admin-stat-title">
+                                        Appointments
+                                    </span>
+
+                                    <strong class="admin-stat-number">
+                                        24
+                                    </strong>
+
+                                    <span class="admin-stat-description">
+                                        Total appointments
+                                    </span>
+
+                                </div>
+
+                                <div class="admin-stat-card">
+
+                                    <span class="admin-stat-title">
+                                        Clients
+                                    </span>
+
+                                    <strong class="admin-stat-number">
+                                        18
+                                    </strong>
+
+                                    <span class="admin-stat-description">
+                                        Assigned clients
+                                    </span>
+
+                                </div>
+
+                                <div class="admin-stat-card">
+
+                                    <span class="admin-stat-title">
+                                        Services
+                                    </span>
+
+                                    <strong class="admin-stat-number">
+                                        5
+                                    </strong>
+
+                                    <span class="admin-stat-description">
+                                        Active services
+                                    </span>
+
+                                </div>
+
+                                <div class="admin-stat-card">
+
+                                    <span class="admin-stat-title">
+                                        Rating
+                                    </span>
+
+                                    <strong class="admin-stat-number">
+                                        4.9
+                                    </strong>
+
+                                    <span class="admin-stat-description">
+                                        Client satisfaction
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-section">
+
+                            <div class="form-section-header">
+
+                                <span class="panel-label">
+                                    BIOGRAPHY
+                                </span>
+
+                                <h3>
+                                    About Michael
+                                </h3>
+
+                            </div>
+
+                            <p>
+                                Michael Anderson is a business strategy consultant
+                                specializing in helping organizations improve
+                                operations, develop growth strategies and make
+                                informed business decisions.
+                            </p>
+
+                        </div>
+
+
+                        <div class="form-actions">
+
+                            <a href="../index.html" class="secondary-button">
+
+                                Back
+
+                            </a>
+
+                            <a href="../edit/index.html" class="dashboard-primary-button">
+
+                                Edit Consultant
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

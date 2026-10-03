@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../admin/admin-dashboard.css">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <a href="../index.html">
+                ConsultPro
+            </a>
+
+            <span>
+                CLIENT PORTAL
+            </span>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+            <!-- Dashboard -->
+            <a href="../index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <!-- My Appointments -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>My Appointments</span>
+                    </a>
+
+                    <label for="appointments-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">
+                        Book Appointment
+                    </a>
+
+                    <a href="../appointments/history/index.html" class="sidebar-sublink">
+                        Appointment History
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../services/index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">▦</span>
+                        <span>Services</span>
+                    </a>
+
+                    <label for="services-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../services/index.html" class="sidebar-sublink active">
+                        Available Services
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../messages/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">✉</span>
+
+                        <span>Messages</span>
+
+                        <span class="sidebar-count">
+                            2
+                        </span>
+
+                    </a>
+
+                    <label for="messages-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        New Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notifications -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../notifications/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">🔔</span>
+
+                        <span>Notifications</span>
+
+                        <span class="sidebar-count">
+                            4
+                        </span>
+
+                    </a>
+
+                    <label for="notifications-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+
+            <!-- My Profile -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="profile-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../profile/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♙</span>
+
+                        <span>My Profile</span>
+
+                    </a>
+
+                    <label for="profile-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../profile/index.html" class="sidebar-sublink">
+                        Profile Details
+                    </a>
+
+                    <a href="../profile/edit/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                    <a href="../profile/change-password/index.html" class="sidebar-sublink">
+                        Change Password
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Settings -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../settings/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">⚙</span>
+
+                        <span>Settings</span>
+
+                    </a>
+
+                    <label for="settings-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">←</span>
+
+                <span>
+                    Back to Website
+                </span>
+
+            </a>
+
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    JD
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>
+                        John Davis
+                    </strong>
+
+                    <span>
+                        Client
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    <main class="admin-main">
+
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    SERVICES
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button">
+                    🔔
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button class="profile-toggle">
+
+                        <span class="header-avatar">
+                            JD
+                        </span>
+
+                        <span class="profile-name">
+                            John Davis
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../profile/edit/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../profile/change-password/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <a href="../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             PAGE CONTENT
+        ========================== -->
+        <section class="admin-content">
+
+
+            <!-- PAGE HEADER -->
+            <div class="admin-page-header">
+
+                <div>
+
+                    <h1>
+                        Available Services
+                    </h1>
+
+                    <p>
+                        Explore our consulting services and book an appointment.
+                    </p>
+
+                </div>
+
+
+                <a href="../appointments/add/index.html" class="primary-button">
+                    + Book Appointment
+                </a>
+
+            </div>
+
+
+            <!-- SERVICE STATS -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Available Services
+                        </span>
+
+                        <strong class="stat-value">
+                            6
+                        </strong>
+
+                        <span class="stat-change positive">
+                            Professional services
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            My Services
+                        </span>
+
+                        <strong class="stat-value">
+                            3
+                        </strong>
+
+                        <span class="stat-change positive">
+                            Services booked
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Upcoming
+                        </span>
+
+                        <strong class="stat-value">
+                            3
+                        </strong>
+
+                        <span class="stat-change positive">
+                            Appointments
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Completed
+                        </span>
+
+                        <strong class="stat-value">
+                            11
+                        </strong>
+
+                        <span class="stat-change positive">
+                            Appointments
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SEARCH / FILTER -->
+            <div class="admin-panel">
+
+                <div class="appointment-filters">
+
+                    <div class="admin-search">
+
+                        <label for="service-search">
+                            Search Services
+                        </label>
+
+                        <input type="search" id="service-search" class="form-input" placeholder="Search services...">
+
+                    </div>
+
+
+                    <div class="admin-filter">
+
+                        <label for="category">
+                            Category
+                        </label>
+
+                        <select id="category" class="form-select">
+
+                            <option value="">
+                                All Categories
+                            </option>
+
+                            <option value="business">
+                                Business
+                            </option>
+
+                            <option value="finance">
+                                Finance
+                            </option>
+
+                            <option value="career">
+                                Career
+                            </option>
+
+                            <option value="management">
+                                Management
+                            </option>
+
+                            <option value="personal-development">
+                                Personal Development
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICES -->
+            <div class="settings-cards">
+
+
+                <!-- BUSINESS STRATEGY -->
+                <div class="settings-card">
+
+                    <div class="settings-card-icon">
+                        ◆
+                    </div>
+
+                    <div class="settings-card-content">
+
+                        <span class="status-badge status-active">
+                            Business
+                        </span>
+
+                        <h3>
+                            Business Strategy
+                        </h3>
+
+                        <p>
+                            Develop practical business strategies,
+                            identify growth opportunities, and improve
+                            long-term business performance.
+                        </p>
+
+                        <strong>
+                            60 minutes · $150
+                        </strong>
+
+                        <br><br>
+
+                        <a href="../appointments/add/index.html" class="primary-button">
+                            Book Service
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LEADERSHIP COACHING -->
+                <div class="settings-card">
+
+                    <div class="settings-card-icon">
+                        ◈
+                    </div>
+
+                    <div class="settings-card-content">
+
+                        <span class="status-badge status-active">
+                            Management
+                        </span>
+
+                        <h3>
+                            Leadership Coaching
+                        </h3>
+
+                        <p>
+                            Build stronger leadership skills, improve
+                            decision-making, and develop effective
+                            leadership strategies.
+                        </p>
+
+                        <strong>
+                            60 minutes · $125
+                        </strong>
+
+                        <br><br>
+
+                        <a href="../appointments/add/index.html" class="primary-button">
+                            Book Service
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CAREER CONSULTATION -->
+                <div class="settings-card">
+
+                    <div class="settings-card-icon">
+                        ◎
+                    </div>
+
+                    <div class="settings-card-content">
+
+                        <span class="status-badge status-active">
+                            Career
+                        </span>
+
+                        <h3>
+                            Career Consultation
+                        </h3>
+
+                        <p>
+                            Get personalized guidance for career planning,
+                            professional development, job searches, and
+                            career transitions.
+                        </p>
+
+                        <strong>
+                            60 minutes · $100
+                        </strong>
+
+                        <br><br>
+
+                        <a href="../appointments/add/index.html" class="primary-button">
+                            Book Service
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUSINESS GROWTH PLANNING -->
+                <div class="settings-card">
+
+                    <div class="settings-card-icon">
+                        ↗
+                    </div>
+
+                    <div class="settings-card-content">
+
+                        <span class="status-badge status-active">
+                            Business
+                        </span>
+
+                        <h3>
+                            Business Growth Planning
+                        </h3>
+
+                        <p>
+                            Identify growth opportunities, improve
+                            operations, and create practical plans for
+                            sustainable business growth.
+                        </p>
+
+                        <strong>
+                            90 minutes · $200
+                        </strong>
+
+                        <br><br>
+
+                        <a href="../appointments/add/index.html" class="primary-button">
+                            Book Service
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FINANCIAL PLANNING -->
+                <div class="settings-card">
+
+                    <div class="settings-card-icon">
+                        $
+                    </div>
+
+                    <div class="settings-card-content">
+
+                        <span class="status-badge status-active">
+                            Finance
+                        </span>
+
+                        <h3>
+                            Financial Planning
+                        </h3>
+
+                        <p>
+                            Receive professional guidance on budgeting,
+                            financial planning, investment decisions,
+                            and personal or business finances.
+                        </p>
+
+                        <strong>
+                            60 minutes · $175
+                        </strong>
+
+                        <br><br>
+
+                        <a href="../appointments/add/index.html" class="primary-button">
+                            Book Service
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PERSONAL DEVELOPMENT -->
+                <div class="settings-card">
+
+                    <div class="settings-card-icon">
+                        ★
+                    </div>
+
+                    <div class="settings-card-content">
+
+                        <span class="status-badge status-active">
+                            Personal Development
+                        </span>
+
+                        <h3>
+                            Personal Development
+                        </h3>
+
+                        <p>
+                            Set meaningful goals, improve personal
+                            effectiveness, and create practical strategies
+                            for personal growth.
+                        </p>
+
+                        <strong>
+                            60 minutes · $120
+                        </strong>
+
+                        <br><br>
+
+                        <a href="../appointments/add/index.html" class="primary-button">
+                            Book Service
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- MY SERVICES -->
+            <div class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            MY SERVICES
+                        </span>
+
+                        <h2>
+                            Recently Booked Services
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Service
+                                </th>
+
+                                <th>
+                                    Consultant
+                                </th>
+
+                                <th>
+                                    Next Appointment
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Action
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Business Strategy
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    David Wilson
+                                </td>
+
+                                <td>
+                                    Oct 05, 2026
+                                    <br>
+                                    10:00 AM
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="../appointments/show/index.html" class="edit-button">
+                                        View
+                                    </a>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Career Consultation
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Sarah Wilson
+                                </td>
+
+                                <td>
+                                    Oct 07, 2026
+                                    <br>
+                                    1:30 PM
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-pending">
+                                        Pending
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="../appointments/show/index.html" class="edit-button">
+                                        View
+                                    </a>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>
+                                        Leadership Coaching
+                                    </strong>
+                                </td>
+
+                                <td>
+                                    Michael Johnson
+                                </td>
+
+                                <td>
+                                    Oct 09, 2026
+                                    <br>
+                                    9:00 AM
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="../appointments/show/index.html" class="edit-button">
+                                        View
+                                    </a>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

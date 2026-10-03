@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../admin/admin-dashboard.css">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" aria-label="Client navigation">
+
+        <div class="sidebar-brand">
+            <a href="../index.html">ConsultPro</a>
+            <span>CLIENT PORTAL</span>
+        </div>
+
+        <nav class="sidebar-navigation" aria-label="Client navigation">
+
+            <p class="sidebar-heading">MAIN MENU</p>
+
+            <a href="../index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                Dashboard
+            </a>
+
+
+            <!-- Appointments -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        My Appointments
+                    </a>
+
+                    <label for="appointments-toggle" class="dropdown-trigger" aria-label="Expand appointments menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../appointments/book.html" class="sidebar-sublink">
+                        Book Appointment
+                    </a>
+
+                    <a href="../appointments/history.html" class="sidebar-sublink">
+                        Appointment History
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◆</span>
+                        Services
+                    </a>
+
+                    <label for="services-toggle" class="dropdown-trigger" aria-label="Expand services menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../services/index.html" class="sidebar-sublink">
+                        Available Services
+                    </a>
+
+                    <a href="../services/index.html" class="sidebar-sublink">
+                        My Services
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <p class="sidebar-heading">COMMUNICATION</p>
+
+
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        Messages
+                        <span class="sidebar-count">2</span>
+                    </a>
+
+                    <label for="messages-toggle" class="dropdown-trigger" aria-label="Expand messages menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../messages/sent.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../messages/compose.html" class="sidebar-sublink">
+                        New Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notifications -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">●</span>
+                        Notifications
+                        <span class="sidebar-count">4</span>
+                    </a>
+
+                    <label for="notifications-toggle" class="dropdown-trigger" aria-label="Expand notifications menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../notifications/unread.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../notifications/settings.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <p class="sidebar-heading">ACCOUNT</p>
+
+
+            <!-- Profile -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="profile-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../profile/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">●</span>
+                        My Profile
+                    </a>
+
+                    <label for="profile-toggle" class="dropdown-trigger" aria-label="Expand profile menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../profile/index.html" class="sidebar-sublink">
+                        Profile Details
+                    </a>
+
+                    <a href="../profile/edit/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                    <a href="../profile/change-password/index.html" class="sidebar-sublink">
+                        Change Password
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Settings -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="index.html" class="sidebar-link active" aria-current="page">
+                        <span class="sidebar-icon">⚙</span>
+                        Settings
+                    </a>
+
+                    <label for="settings-toggle" class="dropdown-trigger" aria-label="Expand settings menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="index.html" class="sidebar-sublink active" aria-current="page">
+                        General Settings
+                    </a>
+
+                    <a href="security.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+                ← Back to Website
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    Y
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>John Davis</strong>
+                    <span>Client</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <div class="admin-main">
+
+        <!-- Header -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle" aria-label="Toggle navigation menu">
+                    ☰
+                </button>
+
+                <div>
+
+                    <span class="header-label">
+                        ACCOUNT SETTINGS
+                    </span>
+
+                    <h1>General Settings</h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button" aria-label="Notifications">
+                    ♢
+                    <span class="header-notification-dot"></span>
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle" aria-label="Open profile menu">
+
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span>
+                            John Davis
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../profile/edit/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../profile/change-password/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <a href="../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="admin-content">
+
+            <!-- Page Header -->
+            <div class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        ACCOUNT
+                    </span>
+
+                    <h2>
+                        General Settings
+                    </h2>
+
+                    <p>
+                        Manage your account preferences and personal
+                        experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Settings Cards -->
+            <section class="settings-cards">
+
+                <article class="settings-card">
+
+                    <div class="settings-card-icon">
+                        ◉
+                    </div>
+
+                    <div class="settings-card-content">
+
+                        <h3>
+                            Profile Information
+                        </h3>
+
+                        <p>
+                            Update your personal information and contact
+                            details.
+                        </p>
+
+                        <a href="../profile/edit/index.html" class="settings-card-link">
+                            Edit Profile →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="settings-card">
+
+                    <div class="settings-card-icon">
+                        🔔
+                    </div>
+
+                    <div class="settings-card-content">
+
+                        <h3>
+                            Notifications
+                        </h3>
+
+                        <p>
+                            Control how you receive appointment and message
+                            notifications.
+                        </p>
+
+                        <a href="../notifications/settings.html" class="settings-card-link">
+                            Notification Settings →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="settings-card">
+
+                    <div class="settings-card-icon">
+                        🔒
+                    </div>
+
+                    <div class="settings-card-content">
+
+                        <h3>
+                            Security
+                        </h3>
+
+                        <p>
+                            Manage your password and account security
+                            preferences.
+                        </p>
+
+                        <a href="security.html" class="settings-card-link">
+                            Security Settings →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- Preferences -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            PREFERENCES
+                        </span>
+
+                        <h2>
+                            Account Preferences
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-list">
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Preferred Language
+                            </strong>
+
+                            <p>
+                                Choose the language used throughout your
+                                client portal.
+                            </p>
+
+                        </div>
+
+                        <select class="admin-filter" aria-label="Preferred language">
+                            <option selected>
+                                English
+                            </option>
+
+                            <option>
+                                French
+                            </option>
+
+                            <option>
+                                Spanish
+                            </option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Time Zone
+                            </strong>
+
+                            <p>
+                                Used when displaying appointment dates and
+                                times.
+                            </p>
+
+                        </div>
+
+                        <select class="admin-filter" aria-label="Time zone">
+                            <option selected>
+                                Eastern Time (ET)
+                            </option>
+
+                            <option>
+                                Central Time (CT)
+                            </option>
+
+                            <option>
+                                Mountain Time (MT)
+                            </option>
+
+                            <option>
+                                Pacific Time (PT)
+                            </option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Date Format
+                            </strong>
+
+                            <p>
+                                Choose how dates appear throughout the
+                                portal.
+                            </p>
+
+                        </div>
+
+                        <select class="admin-filter" aria-label="Date format">
+                            <option selected>
+                                Sep 20, 2026
+                            </option>
+
+                            <option>
+                                20 Sep 2026
+                            </option>
+
+                            <option>
+                                09/20/2026
+                            </option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Default Appointment View
+                            </strong>
+
+                            <p>
+                                Select the default view for your appointments.
+                            </p>
+
+                        </div>
+
+                        <select class="admin-filter" aria-label="Default appointment view">
+                            <option selected>
+                                List View
+                            </option>
+
+                            <option>
+                                Calendar View
+                            </option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Communication Preferences -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            COMMUNICATION
+                        </span>
+
+                        <h2>
+                            Communication Preferences
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-list">
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Email Communication
+                            </strong>
+
+                            <p>
+                                Allow ConsultPro to send account-related
+                                emails to your registered address.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Appointment Updates
+                            </strong>
+
+                            <p>
+                                Receive updates when an appointment is
+                                confirmed, changed, or cancelled.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Consultant Messages
+                            </strong>
+
+                            <p>
+                                Receive notifications when consultants send
+                                you messages.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Marketing Updates
+                            </strong>
+
+                            <p>
+                                Receive occasional news, offers, and service
+                                updates from ConsultPro.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox">
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Settings Summary -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            ACCOUNT STATUS
+                        </span>
+
+                        <h2>
+                            Settings Summary
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Account Status
+                        </span>
+
+                        <strong class="status-badge status-active">
+                            Active
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Email Notifications
+                        </span>
+
+                        <strong>
+                            Enabled
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Appointment Alerts
+                        </span>
+
+                        <strong>
+                            Enabled
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Marketing Emails
+                        </span>
+
+                        <strong>
+                            Disabled
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Actions -->
+            <div class="form-actions">
+
+                <a href="../index.html" class="secondary-button">
+                    Cancel
+                </a>
+
+                <button type="button" class="primary-button">
+                    Save Settings
+                </button>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

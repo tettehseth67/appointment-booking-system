@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Service Details | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+
+            <a href="../../index.html" class="sidebar-brand-icon">
+                CP
+            </a>
+
+            <div>
+                <a href="../../index.html">
+                    ConsultPro
+                </a>
+
+                <span>
+                    MANAGER PORTAL
+                </span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-navigation">
+
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+
+            <!-- DASHBOARD -->
+            <a href="../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox">
+
+                <label for="appointments-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◷</span>
+                        <span>Appointments</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../appointments/index.html" class="sidebar-sublink">Appointment List</a>
+                    <a href="../../appointments/add/index.html" class="sidebar-sublink">Add Appointment</a>
+                    <a href="../../appointments/show/index.html" class="sidebar-sublink">Appointment Details</a>
+                    <a href="../../appointments/edit/index.html" class="sidebar-sublink">Edit Appointment</a>
+                </div>
+
+            </div>
+
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="calendar-menu" class="dropdown-checkbox">
+
+                <label for="calendar-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Calendar</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../calendar/index.html" class="sidebar-sublink">Calendar</a>
+                    <a href="../../calendar/add/index.html" class="sidebar-sublink">Add Event</a>
+                </div>
+
+            </div>
+
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultants-menu" class="dropdown-checkbox">
+
+                <label for="consultants-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◉</span>
+                        <span>Consultants</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../consultants/index.html" class="sidebar-sublink">Consultant List</a>
+                    <a href="../../consultants/add/index.html" class="sidebar-sublink">Add Consultant</a>
+                    <a href="../../consultants/show/index.html" class="sidebar-sublink">Consultant Details</a>
+                    <a href="../../consultants/edit/index.html" class="sidebar-sublink">Edit Consultant</a>
+                </div>
+
+            </div>
+
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox" checked>
+
+                <label for="services-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../index.html" class="sidebar-sublink">Service List</a>
+                    <a href="../add/index.html" class="sidebar-sublink">Add Service</a>
+                    <a href="index.html" class="sidebar-sublink active">Service Details</a>
+                    <a href="../edit/index.html" class="sidebar-sublink">Edit Service</a>
+                </div>
+
+            </div>
+
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="clients-menu" class="dropdown-checkbox">
+
+                <label for="clients-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◎</span>
+                        <span>Clients</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../clients/index.html" class="sidebar-sublink">Client List</a>
+                    <a href="../../clients/show/index.html" class="sidebar-sublink">Client Details</a>
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox">
+
+                <label for="messages-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">3</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../messages/index.html" class="sidebar-sublink">Inbox</a>
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">Sent Messages</a>
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">Compose Message</a>
+                </div>
+
+            </div>
+
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox">
+
+                <label for="notifications-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">3</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../notifications/index.html" class="sidebar-sublink">All Notifications</a>
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">Unread</a>
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">Notification Settings</a>
+                </div>
+
+            </div>
+
+
+            <!-- ANALYTICS -->
+            <div class="sidebar-heading">
+                ANALYTICS
+            </div>
+
+
+            <!-- REPORTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="reports-menu" class="dropdown-checkbox">
+
+                <label for="reports-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">▤</span>
+                        <span>Reports</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../reports/index.html" class="sidebar-sublink">Reports Overview</a>
+                    <a href="../../reports/revenue/index.html" class="sidebar-sublink">Revenue Reports</a>
+                    <a href="../../reports/appointments/index.html" class="sidebar-sublink">Appointment Reports</a>
+                    <a href="../../reports/consultants/index.html" class="sidebar-sublink">Consultant Reports</a>
+                    <a href="../../reports/clients/index.html" class="sidebar-sublink">Client Reports</a>
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+
+            <!-- SETTINGS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-menu" class="dropdown-checkbox">
+
+                <label for="settings-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../settings/index.html" class="sidebar-sublink">General Settings</a>
+                    <a href="../../settings/profile/index.html" class="sidebar-sublink">Profile Settings</a>
+                    <a href="../../settings/security/index.html" class="sidebar-sublink">Security</a>
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    M
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>Manager</strong>
+                    <span>Manager</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    SERVICE DETAILS
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button class="header-icon-button">
+                    ♢
+                    <span class="header-notification-dot"></span>
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button class="profile-toggle">
+
+                        <span class="header-avatar">
+                            M
+                        </span>
+
+                        <span class="profile-name">
+                            Manager
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ⌄
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../settings/profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../../settings/security/index.html">
+                            Security
+                        </a>
+
+                        <a href="../../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <div class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+
+                <div>
+
+                    <h1>
+                        Service Details
+                    </h1>
+
+                    <p>
+                        View and manage service information.
+                    </p>
+
+                </div>
+
+                <div class="admin-page-actions">
+
+                    <a href="../index.html" class="secondary-button">
+                        ← Back to Services
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- SERVICE OVERVIEW -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            SERVICE OVERVIEW
+                        </span>
+
+                        <h2>
+                            Business Strategy
+                        </h2>
+
+                    </div>
+
+                    <span class="status-badge status-active">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Service ID
+                        </span>
+
+                        <strong>
+                            SV-10001
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Category
+                        </span>
+
+                        <strong>
+                            Business
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Duration
+                        </span>
+
+                        <strong>
+                            60 Minutes
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Service Price
+                        </span>
+
+                        <strong>
+                            $150.00
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Total Appointments
+                        </span>
+
+                        <strong>
+                            42
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Status
+                        </span>
+
+                        <strong>
+                            Active
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SERVICE INFORMATION -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            SERVICE INFORMATION
+                        </span>
+
+                        <h2>
+                            Business Strategy
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Service Name
+                        </span>
+
+                        <strong>
+                            Business Strategy
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Service ID
+                        </span>
+
+                        <strong>
+                            SV-10001
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Category
+                        </span>
+
+                        <strong>
+                            Business
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-section">
+
+                    <div class="form-section-header">
+
+                        <h3>
+                            Description
+                        </h3>
+
+                    </div>
+
+                    <p>
+                        Strategic planning and business growth consulting designed
+                        to help organizations improve operational efficiency,
+                        identify growth opportunities, and develop long-term
+                        business strategies.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- APPOINTMENT SETTINGS -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            APPOINTMENT SETTINGS
+                        </span>
+
+                        <h2>
+                            Booking Configuration
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Appointment Duration
+                        </span>
+
+                        <strong>
+                            60 Minutes
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Advance Booking
+                        </span>
+
+                        <strong>
+                            7 Days
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Cancellation Notice
+                        </span>
+
+                        <strong>
+                            24 Hours
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Total Bookings
+                        </span>
+
+                        <strong>
+                            42
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONSULTANTS -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            CONSULTANT ASSIGNMENT
+                        </span>
+
+                        <h2>
+                            Assigned Consultants
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Consultant
+                                </th>
+
+                                <th>
+                                    Consultant ID
+                                </th>
+
+                                <th>
+                                    Email
+                                </th>
+
+                                <th>
+                                    Availability
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    David Wilson
+                                </td>
+
+                                <td>
+                                    CN-10021
+                                </td>
+
+                                <td>
+                                    david.wilson@example.com
+                                </td>
+
+                                <td>
+                                    Available
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Michael Roberts
+                                </td>
+
+                                <td>
+                                    CN-10025
+                                </td>
+
+                                <td>
+                                    michael.roberts@example.com
+                                </td>
+
+                                <td>
+                                    Busy Today
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    Laura Bennett
+                                </td>
+
+                                <td>
+                                    CN-10026
+                                </td>
+
+                                <td>
+                                    laura.bennett@example.com
+                                </td>
+
+                                <td>
+                                    Available
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- SERVICE ACTIVITY -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            SERVICE ACTIVITY
+                        </span>
+
+                        <h2>
+                            Service Record
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Created
+                        </span>
+
+                        <strong>
+                            September 01, 2026
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Last Updated
+                        </span>
+
+                        <strong>
+                            September 12, 2026
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Created By
+                        </span>
+
+                        <strong>
+                            Manager
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span class="stat-label">
+                            Current Status
+                        </span>
+
+                        <strong>
+                            Active
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- BOTTOM ACTIONS -->
+            <section class="form-actions">
+
+                <a href="../index.html" class="secondary-button">
+                    Back to Services
+                </a>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

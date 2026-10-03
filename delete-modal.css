@@ -1,0 +1,159 @@
+/* ================================
+   DELETE MODAL
+================================ */
+
+.delete-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+}
+
+.delete-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.delete-modal-content {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 520px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 32px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.delete-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #777;
+}
+
+.delete-modal-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    background: #fff1f1;
+    color: #c0392b;
+    font-size: 24px;
+}
+
+.delete-modal-content h2 {
+    margin: 8px 0 10px;
+    font-size: 24px;
+}
+
+.delete-modal-message {
+    margin-bottom: 22px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.delete-modal-details {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.delete-modal-details div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 14px 16px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.delete-modal-details div:last-child {
+    border-bottom: none;
+}
+
+.delete-modal-details span {
+    color: #777;
+}
+
+.delete-modal-details strong {
+    text-align: right;
+}
+
+.delete-warning {
+    padding: 14px 16px;
+    margin-bottom: 24px;
+    border-radius: 6px;
+    background: #fff8e6;
+    color: #7a5a00;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.delete-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.delete-button {
+    border: none;
+    background: transparent;
+    color: #c0392b;
+    cursor: pointer;
+    font: inherit;
+}
+
+.danger-button {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    background: #c0392b;
+    color: #ffffff;
+    cursor: pointer;
+    font: inherit;
+}
+
+.danger-button:hover {
+    background: #a93226;
+}
+
+@media (max-width: 600px) {
+
+    .delete-modal-content {
+        width: calc(100% - 30px);
+        padding: 24px;
+    }
+
+    .delete-modal-details div {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .delete-modal-details strong {
+        text-align: left;
+    }
+
+    .delete-modal-actions {
+        flex-direction: column-reverse;
+    }
+
+    .delete-modal-actions button {
+        width: 100%;
+    }
+
+}

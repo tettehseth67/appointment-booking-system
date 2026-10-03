@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Client Details | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+
+            <div class="sidebar-brand-icon">
+                CP
+            </div>
+
+            <div>
+                <h2>ConsultPro</h2>
+                <span>CONSULTANT PORTAL</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+
+            <!-- Dashboard -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-dashboard" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▦</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <label for="consultant-dashboard" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../index.html" class="sidebar-sublink">
+                        Overview
+                    </a>
+
+                    <a href="../../index.html" class="sidebar-sublink">
+                        Recent Activity
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- My Appointments -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-appointments" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>My Appointments</span>
+                    </a>
+
+                    <label for="consultant-appointments" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../../appointments/details/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                    <a href="../../appointments/index.html" class="sidebar-sublink">
+                        Appointment History
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SCHEDULE -->
+            <div class="sidebar-heading">
+                SCHEDULE
+            </div>
+
+
+            <!-- My Calendar -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-calendar" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">□</span>
+                        <span>My Calendar</span>
+                    </a>
+
+                    <label for="consultant-calendar" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                    <a href="../../availability/index.html" class="sidebar-sublink">
+                        Add Availability
+                    </a>
+
+                    <a href="../../availability/index.html" class="sidebar-sublink">
+                        Availability
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Availability -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-availability" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../availability/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">□</span>
+                        <span>Availability</span>
+                    </a>
+
+                    <label for="consultant-availability" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../availability/index.html" class="sidebar-sublink">
+                        Availability
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- My Clients -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-clients" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">♙</span>
+                        <span>My Clients</span>
+                    </a>
+
+                    <label for="consultant-clients" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        Client Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-services" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../../admin/services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+                    </a>
+
+                    <label for="consultant-services" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../../admin/services/index.html" class="sidebar-sublink">
+                        My Services
+                    </a>
+
+                    <a href="../../../admin/services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-messages" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">3</span>
+                    </a>
+
+                    <label for="consultant-messages" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">
+                        New Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notifications -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-notifications" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">3</span>
+                    </a>
+
+                    <label for="consultant-notifications" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+
+            <!-- My Profile -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-profile" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../account/profile/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>My Profile</span>
+                    </a>
+
+                    <label for="consultant-profile" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../account/profile/index.html" class="sidebar-sublink">
+                        Profile Details
+                    </a>
+
+                    <a href="../../account/edit-profile/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Settings -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultant-settings" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../account/settings/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+                    </a>
+
+                    <label for="consultant-settings" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../account/settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../../account/change-password/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    D
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>David Wilson</strong>
+                    <span>Consultant</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <div>
+
+                    <span class="header-label">
+                        CLIENTS
+                    </span>
+
+                    <h1>
+                        Client Details
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    🔔
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ⚙️
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+
+                        <div class="header-avatar">
+                            D
+                        </div>
+
+                        <span>
+                            David Wilson
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▼
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../account/profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../../account/settings/index.html">
+                            Settings
+                        </a>
+
+                        <a href="../../account/change-password/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="../../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <hr>
+
+                        <a href="../../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGE CONTENT -->
+        <main class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+                <div>
+
+                    <span class="panel-label">
+                        CLIENT DETAILS
+                    </span>
+
+                    <h2>
+                        John Davis
+                    </h2>
+
+                    <p>
+                        Review client information, appointment history, and consultation details.
+                    </p>
+
+                </div>
+
+
+                <div class="admin-page-actions">
+
+                    <a href="../index.html" class="secondary-button">
+                        ← Back to Clients
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- CLIENT PROFILE -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            CLIENT PROFILE
+                        </span>
+
+                        <h2>
+                            John Davis
+                        </h2>
+
+                    </div>
+
+                    <span class="status-badge active">
+                        Active
+                    </span>
+
+                </div>
+
+
+                <div class="profile-details-container">
+                    <div class="profile-card">
+                        <div class="profile-avatar-large">
+                            JD
+                        </div>
+                        <div class="profile-information">
+                            <h3>
+                                John Davis
+                            </h3>
+                            <p>
+                                Business Strategy Client
+                            </p>
+                            <span class="status-badge active">
+                                Active Client
+                            </span>
+                        </div>
+                    </div>
+                    <div class="profile-grid">
+
+                        <div class="profile-item">
+
+                            <span>
+                                Email Address
+                            </span>
+
+                            <strong>
+                                john.davis@example.com
+                            </strong>
+
+                        </div>
+
+
+                        <div class="profile-item">
+
+                            <span>
+                                Phone Number
+                            </span>
+
+                            <strong>
+                                +1 555 204 8891
+                            </strong>
+
+                        </div>
+
+
+                        <div class="profile-item">
+
+                            <span>
+                                Client Since
+                            </span>
+
+                            <strong>
+                                March 12, 2026
+                            </strong>
+
+                        </div>
+
+
+                        <div class="profile-item">
+
+                            <span>
+                                Assigned Consultant
+                            </span>
+
+                            <strong>
+                                David Wilson
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- APPOINTMENT SUMMARY -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            APPOINTMENTS
+                        </span>
+
+                        <h2>
+                            Appointment Summary
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-stats">
+
+                    <div class="stat-card">
+
+                        <div class="stat-card-content">
+
+                            <span class="stat-label">
+                                Total Appointments
+                            </span>
+
+                            <strong>
+                                6
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-card-content">
+
+                            <span class="stat-label">
+                                Upcoming
+                            </span>
+
+                            <strong>
+                                2
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-card-content">
+
+                            <span class="stat-label">
+                                Completed
+                            </span>
+
+                            <strong>
+                                4
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-card-content">
+
+                            <span class="stat-label">
+                                Last Appointment
+                            </span>
+
+                            <strong>
+                                Sep 15
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONSULTATION HISTORY -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            HISTORY
+                        </span>
+
+                        <h2>
+                            Consultation History
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Appointment</th>
+                                <th>Service</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    CP-482931
+                                </td>
+
+                                <td>
+                                    Business Strategy
+                                </td>
+
+                                <td>
+                                    Sep 15, 2026
+                                </td>
+
+                                <td>
+                                    10:00 AM
+                                </td>
+
+                                <td>
+                                    <span class="status-badge completed">
+                                        Completed
+                                    </span>
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="../../appointments/details/index.html" class="view-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    CP-461782
+                                </td>
+
+                                <td>
+                                    Business Strategy
+                                </td>
+
+                                <td>
+                                    Sep 02, 2026
+                                </td>
+
+                                <td>
+                                    2:00 PM
+                                </td>
+
+                                <td>
+                                    <span class="status-badge completed">
+                                        Completed
+                                    </span>
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="../../appointments/details/index.html" class="view-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    CP-438921
+                                </td>
+
+                                <td>
+                                    Business Strategy
+                                </td>
+
+                                <td>
+                                    Aug 18, 2026
+                                </td>
+
+                                <td>
+                                    11:00 AM
+                                </td>
+
+                                <td>
+                                    <span class="status-badge completed">
+                                        Completed
+                                    </span>
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="../../appointments/details/index.html" class="view-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    CP-517304
+                                </td>
+
+                                <td>
+                                    Business Strategy
+                                </td>
+
+                                <td>
+                                    Sep 22, 2026
+                                </td>
+
+                                <td>
+                                    9:30 AM
+                                </td>
+
+                                <td>
+                                    <span class="status-badge confirmed">
+                                        Confirmed
+                                    </span>
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="../../appointments/details/index.html" class="view-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- CLIENT NOTES -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            NOTES
+                        </span>
+
+                        <h2>
+                            Consultant Notes
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-bio">
+
+                    <p>
+                        John is currently working on improving his business
+                        operations and strategic planning. Follow-up consultations
+                        should focus on implementation progress and reviewing
+                        previously discussed recommendations.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

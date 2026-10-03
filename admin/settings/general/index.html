@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>General Settings | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- Sidebar -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <a href="../../admin/index.html">ConsultPro</a>
+            <span>ADMIN PORTAL</span>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <p class="sidebar-heading">OVERVIEW</p>
+
+            <a href="../../admin/index.html" class="sidebar-link">
+                Dashboard
+            </a>
+
+            <p class="sidebar-heading">BOOKINGS</p>
+
+            <a href="../../appointments/index.html" class="sidebar-link">
+                Appointments
+            </a>
+
+            <a href="../../calendar/index.html" class="sidebar-link">
+                Calendar
+            </a>
+
+            <p class="sidebar-heading">PEOPLE</p>
+
+            <a href="../../clients/index.html" class="sidebar-link">
+                Clients
+            </a>
+
+            <a href="../../consultants/index.html" class="sidebar-link">
+                Consultants
+            </a>
+
+            <p class="sidebar-heading">COMMUNICATION</p>
+
+            <a href="../../messages/index.html" class="sidebar-link">
+                Messages
+            </a>
+
+            <a href="../../notifications/index.html" class="sidebar-link">
+                Notifications
+            </a>
+
+            <p class="sidebar-heading">REPORTING</p>
+
+            <a href="../../reports/index.html" class="sidebar-link">
+                Reports
+            </a>
+
+            <p class="sidebar-heading">ADMINISTRATION</p>
+
+            <a href="../../users/index.html" class="sidebar-link">
+                Users
+            </a>
+
+            <a href="../../roles/index.html" class="sidebar-link">
+                Roles & Permissions
+            </a>
+
+            <a href="../../activity-log/index.html" class="sidebar-link">
+                Activity Log
+            </a>
+
+            <p class="sidebar-heading">SYSTEM</p>
+
+            <a href="../index.html" class="sidebar-link active">
+                Settings
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+
+            <a href="../../../index.html" class="sidebar-footer-link">
+                ← Back to Website
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Main -->
+    <div class="admin-main">
+
+        <!-- Header -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <div>
+
+                    <span class="header-label">
+                        SYSTEM
+                    </span>
+
+                    <h1>
+                        General Settings
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    🔔
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ⚙️
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+
+                        <div class="header-avatar">
+                            Y
+                        </div>
+
+                        <span>
+                            Yaw
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▼
+                        </span>
+
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="#">
+                            Change Password
+                        </a>
+
+                        <a href="../../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <hr>
+
+                        <a href="../../../auth/login.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Content -->
+        <main class="admin-content">
+
+            <section class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        SETTINGS
+                    </span>
+
+                    <h2>
+                        General Settings
+                    </h2>
+
+                    <p>
+                        Manage your business information and appointment preferences.
+                    </p>
+
+                </div>
+
+                <a href="../index.html" class="secondary-button">
+                    Back to Settings
+                </a>
+
+            </section>
+
+
+            <!-- Business Information -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            BUSINESS
+                        </span>
+
+                        <h2>
+                            Business Information
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <form class="settings-form">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="company-name">
+                                Company Name
+                            </label>
+
+                            <input type="text" id="company-name" value="ConsultPro">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="business-email">
+                                Business Email
+                            </label>
+
+                            <input type="email" id="business-email" value="info@consultpro.com">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="business-phone">
+                                Business Phone
+                            </label>
+
+                            <input type="tel" id="business-phone" value="+1 (555) 123-4567">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="website">
+                                Website URL
+                            </label>
+
+                            <input type="url" id="website" value="https://consultpro.com">
+
+                        </div>
+
+
+                        <div class="form-group form-group-full">
+
+                            <label for="address">
+                                Business Address
+                            </label>
+
+                            <input type="text" id="address" value="100 Business Center, New York, NY">
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- Appointment Settings -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            BOOKINGS
+                        </span>
+
+                        <h2>
+                            Appointment Settings
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="duration">
+                            Appointment Duration
+                        </label>
+
+                        <select id="duration">
+
+                            <option>30 Minutes</option>
+                            <option selected>60 Minutes</option>
+                            <option>90 Minutes</option>
+                            <option>120 Minutes</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="timezone">
+                            Time Zone
+                        </label>
+
+                        <select id="timezone">
+
+                            <option selected>
+                                Eastern Time (ET)
+                            </option>
+
+                            <option>
+                                Central Time (CT)
+                            </option>
+
+                            <option>
+                                Mountain Time (MT)
+                            </option>
+
+                            <option>
+                                Pacific Time (PT)
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="buffer">
+                            Booking Buffer
+                        </label>
+
+                        <select id="buffer">
+
+                            <option>5 Minutes</option>
+                            <option selected>15 Minutes</option>
+                            <option>30 Minutes</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="advance">
+                            Advance Booking
+
+                        </label>
+
+                        <select id="advance">
+
+                            <option>7 Days</option>
+                            <option selected>30 Days</option>
+                            <option>60 Days</option>
+                            <option>90 Days</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Working Hours -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            SCHEDULE
+                        </span>
+
+                        <h2>
+                            Working Hours
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="working-hours">
+
+                    <div class="working-hour-row">
+
+                        <strong>
+                            Monday
+                        </strong>
+
+                        <span>
+                            09:00 AM — 05:00 PM
+                        </span>
+
+                    </div>
+
+
+                    <div class="working-hour-row">
+
+                        <strong>
+                            Tuesday
+                        </strong>
+
+                        <span>
+                            09:00 AM — 05:00 PM
+                        </span>
+
+                    </div>
+
+
+                    <div class="working-hour-row">
+
+                        <strong>
+                            Wednesday
+                        </strong>
+
+                        <span>
+                            09:00 AM — 05:00 PM
+                        </span>
+
+                    </div>
+
+
+                    <div class="working-hour-row">
+
+                        <strong>
+                            Thursday
+                        </strong>
+
+                        <span>
+                            09:00 AM — 05:00 PM
+                        </span>
+
+                    </div>
+
+
+                    <div class="working-hour-row">
+
+                        <strong>
+                            Friday
+                        </strong>
+
+                        <span>
+                            09:00 AM — 05:00 PM
+                        </span>
+
+                    </div>
+
+
+                    <div class="working-hour-row closed">
+
+                        <strong>
+                            Saturday
+                        </strong>
+
+                        <span>
+                            Closed
+                        </span>
+
+                    </div>
+
+
+                    <div class="working-hour-row closed">
+
+                        <strong>
+                            Sunday
+                        </strong>
+
+                        <span>
+                            Closed
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Notifications -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            NOTIFICATIONS
+                        </span>
+
+                        <h2>
+                            Notification Preferences
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-options">
+
+                    <label class="settings-option">
+
+                        <input type="checkbox" checked>
+
+                        <span>
+                            Email notifications for new appointments
+                        </span>
+
+                    </label>
+
+
+                    <label class="settings-option">
+
+                        <input type="checkbox" checked>
+
+                        <span>
+                            Appointment confirmation emails
+                        </span>
+
+                    </label>
+
+
+                    <label class="settings-option">
+
+                        <input type="checkbox" checked>
+
+                        <span>
+                            Appointment reminder notifications
+                        </span>
+
+                    </label>
+
+
+                    <label class="settings-option">
+
+                        <input type="checkbox">
+
+                        <span>
+                            Weekly business activity summary
+                        </span>
+
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- Actions -->
+            <div class="form-actions">
+
+                <a href="../index.html" class="secondary-button">
+                    Cancel
+                </a>
+
+                <button type="button" class="dashboard-primary-button">
+                    Save Changes
+                </button>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

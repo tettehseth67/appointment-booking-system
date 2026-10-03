@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sent Messages | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar" aria-label="Admin navigation">
+        <div class="sidebar-brand"> <a href="../index.html">ConsultPro</a> <span>ADMIN PORTAL</span> </div>
+        <nav class="sidebar-navigation"> <!-- OVERVIEW -->
+            <p class="sidebar-heading">OVERVIEW</p> <a href="../index.html" class="sidebar-link"> <span
+                    class="sidebar-icon">▦</span> <span>Dashboard</span> </a> <!-- BOOKINGS -->
+            <p class="sidebar-heading">BOOKINGS</p> <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown"> <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper"> <a href="../appointments/index.html" class="sidebar-link"> <span
+                            class="sidebar-icon">▣</span> <span>Appointments</span> <span class="sidebar-count">12</span>
+                    </a> <label for="appointments-toggle" class="dropdown-trigger">▾</label> </div>
+                <div class="sidebar-dropdown-content"> <a href="../appointments/index.html" class="sidebar-sublink">All
+                        Appointments</a> <a href="../appointments/add/index.html" class="sidebar-sublink">Add
+                        Appointment</a> <a href="../appointments/show/index.html" class="sidebar-sublink">Appointment
+                        Details</a> <a href="../appointments/edit/index.html" class="sidebar-sublink">Edit Appointment</a>
+                </div>
+            </div> <!-- CALENDAR -->
+            <div class="sidebar-dropdown"> <input type="checkbox" id="calendar-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper"> <a href="../calendar/index.html" class="sidebar-link"> <span
+                            class="sidebar-icon">□</span> <span>Calendar</span> </a> <label for="calendar-toggle"
+                        class="dropdown-trigger">▾</label> </div>
+                <div class="sidebar-dropdown-content"> <a href="../calendar/index.html" class="sidebar-sublink">Calendar</a>
+                    <a href="../calendar/add-event/index.html" class="sidebar-sublink">Add Event</a> <a
+                        href="../calendar/show-event/index.html" class="sidebar-sublink">Event Details</a> <a
+                        href="../calendar/edit-event/index.html" class="sidebar-sublink">Edit Event</a> </div>
+            </div> <!-- PEOPLE -->
+            <p class="sidebar-heading">PEOPLE</p> <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown"> <input type="checkbox" id="consultants-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper"> <a href="../consultants/index.html" class="sidebar-link"> <span
+                            class="sidebar-icon">♙</span> <span>Consultants</span> </a> <label for="consultants-toggle"
+                        class="dropdown-trigger">▾</label> </div>
+                <div class="sidebar-dropdown-content"> <a href="../consultants/index.html" class="sidebar-sublink">All
+                        Consultants</a> <a href="../consultants/add/index.html" class="sidebar-sublink">Add Consultant</a>
+                    <a href="../consultants/show/index.html" class="sidebar-sublink">Consultant Details</a> <a
+                        href="../consultants/edit/index.html" class="sidebar-sublink">Edit Consultant</a> </div>
+            </div> <!-- SERVICES -->
+            <div class="sidebar-dropdown"> <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper"> <a href="../services/index.html" class="sidebar-link"> <span
+                            class="sidebar-icon">▤</span> <span>Services</span> </a> <label for="services-toggle"
+                        class="dropdown-trigger">▾</label> </div>
+                <div class="sidebar-dropdown-content"> <a href="../services/index.html" class="sidebar-sublink">All
+                        Services</a> <a href="../services/add/index.html" class="sidebar-sublink">Add Service</a> <a
+                        href="../services/show/index.html" class="sidebar-sublink">Service Details</a> <a
+                        href="../services/edit/index.html" class="sidebar-sublink">Edit Service</a> </div>
+            </div> <!-- CLIENTS -->
+            <div class="sidebar-dropdown"> <input type="checkbox" id="clients-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper"> <a href="../clients/index.html" class="sidebar-link"> <span
+                            class="sidebar-icon">♙</span> <span>Clients</span> </a> <label for="clients-toggle"
+                        class="dropdown-trigger">▾</label> </div>
+                <div class="sidebar-dropdown-content"> <a href="../clients/index.html" class="sidebar-sublink">All
+                        Clients</a> <a href="../clients/add/index.html" class="sidebar-sublink">Add Client</a> <a
+                        href="../clients/show/index.html" class="sidebar-sublink">Client Details</a> <a
+                        href="../clients/edit/index.html" class="sidebar-sublink">Edit Client</a> <a
+                        href="../clients/activity/index.html" class="sidebar-sublink">Client Activity</a> </div>
+            </div> <!-- COMMUNICATION -->
+            <p class="sidebar-heading">COMMUNICATION</p> <!-- MESSAGES -->
+            <div class="sidebar-dropdown"> <input type="checkbox" id="messages-toggle" class="dropdown-checkbox" checked>
+                <div class="sidebar-link-wrapper"> <a href="../../messages/index.html" class="sidebar-link active"> <span
+                            class="sidebar-icon">✉</span> <span>Messages</span> <span class="sidebar-count">4</span> </a>
+                    <label for="messages-toggle" class="dropdown-trigger">▾</label> </div>
+                <div class="sidebar-dropdown-content"> <a href="../../messages/index.html" class="sidebar-sublink">Inbox</a> <a
+                        href="../../messages/compose/index.html" class="sidebar-sublink">Compose</a> <a href="../../messages/sent/index.html"
+                        class="sidebar-sublink active">Sent Messages</a> </div>
+            </div> <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown"> <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper"> <a href="../notifications/index.html" class="sidebar-link"> <span
+                            class="sidebar-icon">♢</span> <span>Notifications</span> <span class="sidebar-count">4</span>
+                    </a> <label for="notifications-toggle" class="dropdown-trigger">▾</label> </div>
+                <div class="sidebar-dropdown-content"> <a href="../notifications/index.html" class="sidebar-sublink">All
+                        Notifications</a> <a href="../notifications/unread/index.html" class="sidebar-sublink">Unread</a> <a
+                        href="../notifications/settings/index.html" class="sidebar-sublink">Notification Settings</a> </div>
+            </div> <!-- ANALYTICS -->
+            <p class="sidebar-heading">ANALYTICS</p> <a href="../reports/index.html" class="sidebar-link"> <span
+                    class="sidebar-icon">▥</span> <span>Reports</span> </a> <!-- SYSTEM -->
+            <p class="sidebar-heading">SYSTEM</p> <a href="../users/index.html" class="sidebar-link"> <span
+                    class="sidebar-icon">♙</span> <span>User Management</span> </a> <a href="../roles/index.html"
+                class="sidebar-link"> <span class="sidebar-icon">◇</span> <span>Roles &amp; Permissions</span> </a> <a
+                href="../activitylog/index.html" class="sidebar-link"> <span class="sidebar-icon">◷</span> <span>Activity
+                    Log</span> </a> <!-- ACCOUNT -->
+            <p class="sidebar-heading">ACCOUNT</p>
+            <div class="sidebar-dropdown"> <input type="checkbox" id="settings-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper"> <a href="../settings/index.html" class="sidebar-link"> <span
+                            class="sidebar-icon">⚙</span> <span>Settings</span> </a> <label for="settings-toggle"
+                        class="dropdown-trigger">▾</label> </div>
+                <div class="sidebar-dropdown-content"> <a href="../settings/index.html" class="sidebar-sublink">General
+                        Settings</a> <a href="../settings/profile/index.html" class="sidebar-sublink">Profile Settings</a>
+                    <a href="../settings/security/index.html" class="sidebar-sublink">Security</a> </div>
+            </div>
+        </nav> <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom"> <a href="../../index.html" class="sidebar-link"> <span class="sidebar-icon">←</span>
+                <span>Back to Website</span> </a>
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">Y</div>
+                <div class="sidebar-user-info"> <strong>Yaw</strong> <span>Administrator</span> </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <div class="admin-main">
+
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <div>
+                    <span class="header-label">
+                        COMMUNICATION
+                    </span>
+
+                    <h1>Sent Messages</h1>
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    🔔
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ⚙️
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+                        <span class="header-avatar">Y</span>
+                        <span>Yaw</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../profile.html">
+                            My Profile
+                        </a>
+
+                        <a href="../../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="#">
+                            Change Password
+                        </a>
+
+                        <a href="../../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <hr>
+
+                        <a href="../../auth/login/index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="admin-content">
+
+            <div class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">
+                            COMMUNICATION
+                        </span>
+
+                        <h2>Sent Messages</h2>
+                    </div>
+
+                    <a href="../compose/index.html" class="primary-button">
+                        ＋ Compose Message
+                    </a>
+
+                </div>
+
+
+                <div class="appointment-filters">
+
+                    <div class="admin-search">
+
+                        <label for="message-search">
+                            Search Messages
+                        </label>
+
+                        <input type="search" id="message-search" placeholder="Search recipient or subject...">
+
+                    </div>
+
+                    <div class="admin-filter">
+
+                        <label for="message-status">
+                            Status
+                        </label>
+
+                        <select id="message-status">
+
+                            <option value="">
+                                All Statuses
+                            </option>
+
+                            <option value="sent">
+                                Sent
+                            </option>
+
+                            <option value="delivered">
+                                Delivered
+                            </option>
+
+                            <option value="read">
+                                Read
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Message ID</th>
+                                <th>Recipient</th>
+                                <th>Subject</th>
+                                <th>Sent Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>MSG0087</td>
+
+                                <td>
+                                    Michael Johnson
+                                </td>
+
+                                <td>
+                                    Appointment Confirmation
+                                </td>
+
+                                <td>
+                                    Sep 17, 2026
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Delivered
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="../show/index.html" class="view-button">
+                                        View
+                                    </a>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>MSG0086</td>
+
+                                <td>
+                                    Sarah Williams
+                                </td>
+
+                                <td>
+                                    Appointment Reminder
+                                </td>
+
+                                <td>
+                                    Sep 17, 2026
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Read
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="../show/index.html" class="view-button">
+                                        View
+                                    </a>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>MSG0085</td>
+
+                                <td>
+                                    David Brown
+                                </td>
+
+                                <td>
+                                    Service Follow-Up
+                                </td>
+
+                                <td>
+                                    Sep 16, 2026
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Delivered
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="../show/index.html" class="view-button">
+                                        View
+                                    </a>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>MSG0084</td>
+
+                                <td>
+                                    Emily Davis
+                                </td>
+
+                                <td>
+                                    Consultation Details
+                                </td>
+
+                                <td>
+                                    Sep 15, 2026
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-pending">
+                                        Sent
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="../show/index.html" class="view-button">
+                                        View
+                                    </a>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <div class="pagination">
+
+                    <button type="button" class="pagination-button" aria-label="Previous page">
+                        ‹
+                    </button>
+
+                    <button type="button" class="pagination-button active">
+                        1
+                    </button>
+
+                    <button type="button" class="pagination-button">
+                        2
+                    </button>
+
+                    <button type="button" class="pagination-button">
+                        3
+                    </button>
+
+                    <button type="button" class="pagination-button" aria-label="Next page">
+                        ›
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

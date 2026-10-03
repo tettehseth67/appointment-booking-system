@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- =========================
+        CONSULTANT SIDEBAR
+    ========================== -->
+
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">CP</div>
+
+            <div>
+                <h2>ConsultPro</h2>
+                <span>CONSULTANT PORTAL</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <div class="sidebar-heading">MAIN MENU</div>
+
+            <!-- Dashboard -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultant-dashboard" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▦</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <label for="consultant-dashboard" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../index.html" class="sidebar-sublink">Overview</a>
+                    <a href="../../index.html" class="sidebar-sublink">Recent Activity</a>
+                </div>
+            </div>
+
+            <!-- My Appointments -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultant-appointments" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>My Appointments</span>
+                    </a>
+
+                    <label for="consultant-appointments" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../appointments/index.html" class="sidebar-sublink">Appointment List</a>
+                    <a href="../../appointments/details/index.html" class="sidebar-sublink">Appointment Details</a>
+                    <a href="../../appointments/index.html" class="sidebar-sublink">Appointment History</a>
+                </div>
+            </div>
+
+            <div class="sidebar-heading">SCHEDULE</div>
+
+            <!-- My Calendar -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultant-calendar" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">□</span>
+                        <span>My Calendar</span>
+                    </a>
+
+                    <label for="consultant-calendar" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../calendar/index.html" class="sidebar-sublink">Calendar</a>
+                    <a href="../../availability/index.html" class="sidebar-sublink">Add Availability</a>
+                    <a href="../../availability/index.html" class="sidebar-sublink">Availability</a>
+                </div>
+            </div>
+
+            <!-- Availability -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultant-availability" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../availability/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">□</span>
+                        <span>Availability</span>
+                    </a>
+
+                    <label for="consultant-availability" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../availability/index.html" class="sidebar-sublink">Calendar</a>
+                </div>
+            </div>
+
+            <!-- My Clients -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultant-clients" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../clients/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>My Clients</span>
+                    </a>
+
+                    <label for="consultant-clients" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../clients/index.html" class="sidebar-sublink">Client List</a>
+                    <a href="../../clients/details/index.html" class="sidebar-sublink">Client Details</a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultant-services" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+                    </a>
+
+                    <label for="consultant-services" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../services/index.html" class="sidebar-sublink">My Services</a>
+                    <a href="../../services/show/index.html" class="sidebar-sublink">Service Details</a>
+                </div>
+            </div>
+
+            <div class="sidebar-heading">COMMUNICATION</div>
+
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultant-messages" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">3</span>
+                    </a>
+
+                    <label for="consultant-messages" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../messages/index.html" class="sidebar-sublink">Inbox</a>
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">Sent Messages</a>
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">New Message</a>
+                </div>
+            </div>
+
+            <!-- Notifications -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultant-notifications" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">3</span>
+                    </a>
+
+                    <label for="consultant-notifications" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../notifications/index.html" class="sidebar-sublink">All Notifications</a>
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">Unread</a>
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">Notification Settings</a>
+                </div>
+            </div>
+
+            <div class="sidebar-heading">ACCOUNT</div>
+
+            <!-- My Profile -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultant-profile" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../profile/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>My Profile</span>
+                    </a>
+
+                    <label for="consultant-profile" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../profile/index.html" class="sidebar-sublink">Profile Details</a>
+                    <a href="../edit-profile/index.html" class="sidebar-sublink">Edit Profile</a>
+                </div>
+            </div>
+
+            <!-- Settings -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultant-settings" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+                    <a href="index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+                    </a>
+
+                    <label for="consultant-settings" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="index.html" class="sidebar-sublink active">General Settings</a>
+                    <a href="../change-password/index.html" class="sidebar-sublink">Security</a>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">D</div>
+
+                <div class="sidebar-user-info">
+                    <strong>David Wilson</strong>
+                    <span>Consultant</span>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    SETTINGS
+                </span>
+            </div>
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ♢
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <div class="profile-toggle">
+                        <div class="header-avatar">D</div>
+
+                        <span>David Wilson</span>
+
+                        <span class="dropdown-arrow">▾</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <div class="admin-page-header">
+
+                <div>
+                    <span class="panel-label">
+                        ACCOUNT
+                    </span>
+
+                    <h1>
+                        Settings
+                    </h1>
+
+                    <p>
+                        Manage your consultant account preferences and portal settings.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- GENERAL SETTINGS -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">
+                            GENERAL SETTINGS
+                        </span>
+
+                        <h2>
+                            Account Preferences
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="settings-list">
+
+                    <div class="settings-row">
+
+                        <div>
+                            <h3>Profile Visibility</h3>
+
+                            <p>
+                                Allow clients to view your consultant profile.
+                            </p>
+                        </div>
+
+                        <label class="settings-switch">
+                            <input type="checkbox" checked>
+                            <span></span>
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+                            <h3>Appointment Reminders</h3>
+
+                            <p>
+                                Receive reminders before scheduled appointments.
+                            </p>
+                        </div>
+
+                        <label class="settings-switch">
+                            <input type="checkbox" checked>
+                            <span></span>
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+                            <h3>Client Messages</h3>
+
+                            <p>
+                                Receive notifications when clients send messages.
+                            </p>
+                        </div>
+
+                        <label class="settings-switch">
+                            <input type="checkbox" checked>
+                            <span></span>
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+                            <h3>Calendar Notifications</h3>
+
+                            <p>
+                                Receive notifications about calendar changes.
+                            </p>
+                        </div>
+
+                        <label class="settings-switch">
+                            <input type="checkbox" checked>
+                            <span></span>
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+                            <h3>Weekly Summary</h3>
+
+                            <p>
+                                Receive a weekly summary of appointments and activity.
+                            </p>
+                        </div>
+
+                        <label class="settings-switch">
+                            <input type="checkbox">
+                            <span></span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- TIMEZONE -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">
+                            REGIONAL SETTINGS
+                        </span>
+
+                        <h2>
+                            Date & Time
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <form class="consultant-form">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="timezone">
+                                Time Zone
+                            </label>
+
+                            <select id="timezone" name="timezone">
+                                <option>Eastern Time (ET)</option>
+                                <option>Central Time (CT)</option>
+                                <option>Mountain Time (MT)</option>
+                                <option>Pacific Time (PT)</option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="date-format">
+                                Date Format
+                            </label>
+
+                            <select id="date-format" name="date-format">
+                                <option>MM/DD/YYYY</option>
+                                <option>DD/MM/YYYY</option>
+                                <option>YYYY-MM-DD</option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="time-format">
+                                Time Format
+                            </label>
+
+                            <select id="time-format" name="time-format">
+                                <option>12-hour</option>
+                                <option>24-hour</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-actions">
+
+                        <button type="reset" class="secondary-button">
+                            Reset
+                        </button>
+
+                        <button type="submit" class="dashboard-primary-button">
+                            Save Changes
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- SECURITY -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <span class="panel-label">
+                            SECURITY
+                        </span>
+
+                        <h2>
+                            Account Security
+                        </h2>
+                    </div>
+
+                    <a href="../change-password/index.html" class="secondary-button">
+                        Security Settings
+                    </a>
+
+                </div>
+
+
+                <div class="settings-list">
+
+                    <div class="settings-row">
+
+                        <div>
+                            <h3>Password</h3>
+
+                            <p>
+                                Last changed 30 days ago.
+                            </p>
+                        </div>
+
+                        <a href="../change-password/index.html" class="secondary-button">
+                            Change Password
+                        </a>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+                            <h3>Two-Factor Authentication</h3>
+
+                            <p>
+                                Add an extra layer of security to your account.
+                            </p>
+                        </div>
+
+                        <span class="status-badge">
+                            Not Enabled
+                        </span>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+                            <h3>Active Sessions</h3>
+
+                            <p>
+                                Manage devices currently signed in to your account.
+                            </p>
+                        </div>
+
+                        <span>
+                            2 Active
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

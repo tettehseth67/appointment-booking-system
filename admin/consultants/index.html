@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consultants | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../style.css">
+
+</head>
+
+<body class="admin-body">
+
+
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="index.html">
+                ConsultPro
+            </a>
+
+            <span>ADMIN PORTAL</span>
+
+        </div>
+
+
+        <!-- Main Navigation -->
+
+        <nav class="sidebar-navigation">
+
+
+            <p class="sidebar-heading">
+                OVERVIEW
+            </p>
+
+
+            <a href="../admin/index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">⌂</span>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <p class="sidebar-heading">
+                BOOKINGS
+            </p>
+
+
+            <!-- Appointments -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../appointments/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">▣</span>
+
+                        <span>Appointments</span>
+
+                        <span class="sidebar-count">12</span>
+
+                    </a>
+
+                    <label for="appointments-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">☷</span>
+                        <span>Appointment List</span>
+                    </a>
+
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">+</span>
+                        <span>Add Appointment</span>
+                    </a>
+
+                    <a href="../appointments/show/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Appointment Details</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <p class="sidebar-heading">
+                PEOPLE
+            </p>
+
+
+            <!-- Consultants -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultants-toggle" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../consultants/index.html" class="sidebar-link active">
+
+                        <span class="sidebar-icon">▣</span>
+
+                        <span>Consultants</span>
+
+                        <span class="sidebar-count">12</span>
+
+                    </a>
+
+                    <label for="consultants-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../consultants/index.html" class="sidebar-sublink active">
+                        <span class="sidebar-icon">☷</span>
+                        <span>Consultant List</span>
+                    </a>
+
+                    <a href="../consultants/add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">+</span>
+                        <span>Add Consultant</span>
+                    </a>
+
+                    <a href="../consultants/show/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Consultant Details</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Services -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../services/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">◇</span>
+
+                        <span>Services</span>
+
+                    </a>
+
+                    <label for="services-toggle" class="dropdown-trigger" aria-label="Toggle Services">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../services/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">☷</span>
+                        <span>Service List</span>
+                    </a>
+
+                    <a href="../services/add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">＋</span>
+                        <span>Add Service</span>
+                    </a>
+
+                    <a href="../services/show/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">◉</span>
+                        <span>Service Details</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Clients -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="clients-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../clients/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♙</span>
+
+                        <span>Clients</span>
+
+                    </a>
+
+                    <label for="clients-toggle" class="dropdown-trigger" aria-label="Toggle Clients">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../clients/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">☷</span>
+                        <span>Client List</span>
+                    </a>
+
+                    <a href="../clients/show/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">◉</span>
+                        <span>Client Details</span>
+                    </a>
+
+                    <a href="../clients/edit/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">✎</span>
+                        <span>Edit Client</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <p class="sidebar-heading">
+                COMMUNICATION
+            </p>
+
+
+            <!-- Messages -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../messages/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">✉</span>
+
+                        <span>Messages</span>
+
+                        <span class="sidebar-count">4</span>
+
+                    </a>
+
+                    <label for="messages-toggle" class="dropdown-trigger" aria-label="Toggle Messages">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">☷</span>
+                        <span>Inbox</span>
+                    </a>
+
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">➤</span>
+                        <span>Sent Messages</span>
+                    </a>
+
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">＋</span>
+                        <span>Compose Message</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notifications -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../notifications/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♢</span>
+
+                        <span>Notifications</span>
+
+                        <span class="sidebar-count">4</span>
+
+                    </a>
+
+                    <label for="notifications-toggle" class="dropdown-trigger" aria-label="Toggle Notifications">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../notifications/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">☷</span>
+                        <span>All Notifications</span>
+                    </a>
+
+                    <a href="../notifications/unread/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">●</span>
+                        <span>Unread</span>
+                    </a>
+
+                    <a href="../notifications/settings/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Notification Settings</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">←</span>
+
+                <span>Back to Website</span>
+
+            </a>
+
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    AD
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>Admin User</strong>
+
+                    <span>Administrator</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <div class="admin-main">
+        <header class="admin-header">
+
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+
+                <div>
+
+                    <span class="header-label">
+                        CONSULTANT MANAGEMENT
+                    </span>
+
+                    <h1>
+                        Consultants
+                    </h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+
+                <button type="button" class="header-icon-button">
+                    🔔
+                </button>
+
+
+                <button type="button" class="header-icon-button">
+                    ⚙️
+                </button>
+
+
+                <div class="profile-dropdown">
+
+
+                    <button type="button" class="profile-toggle">
+
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span>
+                            Yaw
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▼
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="profile.html">
+                            My Profile
+                        </a>
+
+                        <a href="settings.html">
+                            Account Settings
+                        </a>
+
+                        <a href="#">
+                            Change Password
+                        </a>
+
+                        <a href="notifications.html">
+                            Notifications
+                        </a>
+
+                        <hr>
+
+                        <a href="../../auth/login.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <main class="admin-content">
+
+
+            <!-- PAGE INTRO -->
+
+            <section class="dashboard-welcome">
+
+                <div>
+
+                    <h2>
+                        Consultant Directory
+                    </h2>
+
+                    <p>
+                        Manage consultants, availability and performance.
+                    </p>
+
+                </div>
+
+
+                <a href="../consultants/add/index.html" class="dashboard-primary-button">
+                    + Add Consultant
+                </a>
+
+            </section>
+
+
+
+            <!-- STATS -->
+
+            <section class="dashboard-statistics">
+
+
+                <div class="admin-stat-card">
+
+                    <span class="admin-stat-title">
+                        Total Consultants
+                    </span>
+
+                    <strong class="admin-stat-number">
+                        8
+                    </strong>
+
+                    <span class="admin-stat-description">
+                        Active consultants
+                    </span>
+
+                </div>
+
+
+                <div class="admin-stat-card">
+
+                    <span class="admin-stat-title">
+                        Available Today
+                    </span>
+
+                    <strong class="admin-stat-number">
+                        6
+                    </strong>
+
+                    <span class="admin-stat-description">
+                        Ready for bookings
+                    </span>
+
+                </div>
+
+
+                <div class="admin-stat-card">
+
+                    <span class="admin-stat-title">
+                        Appointments
+                    </span>
+
+                    <strong class="admin-stat-number">
+                        24
+                    </strong>
+
+                    <span class="admin-stat-description">
+                        Scheduled today
+                    </span>
+
+                </div>
+
+
+                <div class="admin-stat-card">
+
+                    <span class="admin-stat-title">
+                        Average Rating
+                    </span>
+
+                    <strong class="admin-stat-number">
+                        4.9
+                    </strong>
+
+                    <span class="admin-stat-description">
+                        Client satisfaction
+                    </span>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- CONSULTANT GRID -->
+
+            <section class="consultants-grid">
+
+
+                <!-- MICHAEL ANDERSON -->
+
+                <div class="consultant-card">
+
+
+                    <div class="consultant-avatar-1">
+                        MA
+                    </div>
+
+
+                    <h3>
+                        Michael Anderson
+                    </h3>
+
+
+                    <span class="consultant-role">
+                        Business Strategy Consultant
+                    </span>
+
+
+                    <span class="availability available">
+                        Available
+                    </span>
+
+
+                    <div class="consultant-info">
+
+
+                        <div class="info-group">
+
+                            <strong class="info-label">
+                                Email:
+                            </strong>
+
+                            <span class="info-text">
+                                david@consultpro.com
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-group">
+
+                            <strong class="info-label">
+                                Phone:
+                            </strong>
+
+                            <span class="info-text">
+                                +1 555 445 9912
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-group">
+
+                            <strong class="info-label">
+                                Upcoming Appointments:
+                            </strong>
+
+                            <span class="info-badge">
+                                7
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="consultant-actions">
+
+
+                        <a href="show/index.html" class="view-button">
+                            View Profile
+                        </a>
+
+
+                        <a href="edit/index.html" class="edit-button">
+                            Edit
+                        </a>
+
+
+                        <button type="button" class="delete-consultant-button" onclick="openDeleteModal(
+                                'Michael Anderson',
+                                'Business Strategy Consultant',
+                                'CON-00124'
+                            )">
+                            Delete
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- SARAH WILLIAMS -->
+
+                <div class="consultant-card">
+
+
+                    <div class="consultant-avatar-1">
+                        SW
+                    </div>
+
+
+                    <h3>
+                        Sarah Williams
+                    </h3>
+
+
+                    <span class="consultant-role">
+                        Career Consultant
+                    </span>
+
+
+                    <span class="availability available">
+                        Available
+                    </span>
+
+
+                    <div class="consultant-info">
+
+
+                        <div class="info-group">
+
+                            <strong class="info-label">
+                                Email:
+                            </strong>
+
+                            <span class="info-text">
+                                sarah@consultpro.com
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-group">
+
+                            <strong class="info-label">
+                                Phone:
+                            </strong>
+
+                            <span class="info-text">
+                                +1 555 445 9913
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-group">
+
+                            <strong class="info-label">
+                                Upcoming Appointments:
+                            </strong>
+
+                            <span class="info-badge">
+                                5
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="consultant-actions">
+
+
+                        <a href="show/index.html" class="view-button">
+                            View Profile
+                        </a>
+
+
+                        <a href="edit/index.html" class="edit-button">
+                            Edit
+                        </a>
+
+
+                        <button type="button" class="delete-consultant-button" onclick="openDeleteModal(
+                                'Sarah Williams',
+                                'Career Consultant',
+                                'CON-00125'
+                            )">
+                            Delete
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DAVID THOMPSON -->
+
+                <div class="consultant-card">
+
+
+                    <div class="consultant-avatar-1">
+                        DT
+                    </div>
+
+
+                    <h3>
+                        David Thompson
+                    </h3>
+
+
+                    <span class="consultant-role">
+                        AI Automation Consultant
+                    </span>
+
+
+                    <span class="availability unavailable">
+                        Busy
+                    </span>
+
+
+                    <div class="consultant-info">
+
+
+                        <div class="info-group">
+
+                            <strong class="info-label">
+                                Email:
+                            </strong>
+
+                            <span class="info-text">
+                                david.thompson@consultpro.com
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-group">
+
+                            <strong class="info-label">
+                                Phone:
+                            </strong>
+
+                            <span class="info-text">
+                                +1 555 445 9914
+                            </span>
+
+                        </div>
+
+
+                        <div class="info-group">
+
+                            <strong class="info-label">
+                                Upcoming Appointments:
+                            </strong>
+
+                            <span class="info-badge">
+                                10
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="consultant-actions">
+
+
+                        <a href="show/index.html" class="view-button">
+                            View Profile
+                        </a>
+
+
+                        <a href="edit/index.html" class="edit-button">
+                            Edit
+                        </a>
+
+
+                        <button type="button" class="delete-consultant-button" onclick="openDeleteModal(
+                                'David Thompson',
+                                'AI Automation Consultant',
+                                'CON-00126'
+                            )">
+                            Delete
+                        </button>
+
+
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+
+    <!-- DELETE MODAL -->
+    <div class="delete-modal" id="deleteModal">
+        <button type="button" class="delete-modal-overlay" onclick="closeDeleteModal()"
+            aria-label="Close delete consultant dialog"></button>
+        <div class="delete-modal-content" role="dialog" aria-modal="true" aria-labelledby="deleteModalTitle">
+
+            <button type="button" class="delete-modal-close" onclick="closeDeleteModal()" aria-label="Close">
+                ×
+            </button>
+            <div class="delete-modal-icon">
+                ⚠
+            </div>
+            <span class="panel-label">
+                DELETE CONSULTANT
+            </span>
+            <h2 id="deleteModalTitle">
+                Delete Consultant?
+            </h2>
+            <p class="delete-modal-message">
+
+                Are you sure you want to delete this consultant?
+
+                This action cannot be undone.
+
+            </p>
+            <div class="delete-modal-details">
+                <div>
+
+                    <span>
+                        Consultant
+                    </span>
+
+                    <strong id="deleteConsultantName">
+                        Michael Anderson
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Position
+                    </span>
+
+                    <strong id="deleteConsultantRole">
+                        Business Strategy Consultant
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Consultant ID
+                    </span>
+
+                    <strong id="deleteConsultantId">
+                        CON-00124
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="delete-warning">
+
+                <strong>
+                    Warning:
+                </strong>
+
+                This may affect appointments, services and
+                availability associated with this consultant.
+
+            </div>
+
+
+            <div class="delete-modal-actions">
+
+
+                <button type="button" class="secondary-button" onclick="closeDeleteModal()">
+                    Cancel
+                </button>
+
+
+                <button type="button" class="danger-button" onclick="confirmDelete()">
+                    Delete Consultant
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- DELETE MODAL SCRIPT -->
+
+    <script>
+
+        function openDeleteModal(name, role, id) {
+
+            document.getElementById("deleteConsultantName").textContent = name;
+
+            document.getElementById("deleteConsultantRole").textContent = role;
+
+            document.getElementById("deleteConsultantId").textContent = id;
+
+            document.getElementById("deleteModalTitle").textContent =
+                "Delete " + name + "?";
+
+            document.getElementById("deleteModal").classList.add("active");
+
+            document.body.style.overflow = "hidden";
+
+        }
+
+
+        function closeDeleteModal() {
+
+            document.getElementById("deleteModal").classList.remove("active");
+
+            document.body.style.overflow = "";
+
+        }
+
+
+        function confirmDelete() {
+
+            const consultant =
+                document.getElementById("deleteConsultantName").textContent;
+
+            closeDeleteModal();
+
+            alert(
+                consultant + " has been deleted successfully."
+            );
+
+        }
+
+
+        document.addEventListener("keydown", function (event) {
+
+            if (event.key === "Escape") {
+
+                closeDeleteModal();
+
+            }
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Directory | ConsultPro</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">CP</div>
+            <a href="../index.html">ConsultPro</a>
+            <span>RECEPTIONIST PORTAL</span>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+            <div class="sidebar-heading">MAIN MENU</div>
+
+            <!-- DASHBOARD -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="dashboard-menu" class="dropdown-checkbox">
+                <label for="dashboard-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">▦</span>
+                        Dashboard
+                    </span>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../index.html" class="sidebar-sublink">Overview</a>
+                    <a href="../schedule/index.html" class="sidebar-sublink">Today's Schedule</a>
+                </div>
+            </div>
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox">
+                <label for="appointments-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        Appointments
+                        <span class="sidebar-count">12</span>
+                    </span>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../appointments/index.html" class="sidebar-sublink">Appointment List</a>
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">Add Appointment</a>
+                    <a href="../appointments/show/index.html" class="sidebar-sublink">Appointment Details</a>
+                    <a href="../appointments/edit/index.html" class="sidebar-sublink">Edit Appointment</a>
+                </div>
+            </div>
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="calendar-menu" class="dropdown-checkbox">
+                <label for="calendar-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">□</span>
+                        Calendar
+                    </span>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../calendar/index.html" class="sidebar-sublink">Calendar</a>
+                    <a href="../calendar/add/index.html" class="sidebar-sublink">Add Event</a>
+                    <a href="../calendar/edit/index.html" class="sidebar-sublink">Edit Event</a>
+                    <a href="../calendar/show/index.html" class="sidebar-sublink">Event Details</a>
+                </div>
+            </div>
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultants-menu" class="dropdown-checkbox">
+                <label for="consultants-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        Consultants
+                    </span>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../consultants/index.html" class="sidebar-sublink">Consultant List</a>
+                    <a href="../consultants/show/index.html" class="sidebar-sublink">Consultant Details</a>
+                </div>
+            </div>
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="clients-menu" class="dropdown-checkbox">
+                <label for="clients-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        Clients
+                    </span>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../clients/index.html" class="sidebar-sublink">Client List</a>
+                    <a href="../clients/add/index.html" class="sidebar-sublink">Add Client</a>
+                    <a href="../clients/show/index.html" class="sidebar-sublink">Client Details</a>
+                    <a href="../clients/edit/index.html" class="sidebar-sublink">Edit Client</a>
+                </div>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox" checked>
+                <label for="services-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        Services
+                    </span>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="index.html" class="sidebar-sublink active">Service List</a>
+                    <a href="show/index.html" class="sidebar-sublink">Service Details</a>
+                </div>
+            </div>
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">COMMUNICATION</div>
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox">
+                <label for="messages-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        Messages
+                        <span class="sidebar-count">4</span>
+                    </span>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../messages/index.html" class="sidebar-sublink">Inbox</a>
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">Sent Messages</a>
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">Compose Message</a>
+                </div>
+            </div>
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox">
+                <label for="notifications-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        Notifications
+                        <span class="sidebar-count">3</span>
+                    </span>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../notifications/index.html" class="sidebar-sublink">All Notifications</a>
+                    <a href="../notifications/unread/index.html" class="sidebar-sublink">Unread</a>
+                    <a href="../notifications/settings/index.html" class="sidebar-sublink">Notification Settings</a>
+                </div>
+            </div>
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">ACCOUNT</div>
+
+            <!-- PROFILE -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="profile-menu" class="dropdown-checkbox">
+                <label for="profile-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◉</span>
+                        Profile
+                    </span>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../profile/index.html" class="sidebar-sublink">Profile Settings</a>
+                    <a href="../profile/edit/index.html" class="sidebar-sublink">Edit Profile</a>
+                    <a href="../profile/password/index.html" class="sidebar-sublink">Change Password</a>
+                    <a href="../profile/settings/index.html" class="sidebar-sublink">Settings</a>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                Back to Website
+            </a>
+
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">R</div>
+                <div class="sidebar-user-info">
+                    <strong>Receptionist</strong>
+                    <span>Receptionist</span>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+                <button class="sidebar-toggle">☰</button>
+                <span class="header-label">SERVICES</span>
+            </div>
+
+            <div class="header-right">
+
+                <button class="header-icon-button">⌕</button>
+
+                <button class="header-icon-button">
+                    ♢
+                    <span class="header-notification-dot"></span>
+                </button>
+
+                <div class="header-profile">
+
+                    <button class="profile-toggle">
+                        <div class="header-profile-avatar">R</div>
+
+                        <div class="header-profile-info">
+                            <strong>Receptionist</strong>
+                            <span>Receptionist</span>
+                        </div>
+
+                        <span class="dropdown-arrow">⌄</span>
+                    </button>
+
+                    <div class="dropdown-menu">
+                        <a href="../profile/index.html">My Profile</a>
+                        <a href="../profile/settings/index.html">Settings</a>
+                        <a href="../../index.html">Logout</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- CONTENT -->
+        <section class="admin-content">
+
+            <div class="admin-page-header">
+
+                <div>
+                    <span class="panel-label">PEOPLE</span>
+
+                    <h1>Service Directory</h1>
+
+                    <p>
+                        Manage consultation services, durations, pricing, and availability.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- SERVICE OVERVIEW -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-card-label">TOTAL SERVICES</div>
+                    <div class="stat-card-value">6</div>
+                    <div class="stat-card-description">Available services</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-label">ACTIVE SERVICES</div>
+                    <div class="stat-card-value">6</div>
+                    <div class="stat-card-description">Currently bookable</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-card-label">AVERAGE PRICE</div>
+                    <div class="stat-card-value">$150</div>
+                    <div class="stat-card-description">Per consultation</div>
+                </div>
+
+            </div>
+
+            <!-- SERVICES TABLE -->
+            <div class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+                        <h2>Available Services</h2>
+                        <p>View consultation services currently offered by ConsultPro.</p>
+                    </div>
+
+                </div>
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Description</th>
+                                <th>Duration</th>
+                                <th>Price</th>
+                                <th>Consultants</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <strong>Business Strategy</strong>
+                                    <span class="table-subtext">SV-1001</span>
+                                </td>
+
+                                <td>
+                                    Strategic planning and business advisory.
+                                </td>
+
+                                <td>60 min</td>
+
+                                <td>$150</td>
+
+                                <td>3</td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="show/index.html" class="table-action">
+                                        View
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Leadership Coaching</strong>
+                                    <span class="table-subtext">SV-1002</span>
+                                </td>
+
+                                <td>
+                                    Personalized leadership development coaching.
+                                </td>
+
+                                <td>60 min</td>
+
+                                <td>$125</td>
+
+                                <td>2</td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="show/index.html" class="table-action">
+                                        View
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Career Consultation</strong>
+                                    <span class="table-subtext">SV-1003</span>
+                                </td>
+
+                                <td>
+                                    Career planning, guidance, and professional growth.
+                                </td>
+
+                                <td>60 min</td>
+
+                                <td>$100</td>
+
+                                <td>2</td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="show/index.html" class="table-action">
+                                        View
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Business Growth Planning</strong>
+                                    <span class="table-subtext">SV-1004</span>
+                                </td>
+
+                                <td>
+                                    Growth strategies and long-term business planning.
+                                </td>
+
+                                <td>90 min</td>
+
+                                <td>$200</td>
+
+                                <td>3</td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="show/index.html" class="table-action">
+                                        View
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Financial Planning</strong>
+                                    <span class="table-subtext">SV-1005</span>
+                                </td>
+
+                                <td>
+                                    Personal and business financial planning guidance.
+                                </td>
+
+                                <td>60 min</td>
+
+                                <td>$175</td>
+
+                                <td>2</td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="show/index.html" class="table-action">
+                                        View
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>Personal Development</strong>
+                                    <span class="table-subtext">SV-1006</span>
+                                </td>
+
+                                <td>
+                                    Personal growth, goals, and development coaching.
+                                </td>
+
+                                <td>60 min</td>
+
+                                <td>$120</td>
+
+                                <td>2</td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <a href="show/index.html" class="table-action">
+                                        View
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

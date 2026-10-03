@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clients | ConsultPro Admin</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar" aria-label="Admin navigation">
+        <!-- Brand -->
+        <div class="sidebar-brand">
+            <a href="../index.html">
+                ConsultPro
+            </a>
+            <span>
+                ADMIN PORTAL
+            </span>
+        </div>
+        <nav class="sidebar-navigation">
+            <!-- =========================
+                        OVERVIEW
+                    ========================== -->
+            <p class="sidebar-heading">
+                OVERVIEW
+            </p>
+            <a href="../index.html" class="sidebar-link" aria-current="page">
+                <span class="sidebar-icon">▦</span>
+                <span>
+                    Dashboard
+                </span>
+            </a>
+            <!-- =========================
+                        BOOKINGS
+                    ========================== -->
+            <p class="sidebar-heading">
+                BOOKINGS
+            </p>
+            <!-- Appointments -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../../admin/appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>
+                            Appointments
+                        </span>
+                        <span class="sidebar-count">
+                            12
+                        </span>
+                    </a>
+                    <label for="appointments-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="../../admin/appointments/index.html" class="sidebar-sublink">
+                        All Appointments
+                    </a>
+                    <a href="../../admin/appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+                    <a href="../../admin/appointments/edit/index.html" class="sidebar-sublink">
+                        Edit Appointment
+                    </a>
+                </div>
+            </div>
+            <!-- Calendar -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="calendar-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">□</span>
+                        <span>
+                            Calendar
+                        </span>
+                    </a>
+                    <label for="calendar-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+                    <a href="calendar/add-event/index.html" class="sidebar-sublink">
+                        Add Event
+                    </a>
+                    <a href="calendar/show-event/index.html" class="sidebar-sublink">
+                        Event Details
+                    </a>
+                    <a href="calendar/edit-event/index.html" class="sidebar-sublink">
+                        Edit Event
+                    </a>
+                </div>
+            </div>
+            <!-- =========================
+                        PEOPLE
+                    ========================== -->
+            <p class="sidebar-heading">
+                PEOPLE
+            </p>
+            <!-- Consultants -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultants-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../../admin/consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>
+                            Consultants
+                        </span>
+                    </a>
+                    <label for="consultants-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="../../admin/consultants/index.html" class="sidebar-sublink">
+                        All Consultants
+                    </a>
+                    <a href="../../admin/consultants/add/index.html" class="sidebar-sublink">
+                        Add Consultant
+                    </a>
+                    <a href="../../admin/consultants/show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+                    <a href="consultants/edit/index.html" class="sidebar-sublink">
+                        Edit Consultant
+                    </a>
+                </div>
+            </div>
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▤</span>
+                        <span>
+                            Services
+                        </span>
+                    </a>
+                    <label for="services-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="services/index.html" class="sidebar-sublink">
+                        All Services
+                    </a>
+                    <a href="services/add/index.html" class="sidebar-sublink">
+                        Add Service
+                    </a>
+                    <a href="services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+                    <a href="services/edit/index.html" class="sidebar-sublink">
+                        Edit Service
+                    </a>
+                </div>
+            </div>
+            <!-- Clients -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="clients-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../clients/index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">♙</span>
+                        <span>
+                            Clients
+                        </span>
+                    </a>
+                    <label for="clients-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="../clients/index.html" class="sidebar-sublink active">
+                        All Clients
+                    </a>
+                    <a href="../clients/add/index.html" class="sidebar-sublink">
+                        Add Clients
+                    </a>
+                    <a href="../clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+                    <a href="../clients/edit/index.html" class="sidebar-sublink">
+                        Edit Client
+                    </a>
+                    <a href="../clients/activity/index.html" class="sidebar-sublink">
+                        Client History
+                    </a>
+                </div>
+            </div>
+            <!-- =========================
+                        COMMUNICATION
+                    ========================== -->
+            <p class="sidebar-heading">
+                COMMUNICATION
+            </p>
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>
+                            Messages
+                        </span>
+                        <span class="sidebar-count">
+                            4
+                        </span>
+                    </a>
+                    <label for="messages-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+                    <a href="messages/compose/index.html" class="sidebar-sublink">
+                        Compose
+                    </a>
+                    <a href="messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+                    <a href="messages/show/index.html" class="sidebar-sublink">
+                        Message Details
+                    </a>
+                </div>
+            </div>
+            <!-- Notifications -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        <span>
+                            Notifications
+                        </span>
+                        <span class="sidebar-count">
+                            4
+                        </span>
+                    </a>
+                    <label for="notifications-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+                    <a href="notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+                    <a href="notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+                </div>
+            </div>
+            <!-- =========================
+                        ANALYTICS
+                    ========================== -->
+            <p class="sidebar-heading">
+                ANALYTICS
+            </p>
+            <!-- Reports -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="reports-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="reports/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▥</span>
+                        <span>
+                            Reports
+                        </span>
+                    </a>
+                    <label for="reports-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="reports/index.html" class="sidebar-sublink">
+                        Overview
+                    </a>
+                    <a href="reports/revenue/index.html" class="sidebar-sublink">
+                        Revenue
+                    </a>
+                    <a href="reports/appointments/index.html" class="sidebar-sublink">
+                        Appointments
+                    </a>
+                    <a href="reports/consultants/index.html" class="sidebar-sublink">
+                        Consultants
+                    </a>
+                    <a href="reports/clients/index.html" class="sidebar-sublink">
+                        Clients
+                    </a>
+                </div>
+            </div>
+            <!-- =========================
+                        SYSTEM
+                    ========================== -->
+            <p class="sidebar-heading">
+                SYSTEM
+            </p>
+            <!-- Users -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="users-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="users/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>
+                            User Management
+                        </span>
+                    </a>
+                    <label for="users-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="users/index.html" class="sidebar-sublink">
+                        All Users
+                    </a>
+                    <a href="users/add/index.html" class="sidebar-sublink">
+                        Add User
+                    </a>
+                    <a href="users/show/index.html" class="sidebar-sublink">
+                        User Details
+                    </a>
+                    <a href="users/edit/index.html" class="sidebar-sublink">
+                        Edit User
+                    </a>
+                </div>
+            </div>
+            <!-- Roles -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="roles-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="roles/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        <span>
+                            Roles &amp; Permissions
+                        </span>
+                    </a>
+                    <label for="roles-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="roles/index.html" class="sidebar-sublink">
+                        All Roles
+                    </a>
+                    <a href="roles/add/index.html" class="sidebar-sublink">
+                        Add Role
+                    </a>
+                    <a href="roles/show/index.html" class="sidebar-sublink">
+                        Role Details
+                    </a>
+                    <a href="roles/edit/index.html" class="sidebar-sublink">
+                        Edit Role
+                    </a>
+                </div>
+            </div>
+            <!-- Activity Log -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="activity-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="activitylog/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◷</span>
+                        <span>
+                            Activity Log
+                        </span>
+                    </a>
+                    <label for="activity-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="activitylog/index.html" class="sidebar-sublink">
+                        All Activity
+                    </a>
+                    <a href="activitylog/show/index.html" class="sidebar-sublink">
+                        Activity Details
+                    </a>
+                </div>
+            </div>
+            <!-- =========================
+                        ACCOUNT
+                    ========================== -->
+            <p class="sidebar-heading">
+                ACCOUNT
+            </p>
+            <!-- Settings -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="settings/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>
+                            Settings
+                        </span>
+                    </a>
+                    <label for="settings-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+                    <a href="settings/profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+                    <a href="settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- =========================
+                    SIDEBAR BOTTOM
+                ========================== -->
+        <div class="sidebar-bottom">
+            <a href="../index.html" class="sidebar-link">
+                <span class="sidebar-icon">
+                    ←
+                </span>
+                <span>
+                    Back to Website
+                </span>
+            </a>
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">
+                    Y
+                </div>
+                <div class="sidebar-user-info">
+                    <strong>
+                        Yaw
+                    </strong>
+                    <span>
+                        Administrator
+                    </span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="admin-main">
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+                <div>
+                    <span class="header-label">
+                        CLIENT MANAGEMENT
+                    </span>
+                    <h1>Clients</h1>
+                </div>
+            </div>
+            <div class="header-right">
+                <button type="button" class="header-icon-button">
+                    🔔
+                </button>
+                <button type="button" class="header-icon-button">
+                    ⚙️
+                </button>
+                <div class="profile-dropdown">
+                    <button type="button" class="profile-toggle">
+                        <span class="header-avatar">
+                            Y
+                        </span>
+                        <span>Yaw</span>
+                        <span class="dropdown-arrow">
+                            ▼
+                        </span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="profile.html">
+                            My Profile
+                        </a>
+                        <a href="settings.html">
+                            Account Settings
+                        </a>
+                        <a href="#">
+                            Change Password
+                        </a>
+                        <a href="notifications.html">
+                            Notifications
+                        </a>
+                        <hr>
+                        <a href="../../auth/login.html">
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="admin-content">
+            <!-- PAGE HEADER -->
+
+            <section class="dashboard-welcome">
+                <div>
+                    <h2>
+                        Client Directory
+                    </h2>
+
+                    <p>
+                        Manage all registered clients and their appointment history.
+                    </p>
+
+                </div>
+
+                <a href="../clients/add/index.html" class="dashboard-primary-button">
+                    + Add Client
+                </a>
+
+            </section>
+
+            <!-- STATISTICS -->
+
+            <section class="dashboard-statistics">
+
+                <div class="admin-stat-card">
+                    <span class="admin-stat-title">Total Clients</span>
+                    <strong class="admin-stat-number">150</strong>
+                    <span class="admin-stat-description">Registered clients</span>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span class="admin-stat-title">Active Clients</span>
+                    <strong class="admin-stat-number">120</strong>
+                    <span class="admin-stat-description">Currently active</span>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span class="admin-stat-title">New This Month</span>
+                    <strong class="admin-stat-number">18</strong>
+                    <span class="admin-stat-description">Recent registrations</span>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span class="admin-stat-title">Returning Clients</span>
+                    <strong class="admin-stat-number">92</strong>
+                    <span class="admin-stat-description">Repeat bookings</span>
+                </div>
+
+            </section>
+
+            <!-- CLIENT TABLE -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            CLIENT DATABASE
+                        </span>
+
+                        <h2>
+                            All Clients
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <!-- FILTERS -->
+
+                <div class="appointment-filters">
+
+                    <div class="admin-search">
+
+                        <label for="searchClient">
+                            Search Client
+                        </label>
+
+                        <input type="search" id="searchClient" placeholder="Search by name or email">
+
+                    </div>
+
+                    <div class="admin-filter">
+
+                        <label for="clientStatus">
+                            Status
+                        </label>
+
+                        <select id="clientStatus">
+
+                            <option>All Clients</option>
+                            <option>Active</option>
+                            <option>Inactive</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="admin-filter">
+
+                        <label for="clientType">
+                            Client Type
+                        </label>
+
+                        <select id="clientType">
+
+                            <option>All Types</option>
+                            <option>New</option>
+                            <option>Returning</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="admin-filter">
+
+                        <label for="sort">
+                            Sort By
+                        </label>
+
+                        <select id="sort">
+
+                            <option>Name</option>
+                            <option>Appointments</option>
+                            <option>Recent Activity</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!-- TABLE -->
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Client ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Appointments</th>
+                                <th>Last Visit</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr data-client-id="121" data-client-name="John Davis">
+                                <td>CL001</td>
+                                <td>John Davis</td>
+                                <td>john@email.com</td>
+                                <td>+1 555 123 4567</td>
+                                <td>12</td>
+                                <td>Sep 15, 2026</td>
+
+                                <td>
+                                    <span class="status confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="#" class="view-button">
+                                            View
+                                        </a>
+
+                                        <a href="#" class="edit-button">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="delete-client-button"
+                                            onclick="openDeleteModal('John Davis', 'CL001')">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr data-client-id="122" data-client-name="Anna Miller">
+
+                                <td>CL002</td>
+                                <td>Anna Miller</td>
+                                <td>anna@email.com</td>
+                                <td>+1 555 987 6543</td>
+                                <td>8</td>
+                                <td>Sep 12, 2026</td>
+
+                                <td>
+                                    <span class="status pending">
+                                        New
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="#" class="view-button">
+                                            View
+                                        </a>
+
+                                        <a href="#" class="edit-button">
+                                            Edit
+                                        </a>
+
+                                        <button type="button" class="delete-client-button"
+                                            onclick="openDeleteModal('Anna Miller', 'CL002')">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <tr data-client-id="123" data-client-name="Sarah Lewis">
+
+                                <td>CL003</td>
+                                <td>Sarah Lewis</td>
+                                <td>sarah@email.com</td>
+                                <td>+1 555 444 7777</td>
+                                <td>15</td>
+                                <td>Sep 14, 2026</td>
+
+                                <td>
+                                    <span class="status confirmed">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="#" class="view-button">
+                                            View
+                                        </a>
+
+                                        <a href="#" class="edit-button">
+                                            Edit
+                                        </a>
+
+                                        <button type="button" class="delete-client-button"
+                                            onclick="openDeleteModal('Sarah Lewis', 'CL003')">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- PAGINATION -->
+
+                <div class="pagination">
+
+                    <a href="#">Previous</a>
+                    <a href="#" class="active-page">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">Next</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Delete Client Dialog -->
+    <!-- DELETE CLIENT MODAL -->
+
+    <!-- DELETE CLIENT MODAL -->
+    <div class="delete-dialog" id="deleteClientDialog">
+        <div class="delete-dialog-content">
+            <div class="delete-dialog-icon">
+                ⚠
+            </div>
+
+            <div class="delete-dialog-header">
+                <h2>
+                    Delete Client
+                </h2>
+
+                <p>
+                    Are you sure you want to delete
+                    <strong id="deleteClientName">
+                        this client
+                    </strong>
+                    ?
+                </p>
+
+                <p class="delete-warning-text">
+                    This action cannot be undone. All appointments,
+                    communication history, and client records will be permanently removed.
+                </p>
+            </div>
+
+            <div class="delete-client-details">
+                <div class="delete-detail-item">
+                    <span>Client ID</span>
+                    <strong id="deleteClientId">
+                        CL001
+                    </strong>
+                </div>
+
+                <div class="delete-detail-item">
+                    <span>Status</span>
+                    <strong>
+                        Active Client
+                    </strong>
+                </div>
+            </div>
+
+            <div class="delete-dialog-actions">
+                <button type="button" class="secondary-button" onclick="closeDeleteModal()">
+                    Cancel
+                </button>
+
+                <button type="button" class="delete-confirm-button">
+                    Delete Client
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../../js/client.js"></script>
+</body>
+
+</html>

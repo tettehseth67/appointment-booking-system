@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications | ConsultPro</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+            <a href="../index.html">ConsultPro</a>
+            <span>ADMIN PORTAL</span>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <p class="sidebar-heading">MAIN MENU</p>
+
+            <!-- Dashboard -->
+            <a href="../index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <!-- APPOINTMENTS -->
+            <p class="sidebar-heading">BOOKINGS</p>
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+
+                    <label for="appointments-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>All Appointments</span>
+                    </a>
+
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">+</span>
+                        <span>Add Appointment</span>
+                    </a>
+
+                    <a href="../appointments/show/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Appointment Details</span>
+                    </a>
+
+                    <a href="../appointments/edit/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">✎</span>
+                        <span>Edit Appointment</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="calendar-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▦</span>
+                        <span>Calendar</span>
+                    </a>
+
+                    <label for="calendar-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../calendar/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">▦</span>
+                        <span>Calendar</span>
+                    </a>
+
+                    <a href="../calendar/add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">+</span>
+                        <span>Add Event</span>
+                    </a>
+
+                    <a href="../calendar/show/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Event Details</span>
+                    </a>
+
+                    <a href="../calendar/edit/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">✎</span>
+                        <span>Edit Event</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PEOPLE -->
+            <p class="sidebar-heading">PEOPLE</p>
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultants-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Consultants</span>
+                    </a>
+
+                    <label for="consultants-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../consultants/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">♙</span>
+                        <span>All Consultants</span>
+                    </a>
+
+                    <a href="../consultants/add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">+</span>
+                        <span>Add Consultant</span>
+                    </a>
+
+                    <a href="../consultants/show/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Consultant Details</span>
+                    </a>
+
+                    <a href="../consultants/edit/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">✎</span>
+                        <span>Edit Consultant</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◆</span>
+                        <span>Services</span>
+                    </a>
+
+                    <label for="services-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../services/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">◆</span>
+                        <span>All Services</span>
+                    </a>
+
+                    <a href="../services/add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">+</span>
+                        <span>Add Service</span>
+                    </a>
+
+                    <a href="../services/show/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Service Details</span>
+                    </a>
+
+                    <a href="../services/edit/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">✎</span>
+                        <span>Edit Service</span>
+                    </a>
+
+                    <a href="../services/activity/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">◷</span>
+                        <span>Service Activity</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="clients-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../clients/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Clients</span>
+                    </a>
+
+                    <label for="clients-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../clients/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">♙</span>
+                        <span>All Clients</span>
+                    </a>
+
+                    <a href="../clients/add/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">+</span>
+                        <span>Add Client</span>
+                    </a>
+
+                    <a href="../clients/show/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Client Details</span>
+                    </a>
+
+                    <a href="../clients/edit/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">✎</span>
+                        <span>Edit Client</span>
+                    </a>
+
+                    <a href="../clients/activity/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">◷</span>
+                        <span>Client Activity</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- COMMUNICATION -->
+            <p class="sidebar-heading">COMMUNICATION</p>
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">4</span>
+                    </a>
+
+                    <label for="messages-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Inbox</span>
+                    </a>
+
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">+</span>
+                        <span>Compose</span>
+                    </a>
+
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↗</span>
+                        <span>Sent Messages</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">🔔</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">4</span>
+                    </a>
+
+                    <label for="notifications-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        <span class="sidebar-icon">●</span>
+                        <span>All Notifications</span>
+                    </a>
+
+                    <a href="unread/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">●</span>
+                        <span>Unread</span>
+                    </a>
+
+                    <a href="settings/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Notification Settings</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- ANALYTICS -->
+            <p class="sidebar-heading sidebar-heading-space">
+                ANALYTICS
+            </p>
+
+            <a href="../reports/index.html" class="sidebar-link">
+                <span class="sidebar-icon">▤</span>
+                <span>Reports</span>
+            </a>
+
+            <!-- SYSTEM -->
+            <p class="sidebar-heading sidebar-heading-space">
+                SYSTEM
+            </p>
+
+            <a href="../users/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>User Management</span>
+            </a>
+
+            <a href="../roles/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Roles &amp; Permissions</span>
+            </a>
+
+            <a href="../activitylog/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Activity Log</span>
+            </a>
+
+            <!-- ACCOUNT -->
+            <p class="sidebar-heading sidebar-heading-space">
+                ACCOUNT
+            </p>
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../settings/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+                    </a>
+
+                    <label for="settings-toggle" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../settings/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>General Settings</span>
+                    </a>
+
+                    <a href="../settings/profile/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">◉</span>
+                        <span>Profile Settings</span>
+                    </a>
+
+                    <a href="../settings/security/index.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">◆</span>
+                        <span>Security</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    AD
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>Admin User</strong>
+                    <span>Administrator</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <div class="admin-main">
+        <!-- HEADER -->
+        <header class="admin-header">
+            <div class="admin-header-left">
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <div>
+
+                    <span class="header-label">
+                        NOTIFICATION CENTER
+                    </span>
+
+                    <h1>Notifications</h1>
+
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    🔔
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ⚙️
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span>Yaw</span>
+
+                        <span class="dropdown-arrow">
+                            ▼
+                        </span>
+
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../profile.html">
+                            My Profile
+                        </a>
+
+                        <a href="../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../settings/security/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="index.html">
+                            Notifications
+                        </a>
+
+                        <hr>
+
+                        <a href="../../auth/login.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- CONTENT -->
+        <main class="admin-content">
+
+            <!-- PAGE INTRO -->
+            <section class="dashboard-welcome">
+
+                <div>
+
+                    <span class="panel-label">
+                        NOTIFICATION CENTER
+                    </span>
+
+                    <h2>
+                        Stay Updated
+                    </h2>
+
+                    <p>
+                        Review appointment alerts, client activity,
+                        messages, and important system notifications.
+                    </p>
+
+                </div>
+
+            </section>
+
+            <!-- STATISTICS -->
+            <section class="dashboard-statistics">
+
+                <div class="admin-stat-card">
+
+                    <span class="admin-stat-title">
+                        Total Notifications
+                    </span>
+
+                    <strong class="admin-stat-number">
+                        248
+                    </strong>
+
+                </div>
+
+                <div class="admin-stat-card">
+
+                    <span class="admin-stat-title">
+                        Unread
+                    </span>
+
+                    <strong class="admin-stat-number">
+                        18
+                    </strong>
+
+                </div>
+
+                <div class="admin-stat-card">
+
+                    <span class="admin-stat-title">
+                        Appointment Alerts
+                    </span>
+
+                    <strong class="admin-stat-number">
+                        94
+                    </strong>
+
+                </div>
+
+                <div class="admin-stat-card">
+
+                    <span class="admin-stat-title">
+                        Messages
+                    </span>
+
+                    <strong class="admin-stat-number">
+                        52
+                    </strong>
+
+                </div>
+
+            </section>
+
+            <!-- FILTERS -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            FILTERS
+                        </span>
+
+                        <h2>
+                            Manage Notifications
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="appointment-filters">
+
+                    <div class="admin-search">
+
+                        <label for="notification-search">
+                            Search
+                        </label>
+
+                        <input type="search" id="notification-search" placeholder="Search notifications">
+
+                    </div>
+
+                    <div class="admin-filter">
+
+                        <label for="notification-category">
+                            Category
+                        </label>
+
+                        <select id="notification-category">
+
+                            <option>
+                                All Notifications
+                            </option>
+
+                            <option>
+                                Appointments
+                            </option>
+
+                            <option>
+                                Clients
+                            </option>
+
+                            <option>
+                                Messages
+                            </option>
+
+                            <option>
+                                System
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="admin-filter">
+
+                        <label for="notification-status">
+                            Status
+                        </label>
+
+                        <select id="notification-status">
+
+                            <option>
+                                All
+                            </option>
+
+                            <option>
+                                Unread
+                            </option>
+
+                            <option>
+                                Read
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- NOTIFICATION LIST -->
+            <section class="notification-list">
+
+                <!-- NOTIFICATION 1 -->
+                <div class="notification-card unread-notification">
+
+                    <div class="notification-icon">
+                        📅
+                    </div>
+
+                    <div class="notification-content">
+
+                        <h4>
+                            New Appointment Booked
+                        </h4>
+
+                        <p>
+                            John Davis booked a Business Strategy
+                            Consultation for September 20, 2026.
+                        </p>
+
+                        <span class="notification-time">
+                            5 Minutes Ago
+                        </span>
+
+                    </div>
+
+                    <div class="notification-actions">
+
+                        <a href="../appointments/show/index.html" class="view-button">
+                            View
+                        </a>
+
+                        <a href="#" class="secondary-button">
+                            Mark Read
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- NOTIFICATION 2 -->
+                <div class="notification-card unread-notification">
+
+                    <div class="notification-icon">
+                        👤
+                    </div>
+
+                    <div class="notification-content">
+
+                        <h4>
+                            New Client Registration
+                        </h4>
+
+                        <p>
+                            Sarah Williams created a new client account.
+                        </p>
+
+                        <span class="notification-time">
+                            1 Hour Ago
+                        </span>
+
+                    </div>
+
+                    <div class="notification-actions">
+
+                        <a href="../clients/show/index.html" class="view-button">
+                            View
+                        </a>
+
+                        <a href="#" class="secondary-button">
+                            Mark Read
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- NOTIFICATION 3 -->
+                <div class="notification-card unread-notification">
+
+                    <div class="notification-icon">
+                        ✉
+                    </div>
+
+                    <div class="notification-content">
+
+                        <h4>
+                            New Contact Message
+                        </h4>
+
+                        <p>
+                            A new inquiry was received from the
+                            contact form.
+                        </p>
+
+                        <span class="notification-time">
+                            3 Hours Ago
+                        </span>
+
+                    </div>
+
+                    <div class="notification-actions">
+
+                        <a href="../messages/index.html" class="view-button">
+                            View
+                        </a>
+
+                        <a href="#" class="secondary-button">
+                            Mark Read
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- NOTIFICATION 4 -->
+                <div class="notification-card">
+
+                    <div class="notification-icon">
+                        ⚙
+                    </div>
+
+                    <div class="notification-content">
+
+                        <h4>
+                            System Update
+                        </h4>
+
+                        <p>
+                            Notification settings were updated
+                            successfully.
+                        </p>
+
+                        <span class="notification-time">
+                            Yesterday
+                        </span>
+
+                    </div>
+
+                    <div class="notification-actions">
+
+                        <a href="../settings/index.html" class="view-button">
+                            View
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- NOTIFICATION 5 -->
+                <div class="notification-card">
+
+                    <div class="notification-icon">
+                        📅
+                    </div>
+
+                    <div class="notification-content">
+
+                        <h4>
+                            Appointment Confirmed
+                        </h4>
+
+                        <p>
+                            Anna Miller's consultation has been
+                            confirmed for September 21, 2026.
+                        </p>
+
+                        <span class="notification-time">
+                            Yesterday
+                        </span>
+
+                    </div>
+
+                    <div class="notification-actions">
+
+                        <a href="../appointments/show/index.html" class="view-button">
+                            View
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- PAGINATION -->
+            <div class="pagination">
+
+                <a href="#" class="pagination-button">
+                    Previous
+                </a>
+
+                <a href="#" class="pagination-button active">
+                    1
+                </a>
+
+                <a href="#" class="pagination-button">
+                    2
+                </a>
+
+                <a href="#" class="pagination-button">
+                    3
+                </a>
+
+                <a href="#" class="pagination-button">
+                    Next
+                </a>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

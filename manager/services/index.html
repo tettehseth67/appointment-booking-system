@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | ConsultPro</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <a href="../index.html" class="sidebar-brand-icon">
+                CP
+            </a>
+
+            <div>
+                <a href="../index.html">
+                    ConsultPro
+                </a>
+
+                <span>
+                    MANAGER PORTAL
+                </span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+            <!-- DASHBOARD -->
+            <a href="../index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox">
+
+                <label for="appointments-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◷</span>
+                        <span>Appointments</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+
+                    <a href="../appointments/show/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                    <a href="../appointments/edit/index.html" class="sidebar-sublink">
+                        Edit Appointment
+                    </a>
+                </div>
+            </div>
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="calendar-menu" class="dropdown-checkbox">
+
+                <label for="calendar-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Calendar</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                    <a href="../calendar/add/index.html" class="sidebar-sublink">
+                        Add Event
+                    </a>
+                </div>
+            </div>
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultants-menu" class="dropdown-checkbox">
+
+                <label for="consultants-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◉</span>
+                        <span>Consultants</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../consultants/index.html" class="sidebar-sublink">
+                        Consultant List
+                    </a>
+
+                    <a href="../consultants/add/index.html" class="sidebar-sublink">
+                        Add Consultant
+                    </a>
+
+                    <a href="../consultants/show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+
+                    <a href="../consultants/edit/index.html" class="sidebar-sublink">
+                        Edit Consultant
+                    </a>
+                </div>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox" checked>
+
+                <label for="services-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="index.html" class="sidebar-sublink active">
+                        Service List
+                    </a>
+
+                    <a href="add/index.html" class="sidebar-sublink">
+                        Add Service
+                    </a>
+
+                    <a href="edit/index.html" class="sidebar-sublink">
+                        Edit Service
+                    </a>
+
+                    <a href="show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+                </div>
+            </div>
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="clients-menu" class="dropdown-checkbox">
+
+                <label for="clients-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">◎</span>
+                        <span>Clients</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="../clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+                </div>
+            </div>
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox">
+
+                <label for="messages-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">3</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        Compose Message
+                    </a>
+                </div>
+            </div>
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox">
+
+                <label for="notifications-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">3</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+                </div>
+            </div>
+
+            <!-- ANALYTICS -->
+            <div class="sidebar-heading">
+                ANALYTICS
+            </div>
+
+            <!-- REPORTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="reports-menu" class="dropdown-checkbox">
+
+                <label for="reports-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">▤</span>
+                        <span>Reports</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../reports/index.html" class="sidebar-sublink">
+                        Reports Overview
+                    </a>
+
+                    <a href="../reports/revenue/index.html" class="sidebar-sublink">
+                        Revenue Reports
+                    </a>
+
+                    <a href="../reports/appointments/index.html" class="sidebar-sublink">
+                        Appointment Reports
+                    </a>
+
+                    <a href="../reports/consultants/index.html" class="sidebar-sublink">
+                        Consultant Reports
+                    </a>
+
+                    <a href="../reports/clients/index.html" class="sidebar-sublink">
+                        Client Reports
+                    </a>
+                </div>
+            </div>
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+            <!-- SETTINGS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="settings-menu" class="dropdown-checkbox">
+
+                <label for="settings-menu" class="sidebar-link-wrapper">
+                    <span class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+                        <span class="dropdown-trigger">›</span>
+                    </span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../settings/profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+
+                    <a href="../settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    M
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>Manager</strong>
+                    <span>Manager</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    SERVICES
+                </span>
+
+            </div>
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ♢
+                    <span class="header-notification-dot"></span>
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+
+                        <span class="header-avatar">
+                            M
+                        </span>
+
+                        <span class="profile-name">
+                            Manager
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../settings/profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../settings/security/index.html">
+                            Security
+                        </a>
+
+                        <a href="../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- CONTENT -->
+        <section class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <div class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        SERVICES
+                    </span>
+
+                    <h1>
+                        Services
+                    </h1>
+
+                    <p>
+                        Manage the consulting services offered through ConsultPro.
+                    </p>
+
+                </div>
+
+                <a href="add/index.html" class="primary-button">
+                    + Add Service
+                </a>
+
+            </div>
+
+            <!-- FILTERS -->
+            <div class="admin-filter-bar">
+
+                <div class="admin-search">
+
+                    <label for="service-search">
+                        Search
+                    </label>
+
+                    <input type="search" id="service-search" placeholder="Search by service name or ID...">
+
+                </div>
+
+                <div class="admin-filter">
+
+                    <label for="service-status">
+                        Status
+                    </label>
+
+                    <select id="service-status">
+
+                        <option value="all">
+                            All Statuses
+                        </option>
+
+                        <option value="active">
+                            Active
+                        </option>
+
+                        <option value="inactive">
+                            Inactive
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <!-- SERVICE TABLE -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            SERVICE DIRECTORY
+                        </span>
+
+                        <h2>
+                            Consulting Services
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Service ID</th>
+                                <th>Service</th>
+                                <th>Description</th>
+                                <th>Duration</th>
+                                <th>Appointments</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <!-- SERVICE 1 -->
+                            <tr>
+
+                                <td>
+                                    SV-10001
+                                </td>
+
+                                <td>
+                                    <strong>Business Strategy</strong>
+                                </td>
+
+                                <td>
+                                    Strategic planning and business growth consulting.
+                                </td>
+
+                                <td>
+                                    60 min
+                                </td>
+
+                                <td>
+                                    42
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- SERVICE 2 -->
+                            <tr>
+
+                                <td>
+                                    SV-10002
+                                </td>
+
+                                <td>
+                                    <strong>Financial Consulting</strong>
+                                </td>
+
+                                <td>
+                                    Financial planning and business performance guidance.
+                                </td>
+
+                                <td>
+                                    60 min
+                                </td>
+
+                                <td>
+                                    31
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- SERVICE 3 -->
+                            <tr>
+
+                                <td>
+                                    SV-10003
+                                </td>
+
+                                <td>
+                                    <strong>Business Planning</strong>
+                                </td>
+
+                                <td>
+                                    Business planning, operations, and implementation support.
+                                </td>
+
+                                <td>
+                                    60 min
+                                </td>
+
+                                <td>
+                                    28
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- SERVICE 4 -->
+                            <tr>
+
+                                <td>
+                                    SV-10004
+                                </td>
+
+                                <td>
+                                    <strong>Career Consulting</strong>
+                                </td>
+
+                                <td>
+                                    Career planning, development, and professional guidance.
+                                </td>
+
+                                <td>
+                                    45 min
+                                </td>
+
+                                <td>
+                                    19
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- SERVICE 5 -->
+                            <tr>
+
+                                <td>
+                                    SV-10005
+                                </td>
+
+                                <td>
+                                    <strong>Startup Advisory</strong>
+                                </td>
+
+                                <td>
+                                    Guidance for early-stage businesses and startup founders.
+                                </td>
+
+                                <td>
+                                    60 min
+                                </td>
+
+                                <td>
+                                    14
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                            <!-- SERVICE 6 -->
+                            <tr>
+
+                                <td>
+                                    SV-10006
+                                </td>
+
+                                <td>
+                                    <strong>Leadership Coaching</strong>
+                                </td>
+
+                                <td>
+                                    Leadership development and executive coaching sessions.
+                                </td>
+
+                                <td>
+                                    45 min
+                                </td>
+
+                                <td>
+                                    11
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-inactive">
+                                        Inactive
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- PAGINATION -->
+                <div class="admin-pagination">
+
+                    <span>
+                        Showing 1-6 of 6 services
+                    </span>
+
+                    <div class="pagination-controls">
+
+                        <button type="button" class="pagination-button" disabled>
+                            Previous
+                        </button>
+
+                        <button type="button" class="pagination-button">
+                            1
+                        </button>
+
+                        <button type="button" class="pagination-button" disabled>
+                            Next
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- DELETE MODAL -->
+    <div class="confirmation-modal">
+
+        <div class="confirmation-modal-overlay"></div>
+
+        <div class="confirmation-modal-content">
+
+            <div class="confirmation-modal-icon">
+                !
+            </div>
+
+            <div class="confirmation-modal-body">
+
+                <h2>Delete Service?</h2>
+
+                <p>
+                    Are you sure you want to delete this service?
+                </p>
+
+                <p class="confirmation-modal-warning">
+                    This action cannot be undone.
+                </p>
+
+            </div>
+
+            <div class="confirmation-modal-actions">
+
+                <button type="button" class="secondary-button">
+                    Cancel
+                </button>
+
+                <button type="button" class="danger-button">
+                    Delete Service
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../../js/services.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Client | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">CP</div>
+
+            <div>
+                <a href="../../index.html">ConsultPro</a>
+                <span>RECEPTIONIST PORTAL</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+            <div class="sidebar-heading">MAIN MENU</div>
+
+            <!-- DASHBOARD -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="dashboard-menu" class="dropdown-checkbox">
+                <label for="dashboard-menu" class="sidebar-link-wrapper">
+                    <a href="../../index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⌂</span>
+                        Dashboard
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../index.html" class="sidebar-sublink">Overview</a>
+                    <a href="../../today/index.html" class="sidebar-sublink">Today's Schedule</a>
+                </div>
+            </div>
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox">
+
+                <label for="appointments-menu" class="sidebar-link-wrapper">
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        Appointments
+                        <span class="sidebar-count">12</span>
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../appointments/index.html" class="sidebar-sublink">Appointment List</a>
+                    <a href="../../appointments/add/index.html" class="sidebar-sublink">Add Appointment</a>
+                    <a href="../../appointments/show/index.html" class="sidebar-sublink">Appointment Details</a>
+                    <a href="../../appointments/edit/index.html" class="sidebar-sublink">Edit Appointment</a>
+                </div>
+            </div>
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="calendar-menu" class="dropdown-checkbox">
+
+                <label for="calendar-menu" class="sidebar-link-wrapper">
+                    <a href="../../calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▦</span>
+                        Calendar
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../calendar/index.html" class="sidebar-sublink">Calendar</a>
+                    <a href="../../calendar/add/index.html" class="sidebar-sublink">Add Event</a>
+                    <a href="../../calendar/edit/index.html" class="sidebar-sublink">Edit Event</a>
+                    <a href="../../calendar/show/index.html" class="sidebar-sublink">Event Details</a>
+                </div>
+            </div>
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultants-menu" class="dropdown-checkbox">
+
+                <label for="consultants-menu" class="sidebar-link-wrapper">
+                    <a href="../../consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        Consultants
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../consultants/index.html" class="sidebar-sublink">Consultant List</a>
+                    <a href="../../consultants/show/index.html" class="sidebar-sublink">Consultant Details</a>
+                </div>
+            </div>
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="clients-menu" class="dropdown-checkbox" checked>
+
+                <label for="clients-menu" class="sidebar-link-wrapper">
+                    <a href="../index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">♙</span>
+                        Clients
+                    </a>
+
+                    <span class="dropdown-trigger">⌃</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../index.html" class="sidebar-sublink">Client List</a>
+                    <a href="index.html" class="sidebar-sublink active">Add Client</a>
+                    <a href="../show/index.html" class="sidebar-sublink">Client Details</a>
+                    <a href="../edit/index.html" class="sidebar-sublink">Edit Client</a>
+                </div>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox">
+
+                <label for="services-menu" class="sidebar-link-wrapper">
+                    <a href="../../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        Services
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../services/index.html" class="sidebar-sublink">Service List</a>
+                    <a href="../../services/show/index.html" class="sidebar-sublink">Service Details</a>
+                </div>
+            </div>
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">COMMUNICATION</div>
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox">
+
+                <label for="messages-menu" class="sidebar-link-wrapper">
+                    <a href="../../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        Messages
+                        <span class="sidebar-count">4</span>
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../messages/index.html" class="sidebar-sublink">Inbox</a>
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">Sent Messages</a>
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">Compose Message</a>
+                </div>
+            </div>
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox">
+
+                <label for="notifications-menu" class="sidebar-link-wrapper">
+                    <a href="../../notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        Notifications
+                        <span class="sidebar-count">3</span>
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../notifications/index.html" class="sidebar-sublink">All Notifications</a>
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">Unread</a>
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">Notification Settings</a>
+                </div>
+            </div>
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">ACCOUNT</div>
+
+            <!-- PROFILE -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="profile-menu" class="dropdown-checkbox">
+
+                <label for="profile-menu" class="sidebar-link-wrapper">
+                    <a href="../../profile/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◉</span>
+                        Profile
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../profile/index.html" class="sidebar-sublink">Profile Settings</a>
+                    <a href="../../profile/edit/index.html" class="sidebar-sublink">Edit Profile</a>
+                    <a href="../../profile/password/index.html" class="sidebar-sublink">Change Password</a>
+                    <a href="../../profile/settings/index.html" class="sidebar-sublink">Settings</a>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                Back to Website
+            </a>
+
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">R</div>
+
+                <div class="sidebar-user-info">
+                    <strong>Receptionist</strong>
+                    <span>Receptionist</span>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <div class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle">☰</button>
+
+                <span class="header-label">CLIENTS</span>
+
+            </div>
+
+            <div class="header-right">
+
+                <button class="header-icon-button">⌕</button>
+
+                <button class="header-icon-button">
+                    ♢
+                    <span class="header-notification-dot"></span>
+                </button>
+
+                <div class="header-profile">
+
+                    <button class="profile-toggle">
+
+                        <div class="header-profile-avatar">R</div>
+
+                        <div class="header-profile-info">
+                            <strong>Receptionist</strong>
+                            <span>Receptionist</span>
+                        </div>
+
+                        <span class="dropdown-arrow">⌄</span>
+
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../profile/index.html">Profile</a>
+
+                        <a href="../../profile/settings/index.html">Settings</a>
+
+                        <a href="../../../index.html">Logout</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <main class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">PEOPLE</span>
+
+                    <h1>Add Client</h1>
+
+                    <p>
+                        Create a new client profile and add their contact and consultation information.
+                    </p>
+
+                </div>
+
+                <div class="admin-page-actions">
+
+                    <a href="../index.html" class="secondary-button">
+                        Cancel
+                    </a>
+
+                    <button type="submit" form="client-form" class="primary-button">
+                        Save Client
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- CLIENT FORM -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">CLIENT INFORMATION</span>
+
+                        <h2>New Client Profile</h2>
+
+                    </div>
+
+                </div>
+
+
+                <form id="client-form" class="admin-form">
+
+                    <!-- PERSONAL INFORMATION -->
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">PERSONAL DETAILS</span>
+
+                            <h2>Basic Information</h2>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="first-name" class="form-label">
+                                First Name
+                            </label>
+
+                            <input type="text" id="first-name" name="first_name" class="form-input"
+                                placeholder="Enter first name" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="last-name" class="form-label">
+                                Last Name
+                            </label>
+
+                            <input type="text" id="last-name" name="last_name" class="form-input"
+                                placeholder="Enter last name" required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="email" class="form-label">
+                                Email Address
+                            </label>
+
+                            <input type="email" id="email" name="email" class="form-input"
+                                placeholder="client@example.com" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone" class="form-label">
+                                Phone Number
+                            </label>
+
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (555) 000-0000"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="date-of-birth" class="form-label">
+                                Date of Birth
+                            </label>
+
+                            <input type="date" id="date-of-birth" name="date_of_birth" class="form-input">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="company" class="form-label">
+                                Company / Organization
+                            </label>
+
+                            <input type="text" id="company" name="company" class="form-input"
+                                placeholder="Enter company name">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ADDRESS -->
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">CONTACT DETAILS</span>
+
+                            <h2>Address</h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="address" class="form-label">
+                            Street Address
+                        </label>
+
+                        <input type="text" id="address" name="address" class="form-input"
+                            placeholder="Enter street address">
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="city" class="form-label">
+                                City
+                            </label>
+
+                            <input type="text" id="city" name="city" class="form-input" placeholder="Enter city">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="state" class="form-label">
+                                State
+                            </label>
+
+                            <input type="text" id="state" name="state" class="form-input" placeholder="Enter state">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="zip-code" class="form-label">
+                                ZIP Code
+                            </label>
+
+                            <input type="text" id="zip-code" name="zip_code" class="form-input"
+                                placeholder="Enter ZIP code">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONSULTATION INFORMATION -->
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">CONSULTATION</span>
+
+                            <h2>Client Preferences</h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="consultant" class="form-label">
+                                Preferred Consultant
+                            </label>
+
+                            <select id="consultant" name="consultant" class="form-select">
+
+                                <option value="">
+                                    Select consultant
+                                </option>
+
+                                <option value="david-wilson">
+                                    David Wilson
+                                </option>
+
+                                <option value="sarah-wilson">
+                                    Sarah Wilson
+                                </option>
+
+                                <option value="michael-johnson">
+                                    Michael Johnson
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="status" class="form-label">
+                                Client Status
+                            </label>
+
+                            <select id="status" name="status" class="form-select">
+
+                                <option value="active" selected>
+                                    Active
+                                </option>
+
+                                <option value="inactive">
+                                    Inactive
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="notes" class="form-label">
+                            Notes
+                        </label>
+
+                        <textarea id="notes" name="notes" class="form-textarea" rows="5"
+                            placeholder="Add any relevant client notes or preferences..."></textarea>
+
+                    </div>
+
+
+                    <!-- FORM ACTIONS -->
+                    <div class="admin-page-actions">
+
+                        <a href="../index.html" class="secondary-button">
+                            Cancel
+                        </a>
+
+                        <button type="submit" class="primary-button">
+                            Save Client
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

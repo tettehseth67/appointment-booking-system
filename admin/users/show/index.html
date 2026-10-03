@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Users | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar" aria-label="Main navigation">
+        <div class="sidebar-brand">
+            <a href="index.html">ConsultPro</a>
+            <span>ADMIN PORTAL</span>
+        </div>
+        <nav class="sidebar-navigation">
+            <p class="sidebar-heading">MAIN MENU</p>
+            <a href="../admin/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                <span>Dashboard</span>
+            </a>
+
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+                <div class="sidebar-link-wrapper">
+                    <a href="../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+                    <label for="appointments-toggle" class="dropdown-trigger">▾</label>
+                </div>
+                <div class="sidebar-dropdown-content">
+                    <a href="../appointments/show-appointments.html" class="sidebar-sublink">
+                        <span class="sidebar-icon">↳</span>
+                        <span>Appointment Details</span>
+                    </a>
+                </div>
+            </div>
+
+            <a href="../consultants/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Consultants</span>
+            </a>
+            <a href="../services/index.html" class="sidebar-link">
+                <span class="sidebar-icon">◆</span>
+                <span>Services</span>
+            </a>
+            <a href="../clients/index.html" class="sidebar-link">
+                <span class="sidebar-icon">♙</span>
+                <span>Clients</span>
+            </a>
+            <a href="../messages/index.html" class="sidebar-link">
+                <span class="sidebar-icon">✉</span>
+                <span>Messages</span>
+                <span class="sidebar-count">4</span>
+            </a>
+
+            <p class="sidebar-heading sidebar-heading-space">MANAGEMENT</p>
+            <a href="../reports/index.html" class="sidebar-link">
+                <span class="sidebar-icon">▤</span>
+                <span>Reports</span>
+            </a>
+            <a href="../settings/index.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                <span>Settings</span>
+            </a>
+            <a href="../users/index.html" class="sidebar-link active">
+                <span class="sidebar-icon">⚙</span>
+                <span>Users</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">AD</div>
+                <div class="sidebar-user-info">
+                    <strong>Admin User</strong>
+                    <span>Administrator</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- CONTENT ELEMENT AREA -->
+    <div class="admin-main">
+        <header class="admin-header">
+            <div>
+                <span class="header-label">USER MANAGEMENT</span>
+                <h1>Show Users</h1>
+            </div>
+        </header>
+
+        <main class="admin-content">
+            <section class="details-header">
+                <div>
+                    <span class="panel-label">USER PROFILE</span>
+                    <h2>Michael Anderson</h2>
+                </div>
+                <span class="status confirmed">Active</span>
+            </section>
+
+            <section class="details-card">
+                <div class="details-card-header">
+                    <h3>User Information</h3>
+                </div>
+                <div class="details-grid">
+                    <div class="detail-item"><label>User ID</label>
+                        <p>USR002</p>
+                    </div>
+                    <div class="detail-item"><label>Role</label>
+                        <p>Consultant</p>
+                    </div>
+                    <div class="detail-item"><label>Email</label>
+                        <p>michael@consultpro.com</p>
+                    </div>
+                    <div class="detail-item"><label>Phone</label>
+                        <p>+1 555 123 4567</p>
+                    </div>
+                    <div class="detail-item"><label>Last Login</label>
+                        <p>September 15, 2026</p>
+                    </div>
+                    <div class="detail-item"><label>Status</label>
+                        <p>Active</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="admin-panel">
+                <div class="admin-panel-header">
+                    <h2>Recent Activity</h2>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">Logged into system</div>
+                    <div class="activity-item">Updated appointment schedule</div>
+                    <div class="activity-item">Completed consultation session</div>
+                </div>
+            </section>
+
+            <section class="details-actions">
+                <a href="../edit/index.html" class="dashboard-primary-button">Edit User</a>
+                <!-- This button targets the ID of the dialog element below -->
+                <button type="button" popovertarget="delete-user-modal" class="danger-button">
+                    Deactivate User
+                </button>
+            </section>
+
+            <!-- INSERT THE DIALOG MODAL HERE FROM PART 2 -->
+            <dialog id="delete-user-modal" popover class="admin-panel delete-user-card" role="dialog" aria-modal="true"
+                aria-labelledby="user-delete-title" aria-describedby="user-delete-description">
+
+                <!-- Warning Context Block -->
+                <div class="delete-warning-box" role="alert">
+                    <span class="warning-icon" aria-hidden="true">⚠</span>
+                    <div>
+                        <h3>Permanently Remove Account?</h3>
+                        <p>You are about to permanently remove this user from the system. This action cannot be undone.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Interactive Actions Sub-Footer Grid -->
+                <div class="delete-actions-row">
+                    <button type="button" popovertarget="delete-user-modal" popovertargetaction="hide"
+                        class="secondary-button">
+                        Cancel
+                    </button>
+                    <button type="button" id="deleteUserButton" class="delete-confirm-button">
+                        Confirm Delete
+                    </button>
+                </div>
+            </dialog>
+
+        </main>
+    </div>
+
+</body>
+
+</html>

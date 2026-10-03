@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Availability | ConsultPro Consultant Portal</title>
+
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- ================================
+        SIDEBAR
+    ================================= -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+
+            <div class="sidebar-brand-icon">
+                CP
+            </div>
+
+            <div>
+                <h2>ConsultPro</h2>
+                <span>CONSULTANT PORTAL</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+
+            <!-- Dashboard -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="dashboard-toggle" class="dropdown-checkbox">
+
+                <label for="dashboard-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">▦</span>
+                        <span>Dashboard</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Overview
+                    </a>
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Recent Activity
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- My Appointments -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <label for="appointments-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../appointments/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">▣</span>
+                        <span>My Appointments</span>
+                        <span class="sidebar-count">12</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../appointments/upcoming/index.html" class="sidebar-sublink">
+                        Upcoming Appointments
+                    </a>
+
+                    <a href="../appointments/completed/index.html" class="sidebar-sublink">
+                        Completed Appointments
+                    </a>
+
+                    <a href="../appointments/details/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SCHEDULE -->
+
+            <div class="sidebar-heading">
+                SCHEDULE
+            </div>
+
+
+            <!-- My Calendar -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="calendar-toggle" class="dropdown-checkbox">
+
+                <label for="calendar-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../calendar/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">▦</span>
+                        <span>My Calendar</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        Add Availability
+                    </a>
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        Availability
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- My Clients -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="clients-toggle" class="dropdown-checkbox">
+
+                <label for="clients-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../clients/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♙</span>
+                        <span>My Clients</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="../clients/details/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Services -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+
+                <label for="services-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../../admin/services/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">◆</span>
+                        <span>Services</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../admin/services/index.html" class="sidebar-sublink">
+                        Service List
+                    </a>
+
+                    <a href="../../admin/services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+
+            <!-- Messages -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+
+                <label for="messages-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../messages/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">3</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        New Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notifications -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+
+                <label for="notifications-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../notifications/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">3</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+
+            <!-- My Profile -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="profile-toggle" class="dropdown-checkbox">
+
+                <label for="profile-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../account/profile/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">◉</span>
+                        <span>My Profile</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../account/profile/index.html" class="sidebar-sublink">
+                        Profile Details
+                    </a>
+
+                    <a href="../account/edit-profile/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Settings -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox">
+
+                <label for="settings-toggle" class="sidebar-link-wrapper">
+
+                    <a href="../account/settings/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../account/settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../account/change-password/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+
+            </a>
+
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    D
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>David Wilson</strong>
+                    <span>Consultant</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================================
+        MAIN CONTENT
+    ================================= -->
+
+    <main class="admin-main">
+
+        <!-- HEADER -->
+
+        <header class="admin-header">
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle" type="button" aria-label="Open navigation menu">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    SCHEDULE
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button" type="button" aria-label="View notifications">
+                    ♢
+                </button>
+
+                <button class="header-icon-button" type="button" aria-label="Open settings">
+                    ⚙
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button class="profile-toggle" type="button" aria-label="Open David Wilson profile menu">
+
+                        <span class="header-avatar">
+                            D
+                        </span>
+
+                        <span>
+                            David Wilson
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../account/profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../account/settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../account/change-password/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <a href="../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <div class="admin-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <section class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        SCHEDULE
+                    </span>
+
+                    <h1>
+                        Availability
+                    </h1>
+
+                    <p>
+                        Set the days and hours when clients can book appointments with you.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- AVAILABILITY OVERVIEW -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            WEEKLY SCHEDULE
+                        </span>
+
+                        <h2>
+                            Working Hours
+                        </h2>
+
+                    </div>
+
+                    <span class="status-badge confirmed">
+                        Availability Active
+                    </span>
+
+                </div>
+
+
+                <div class="availability-grid">
+
+
+                    <!-- MONDAY -->
+
+                    <div class="availability-day">
+
+                        <div>
+
+                            <strong>
+                                Monday
+                            </strong>
+
+                            <span>
+                                Available
+                            </span>
+
+                        </div>
+
+                        <div class="availability-time">
+
+                            <span>
+                                09:00 AM
+                            </span>
+
+                            <span>
+                                —
+                            </span>
+
+                            <span>
+                                05:00 PM
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TUESDAY -->
+
+                    <div class="availability-day">
+
+                        <div>
+
+                            <strong>
+                                Tuesday
+                            </strong>
+
+                            <span>
+                                Available
+                            </span>
+
+                        </div>
+
+                        <div class="availability-time">
+
+                            <span>
+                                09:00 AM
+                            </span>
+
+                            <span>
+                                —
+                            </span>
+
+                            <span>
+                                05:00 PM
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- WEDNESDAY -->
+
+                    <div class="availability-day">
+
+                        <div>
+
+                            <strong>
+                                Wednesday
+                            </strong>
+
+                            <span>
+                                Available
+                            </span>
+
+                        </div>
+
+                        <div class="availability-time">
+
+                            <span>
+                                09:00 AM
+                            </span>
+
+                            <span>
+                                —
+                            </span>
+
+                            <span>
+                                05:00 PM
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- THURSDAY -->
+
+                    <div class="availability-day">
+
+                        <div>
+
+                            <strong>
+                                Thursday
+                            </strong>
+
+                            <span>
+                                Available
+                            </span>
+
+                        </div>
+
+                        <div class="availability-time">
+
+                            <span>
+                                09:00 AM
+                            </span>
+
+                            <span>
+                                —
+                            </span>
+
+                            <span>
+                                05:00 PM
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FRIDAY -->
+
+                    <div class="availability-day">
+
+                        <div>
+
+                            <strong>
+                                Friday
+                            </strong>
+
+                            <span>
+                                Available
+                            </span>
+
+                        </div>
+
+                        <div class="availability-time">
+
+                            <span>
+                                09:00 AM
+                            </span>
+
+                            <span>
+                                —
+                            </span>
+
+                            <span>
+                                03:00 PM
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SATURDAY -->
+
+                    <div class="availability-day">
+
+                        <div>
+
+                            <strong>
+                                Saturday
+                            </strong>
+
+                            <span>
+                                Unavailable
+                            </span>
+
+                        </div>
+
+                        <div class="availability-time unavailable">
+                            Closed
+                        </div>
+
+                    </div>
+
+
+                    <!-- SUNDAY -->
+
+                    <div class="availability-day">
+
+                        <div>
+
+                            <strong>
+                                Sunday
+                            </strong>
+
+                            <span>
+                                Unavailable
+                            </span>
+
+                        </div>
+
+                        <div class="availability-time unavailable">
+                            Closed
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- AVAILABILITY FORM -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            UPDATE SCHEDULE
+                        </span>
+
+                        <h2>
+                            Working Hours
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <form class="consultant-form" action="#" method="post">
+                    <!-- MONDAY -->
+
+                    <div class="form-section">
+
+                        <h3 class="form-section-title">
+                            Monday
+                        </h3>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="monday-start">
+                                    Start Time
+                                </label>
+
+                                <input type="time" id="monday-start" name="monday-start" value="09:00">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="monday-end">
+                                    End Time
+                                </label>
+
+                                <input type="time" id="monday-end" name="monday-end" value="17:00">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TUESDAY -->
+
+                    <div class="form-section">
+
+                        <h3 class="form-section-title">
+                            Tuesday
+                        </h3>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="tuesday-start">
+                                    Start Time
+                                </label>
+
+                                <input type="time" id="tuesday-start" name="tuesday-start" value="09:00">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="tuesday-end">
+                                    End Time
+                                </label>
+
+                                <input type="time" id="tuesday-end" name="tuesday-end" value="17:00">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- WEDNESDAY -->
+
+                    <div class="form-section">
+
+                        <h3 class="form-section-title">
+                            Wednesday
+                        </h3>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="wednesday-start">
+                                    Start Time
+                                </label>
+
+                                <input type="time" id="wednesday-start" name="wednesday-start" value="09:00">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="wednesday-end">
+                                    End Time
+                                </label>
+
+                                <input type="time" id="wednesday-end" name="wednesday-end" value="17:00">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- THURSDAY -->
+
+                    <div class="form-section">
+
+                        <h3 class="form-section-title">
+                            Thursday
+                        </h3>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="thursday-start">
+                                    Start Time
+                                </label>
+
+                                <input type="time" id="thursday-start" name="thursday-start" value="09:00">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="thursday-end">
+                                    End Time
+                                </label>
+
+                                <input type="time" id="thursday-end" name="thursday-end" value="17:00">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FRIDAY -->
+
+                    <div class="form-section">
+
+                        <h3 class="form-section-title">
+                            Friday
+                        </h3>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="friday-start">
+                                    Start Time
+                                </label>
+
+                                <input type="time" id="friday-start" name="friday-start" value="09:00">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="friday-end">
+                                    End Time
+                                </label>
+
+                                <input type="time" id="friday-end" name="friday-end" value="15:00">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SATURDAY -->
+
+                    <div class="form-section">
+
+                        <h3 class="form-section-title">
+                            Saturday
+                        </h3>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="saturday-status">
+                                    Availability
+                                </label>
+
+                                <select id="saturday-status" name="saturday-status">
+
+                                    <option value="unavailable" selected>
+                                        Unavailable
+                                    </option>
+
+                                    <option value="available">
+                                        Available
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SUNDAY -->
+
+                    <div class="form-section">
+
+                        <h3 class="form-section-title">
+                            Sunday
+                        </h3>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="sunday-status">
+                                    Availability
+                                </label>
+
+                                <select id="sunday-status" name="sunday-status">
+
+                                    <option value="unavailable" selected>
+                                        Unavailable
+                                    </option>
+
+                                    <option value="available">
+                                        Available
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FORM ACTIONS -->
+
+                    <div class="form-actions">
+
+                        <button type="reset" class="secondary-button">
+                            Reset
+                        </button>
+
+                        <button type="submit" class="dashboard-primary-button">
+                            Save Availability
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+            <!-- BOOKING SETTINGS -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            BOOKING SETTINGS
+                        </span>
+
+                        <h2>
+                            Appointment Preferences
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-list">
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Appointment Duration
+                            </strong>
+
+                            <span>
+                                Default length for new appointments
+                            </span>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <select id="appointment-duration" name="appointment-duration">
+
+                                <option value="30">
+                                    30 Minutes
+                                </option>
+
+                                <option value="45">
+                                    45 Minutes
+                                </option>
+
+                                <option value="60" selected>
+                                    60 Minutes
+                                </option>
+
+                                <option value="90">
+                                    90 Minutes
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Buffer Time
+                            </strong>
+
+                            <span>
+                                Time between appointments
+                            </span>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <select id="buffer-time" name="buffer-time">
+
+                                <option value="0" selected>
+                                    No Buffer
+                                </option>
+
+                                <option value="15">
+                                    15 Minutes
+                                </option>
+
+                                <option value="30">
+                                    30 Minutes
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Advance Booking
+                            </strong>
+
+                            <span>
+                                How far ahead clients can book
+                            </span>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <select id="advance-booking" name="advance-booking">
+
+                                <option value="7">
+                                    7 Days
+                                </option>
+
+                                <option value="14">
+                                    14 Days
+                                </option>
+
+                                <option value="30" selected>
+                                    30 Days
+                                </option>
+
+                                <option value="60">
+                                    60 Days
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Minimum Notice
+                            </strong>
+
+                            <span>
+                                Minimum time required before booking
+                            </span>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <select id="minimum-notice" name="minimum-notice">
+
+                                <option value="1">
+                                    1 Hour
+                                </option>
+
+                                <option value="4" selected>
+                                    4 Hours
+                                </option>
+
+                                <option value="12">
+                                    12 Hours
+                                </option>
+
+                                <option value="24">
+                                    24 Hours
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

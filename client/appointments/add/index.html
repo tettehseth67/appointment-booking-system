@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Appointment | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../admin/admin-dashboard.css">
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="../../index.html">
+                ConsultPro
+            </a>
+
+            <span>
+                CLIENT PORTAL
+            </span>
+
+        </div>
+
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+
+            <!-- Dashboard -->
+            <a href="../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">⌂</span>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <!-- My Appointments -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../index.html" class="sidebar-link active">
+
+                        <span class="sidebar-icon">▣</span>
+
+                        <span>
+                            My Appointments
+                        </span>
+
+                    </a>
+
+                    <label for="appointments-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        Book Appointment
+                    </a>
+
+                    <a href="../history/index.html" class="sidebar-sublink">
+                        Appointment History
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../services/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">▦</span>
+
+                        <span>
+                            Services
+                        </span>
+
+                    </a>
+
+                    <label for="services-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../services/index.html" class="sidebar-sublink">
+                        Available Services
+                    </a>
+
+                    <a href="../../services/index.html" class="sidebar-sublink">
+                        My Services
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../messages/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">✉</span>
+
+                        <span>
+                            Messages
+                        </span>
+
+                        <span class="sidebar-count">
+                            2
+                        </span>
+
+                    </a>
+
+                    <label for="messages-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">
+                        New Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notifications -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../notifications/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">🔔</span>
+
+                        <span>
+                            Notifications
+                        </span>
+
+                        <span class="sidebar-count">
+                            4
+                        </span>
+
+                    </a>
+
+                    <label for="notifications-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+
+            <!-- My Profile -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="profile-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../profile/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♙</span>
+
+                        <span>
+                            My Profile
+                        </span>
+
+                    </a>
+
+                    <label for="profile-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../profile/index.html" class="sidebar-sublink">
+                        Profile Details
+                    </a>
+
+                    <a href="../../profile/edit/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                    <a href="../../profile/change-password/index.html" class="sidebar-sublink">
+                        Change Password
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Settings -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../settings/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">⚙</span>
+
+                        <span>
+                            Settings
+                        </span>
+
+                    </a>
+
+                    <label for="settings-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../../settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">
+                    ←
+                </span>
+
+                <span>
+                    Back to Website
+                </span>
+
+            </a>
+
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    JD
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>
+                        John Davis
+                    </strong>
+
+                    <span>
+                        Client
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    <main class="admin-main">
+
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    BOOK APPOINTMENT
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button">
+                    🔔
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button class="profile-toggle">
+
+                        <span class="header-avatar">
+                            JD
+                        </span>
+
+                        <span class="profile-name">
+                            John Davis
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../../profile/edit/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../../profile/change-password/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="../../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <a href="../../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             PAGE CONTENT
+        ========================== -->
+        <section class="admin-content">
+
+
+            <!-- PAGE HEADER -->
+            <div class="admin-page-header">
+
+                <div>
+
+                    <h1>
+                        Book Appointment
+                    </h1>
+
+                    <p>
+                        Schedule a consultation with one of our specialists.
+                    </p>
+
+                </div>
+
+
+                <a href="../index.html" class="secondary-button">
+
+                    Back to Appointments
+
+                </a>
+
+            </div>
+
+
+            <!-- BOOKING FORM -->
+            <div class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            NEW APPOINTMENT
+                        </span>
+
+                        <h2>
+                            Appointment Details
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <form class="admin-form">
+
+
+                    <!-- SERVICE -->
+                    <div class="form-group">
+
+                        <label for="service">
+                            Select Service
+                        </label>
+
+                        <select id="service" name="service" class="form-select" required>
+
+                            <option value="">
+                                Select a service
+                            </option>
+
+                            <option value="business-strategy">
+                                Business Strategy
+                            </option>
+
+                            <option value="leadership-coaching">
+                                Leadership Coaching
+                            </option>
+
+                            <option value="career-consultation">
+                                Career Consultation
+                            </option>
+
+                            <option value="business-growth-planning">
+                                Business Growth Planning
+                            </option>
+
+                            <option value="financial-planning">
+                                Financial Planning
+                            </option>
+
+                            <option value="personal-development">
+                                Personal Development
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- CONSULTANT -->
+                    <div class="form-group">
+
+                        <label for="consultant">
+                            Select Consultant
+                        </label>
+
+                        <select id="consultant" name="consultant" class="form-select" required>
+
+                            <option value="">
+                                Select a consultant
+                            </option>
+
+                            <option value="david-wilson">
+                                David Wilson
+                            </option>
+
+                            <option value="sarah-wilson">
+                                Sarah Wilson
+                            </option>
+
+                            <option value="michael-johnson">
+                                Michael Johnson
+                            </option>
+
+                            <option value="emily-carter">
+                                Emily Carter
+                            </option>
+
+                            <option value="robert-anderson">
+                                Robert Anderson
+                            </option>
+
+                            <option value="jessica-morgan">
+                                Jessica Morgan
+                            </option>
+
+                            <option value="any-consultant">
+                                Any Available Consultant
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- DATE AND TIME -->
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="appointment-date">
+                                Appointment Date
+                            </label>
+
+                            <input type="date" id="appointment-date" name="appointment-date" class="form-input"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="appointment-time">
+                                Preferred Time
+                            </label>
+
+                            <select id="appointment-time" name="appointment-time" class="form-select" required>
+
+                                <option value="">
+                                    Select a time
+                                </option>
+
+                                <option value="09:00">
+                                    9:00 AM
+                                </option>
+
+                                <option value="10:00">
+                                    10:00 AM
+                                </option>
+
+                                <option value="11:00">
+                                    11:00 AM
+                                </option>
+
+                                <option value="12:00">
+                                    12:00 PM
+                                </option>
+
+                                <option value="13:00">
+                                    1:00 PM
+                                </option>
+
+                                <option value="14:00">
+                                    2:00 PM
+                                </option>
+
+                                <option value="15:00">
+                                    3:00 PM
+                                </option>
+
+                                <option value="16:00">
+                                    4:00 PM
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- APPOINTMENT TYPE -->
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="appointment-type">
+                                Appointment Type
+                            </label>
+
+                            <select id="appointment-type" name="appointment-type" class="form-select" required>
+
+                                <option value="">
+                                    Select appointment type
+                                </option>
+
+                                <option value="in-person">
+                                    In-Person
+                                </option>
+
+                                <option value="online">
+                                    Online
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="location">
+                                Location / Meeting Method
+                            </label>
+
+                            <select id="location" name="location" class="form-select" required>
+
+                                <option value="">
+                                    Select location
+                                </option>
+
+                                <option value="conference-room-a">
+                                    Conference Room A
+                                </option>
+
+                                <option value="conference-room-b">
+                                    Conference Room B
+                                </option>
+
+                                <option value="online-meeting">
+                                    Online Meeting
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTACT INFORMATION -->
+                    <div class="admin-panel-header form-section-heading">
+
+                        <div>
+
+                            <span class="panel-label">
+                                CONTACT INFORMATION
+                            </span>
+
+                            <h2>
+                                Your Information
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="first-name">
+                                First Name
+                            </label>
+
+                            <input type="text" id="first-name" name="first-name" class="form-input" value="John"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="last-name">
+                                Last Name
+                            </label>
+
+                            <input type="text" id="last-name" name="last-name" class="form-input" value="Davis"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input type="email" id="email" name="email" class="form-input" value="john@example.com"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number
+                            </label>
+
+                            <input type="tel" id="phone" name="phone" class="form-input" value="+1 555 123 4567"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- NOTES -->
+                    <div class="form-group">
+
+                        <label for="notes">
+                            Appointment Notes
+                        </label>
+
+                        <textarea id="notes" name="notes" class="form-textarea" rows="5"
+                            placeholder="Tell us briefly what you would like to discuss..."></textarea>
+
+                    </div>
+
+
+                    <!-- TERMS -->
+                    <div class="form-group">
+
+                        <label class="checkbox-label">
+
+                            <input type="checkbox" name="confirmation" required>
+
+                            <span>
+                                I confirm that the appointment information
+                                provided above is correct.
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- FORM ACTIONS -->
+                    <div class="form-actions">
+
+                        <a href="../index.html" class="secondary-button">
+                            Cancel
+                        </a>
+
+                        <button type="submit" class="primary-button">
+                            Request Appointment
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- BOOKING INFORMATION -->
+            <div class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            BOOKING INFORMATION
+                        </span>
+
+                        <h2>
+                            Before You Book
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-cards">
+
+
+                    <div class="settings-card">
+
+                        <div class="settings-card-icon">
+                            ✓
+                        </div>
+
+                        <div class="settings-card-content">
+
+                            <h3>
+                                Check Availability
+                            </h3>
+
+                            <p>
+                                Appointment requests are reviewed based on
+                                consultant availability.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-card">
+
+                        <div class="settings-card-icon">
+                            ⏱
+                        </div>
+
+                        <div class="settings-card-content">
+
+                            <h3>
+                                Confirmation
+                            </h3>
+
+                            <p>
+                                You will receive a notification when your
+                                appointment is confirmed.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="../../messages/compose/index.html" class="settings-card">
+
+                        <div class="settings-card-icon">
+                            ✉
+                        </div>
+
+                        <div class="settings-card-content">
+
+                            <h3>
+                                Need Help?
+                            </h3>
+
+                            <p>
+                                Contact our team through the messaging center
+                                if you need assistance.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

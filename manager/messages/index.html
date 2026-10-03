@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Messages | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+
+            <div class="sidebar-brand-icon">
+                CP
+            </div>
+
+            <div>
+                <h2>ConsultPro</h2>
+                <span>MANAGER PORTAL</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+            <!-- Dashboard -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-dashboard" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ▦
+                        </span>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+                    <label for="manager-dashboard" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Overview
+                    </a>
+
+                    <a href="index.html" class="sidebar-sublink">
+                        Recent Activity
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Appointments -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-appointments" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../appointments/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ▣
+                        </span>
+
+                        <span>
+                            Appointments
+                        </span>
+
+                    </a>
+
+                    <label for="manager-appointments" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+
+                    <a href="../appointments/show/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Calendar -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-calendar" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../calendar/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            □
+                        </span>
+
+                        <span>
+                            Calendar
+                        </span>
+
+                    </a>
+
+                    <label for="manager-calendar" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                    <a href="calendar/add/index.html" class="sidebar-sublink">
+                        Add Event
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Consultants -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-consultants" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="consultants/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ♙
+                        </span>
+
+                        <span>
+                            Consultants
+                        </span>
+
+                    </a>
+
+                    <label for="manager-consultants" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="consultants/index.html" class="sidebar-sublink">
+                        Consultant List
+                    </a>
+
+                    <a href="consultants/add/index.html" class="sidebar-sublink">
+                        Add Consultant
+                    </a>
+
+                    <a href="consultants/show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Services -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-services" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="services/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ◇
+                        </span>
+
+                        <span>
+                            Services
+                        </span>
+
+                    </a>
+
+                    <label for="manager-services" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="services/index.html" class="sidebar-sublink">
+                        Service List
+                    </a>
+
+                    <a href="services/add/index.html" class="sidebar-sublink">
+                        Add Service
+                    </a>
+
+                    <a href="services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Clients -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-clients" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="clients/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ♙
+                        </span>
+
+                        <span>
+                            Clients
+                        </span>
+
+                    </a>
+
+                    <label for="manager-clients" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="clients/add/index.html" class="sidebar-sublink">
+                        Add Client
+                    </a>
+
+                    <a href="clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                    <a href="clients/edit/index.html" class="sidebar-sublink">
+                        Edit Client
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+
+            <!-- Messages -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-messages" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="messages/index.html" class="sidebar-link active">
+
+                        <span class="sidebar-icon">
+                            ✉
+                        </span>
+
+                        <span>
+                            Messages
+                        </span>
+
+                        <span class="sidebar-count">
+                            4
+                        </span>
+
+                    </a>
+
+                    <label for="manager-messages" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink active">
+                        Inbox
+                    </a>
+
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        Compose Message
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Notifications -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-notifications" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../notifications/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ♢
+                        </span>
+
+                        <span>
+                            Notifications
+                        </span>
+
+                        <span class="sidebar-count">
+                            4
+                        </span>
+
+                    </a>
+
+                    <label for="manager-notifications" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ANALYTICS -->
+
+            <div class="sidebar-heading">
+                ANALYTICS
+            </div>
+
+
+            <!-- Reports -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-reports" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="reports/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ▥
+                        </span>
+
+                        <span>
+                            Reports
+                        </span>
+
+                    </a>
+
+                    <label for="manager-reports" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="reports/index.html" class="sidebar-sublink">
+                        Reports Overview
+                    </a>
+
+                    <a href="reports/revenue/index.html" class="sidebar-sublink">
+                        Revenue Reports
+                    </a>
+
+                    <a href="reports/appointments/index.html" class="sidebar-sublink">
+                        Appointment Reports
+                    </a>
+
+                    <a href="reports/consultants/index.html" class="sidebar-sublink">
+                        Consultant Reports
+                    </a>
+
+                    <a href="reports/clients/index.html" class="sidebar-sublink">
+                        Client Reports
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+
+            <!-- Settings -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="manager-settings" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="settings/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ⚙
+                        </span>
+
+                        <span>
+                            Settings
+                        </span>
+
+                    </a>
+
+                    <label for="manager-settings" class="dropdown-trigger">
+                        ▾
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="settings/general/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="settings/profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+
+                    <a href="settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+            <a href="../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">
+                    ←
+                </span>
+
+                <span>
+                    Back to Website
+                </span>
+
+            </a>
+
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    M
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>
+                        Manager
+                    </strong>
+
+                    <span>
+                        Manager
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    MESSAGES
+                </span>
+
+            </div>
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ♢
+                    <span class="header-notification-dot"></span>
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span class="profile-name">
+                            Yaw
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../settings/profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../settings/security/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <a href="../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <div class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        COMMUNICATION
+                    </span>
+
+                    <h1>
+                        Messages
+                    </h1>
+
+                    <p>
+                        Manage incoming messages and communication with clients and consultants.
+                    </p>
+
+                </div>
+
+                <div class="admin-page-actions">
+
+                    <a href="compose/index.html" class="primary-button">
+                        + New Message
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- MESSAGE STATS -->
+            <section class="dashboard-stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-card-header">
+
+                        <span class="stat-label">
+                            TOTAL MESSAGES
+                        </span>
+
+                        <span class="stat-icon">
+                            ✉
+                        </span>
+
+                    </div>
+
+                    <strong class="stat-value">
+                        48
+                    </strong>
+
+                    <span class="stat-footer">
+                        All messages
+                    </span>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-card-header">
+
+                        <span class="stat-label">
+                            UNREAD
+                        </span>
+
+                        <span class="stat-icon">
+                            ●
+                        </span>
+
+                    </div>
+
+                    <strong class="stat-value">
+                        4
+                    </strong>
+
+                    <span class="stat-footer">
+                        Require attention
+                    </span>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-card-header">
+
+                        <span class="stat-label">
+                            THIS WEEK
+                        </span>
+
+                        <span class="stat-icon">
+                            ◷
+                        </span>
+
+                    </div>
+
+                    <strong class="stat-value">
+                        12
+                    </strong>
+
+                    <span class="stat-footer">
+                        New messages
+                    </span>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-card-header">
+
+                        <span class="stat-label">
+                            SENT
+                        </span>
+
+                        <span class="stat-icon">
+                            ↑
+                        </span>
+
+                    </div>
+
+                    <strong class="stat-value">
+                        32
+                    </strong>
+
+                    <span class="stat-footer">
+                        Sent messages
+                    </span>
+
+                </div>
+
+            </section>
+
+
+            <!-- INBOX -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            INBOX
+                        </span>
+
+                        <h2>
+                            Recent Messages
+                        </h2>
+
+                    </div>
+
+                    <a href="compose/index.html" class="secondary-button">
+                        Compose Message
+                    </a>
+
+                </div>
+
+
+                <!-- TOOLBAR -->
+                <div class="table-toolbar">
+
+                    <div class="table-search">
+
+                        <label for="message-search" class="sr-only">
+                            Search messages
+                        </label>
+
+                        <input type="search" id="message-search" placeholder="Search messages...">
+
+                    </div>
+
+                    <div class="table-filter">
+                        <select aria-label="Filter messages">
+
+                            <option value="">
+                                All Messages
+                            </option>
+
+                            <option value="unread">
+                                Unread
+                            </option>
+
+                            <option value="read">
+                                Read
+                            </option>
+
+                            <option value="client">
+                                Clients
+                            </option>
+
+                            <option value="consultant">
+                                Consultants
+                            </option>
+
+                        </select>
+                    </div>
+                </div>
+
+
+                <!-- MESSAGE TABLE -->
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Sender
+                                </th>
+
+                                <th>
+                                    Subject
+                                </th>
+
+                                <th>
+                                    Date
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Actions
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="table-person">
+
+                                        <div class="table-avatar">
+                                            JD
+                                        </div>
+
+                                        <div>
+                                            <strong>
+                                                John Davis
+                                            </strong>
+
+                                            <span>
+                                                john.davis@example.com
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Question about upcoming appointment
+                                </td>
+
+                                <td>
+                                    Sep 25, 2026
+                                    <br>
+                                    <small>09:15 AM</small>
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-pending">
+                                        Unread
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="view/index.html" class="table-action">
+                                            View
+                                        </a>
+
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="table-person">
+
+                                        <div class="table-avatar">
+                                            AM
+                                        </div>
+
+                                        <div>
+                                            <strong>
+                                                Anna Miller
+                                            </strong>
+
+                                            <span>
+                                                anna.miller@example.com
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Request to reschedule consultation
+                                </td>
+
+                                <td>
+                                    Sep 25, 2026
+                                    <br>
+                                    <small>08:40 AM</small>
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-pending">
+                                        Unread
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="view/index.html" class="table-action">
+                                            View
+                                        </a>
+
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="table-person">
+
+                                        <div class="table-avatar">
+                                            MB
+                                        </div>
+
+                                        <div>
+                                            <strong>
+                                                Michael Brown
+                                            </strong>
+
+                                            <span>
+                                                michael.brown@example.com
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Follow-up regarding business planning
+                                </td>
+
+                                <td>
+                                    Sep 24, 2026
+                                    <br>
+                                    <small>03:20 PM</small>
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Read
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="view/index.html" class="table-action">
+                                            View
+                                        </a>
+
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="table-person">
+
+                                        <div class="table-avatar">
+                                            SW
+                                        </div>
+
+                                        <div>
+                                            <strong>
+                                                Sarah Wilson
+                                            </strong>
+
+                                            <span>
+                                                sarah.wilson@example.com
+                                            </span>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Career consultation information
+                                </td>
+
+                                <td>
+                                    Sep 24, 2026
+                                    <br>
+                                    <small>11:05 AM</small>
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Read
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="view/index.html" class="table-action">
+                                            View
+                                        </a>
+
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+
+                                    <div class="table-person">
+
+                                        <div class="table-avatar">
+                                            RW
+                                        </div>
+
+                                        <div>
+                                            <strong>
+                                                Robert Williams
+                                            </strong>
+
+                                            <span>
+                                                robert.williams@example.com
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Leadership coaching availability
+                                </td>
+
+                                <td>
+                                    Sep 23, 2026
+                                    <br>
+                                    <small>04:30 PM</small>
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Read
+                                    </span>
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="view/index.html" class="table-action">
+                                            View
+                                        </a>
+
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- TABLE FOOTER -->
+                <div class="table-footer">
+
+                    <span>
+                        Showing 1–5 of 48 messages
+                    </span>
+
+                    <div class="pagination">
+
+                        <a href="#" class="pagination-link active">
+                            1
+                        </a>
+
+                        <a href="#" class="pagination-link">
+                            2
+                        </a>
+
+                        <a href="#" class="pagination-link">
+                            3
+                        </a>
+
+                        <span class="pagination-dots">
+                            ...
+                        </span>
+
+                        <a href="#" class="pagination-link">
+                            10
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RECENT ACTIVITY -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            ACTIVITY
+                        </span>
+
+                        <h2>
+                            Recent Communication Activity
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <div class="activity-list">
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon">
+                            ✉
+                        </div>
+
+                        <div class="activity-content">
+
+                            <strong>
+                                New message received from John Davis
+                            </strong>
+
+                            <p>
+                                Question about upcoming appointment
+                            </p>
+
+                            <span>
+                                15 minutes ago
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon">
+                            ✓
+                        </div>
+
+                        <div class="activity-content">
+
+                            <strong>
+                                Message marked as read
+                            </strong>
+
+                            <p>
+                                Follow-up regarding business planning
+                            </p>
+
+                            <span>
+                                Yesterday
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="activity-item">
+
+                        <div class="activity-icon">
+                            ↑
+                        </div>
+
+                        <div class="activity-content">
+
+                            <strong>
+                                Message sent to Michael Brown
+                            </strong>
+
+                            <p>
+                                Appointment confirmation
+                            </p>
+
+                            <span>
+                                Yesterday
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- DELETE MESSAGE CONFIRMATION MODAL -->
+    <div class="confirmation-modal">
+
+        <div class="confirmation-modal-overlay"></div>
+
+        <div class="confirmation-modal-content">
+
+            <div class="confirmation-modal-icon">
+                !
+            </div>
+
+            <div class="confirmation-modal-body">
+
+                <h2>
+                    Delete Message?
+                </h2>
+
+                <p>
+                    Are you sure you want to delete this message?
+                </p>
+
+                <p class="confirmation-modal-warning">
+                    This action cannot be undone.
+                </p>
+
+            </div>
+
+            <div class="confirmation-modal-actions">
+
+                <button type="button" class="secondary-button">
+                    Cancel
+                </button>
+
+                <button type="button" class="danger-button">
+                    Delete Message
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- DELETE MODAL JS -->
+    <script>
+
+        const deleteButtons = document.querySelectorAll(
+            ".admin-table .table-action-danger"
+        );
+
+        const modal = document.querySelector(
+            ".confirmation-modal"
+        );
+
+        const cancelButton = modal.querySelector(
+            ".secondary-button"
+        );
+
+        const overlay = modal.querySelector(
+            ".confirmation-modal-overlay"
+        );
+
+
+        deleteButtons.forEach(function (button) {
+
+            button.addEventListener("click", function () {
+
+                modal.style.visibility = "visible";
+                modal.style.opacity = "1";
+
+            });
+
+        });
+
+
+        cancelButton.addEventListener("click", function () {
+
+            modal.style.visibility = "hidden";
+            modal.style.opacity = "0";
+
+        });
+
+
+        overlay.addEventListener("click", function () {
+
+            modal.style.visibility = "hidden";
+            modal.style.opacity = "0";
+
+        });
+
+    </script>
+
+</body>
+
+</html>

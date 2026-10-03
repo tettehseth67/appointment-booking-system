@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">
+                CP
+            </div>
+
+            <div>
+                <h2>ConsultPro</h2>
+                <span>RECEPTIONIST PORTAL</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+            <!-- DASHBOARD -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="dashboard-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⌂</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <label for="dashboard-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../index.html" class="sidebar-sublink">
+                        Overview
+                    </a>
+
+                    <a href="../../index.html#today-schedule" class="sidebar-sublink">
+                        Today's Schedule
+                    </a>
+                </div>
+            </div>
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◷</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+
+                    <label for="appointments-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../../appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+
+                    <a href="../../appointments/show/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                    <a href="../../appointments/edit/index.html" class="sidebar-sublink">
+                        Edit Appointment
+                    </a>
+                </div>
+            </div>
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="calendar-menu" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">▦</span>
+                        <span>Calendar</span>
+                    </a>
+
+                    <label for="calendar-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                    <a href="../add/index.html" class="sidebar-sublink">
+                        Add Event
+                    </a>
+
+                    <a href="../edit/index.html" class="sidebar-sublink">
+                        Edit Event
+                    </a>
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        Event Details
+                    </a>
+                </div>
+            </div>
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultants-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Consultants</span>
+                    </a>
+
+                    <label for="consultants-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../consultants/index.html" class="sidebar-sublink">
+                        Consultant List
+                    </a>
+
+                    <a href="../../consultants/show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+                </div>
+            </div>
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="clients-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../clients/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♧</span>
+                        <span>Clients</span>
+                    </a>
+
+                    <label for="clients-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="../../clients/add/index.html" class="sidebar-sublink">
+                        Add Client
+                    </a>
+
+                    <a href="../../clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                    <a href="../../clients/edit/index.html" class="sidebar-sublink">
+                        Edit Client
+                    </a>
+                </div>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▤</span>
+                        <span>Services</span>
+                    </a>
+
+                    <label for="services-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../services/index.html" class="sidebar-sublink">
+                        Service List
+                    </a>
+
+                    <a href="../../services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+                </div>
+            </div>
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">4</span>
+                    </a>
+
+                    <label for="messages-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">
+                        Compose Message
+                    </a>
+                </div>
+            </div>
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">3</span>
+                    </a>
+
+                    <label for="notifications-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+                </div>
+            </div>
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+            <!-- PROFILE -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="profile-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../profile/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Profile</span>
+                    </a>
+
+                    <label for="profile-menu" class="dropdown-trigger">
+                        ▾
+                    </label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+
+                    <a href="../../profile/edit/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                    <a href="../../profile/password/index.html" class="sidebar-sublink">
+                        Change Password
+                    </a>
+
+                    <a href="../../profile/settings/index.html" class="sidebar-sublink">
+                        Settings
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">
+                    ←
+                </span>
+
+                <span>
+                    Back to Website
+                </span>
+
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    R
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>
+                        Receptionist
+                    </strong>
+
+                    <span>
+                        Receptionist
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- MAIN -->
+    <div class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    CALENDAR
+                </span>
+
+            </div>
+
+            <div class="header-right">
+
+                <button class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button class="header-icon-button">
+
+                    ♢
+
+                    <span class="header-notification-dot"></span>
+
+                </button>
+
+                <div class="header-profile">
+
+                    <button class="profile-toggle">
+
+                        <div class="header-profile-avatar">
+                            R
+                        </div>
+
+                        <div class="header-profile-info">
+
+                            <strong>
+                                Receptionist
+                            </strong>
+
+                            <span>
+                                Receptionist
+                            </span>
+
+                        </div>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../profile/index.html">
+                            Profile
+                        </a>
+
+                        <a href="../../profile/settings/index.html">
+                            Settings
+                        </a>
+
+                        <a href="../../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- CONTENT -->
+        <main class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="dashboard-welcome">
+
+                <div>
+
+                    <h2>
+                        Event Details
+                    </h2>
+
+                    <p>
+                        View complete event information and scheduling details.
+                    </p>
+
+                </div>
+
+                <div class="dashboard-welcome-actions">
+
+                    <a href="../edit/index.html" class="admin-button">
+                        Edit Event
+                    </a>
+
+                    <a href="../index.html" class="admin-button secondary">
+                        Back to Calendar
+                    </a>
+
+                </div>
+
+            </section>
+
+            <!-- EVENT SUMMARY -->
+            <section class="admin-panel">
+
+                <div class="profile-summary">
+
+                    <div class="profile-large-avatar">
+                        EV
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Monthly Team Meeting
+                        </h3>
+
+                        <p>
+                            Internal Staff Meeting
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="details-list">
+
+                    <div class="details-row">
+                        <span>Event ID</span>
+                        <strong>EV-2026-001</strong>
+                    </div>
+
+                    <div class="details-row">
+                        <span>Event Type</span>
+                        <strong>Meeting</strong>
+                    </div>
+
+                    <div class="details-row">
+                        <span>Date</span>
+                        <strong>September 25, 2026</strong>
+                    </div>
+
+                    <div class="details-row">
+                        <span>Start Time</span>
+                        <strong>10:00 AM</strong>
+                    </div>
+
+                    <div class="details-row">
+                        <span>End Time</span>
+                        <strong>11:30 AM</strong>
+                    </div>
+
+                    <div class="details-row">
+                        <span>Location</span>
+                        <strong>Conference Room A</strong>
+                    </div>
+
+                    <div class="details-row">
+                        <span>Consultant</span>
+                        <strong>David Wilson</strong>
+                    </div>
+
+                    <div class="details-row">
+                        <span>Status</span>
+
+                        <strong>
+                            <span class="status-badge status-confirmed">
+                                Scheduled
+                            </span>
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- EVENT DESCRIPTION -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            DESCRIPTION
+                        </span>
+
+                        <h3>
+                            Event Notes
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <div class="client-note">
+
+                    <p>
+                        Monthly team strategy meeting to review appointment performance,
+                        consultant availability, upcoming client consultations, and
+                        operational improvements.
+                    </p>
+
+                    <span>
+                        Last Updated: September 20, 2026
+                    </span>
+
+                </div>
+
+            </section>
+
+            <!-- ACTIONS -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            ACTIONS
+                        </span>
+
+                        <h3>
+                            Manage Event
+                        </h3>
+
+                    </div>
+
+                </div>
+
+                <!-- EDIT EVENT -->
+                <div class="danger-panel-content">
+
+                    <div>
+
+                        <strong>
+                            Edit Event
+                        </strong>
+
+                        <p>
+                            Update event information, time, location, or notes.
+                        </p>
+
+                    </div>
+
+                    <a href="../edit/index.html" class="admin-button">
+                        Edit Event
+                    </a>
+
+                </div>
+
+                <!-- DELETE EVENT -->
+                <div class="danger-panel-content">
+
+                    <div>
+
+                        <strong>
+                            Delete Event
+                        </strong>
+
+                        <p>
+                            Permanently remove this event from the calendar.
+                        </p>
+
+                    </div>
+
+                    <button type="button" class="admin-button danger"
+                        onclick="document.getElementById('deleteEventModal').classList.add('active')">
+                        Delete Event
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- DELETE EVENT MODAL -->
+    <div class="modal-overlay" id="deleteEventModal" aria-hidden="true">
+
+        <div class="modal-container" role="dialog" aria-modal="true" aria-labelledby="deleteEventTitle">
+
+            <!-- MODAL HEADER -->
+            <div class="modal-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        DELETE EVENT
+                    </span>
+
+                    <h3 id="deleteEventTitle">
+                        Delete Event?
+                    </h3>
+
+                </div>
+
+                <button type="button" class="modal-close" aria-label="Close"
+                    onclick="document.getElementById('deleteEventModal').classList.remove('active')">
+                    ×
+                </button>
+
+            </div>
+
+            <!-- MODAL BODY -->
+            <div class="modal-body">
+
+                <div class="modal-warning-icon">
+                    !
+                </div>
+
+                <div class="modal-message">
+
+                    <h4>
+                        Are you sure you want to delete this event?
+                    </h4>
+
+                    <p>
+                        You are about to permanently remove the following
+                        event from the ConsultPro calendar:
+                    </p>
+
+                </div>
+
+                <!-- EVENT SUMMARY -->
+                <div class="modal-event-summary">
+
+                    <div class="modal-event-row">
+
+                        <span>
+                            Event
+                        </span>
+
+                        <strong>
+                            Monthly Team Meeting
+                        </strong>
+
+                    </div>
+
+                    <div class="modal-event-row">
+
+                        <span>
+                            Date
+                        </span>
+
+                        <strong>
+                            September 25, 2026
+                        </strong>
+
+                    </div>
+
+                    <div class="modal-event-row">
+
+                        <span>
+                            Time
+                        </span>
+
+                        <strong>
+                            10:00 AM – 11:30 AM
+                        </strong>
+
+                    </div>
+
+                    <div class="modal-event-row">
+
+                        <span>
+                            Consultant
+                        </span>
+
+                        <strong>
+                            David Wilson
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <p class="modal-danger-text">
+                    This action cannot be undone.
+                </p>
+
+            </div>
+
+            <!-- MODAL FOOTER -->
+            <div class="modal-footer">
+
+                <button type="button" class="admin-button secondary"
+                    onclick="document.getElementById('deleteEventModal').classList.remove('active')">
+                    Cancel
+                </button>
+
+                <button type="button" class="admin-button danger">
+                    Delete Event
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consultants | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- =========================
+        SIDEBAR
+    ========================== -->
+
+    <aside class="admin-sidebar">
+        <div class="sidebar-brand">
+
+            <a href="../index.html" class="sidebar-brand-icon">
+                CP
+            </a>
+
+            <div>
+                <a href="../index.html">
+                    ConsultPro
+                </a>
+
+                <span>
+                    MANAGER PORTAL
+                </span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-navigation">
+
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+
+            <!-- DASHBOARD -->
+
+            <a href="../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">
+                    ⌂
+                </span>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <!-- APPOINTMENTS -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox">
+
+                <label for="appointments-menu" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ◷
+                        </span>
+
+                        <span>
+                            Appointments
+                        </span>
+
+                        <span class="dropdown-trigger">
+                            ›
+                        </span>
+
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+
+                    <a href="../appointments/show/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CALENDAR -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="calendar-menu" class="dropdown-checkbox">
+
+                <label for="calendar-menu" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ▣
+                        </span>
+
+                        <span>
+                            Calendar
+                        </span>
+
+                        <span class="dropdown-trigger">
+                            ›
+                        </span>
+
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                    <a href="../calendar/add/index.html" class="sidebar-sublink">
+                        Add Event
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONSULTANTS -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultants-menu" class="dropdown-checkbox" checked>
+
+                <label for="consultants-menu" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ◉
+                        </span>
+
+                        <span>
+                            Consultants
+                        </span>
+
+                        <span class="dropdown-trigger">
+                            ›
+                        </span>
+
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        Consultant List
+                    </a>
+
+                    <a href="add/index.html" class="sidebar-sublink">
+                        Add Consultant
+                    </a>
+
+                    <a href="show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox">
+
+                <label for="services-menu" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ◇
+                        </span>
+
+                        <span>
+                            Services
+                        </span>
+
+                        <span class="dropdown-trigger">
+                            ›
+                        </span>
+
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../services/index.html" class="sidebar-sublink">
+                        Service List
+                    </a>
+
+                    <a href="../services/add/index.html" class="sidebar-sublink">
+                        Add Service
+                    </a>
+
+                    <a href="../services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLIENTS -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="clients-menu" class="dropdown-checkbox">
+
+                <label for="clients-menu" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ◎
+                        </span>
+
+                        <span>
+                            Clients
+                        </span>
+
+                        <span class="dropdown-trigger">
+                            ›
+                        </span>
+
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="../clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+
+            <!-- MESSAGES -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox">
+
+                <label for="messages-menu" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ✉
+                        </span>
+
+                        <span>
+                            Messages
+                        </span>
+
+                        <span class="dropdown-trigger">
+                            ›
+                        </span>
+
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        Compose Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOTIFICATIONS -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox">
+
+                <label for="notifications-menu" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ♢
+                        </span>
+
+                        <span>
+                            Notifications
+                        </span>
+
+                        <span class="sidebar-count">
+                            3
+                        </span>
+
+                        <span class="dropdown-trigger">
+                            ›
+                        </span>
+
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ANALYTICS -->
+
+            <div class="sidebar-heading">
+                ANALYTICS
+            </div>
+
+
+            <!-- REPORTS -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="reports-menu" class="dropdown-checkbox">
+
+                <label for="reports-menu" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ▤
+                        </span>
+
+                        <span>
+                            Reports
+                        </span>
+
+                        <span class="dropdown-trigger">
+                            ›
+                        </span>
+
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../reports/index.html" class="sidebar-sublink">
+                        Reports Overview
+                    </a>
+
+                    <a href="../reports/revenue/index.html" class="sidebar-sublink">
+                        Revenue Reports
+                    </a>
+
+                    <a href="../reports/appointments/index.html" class="sidebar-sublink">
+                        Appointment Reports
+                    </a>
+
+                    <a href="../reports/consultants/index.html" class="sidebar-sublink">
+                        Consultant Reports
+                    </a>
+
+                    <a href="../reports/clients/index.html" class="sidebar-sublink">
+                        Client Reports
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+
+            <!-- SETTINGS -->
+
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-menu" class="dropdown-checkbox">
+
+                <label for="settings-menu" class="sidebar-link-wrapper">
+
+                    <span class="sidebar-link">
+
+                        <span class="sidebar-icon">
+                            ⚙
+                        </span>
+
+                        <span>
+                            Settings
+                        </span>
+
+                        <span class="dropdown-trigger">
+                            ›
+                        </span>
+
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../settings/profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+
+                    <a href="../settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">
+                    ←
+                </span>
+
+                <span>
+                    Back to Website
+                </span>
+
+            </a>
+
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    M
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>
+                        Manager
+                    </strong>
+
+                    <span>
+                        Manager
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+        MAIN CONTENT
+    ========================== -->
+
+    <main class="admin-main">
+
+
+        <!-- HEADER -->
+
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle" type="button">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    CONSULTANTS
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button" type="button">
+                    ⌕
+                </button>
+
+                <button class="header-icon-button" type="button">
+                    ♢
+
+                    <span class="header-notification-dot"></span>
+
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button class="profile-toggle" type="button">
+
+                        <span class="header-avatar">
+                            M
+                        </span>
+
+                        <span class="profile-name">
+                            Manager
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▼
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../settings/profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../settings/security/index.html">
+                            Security
+                        </a>
+
+                        <a href="../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <div class="admin-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <section class="admin-page-header">
+
+                <div>
+
+                    <h1>
+                        Consultants
+                    </h1>
+
+                    <p>
+                        Manage ConsultPro consultants and their availability.
+                    </p>
+
+                </div>
+
+
+                <a href="add/index.html" class="primary-button">
+                    + Add Consultant
+                </a>
+
+            </section>
+
+
+            <!-- FILTER BAR -->
+
+            <section class="admin-panel">
+
+                <div class="admin-filter-bar">
+
+                    <div class="admin-search">
+
+                        <label for="consultant-search">
+                            Search Consultants
+                        </label>
+
+                        <input type="search" id="consultant-search" placeholder="Search by name, email or ID...">
+
+                    </div>
+
+
+                    <div class="admin-filter">
+
+                        <label for="consultant-status">
+                            Status
+                        </label>
+
+                        <select id="consultant-status">
+
+                            <option value="">
+                                All Statuses
+                            </option>
+
+                            <option value="active">
+                                Active
+                            </option>
+
+                            <option value="inactive">
+                                Inactive
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="admin-filter">
+
+                        <label for="consultant-service">
+                            Service
+                        </label>
+
+                        <select id="consultant-service">
+
+                            <option value="">
+                                All Services
+                            </option>
+
+                            <option value="business-strategy">
+                                Business Strategy
+                            </option>
+
+                            <option value="financial-consulting">
+                                Financial Consulting
+                            </option>
+
+                            <option value="business-planning">
+                                Business Planning
+                            </option>
+
+                            <option value="career-consulting">
+                                Career Consulting
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONSULTANT TABLE -->
+
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            CONSULTANT DIRECTORY
+                        </span>
+
+                        <h2>
+                            All Consultants
+                        </h2>
+
+                    </div>
+
+                    <span>
+                        8 Consultants
+                    </span>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Consultant
+                                </th>
+
+                                <th>
+                                    Email
+                                </th>
+
+                                <th>
+                                    Specialty
+                                </th>
+
+                                <th>
+                                    Appointments
+                                </th>
+
+                                <th>
+                                    Availability
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                                <th>
+                                    Actions
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <!-- DAVID WILSON -->
+
+                            <tr>
+
+                                <td>
+
+                                    <strong>
+                                        David Wilson
+                                    </strong>
+
+                                    <br>
+
+                                    <small>
+                                        CN-10021
+                                    </small>
+
+                                </td>
+
+                                <td>
+                                    david.wilson@example.com
+                                </td>
+
+                                <td>
+                                    Business Strategy
+                                </td>
+
+                                <td>
+                                    18
+                                </td>
+
+                                <td>
+                                    Available
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- EMILY CARTER -->
+
+                            <tr>
+
+                                <td>
+
+                                    <strong>
+                                        Emily Carter
+                                    </strong>
+
+                                    <br>
+
+                                    <small>
+                                        CN-10022
+                                    </small>
+
+                                </td>
+
+                                <td>
+                                    emily.carter@example.com
+                                </td>
+
+                                <td>
+                                    Financial Consulting
+                                </td>
+
+                                <td>
+                                    14
+                                </td>
+
+                                <td>
+                                    Available
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- JAMES ANDERSON -->
+
+                            <tr>
+
+                                <td>
+
+                                    <strong>
+                                        James Anderson
+                                    </strong>
+
+                                    <br>
+
+                                    <small>
+                                        CN-10023
+                                    </small>
+
+                                </td>
+
+                                <td>
+                                    james.anderson@example.com
+                                </td>
+
+                                <td>
+                                    Career Consulting
+                                </td>
+
+                                <td>
+                                    11
+                                </td>
+
+                                <td>
+                                    Available
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- SARAH THOMPSON -->
+
+                            <tr>
+
+                                <td>
+
+                                    <strong>
+                                        Sarah Thompson
+                                    </strong>
+
+                                    <br>
+
+                                    <small>
+                                        CN-10024
+                                    </small>
+
+                                </td>
+
+                                <td>
+                                    sarah.thompson@example.com
+                                </td>
+
+                                <td>
+                                    Business Planning
+                                </td>
+
+                                <td>
+                                    9
+                                </td>
+
+                                <td>
+                                    Available
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- MICHAEL ROBERTS -->
+
+                            <tr>
+
+                                <td>
+
+                                    <strong>
+                                        Michael Roberts
+                                    </strong>
+
+                                    <br>
+
+                                    <small>
+                                        CN-10025
+                                    </small>
+
+                                </td>
+
+                                <td>
+                                    michael.roberts@example.com
+                                </td>
+
+                                <td>
+                                    Business Strategy
+                                </td>
+
+                                <td>
+                                    16
+                                </td>
+
+                                <td>
+                                    Busy Today
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- LAURA BENNETT -->
+
+                            <tr>
+
+                                <td>
+
+                                    <strong>
+                                        Laura Bennett
+                                    </strong>
+
+                                    <br>
+
+                                    <small>
+                                        CN-10026
+                                    </small>
+
+                                </td>
+
+                                <td>
+                                    laura.bennett@example.com
+                                </td>
+
+                                <td>
+                                    Financial Consulting
+                                </td>
+
+                                <td>
+                                    12
+                                </td>
+
+                                <td>
+                                    Available
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ROBERT CLARK -->
+
+                            <tr>
+
+                                <td>
+
+                                    <strong>
+                                        Robert Clark
+                                    </strong>
+
+                                    <br>
+
+                                    <small>
+                                        CN-10027
+                                    </small>
+
+                                </td>
+
+                                <td>
+                                    robert.clark@example.com
+                                </td>
+
+                                <td>
+                                    Business Planning
+                                </td>
+
+                                <td>
+                                    8
+                                </td>
+
+                                <td>
+                                    Unavailable
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Active
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- MARIA LEWIS -->
+
+                            <tr>
+
+                                <td>
+
+                                    <strong>
+                                        Maria Lewis
+                                    </strong>
+
+                                    <br>
+
+                                    <small>
+                                        CN-10028
+                                    </small>
+
+                                </td>
+
+                                <td>
+                                    maria.lewis@example.com
+                                </td>
+
+                                <td>
+                                    Career Consulting
+                                </td>
+
+                                <td>
+                                    7
+                                </td>
+
+                                <td>
+                                    Available
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-pending">
+                                        Inactive
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <a href="show/index.html" class="edit-button">
+                                            View
+                                        </a>
+
+                                        <a href="edit/index.html" class="edit-button">
+                                            Edit
+                                        </a>
+                                        <button type="button" class="edit-button table-action-danger">
+                                            Delete
+                                        </button>
+                                    </div>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- PAGINATION -->
+
+                <div class="admin-pagination">
+
+                    <span>
+                        Showing 1–8 of 8 consultants
+                    </span>
+
+                    <div class="pagination-controls">
+
+                        <button type="button" class="pagination-button" disabled>
+                            Previous
+                        </button>
+
+                        <button type="button" class="pagination-button active">
+                            1
+                        </button>
+
+                        <button type="button" class="pagination-button" disabled>
+                            Next
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+    <!-- DELETE CONSULTANT CONFIRMATION MODAL -->
+    <div class="confirmation-modal">
+        <div class="confirmation-modal-overlay"></div>
+        <div class="confirmation-modal-content">
+            <div class="confirmation-modal-icon"> ! </div>
+            <div class="confirmation-modal-body">
+                <h2>Delete Consultant?</h2>
+                <p> Are you sure you want to delete this consultant? </p>
+                <p class="confirmation-modal-warning"> This action cannot be undone. </p>
+            </div>
+            <div class="confirmation-modal-actions"> <button type="button" class="secondary-button"> Cancel </button>
+                <button type="button" class="danger-button"> Delete Consultant </button> </div>
+        </div>
+    </div>
+
+    <script src="../../js/services.js"></script>
+</body>
+
+</html>

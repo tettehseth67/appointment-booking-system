@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Event | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+
+            <a href="../../index.html">
+
+                <div class="sidebar-brand-icon">
+                    CP
+                </div>
+
+                <div>
+
+                    <strong>
+                        ConsultPro
+                    </strong>
+
+                    <span>
+                        MANAGER PORTAL
+                    </span>
+
+                </div>
+
+            </a>
+
+        </div>
+
+
+        <!-- SIDEBAR NAVIGATION -->
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+            <div class="sidebar-heading">
+                MAIN MENU
+            </div>
+
+
+            <!-- DASHBOARD -->
+            <div class="sidebar-link-wrapper">
+
+                <a href="../../index.html" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ▦
+                    </span>
+
+                    <span>
+                        Dashboard
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <label for="appointments-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        □
+                    </span>
+
+                    <span>
+                        Appointments
+                    </span>
+
+                    <span class="sidebar-count">
+                        12
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../../appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+
+                    <a href="../../appointments/show/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                    <a href="../../appointments/edit/index.html" class="sidebar-sublink">
+                        Edit Appointment
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="calendar-toggle" class="dropdown-checkbox" checked>
+
+                <label for="calendar-toggle" class="sidebar-link active">
+
+                    <span class="sidebar-icon">
+                        ▣
+                    </span>
+
+                    <span>
+                        Calendar
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Calendar List
+                    </a>
+
+                    <a href="../add/index.html" class="sidebar-sublink">
+                        Add Event
+                    </a>
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        Edit Event
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultants-toggle" class="dropdown-checkbox">
+
+                <label for="consultants-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ◉
+                    </span>
+
+                    <span>
+                        Consultants
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../consultants/index.html" class="sidebar-sublink">
+                        Consultant List
+                    </a>
+
+                    <a href="../../consultants/add/index.html" class="sidebar-sublink">
+                        Add Consultant
+                    </a>
+
+                    <a href="../../consultants/show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+
+                    <a href="../../consultants/edit/index.html" class="sidebar-sublink">
+                        Edit Consultant
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+
+                <label for="services-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ◈
+                    </span>
+
+                    <span>
+                        Services
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../services/index.html" class="sidebar-sublink">
+                        Service List
+                    </a>
+
+                    <a href="../../services/add/index.html" class="sidebar-sublink">
+                        Add Service
+                    </a>
+
+                    <a href="../../services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+
+                    <a href="../../services/edit/index.html" class="sidebar-sublink">
+                        Edit Service
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="clients-toggle" class="dropdown-checkbox">
+
+                <label for="clients-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ◎
+                    </span>
+
+                    <span>
+                        Clients
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="../../clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                    <a href="../../clients/add/index.html" class="sidebar-sublink">
+                        Add Client
+                    </a>
+
+                    <a href="../../clients/edit/index.html" class="sidebar-sublink">
+                        Edit Client
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">
+                COMMUNICATION
+            </div>
+
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+
+                <label for="messages-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ✉
+                    </span>
+
+                    <span>
+                        Messages
+                    </span>
+
+                    <span class="sidebar-count">
+                        4
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">
+                        Compose Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox">
+
+                <label for="notifications-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ♢
+                    </span>
+
+                    <span>
+                        Notifications
+                    </span>
+
+                    <span class="sidebar-count">
+                        4
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ANALYTICS -->
+            <div class="sidebar-heading">
+                ANALYTICS
+            </div>
+
+
+            <!-- REPORTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="reports-toggle" class="dropdown-checkbox">
+
+                <label for="reports-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ▤
+                    </span>
+
+                    <span>
+                        Reports
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../reports/index.html" class="sidebar-sublink">
+                        Reports Overview
+                    </a>
+
+                    <a href="../../reports/revenue/index.html" class="sidebar-sublink">
+                        Revenue Report
+                    </a>
+
+                    <a href="../../reports/appointments/index.html" class="sidebar-sublink">
+                        Appointment Report
+                    </a>
+
+                    <a href="../../reports/consultants/index.html" class="sidebar-sublink">
+                        Consultant Report
+                    </a>
+
+                    <a href="../../reports/clients/index.html" class="sidebar-sublink">
+                        Client Report
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">
+                ACCOUNT
+            </div>
+
+
+            <!-- SETTINGS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox">
+
+                <label for="settings-toggle" class="sidebar-link">
+
+                    <span class="sidebar-icon">
+                        ⚙
+                    </span>
+
+                    <span>
+                        Settings
+                    </span>
+
+                    <span class="dropdown-trigger">
+                        ▾
+                    </span>
+
+                </label>
+
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../../settings/profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+
+                    <a href="../../settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">
+                    ←
+                </span>
+
+                <span>
+                    Back to Website
+                </span>
+
+            </a>
+
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    Y
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>
+                        Yaw
+                    </strong>
+
+                    <span>
+                        Manager
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    EDIT EVENT
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button type="button" class="header-icon-button">
+                    ♢
+                    <span class="header-notification-dot"></span>
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle">
+
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span class="profile-name">
+                            Yaw
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ⌄
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../settings/profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../../settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../../settings/security/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="../../notifications/index.html">
+                            Notifications
+                        </a>
+
+                        <a href="../../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <div class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        CALENDAR
+                    </span>
+
+                    <h1>
+                        Edit Event
+                    </h1>
+
+                    <p>
+                        Update the event information, schedule, and participants.
+                    </p>
+
+                </div>
+
+
+                <div class="admin-page-actions">
+
+                    <a href="../index.html" class="secondary-button">
+                        Back to Calendar
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- FORM -->
+            <form class="admin-form">
+
+                <!-- BASIC INFORMATION -->
+                <section class="admin-panel">
+
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                BASIC INFORMATION
+                            </span>
+
+                            <h2>
+                                Event Details
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-section">
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="event-title">
+                                    Event Title
+                                </label>
+
+                                <input type="text" id="event-title" name="event-title"
+                                    value="Business Strategy Consultation">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="event-id">
+                                    Event ID
+                                </label>
+
+                                <input type="text" id="event-id" name="event-id" value="EV-10001" readonly>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="event-type">
+                                    Event Type
+                                </label>
+
+                                <select id="event-type" name="event-type">
+
+                                    <option value="appointment" selected>
+                                        Appointment
+                                    </option>
+
+                                    <option value="meeting">
+                                        Meeting
+                                    </option>
+
+                                    <option value="internal">
+                                        Internal
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="event-status">
+                                    Status
+                                </label>
+
+                                <select id="event-status" name="event-status">
+
+                                    <option value="scheduled">
+                                        Scheduled
+                                    </option>
+
+                                    <option value="confirmed" selected>
+                                        Confirmed
+                                    </option>
+
+                                    <option value="pending">
+                                        Pending
+                                    </option>
+
+                                    <option value="cancelled">
+                                        Cancelled
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- DATE & TIME -->
+                <section class="admin-panel">
+
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                DATE &amp; TIME
+                            </span>
+
+                            <h2>
+                                Schedule
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-section">
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="event-date">
+                                    Event Date
+                                </label>
+
+                                <input type="date" id="event-date" name="event-date" value="2026-09-25">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="start-time">
+                                    Start Time
+                                </label>
+
+                                <input type="time" id="start-time" name="start-time" value="09:00">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="end-time">
+                                    End Time
+                                </label>
+
+                                <input type="time" id="end-time" name="end-time" value="10:00">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="time-zone">
+                                    Time Zone
+                                </label>
+
+                                <select id="time-zone" name="time-zone">
+
+                                    <option value="eastern" selected>
+                                        Eastern Time (ET)
+                                    </option>
+
+                                    <option value="central">
+                                        Central Time (CT)
+                                    </option>
+
+                                    <option value="mountain">
+                                        Mountain Time (MT)
+                                    </option>
+
+                                    <option value="pacific">
+                                        Pacific Time (PT)
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ASSIGNMENT -->
+                <section class="admin-panel">
+
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                ASSIGNMENT
+                            </span>
+
+                            <h2>
+                                Participants
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-section">
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="consultant">
+                                    Consultant
+                                </label>
+
+                                <select id="consultant" name="consultant">
+
+                                    <option value="">
+                                        Select consultant
+                                    </option>
+
+                                    <option value="david-wilson" selected>
+                                        David Wilson
+                                    </option>
+
+                                    <option value="michael-roberts">
+                                        Michael Roberts
+                                    </option>
+
+                                    <option value="laura-bennett">
+                                        Laura Bennett
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="client">
+                                    Client
+                                </label>
+
+                                <select id="client" name="client">
+
+                                    <option value="">
+                                        Select client
+                                    </option>
+
+                                    <option value="john-davis" selected>
+                                        John Davis
+                                    </option>
+
+                                    <option value="anna-miller">
+                                        Anna Miller
+                                    </option>
+
+                                    <option value="michael-brown">
+                                        Michael Brown
+                                    </option>
+
+                                    <option value="sarah-wilson">
+                                        Sarah Wilson
+                                    </option>
+
+                                    <option value="robert-williams">
+                                        Robert Williams
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="service">
+                                    Service
+                                </label>
+
+                                <select id="service" name="service">
+
+                                    <option value="">
+                                        Select service
+                                    </option>
+
+                                    <option value="business-strategy" selected>
+                                        Business Strategy
+                                    </option>
+
+                                    <option value="financial-consulting">
+                                        Financial Consulting
+                                    </option>
+
+                                    <option value="business-planning">
+                                        Business Planning
+                                    </option>
+
+                                    <option value="career-consulting">
+                                        Career Consulting
+                                    </option>
+
+                                    <option value="startup-advisory">
+                                        Startup Advisory
+                                    </option>
+
+                                    <option value="leadership-coaching">
+                                        Leadership Coaching
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- NOTES -->
+                <section class="admin-panel">
+
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                NOTES
+                            </span>
+
+                            <h2>
+                                Additional Information
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-section">
+
+                        <div class="form-group">
+
+                            <label for="event-notes">
+                                Description / Notes
+                            </label>
+
+                            <textarea id="event-notes" name="event-notes"
+                                rows="6">Client requested a detailed business strategy consultation focusing on operational efficiency and long-term growth planning.</textarea>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ACTIONS -->
+                <div class="form-actions">
+
+                    <a href="../index.html" class="secondary-button">
+                        Cancel
+                    </a>
+
+                    <button type="submit" class="primary-button">
+                        Save Changes
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

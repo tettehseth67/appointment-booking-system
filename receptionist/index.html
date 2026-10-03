@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Receptionist Dashboard | ConsultPro</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- =========================
+        SIDEBAR
+    ========================== -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">CP</div>
+
+            <div>
+                <h2>ConsultPro</h2>
+                <span>RECEPTIONIST PORTAL</span>
+            </div>
+        </div>
+
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+            <div class="sidebar-heading">MAIN MENU</div>
+
+            <!-- Dashboard -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="receptionist-dashboard" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="index.html" class="sidebar-link active">
+
+                        <span class="sidebar-icon">▦</span>
+                        <span>Dashboard</span>
+
+                    </a>
+
+                    <label for="receptionist-dashboard" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        Overview
+                    </a>
+
+                    <a href="schedule.html" class="sidebar-sublink">
+                        Todays Schedule
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Appointments -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="receptionist-appointments" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../receptionist/appointments/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+
+                    </a>
+
+                    <label for="receptionist-appointments" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../receptionist/appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../receptionist/appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+
+                    <a href="../receptionist/appointments/show/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                    <a href="../receptionist/appointments/edit/index.html" class="sidebar-sublink">
+                        Edit Appointment
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Calendar -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="receptionist-calendar" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../receptionist/calendar/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">□</span>
+                        <span>Calendar</span>
+
+                    </a>
+
+                    <label for="receptionist-calendar" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../receptionist/calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                    <a href="../receptionist/calendar/add-event/index.html" class="sidebar-sublink">
+                        Add Event
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Clients -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="receptionist-clients" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../receptionist/clients/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♙</span>
+                        <span>Clients</span>
+
+                    </a>
+
+                    <label for="receptionist-clients" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../receptionist/clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="../receptionist/clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                    <a href="../receptionist/clients/edit/index.html" class="sidebar-sublink">
+                        Edit Client
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Consultants -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="receptionist-consultants" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../receptionist/consultants/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♙</span>
+                        <span>Consultants</span>
+
+                    </a>
+
+                    <label for="receptionist-consultants" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../receptionist/consultants/index.html" class="sidebar-sublink">
+                        Consultant List
+                    </a>
+
+                    <a href="../receptionist/consultants/show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="receptionist-services" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../receptionist/services/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+
+                    </a>
+
+                    <label for="receptionist-services" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../receptionist/services/index.html" class="sidebar-sublink">
+                        Service List
+                    </a>
+
+                    <a href="../receptionist/services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">COMMUNICATION</div>
+
+
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="receptionist-messages" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../receptionist/messages/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">4</span>
+
+                    </a>
+
+                    <label for="receptionist-messages" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../receptionist/messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../receptionist/messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../receptionist/messages/compose/index.html" class="sidebar-sublink">
+                        Compose Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notifications -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="receptionist-notifications" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../receptionist/notifications/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">4</span>
+
+                    </a>
+
+                    <label for="receptionist-notifications" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../receptionist/notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../receptionist/notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../receptionist/notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">ACCOUNT</div>
+            <!-- Settings -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="receptionist-settings" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../receptionist/settings/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+
+                    </a>
+
+                    <label for="receptionist-settings" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../receptionist/settings/general/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../receptionist/settings/profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+
+                    <a href="../receptionist/settings/security/index.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Profile -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="profile-menu" class="dropdown-checkbox">
+                <label for="profile-menu" class="sidebar-link-wrapper">
+                    <a href="../receptionist/profile/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◎</span>
+                        <span>Profile</span>
+                    </a>
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+                <div class="sidebar-dropdown-content">
+                    <a href="../receptionist/profile/index.html" class="sidebar-sublink">Profile Settings</a>
+                    <a href="../receptionist/profile/edit/index.html" class="sidebar-sublink">Edit Profile</a>
+                    <a href="../receptionist/profile/password/index.html" class="sidebar-sublink">Change Password</a>
+                    <a href="../receptionist/profile/settings/index.html" class="sidebar-sublink">Settings</a>
+                </div>
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+
+            </a>
+
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    R
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>Receptionist</strong>
+                    <span>Receptionist</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+        MAIN CONTENT
+    ========================== -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle" type="button" aria-label="Toggle sidebar">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    Receptionist Dashboard
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button" type="button" aria-label="Notifications">
+
+                    ♢
+
+                    <span class="header-notification-dot"></span>
+
+                </button>
+
+
+                <div class="profile-dropdown">
+
+                    <button class="profile-toggle" type="button">
+
+                        <span class="header-avatar">
+                            R
+                        </span>
+
+                        <span class="profile-name">
+                            Receptionist
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../receptionist/settings/profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../receptionist/settings/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../receptionist/settings/security/index.html">
+                            Security
+                        </a>
+
+                        <a href="../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- =========================
+            DASHBOARD
+        ========================== -->
+        <section class="admin-content">
+
+            <div class="admin-page-header">
+
+                <div>
+
+                    <h1>Welcome back, Receptionist</h1>
+
+                    <p>
+                        Manage today's appointments, clients, and front desk activities.
+                    </p>
+
+                </div>
+
+
+                <a href="../receptionist/appointments/add/index.html" class="primary-button">
+
+                    + New Appointment
+
+                </a>
+
+            </div>
+
+
+            <!-- STATS -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Today's Appointments
+                        </span>
+
+                        <strong class="stat-value">
+                            5
+                        </strong>
+
+                        <span class="stat-change positive">
+                            2 more than yesterday
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Pending Confirmations
+                        </span>
+
+                        <strong class="stat-value">
+                            4
+                        </strong>
+
+                        <span class="stat-change">
+                            Requires attention
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Today's Clients
+                        </span>
+
+                        <strong class="stat-value">
+                            5
+                        </strong>
+
+                        <span class="stat-change">
+                            Scheduled today
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Available Consultants
+                        </span>
+
+                        <strong class="stat-value">
+                            5
+                        </strong>
+
+                        <span class="stat-change positive">
+                            Available today
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TODAY'S APPOINTMENTS -->
+            <div class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            FRONT DESK
+                        </span>
+
+                        <h2>Today's Appointments</h2>
+
+                    </div>
+
+
+                    <a href="../receptionist/appointments/index.html" class="secondary-button">
+
+                        View All
+
+                    </a>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Time</th>
+                                <th>Client</th>
+                                <th>Service</th>
+                                <th>Consultant</th>
+                                <th>Status</th>
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>10:00 AM</strong>
+                                </td>
+
+                                <td>
+                                    John Davis
+                                </td>
+
+                                <td>
+                                    Business Strategy
+                                </td>
+
+                                <td>
+                                    David Wilson
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="../receptionist/appointments/show/index.html" class="edit-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>11:30 AM</strong>
+                                </td>
+
+                                <td>
+                                    Anna Miller
+                                </td>
+
+                                <td>
+                                    Financial Consulting
+                                </td>
+
+                                <td>
+                                    Michael Brown
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-pending">
+                                        Pending
+                                    </span>
+
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="../receptionist/appointments/show/index.html" class="edit-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>1:00 PM</strong>
+                                </td>
+
+                                <td>
+                                    Robert Johnson
+                                </td>
+
+                                <td>
+                                    Business Planning
+                                </td>
+
+                                <td>
+                                    Sarah Williams
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="../receptionist/appointments/show/index.html" class="edit-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>2:30 PM</strong>
+                                </td>
+
+                                <td>
+                                    Sarah Wilson
+                                </td>
+
+                                <td>
+                                    Career Consulting
+                                </td>
+
+                                <td>
+                                    David Wilson
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-pending">
+                                        Pending
+                                    </span>
+
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="../receptionist/appointments/show/index.html" class="edit-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>4:00 PM</strong>
+                                </td>
+
+                                <td>
+                                    James Anderson
+                                </td>
+
+                                <td>
+                                    Business Strategy
+                                </td>
+
+                                <td>
+                                    Michael Brown
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-active">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="../receptionist/appointments/show/index.html" class="edit-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK MANAGEMENT -->
+            <div class="stats-grid">
+
+                <!-- Clients -->
+                <div class="admin-panel">
+
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                CLIENTS
+                            </span>
+
+                            <h2>Client Management</h2>
+
+                        </div>
+
+                        <a href="../receptionist/clients/index.html" class="secondary-button">
+                            Manage
+                        </a>
+
+                    </div>
+
+
+                    <div class="settings-summary">
+
+                        <div class="settings-summary-item">
+
+                            <span>Total Clients</span>
+
+                            <strong>148</strong>
+
+                        </div>
+
+
+                        <div class="settings-summary-item">
+
+                            <span>New Today</span>
+
+                            <strong>3</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Consultants -->
+                <div class="admin-panel">
+
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                CONSULTANTS
+                            </span>
+
+                            <h2>Consultant Availability</h2>
+
+                        </div>
+
+                        <a href="../receptionist/consultants/index.html" class="secondary-button">
+                            View
+                        </a>
+
+                    </div>
+
+
+                    <div class="settings-summary">
+
+                        <div class="settings-summary-item">
+
+                            <span>Available</span>
+
+                            <strong>5</strong>
+
+                        </div>
+
+
+                        <div class="settings-summary-item">
+
+                            <span>Busy</span>
+
+                            <strong>3</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FRONT DESK ACTIONS -->
+            <div class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            QUICK ACTIONS
+                        </span>
+
+                        <h2>Front Desk</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-cards">
+
+                    <a href="../receptionist/appointments/add/index.html" class="settings-card">
+
+                        <div class="settings-card-icon">
+                            +
+                        </div>
+
+                        <div class="settings-card-content">
+
+                            <h3>New Appointment</h3>
+
+                            <p>
+                                Schedule an appointment for a client.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="../receptionist/clients/index.html" class="settings-card">
+
+                        <div class="settings-card-icon">
+                            ♙
+                        </div>
+
+                        <div class="settings-card-content">
+
+                            <h3>Find Client</h3>
+
+                            <p>
+                                Search and manage client information.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="../receptionist/calendar/index.html" class="settings-card">
+
+                        <div class="settings-card-icon">
+                            □
+                        </div>
+
+                        <div class="settings-card-content">
+
+                            <h3>View Calendar</h3>
+
+                            <p>
+                                Check consultant schedules and availability.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <a href="../receptionist/messages/compose/index.html" class="settings-card">
+
+                        <div class="settings-card-icon">
+                            ✉
+                        </div>
+
+                        <div class="settings-card-content">
+
+                            <h3>Send Message</h3>
+
+                            <p>
+                                Contact a client or consultant.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

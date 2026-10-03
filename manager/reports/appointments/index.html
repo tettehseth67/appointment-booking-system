@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Reports | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">CP</div>
+
+            <div>
+                <h2>ConsultPro</h2>
+                <span>MANAGER PORTAL</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+            <div class="sidebar-heading">MAIN MENU</div>
+
+            <!-- DASHBOARD -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-dashboard" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⌂</span>
+                        <span>Dashboard</span>
+                    </a>
+                    <label for="manager-dashboard" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../index.html" class="sidebar-sublink">Overview</a>
+                    <a href="../../index.html#recent-activity" class="sidebar-sublink">Recent Activity</a>
+                </div>
+            </div>
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-appointments" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+                    <label for="manager-appointments" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../appointments/index.html" class="sidebar-sublink">Appointment List</a>
+                    <a href="../../appointments/add/index.html" class="sidebar-sublink">Add Appointment</a>
+                    <a href="../../appointments/show/index.html" class="sidebar-sublink">Appointment Details</a>
+                    <a href="../../appointments/edit/index.html" class="sidebar-sublink">Edit Appointment</a>
+                </div>
+            </div>
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-calendar" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▦</span>
+                        <span>Calendar</span>
+                    </a>
+                    <label for="manager-calendar" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../calendar/index.html" class="sidebar-sublink">Calendar</a>
+                    <a href="../../calendar/add/index.html" class="sidebar-sublink">Add Event</a>
+                    <a href="../../calendar/edit/index.html" class="sidebar-sublink">Edit Event</a>
+                    <a href="../../calendar/show/index.html" class="sidebar-sublink">Event Details</a>
+                </div>
+            </div>
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-consultants" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Consultants</span>
+                    </a>
+                    <label for="manager-consultants" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../consultants/index.html" class="sidebar-sublink">Consultant List</a>
+                    <a href="../../consultants/add/index.html" class="sidebar-sublink">Add Consultant</a>
+                    <a href="../../consultants/show/index.html" class="sidebar-sublink">Consultant Details</a>
+                    <a href="../../consultants/edit/index.html" class="sidebar-sublink">Edit Consultant</a>
+                </div>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-services" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+                    </a>
+                    <label for="manager-services" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../services/index.html" class="sidebar-sublink">Service List</a>
+                    <a href="../../services/add/index.html" class="sidebar-sublink">Add Service</a>
+                    <a href="../../services/show/index.html" class="sidebar-sublink">Service Details</a>
+                    <a href="../../services/edit/index.html" class="sidebar-sublink">Edit Service</a>
+                </div>
+            </div>
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-clients" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../clients/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♧</span>
+                        <span>Clients</span>
+                    </a>
+                    <label for="manager-clients" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../clients/index.html" class="sidebar-sublink">Client List</a>
+                    <a href="../../clients/add/index.html" class="sidebar-sublink">Add Client</a>
+                    <a href="../../clients/show/index.html" class="sidebar-sublink">Client Details</a>
+                    <a href="../../clients/edit/index.html" class="sidebar-sublink">Edit Client</a>
+                </div>
+            </div>
+
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">COMMUNICATION</div>
+
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-messages" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">4</span>
+                    </a>
+                    <label for="manager-messages" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../messages/index.html" class="sidebar-sublink">Inbox</a>
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">Sent Messages</a>
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">Compose Message</a>
+                </div>
+            </div>
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-notifications" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../notifications/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">4</span>
+                    </a>
+                    <label for="manager-notifications" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../notifications/index.html" class="sidebar-sublink">All Notifications</a>
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">Unread</a>
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink">Notification Settings</a>
+                </div>
+            </div>
+
+
+            <!-- ANALYTICS -->
+            <div class="sidebar-heading">ANALYTICS</div>
+
+            <!-- REPORTS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-reports" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">▤</span>
+                        <span>Reports</span>
+                    </a>
+                    <label for="manager-reports" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../index.html" class="sidebar-sublink">Reports Overview</a>
+                    <a href="../revenue/index.html" class="sidebar-sublink">Revenue Reports</a>
+                    <a href="index.html" class="sidebar-sublink active">Appointment Reports</a>
+                    <a href="../consultants/index.html" class="sidebar-sublink">Consultant Reports</a>
+                    <a href="../clients/index.html" class="sidebar-sublink">Client Reports</a>
+                </div>
+            </div>
+
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">ACCOUNT</div>
+
+            <!-- SETTINGS -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="manager-settings" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+                    <a href="../../settings/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        <span>Settings</span>
+                    </a>
+                    <label for="manager-settings" class="dropdown-trigger">▾</label>
+                </div>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../settings/general/index.html" class="sidebar-sublink">General Settings</a>
+                    <a href="../../settings/profile/index.html" class="sidebar-sublink">Profile Settings</a>
+                    <a href="../../settings/security/index.html" class="sidebar-sublink">Security</a>
+                </div>
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">↩</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+                <div class="sidebar-user-avatar">M</div>
+
+                <div class="sidebar-user-info">
+                    <strong>Manager</strong>
+                    <span>Manager</span>
+                </div>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    APPOINTMENT REPORTS
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button class="header-icon-button">
+                    ♢
+                </button>
+
+                <div class="header-profile">
+
+                    <div class="header-profile-avatar">
+                        Y
+                    </div>
+
+                    <div class="header-profile-info">
+                        <strong>Yaw</strong>
+                        <span>Manager</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <div class="admin-content">
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        ANALYTICS
+                    </span>
+
+                    <h1>
+                        Appointment Reports
+                    </h1>
+
+                    <p>
+                        Review appointment activity, completion rates, cancellations, and scheduling performance.
+                    </p>
+
+                </div>
+
+
+                <div class="admin-page-actions">
+
+                    <a href="../index.html" class="secondary-button">
+                        Reports Overview
+                    </a>
+
+                    <button class="primary-button">
+                        Export Report
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- APPOINTMENT STATS -->
+            <section class="dashboard-stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Total Appointments
+                        </span>
+
+                        <strong class="stat-value">
+                            24
+                        </strong>
+
+                        <span class="stat-description">
+                            All scheduled appointments
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Completed
+                        </span>
+
+                        <strong class="stat-value">
+                            7
+                        </strong>
+
+                        <span class="stat-description">
+                            Successfully completed
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Upcoming
+                        </span>
+
+                        <strong class="stat-value">
+                            12
+                        </strong>
+
+                        <span class="stat-description">
+                            Scheduled appointments
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            Cancelled
+                        </span>
+
+                        <strong class="stat-value">
+                            5
+                        </strong>
+
+                        <span class="stat-description">
+                            Cancelled appointments
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- APPOINTMENT SUMMARY -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            PERFORMANCE
+                        </span>
+
+                        <h2>
+                            Appointment Summary
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Period</th>
+                                <th>Total</th>
+                                <th>Completed</th>
+                                <th>Upcoming</th>
+                                <th>Cancelled</th>
+                                <th>Completion Rate</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>September 2026</strong>
+                                </td>
+
+                                <td>
+                                    8
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    5
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    25%
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>August 2026</strong>
+                                </td>
+
+                                <td>
+                                    7
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    43%
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>July 2026</strong>
+                                </td>
+
+                                <td>
+                                    5
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    40%
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>June 2026</strong>
+                                </td>
+
+                                <td>
+                                    4
+                                </td>
+
+                                <td>
+                                    0
+                                </td>
+
+                                <td>
+                                    4
+                                </td>
+
+                                <td>
+                                    0
+                                </td>
+
+                                <td>
+                                    0%
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- APPOINTMENT STATUS -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            APPOINTMENT STATUS
+                        </span>
+
+                        <h2>
+                            Current Appointment Activity
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Appointment</th>
+                                <th>Client</th>
+                                <th>Consultant</th>
+                                <th>Date</th>
+                                <th>Service</th>
+                                <th>Status</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>CP-482931</strong>
+                                </td>
+
+                                <td>
+                                    John Davis
+                                </td>
+
+                                <td>
+                                    David Wilson
+                                </td>
+
+                                <td>
+                                    Sep 28, 2026
+                                </td>
+
+                                <td>
+                                    Business Strategy
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Confirmed
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>CP-482930</strong>
+                                </td>
+
+                                <td>
+                                    Anna Miller
+                                </td>
+
+                                <td>
+                                    Sarah Wilson
+                                </td>
+
+                                <td>
+                                    Sep 29, 2026
+                                </td>
+
+                                <td>
+                                    Career Consultation
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Confirmed
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>CP-482929</strong>
+                                </td>
+
+                                <td>
+                                    Michael Brown
+                                </td>
+
+                                <td>
+                                    David Wilson
+                                </td>
+
+                                <td>
+                                    Sep 30, 2026
+                                </td>
+
+                                <td>
+                                    Leadership Coaching
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-confirmed">
+                                        Confirmed
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>CP-482928</strong>
+                                </td>
+
+                                <td>
+                                    Sarah Wilson
+                                </td>
+
+                                <td>
+                                    James Anderson
+                                </td>
+
+                                <td>
+                                    Sep 26, 2026
+                                </td>
+
+                                <td>
+                                    Marketing Consultation
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-completed">
+                                        Completed
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>CP-482927</strong>
+                                </td>
+
+                                <td>
+                                    David Anderson
+                                </td>
+
+                                <td>
+                                    Sarah Wilson
+                                </td>
+
+                                <td>
+                                    Sep 25, 2026
+                                </td>
+
+                                <td>
+                                    Business Strategy
+                                </td>
+
+                                <td>
+                                    <span class="status-badge status-completed">
+                                        Completed
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- CONSULTANT APPOINTMENT ACTIVITY -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            CONSULTANT PERFORMANCE
+                        </span>
+
+                        <h2>
+                            Appointments by Consultant
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Consultant</th>
+                                <th>Total Appointments</th>
+                                <th>Completed</th>
+                                <th>Upcoming</th>
+                                <th>Cancelled</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>David Wilson</strong>
+                                </td>
+
+                                <td>
+                                    9
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+                                    5
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>Sarah Wilson</strong>
+                                </td>
+
+                                <td>
+                                    7
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    4
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>James Anderson</strong>
+                                </td>
+
+                                <td>
+                                    5
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>Emily Johnson</strong>
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- SERVICE APPOINTMENT ACTIVITY -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            SERVICE ACTIVITY
+                        </span>
+
+                        <h2>
+                            Appointments by Service
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Service</th>
+                                <th>Appointments</th>
+                                <th>Completed</th>
+                                <th>Upcoming</th>
+                                <th>Cancelled</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>
+                                    <strong>Business Strategy</strong>
+                                </td>
+
+                                <td>
+                                    7
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>Career Consultation</strong>
+                                </td>
+
+                                <td>
+                                    5
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>Leadership Coaching</strong>
+                                </td>
+
+                                <td>
+                                    5
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>Marketing Consultation</strong>
+                                </td>
+
+                                <td>
+                                    4
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    <strong>Other Services</strong>
+                                </td>
+
+                                <td>
+                                    3
+                                </td>
+
+                                <td>
+                                    0
+                                </td>
+
+                                <td>
+                                    2
+                                </td>
+
+                                <td>
+                                    1
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

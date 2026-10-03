@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Settings | ConsultPro</title>
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">CP</div>
+
+            <div>
+                <a href="../../index.html">ConsultPro</a>
+                <span>RECEPTIONIST PORTAL</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+            <div class="sidebar-heading">MAIN MENU</div>
+
+            <!-- Dashboard -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="dashboard-menu" class="dropdown-checkbox">
+
+                <label for="dashboard-menu" class="sidebar-link-wrapper">
+                    <a href="../../index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⌂</span>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../index.html" class="sidebar-sublink">
+                        Overview
+                    </a>
+
+                    <a href="../../appointments/today/index.html" class="sidebar-sublink">
+                        Today's Schedule
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Appointments -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox">
+
+                <label for="appointments-menu" class="sidebar-link-wrapper">
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../../appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+
+                    <a href="../../appointments/show/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                    <a href="../../appointments/edit/index.html" class="sidebar-sublink">
+                        Edit Appointment
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Calendar -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="calendar-menu" class="dropdown-checkbox">
+
+                <label for="calendar-menu" class="sidebar-link-wrapper">
+                    <a href="../../calendar/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">□</span>
+                        <span>Calendar</span>
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                    <a href="../../calendar/add/index.html" class="sidebar-sublink">
+                        Add Event
+                    </a>
+
+                    <a href="../../calendar/edit/index.html" class="sidebar-sublink">
+                        Edit Event
+                    </a>
+
+                    <a href="../../calendar/show/index.html" class="sidebar-sublink">
+                        Event Details
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Consultants -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="consultants-menu" class="dropdown-checkbox">
+
+                <label for="consultants-menu" class="sidebar-link-wrapper">
+                    <a href="../../consultants/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Consultants</span>
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../consultants/index.html" class="sidebar-sublink">
+                        Consultant List
+                    </a>
+
+                    <a href="../../consultants/show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Clients -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="clients-menu" class="dropdown-checkbox">
+
+                <label for="clients-menu" class="sidebar-link-wrapper">
+                    <a href="../../clients/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">♙</span>
+                        <span>Clients</span>
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="../../clients/add/index.html" class="sidebar-sublink">
+                        Add Client
+                    </a>
+
+                    <a href="../../clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                    <a href="../../clients/edit/index.html" class="sidebar-sublink">
+                        Edit Client
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox">
+
+                <label for="services-menu" class="sidebar-link-wrapper">
+                    <a href="../../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◇</span>
+                        <span>Services</span>
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../services/index.html" class="sidebar-sublink">
+                        Service List
+                    </a>
+
+                    <a href="../../services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">COMMUNICATION</div>
+
+
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox">
+
+                <label for="messages-menu" class="sidebar-link-wrapper">
+                    <a href="../../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">4</span>
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+                    <a href="../../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../../messages/compose/index.html" class="sidebar-sublink">
+                        Compose Message
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Notifications -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox" checked>
+
+                <label for="notifications-menu" class="sidebar-link-wrapper">
+                    <a href="../index.html" class="sidebar-link active">
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">3</span>
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="index.html" class="sidebar-sublink active">
+                        Notification Settings
+                    </a>
+
+                </div>
+            </div>
+
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">ACCOUNT</div>
+
+
+            <!-- Profile -->
+            <div class="sidebar-dropdown">
+                <input type="checkbox" id="profile-menu" class="dropdown-checkbox">
+
+                <label for="profile-menu" class="sidebar-link-wrapper">
+                    <a href="../../profile/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◎</span>
+                        <span>Profile</span>
+                    </a>
+
+                    <span class="dropdown-trigger">⌄</span>
+                </label>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+
+                    <a href="../../profile/edit/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                    <a href="../../profile/password/index.html" class="sidebar-sublink">
+                        Change Password
+                    </a>
+
+                    <a href="../../profile/settings/index.html" class="sidebar-sublink">
+                        Settings
+                    </a>
+
+                </div>
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    R
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>Receptionist</strong>
+                    <span>Receptionist</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="admin-main">
+
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    NOTIFICATION SETTINGS
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button class="header-icon-button">
+                    ♢
+                    <span class="header-notification-dot"></span>
+                </button>
+
+
+                <!-- PROFILE -->
+                <div class="header-profile">
+
+                    <button class="profile-toggle">
+
+                        <div class="header-profile-avatar">
+                            R
+                        </div>
+
+                        <div class="header-profile-info">
+                            <strong>Receptionist</strong>
+                            <span>Receptionist</span>
+                        </div>
+
+                        <span class="dropdown-arrow">
+                            ⌄
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../../profile/index.html">
+                            Profile
+                        </a>
+
+                        <a href="../../profile/settings/index.html">
+                            Settings
+                        </a>
+
+                        <a href="../../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <section class="admin-content">
+
+
+            <!-- PAGE HEADER -->
+            <div class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        COMMUNICATION
+                    </span>
+
+                    <h1>
+                        Notification Settings
+                    </h1>
+
+                    <p>
+                        Manage how appointment updates, reminders, and system alerts are delivered.
+                    </p>
+
+                </div>
+
+
+                <div class="admin-page-actions">
+
+                    <a href="../index.html" class="secondary-button">
+                        ← Notifications
+                    </a>
+
+                    <button type="submit" form="notification-settings-form" class="primary-button">
+                        Save Settings
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- SETTINGS FORM -->
+            <form id="notification-settings-form">
+
+
+                <!-- EMAIL NOTIFICATIONS -->
+                <section class="admin-panel">
+
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                EMAIL
+                            </span>
+
+                            <h2>
+                                Email Notifications
+                            </h2>
+
+                            <p>
+                                Choose which activities should generate email notifications.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-summary">
+
+
+                        <div class="settings-summary-item">
+
+                            <div>
+
+                                <strong>
+                                    Email Notifications
+                                </strong>
+
+                                <span>
+                                    Receive important ConsultPro updates by email.
+                                </span>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input type="checkbox" checked>
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="settings-summary-item">
+
+                            <div>
+
+                                <strong>
+                                    Appointment Reminders
+                                </strong>
+
+                                <span>
+                                    Receive reminders before scheduled appointments.
+                                </span>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input type="checkbox" checked>
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="settings-summary-item">
+
+                            <div>
+
+                                <strong>
+                                    New Appointment Alerts
+                                </strong>
+
+                                <span>
+                                    Receive an email whenever a new appointment is booked.
+                                </span>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input type="checkbox" checked>
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="settings-summary-item">
+
+                            <div>
+
+                                <strong>
+                                    Appointment Cancellation Alerts
+                                </strong>
+
+                                <span>
+                                    Receive notifications when an appointment is cancelled.
+                                </span>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input type="checkbox" checked>
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- SMS NOTIFICATIONS -->
+                <section class="admin-panel">
+
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                SMS
+                            </span>
+
+                            <h2>
+                                SMS Notifications
+                            </h2>
+
+                            <p>
+                                Control text-message notifications for important appointment activity.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-summary">
+
+
+                        <div class="settings-summary-item">
+
+                            <div>
+
+                                <strong>
+                                    SMS Notifications
+                                </strong>
+
+                                <span>
+                                    Receive appointment alerts through SMS.
+                                </span>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input type="checkbox">
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="settings-summary-item">
+
+                            <div>
+
+                                <strong>
+                                    Appointment Reminders
+                                </strong>
+
+                                <span>
+                                    Receive SMS reminders before upcoming appointments.
+                                </span>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input type="checkbox">
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="settings-summary-item">
+
+                            <div>
+
+                                <strong>
+                                    Cancellation Alerts
+                                </strong>
+
+                                <span>
+                                    Receive an SMS when an appointment is cancelled.
+                                </span>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input type="checkbox" checked>
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- SYSTEM NOTIFICATIONS -->
+                <section class="admin-panel">
+
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                SYSTEM
+                            </span>
+
+                            <h2>
+                                System Notifications
+                            </h2>
+
+                            <p>
+                                Manage alerts related to consultants, system updates, and daily activity.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="settings-summary">
+
+
+                        <div class="settings-summary-item">
+
+                            <div>
+
+                                <strong>
+                                    Consultant Schedule Updates
+                                </strong>
+
+                                <span>
+                                    Receive notifications when consultant availability changes.
+                                </span>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input type="checkbox" checked>
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="settings-summary-item">
+
+                            <div>
+
+                                <strong>
+                                    System Announcements
+                                </strong>
+
+                                <span>
+                                    Receive updates about maintenance and important system changes.
+                                </span>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input type="checkbox" checked>
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="settings-summary-item">
+
+                            <div>
+
+                                <strong>
+                                    Daily Summary Reports
+                                </strong>
+
+                                <span>
+                                    Receive a daily summary of appointments and notifications.
+                                </span>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input type="checkbox">
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+                        <div class="settings-summary-item">
+
+                            <div>
+
+                                <strong>
+                                    Client Activity Alerts
+                                </strong>
+
+                                <span>
+                                    Receive alerts when important client information is updated.
+                                </span>
+
+                            </div>
+
+                            <label class="switch">
+
+                                <input type="checkbox" checked>
+
+                                <span class="slider"></span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- REMINDER PREFERENCES -->
+                <section class="admin-panel">
+
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                REMINDERS
+                            </span>
+
+                            <h2>
+                                Reminder Preferences
+                            </h2>
+
+                            <p>
+                                Choose how far in advance appointment reminders should be sent.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-panel-content">
+
+                        <div class="admin-form">
+
+                            <div class="form-row">
+
+                                <div class="form-group">
+
+                                    <label for="appointment-reminder" class="form-label">
+                                        Appointment Reminder
+                                    </label>
+
+                                    <select id="appointment-reminder" class="form-select">
+
+                                        <option>
+                                            15 minutes before
+                                        </option>
+
+                                        <option>
+                                            30 minutes before
+                                        </option>
+
+                                        <option selected>
+                                            1 hour before
+                                        </option>
+
+                                        <option>
+                                            2 hours before
+                                        </option>
+
+                                        <option>
+                                            1 day before
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="daily-summary" class="form-label">
+                                        Daily Summary Time
+                                    </label>
+
+                                    <select id="daily-summary" class="form-select">
+
+                                        <option>
+                                            6:00 AM
+                                        </option>
+
+                                        <option selected>
+                                            7:00 AM
+                                        </option>
+
+                                        <option>
+                                            8:00 AM
+                                        </option>
+
+                                        <option>
+                                            9:00 AM
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- SAVE ACTIONS -->
+                <section class="admin-panel">
+
+                    <div class="admin-panel-header">
+
+                        <div>
+
+                            <span class="panel-label">
+                                SETTINGS
+                            </span>
+
+                            <h2>
+                                Save Changes
+                            </h2>
+
+                            <p>
+                                Your notification preferences will apply to future alerts.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="admin-panel-content">
+
+                        <div class="admin-page-actions">
+
+                            <button type="reset" class="secondary-button">
+                                Reset Defaults
+                            </button>
+
+                            <button type="submit" class="primary-button">
+                                Save Settings
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

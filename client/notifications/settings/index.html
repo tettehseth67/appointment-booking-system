@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notification Settings | ConsultPro</title>
+
+    <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" aria-label="Client navigation">
+
+        <div class="sidebar-brand">
+            <a href="../../index.html">ConsultPro</a>
+            <span>CLIENT PORTAL</span>
+        </div>
+
+        <nav class="sidebar-navigation" aria-label="Client navigation">
+
+            <p class="sidebar-heading">MAIN MENU</p>
+
+            <a href="../../index.html" class="sidebar-link">
+                <span class="sidebar-icon">⌂</span>
+                Dashboard
+            </a>
+
+
+            <!-- My Appointments -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../appointments/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">▣</span>
+                        My Appointments
+                    </a>
+
+                    <label for="appointments-toggle" class="dropdown-trigger" aria-label="Expand appointments menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../appointments/index.html" class="sidebar-sublink">
+                        Appointment List
+                    </a>
+
+                    <a href="../../appointments/book.html" class="sidebar-sublink">
+                        Book Appointment
+                    </a>
+
+                    <a href="../../appointments/history.html" class="sidebar-sublink">
+                        Appointment H   istory
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Services -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../services/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">◆</span>
+                        Services
+                    </a>
+
+                    <label for="services-toggle" class="dropdown-trigger" aria-label="Expand services menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../services/index.html" class="sidebar-sublink">
+                        Available Services
+                    </a>
+
+                    <a href="../../services/index.html" class="sidebar-sublink">
+                        My Services
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <p class="sidebar-heading">COMMUNICATION</p>
+
+
+            <!-- Messages -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../messages/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">✉</span>
+                        Messages
+                        <span class="sidebar-count">2</span>
+                    </a>
+
+                    <label for="messages-toggle" class="dropdown-trigger" aria-label="Expand messages menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../../messages/sent.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../../messages/compose.html" class="sidebar-sublink">
+                        New Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notifications -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-toggle" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../notifications/index.html" class="sidebar-link active" aria-current="page">
+                        <span class="sidebar-icon">●</span>
+                        Notifications
+                        <span class="sidebar-count">4</span>
+                    </a>
+
+                    <label for="notifications-toggle" class="dropdown-trigger" aria-label="Expand notifications menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../../notifications/settings/index.html" class="sidebar-sublink active" aria-current="page">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <p class="sidebar-heading">ACCOUNT</p>
+
+
+            <!-- My Profile -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="profile-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../profile/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">●</span>
+                        My Profile
+                    </a>
+
+                    <label for="profile-toggle" class="dropdown-trigger" aria-label="Expand profile menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../profile/index.html" class="sidebar-sublink">
+                        Profile Details
+                    </a>
+
+                    <a href="../../profile/edit/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                    <a href="../../profile/change-password/index.html" class="sidebar-sublink">
+                        Change Password
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Settings -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="settings-toggle" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../../settings/index.html" class="sidebar-link">
+                        <span class="sidebar-icon">⚙</span>
+                        Settings
+                    </a>
+
+                    <label for="settings-toggle" class="dropdown-trigger" aria-label="Expand settings menu">
+                        ▾
+                    </label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../../settings/index.html" class="sidebar-sublink">
+                        General Settings
+                    </a>
+
+                    <a href="../../settings/security.html" class="sidebar-sublink">
+                        Security
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- Sidebar Bottom -->
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+                ← Back to Website
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    Y
+                </div>
+
+                <div class="sidebar-user-info">
+                    <strong>John Davis</strong>
+                    <span>Client</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <div class="admin-main">
+
+        <!-- Header -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button type="button" class="sidebar-toggle" aria-label="Toggle navigation menu">
+                    ☰
+                </button>
+
+                <div>
+
+                    <span class="header-label">
+                        COMMUNICATION
+                    </span>
+
+                    <h1>Notification Settings</h1>
+
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button type="button" class="header-icon-button" aria-label="Notifications">
+                    ♢
+                    <span class="header-notification-dot"></span>
+                </button>
+
+                <div class="profile-dropdown">
+
+                    <button type="button" class="profile-toggle" aria-label="Open profile menu">
+
+                        <span class="header-avatar">
+                            Y
+                        </span>
+
+                        <span>
+                            John Davis
+                        </span>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+                    <div class="dropdown-menu">
+
+                        <a href="../profile/index.html">
+                            My Profile
+                        </a>
+
+                        <a href="../profile/edit/index.html">
+                            Account Settings
+                        </a>
+
+                        <a href="../profile/change-password/index.html">
+                            Change Password
+                        </a>
+
+                        <a href="index.html">
+                            Notifications
+                        </a>
+
+                        <a href="../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <main class="admin-content">
+
+            <!-- Page Header -->
+            <div class="admin-page-header">
+
+                <div>
+
+                    <span class="panel-label">
+                        NOTIFICATIONS
+                    </span>
+
+                    <h2>
+                        Notification Settings
+                    </h2>
+
+                    <p>
+                        Choose which notifications you want to receive
+                        from ConsultPro.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Notification Overview -->
+            <section class="stats-grid">
+
+                <article class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            APPOINTMENT ALERTS
+                        </span>
+
+                        <strong class="stat-value">
+                            Enabled
+                        </strong>
+
+                        <span class="stat-change positive">
+                            Active
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            MESSAGE ALERTS
+                        </span>
+
+                        <strong class="stat-value">
+                            Enabled
+                        </strong>
+
+                        <span class="stat-change positive">
+                            Active
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            EMAIL ALERTS
+                        </span>
+
+                        <strong class="stat-value">
+                            Enabled
+                        </strong>
+
+                        <span class="stat-change positive">
+                            Active
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="stat-card">
+
+                    <div class="stat-card-content">
+
+                        <span class="stat-label">
+                            PROMOTIONAL
+                        </span>
+
+                        <strong class="stat-value">
+                            Disabled
+                        </strong>
+
+                        <span class="stat-change">
+                            Off
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+
+            <!-- In-App Notifications -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            IN-APP NOTIFICATIONS
+                        </span>
+
+                        <h2>
+                            Notification Preferences
+                        </h2>
+
+                        <p>
+                            Control the notifications displayed inside your
+                            ConsultPro account.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-list">
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Appointment Reminders
+                            </strong>
+
+                            <p>
+                                Receive reminders before your upcoming
+                                appointments.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Appointment Updates
+                            </strong>
+
+                            <p>
+                                Get notified when an appointment is
+                                confirmed, changed, rescheduled, or
+                                cancelled.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                New Messages
+                            </strong>
+
+                            <p>
+                                Receive an alert when a consultant or
+                                ConsultPro support sends you a message.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Message Replies
+                            </strong>
+
+                            <p>
+                                Receive an alert when someone replies to
+                                one of your messages.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Account Activity
+                            </strong>
+
+                            <p>
+                                Get notified about important changes to your
+                                account and profile.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Email Notifications -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            EMAIL NOTIFICATIONS
+                        </span>
+
+                        <h2>
+                            Email Preferences
+                        </h2>
+
+                        <p>
+                            Choose which updates should also be sent to
+                            your email address.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-list">
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Appointment Confirmation Emails
+                            </strong>
+
+                            <p>
+                                Receive an email when an appointment is
+                                successfully confirmed.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Appointment Reminder Emails
+                            </strong>
+
+                            <p>
+                                Receive email reminders before scheduled
+                                appointments.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Message Emails
+                            </strong>
+
+                            <p>
+                                Receive an email when a new message arrives
+                                in your account.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox" checked>
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Promotional Updates
+                            </strong>
+
+                            <p>
+                                Receive occasional news, offers, and
+                                service updates from ConsultPro.
+                            </p>
+
+                        </div>
+
+                        <label class="switch">
+
+                            <input type="checkbox">
+
+                            <span class="slider"></span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Notification Frequency -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            DELIVERY
+                        </span>
+
+                        <h2>
+                            Notification Frequency
+                        </h2>
+
+                        <p>
+                            Choose how frequently certain notifications
+                            should be delivered.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-list">
+
+                    <div class="settings-row">
+
+                        <div class="settings-title">
+
+                            <strong>
+                                Appointment Reminder Timing
+                            </strong>
+
+                            <p>
+                                Choose when to receive your appointment
+                                reminder.
+                            </p>
+
+                        </div>
+
+                        <select class="admin-filter" aria-label="Appointment reminder timing">
+
+                            <option selected>
+                                24 hours before
+                            </option>
+
+                            <option>
+                                12 hours before
+                            </option>
+
+                            <option>
+                                2 hours before
+                            </option>
+
+                            <option>
+                                1 hour before
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="settings-row">
+
+                        <div>
+
+                            <strong>
+                                Email Delivery
+                            </strong>
+
+                            <p>
+                                Choose whether email notifications should
+                                be delivered immediately or grouped.
+                            </p>
+
+                        </div>
+
+                        <select class="admin-filter" aria-label="Email delivery frequency">
+
+                            <option selected>
+                                Immediately
+                            </option>
+
+                            <option>
+                                Daily Summary
+                            </option>
+
+                            <option>
+                                Weekly Summary
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Current Summary -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            CURRENT SETTINGS
+                        </span>
+
+                        <h2>
+                            Notification Summary
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Appointment Alerts
+                        </span>
+
+                        <strong>
+                            Enabled
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Message Alerts
+                        </span>
+
+                        <strong>
+                            Enabled
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Account Alerts
+                        </span>
+
+                        <strong>
+                            Enabled
+                        </strong>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <span>
+                            Promotional Emails
+                        </span>
+
+                        <strong>
+                            Disabled
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Quick Links -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            QUICK LINKS
+                        </span>
+
+                        <h2>
+                            Notification Management
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-cards">
+
+                    <article class="settings-card">
+
+                        <div class="settings-card-icon">
+                            ●
+                        </div>
+
+                        <div class="settings-card-content">
+
+                            <h3>
+                                All Notifications
+                            </h3>
+
+                            <p>
+                                View your complete notification history.
+                            </p>
+
+                            <a href="index.html" class="settings-card-link">
+                                View Notifications →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="settings-card">
+
+                        <div class="settings-card-icon">
+                            !
+                        </div>
+
+                        <div class="settings-card-content">
+
+                            <h3>
+                                Unread Notifications
+                            </h3>
+
+                            <p>
+                                Review notifications that still need your
+                                attention.
+                            </p>
+
+                            <a href="unread.html" class="settings-card-link">
+                                View Unread →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="settings-card">
+
+                        <div class="settings-card-icon">
+                            ✉
+                        </div>
+
+                        <div class="settings-card-content">
+
+                            <h3>
+                                Messages
+                            </h3>
+
+                            <p>
+                                View messages from your consultants and
+                                ConsultPro support.
+                            </p>
+
+                            <a href="../messages/index.html" class="settings-card-link">
+                                Open Messages →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- Actions -->
+            <div class="form-actions">
+
+                <a href="index.html" class="secondary-button">
+                    Cancel
+                </a>
+
+                <button type="button" class="primary-button">
+                    Save Preferences
+                </button>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

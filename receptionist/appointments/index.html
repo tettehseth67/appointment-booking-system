@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments | ConsultPro</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="admin-body">
+
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+
+        <div class="sidebar-brand">
+            <div class="sidebar-brand-icon">CP</div>
+            <div>
+                <h2>ConsultPro</h2>
+                <span>RECEPTIONIST PORTAL</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-navigation">
+
+            <!-- MAIN MENU -->
+            <div class="sidebar-heading">MAIN MENU</div>
+
+            <!-- DASHBOARD -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="dashboard-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">⌂</span>
+                        <span>Dashboard</span>
+
+                    </a>
+
+                    <label for="dashboard-menu" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../index.html" class="sidebar-sublink">
+                        Overview
+                    </a>
+
+                    <a href="../index.html#today-schedule" class="sidebar-sublink">
+                        Today's Schedule
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- APPOINTMENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="appointments-menu" class="dropdown-checkbox" checked>
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../appointments/index.html" class="sidebar-link active">
+
+                        <span class="sidebar-icon">◷</span>
+                        <span>Appointments</span>
+                        <span class="sidebar-count">12</span>
+
+                    </a>
+
+                    <label for="appointments-menu" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../appointments/index.html" class="sidebar-sublink active">
+                        Appointment List
+                    </a>
+
+                    <a href="../appointments/add/index.html" class="sidebar-sublink">
+                        Add Appointment
+                    </a>
+
+                    <a href="../appointments/show/index.html" class="sidebar-sublink">
+                        Appointment Details
+                    </a>
+
+                    <a href="../appointments/edit/index.html" class="sidebar-sublink">
+                        Edit Appointment
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CALENDAR -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="calendar-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../calendar/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">▦</span>
+                        <span>Calendar</span>
+
+                    </a>
+
+                    <label for="calendar-menu" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../calendar/index.html" class="sidebar-sublink">
+                        Calendar
+                    </a>
+
+                    <a href="../calendar/add/index.html" class="sidebar-sublink">
+                        Add Event
+                    </a>
+
+                    <a href="../calendar/edit/index.html" class="sidebar-sublink">
+                        Edit Event
+                    </a>
+
+                    <a href="../calendar/show/index.html" class="sidebar-sublink">
+                        Event Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONSULTANTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="consultants-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../consultants/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♙</span>
+                        <span>Consultants</span>
+
+                    </a>
+
+                    <label for="consultants-menu" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../consultants/index.html" class="sidebar-sublink">
+                        Consultant List
+                    </a>
+
+                    <a href="../consultants/show/index.html" class="sidebar-sublink">
+                        Consultant Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CLIENTS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="clients-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../clients/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♧</span>
+                        <span>Clients</span>
+
+                    </a>
+
+                    <label for="clients-menu" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../clients/index.html" class="sidebar-sublink">
+                        Client List
+                    </a>
+
+                    <a href="../clients/add/index.html" class="sidebar-sublink">
+                        Add Client
+                    </a>
+
+                    <a href="../clients/show/index.html" class="sidebar-sublink">
+                        Client Details
+                    </a>
+
+                    <a href="../clients/edit/index.html" class="sidebar-sublink">
+                        Edit Client
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="services-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../services/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">▤</span>
+                        <span>Services</span>
+
+                    </a>
+
+                    <label for="services-menu" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../services/index.html" class="sidebar-sublink">
+                        Service List
+                    </a>
+
+                    <a href="../services/show/index.html" class="sidebar-sublink">
+                        Service Details
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMUNICATION -->
+            <div class="sidebar-heading">COMMUNICATION</div>
+            <!-- MESSAGES -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="messages-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../messages/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">✉</span>
+                        <span>Messages</span>
+                        <span class="sidebar-count">4</span>
+
+                    </a>
+
+                    <label for="messages-menu" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../messages/index.html" class="sidebar-sublink">
+                        Inbox
+                    </a>
+
+                    <a href="../messages/sent/index.html" class="sidebar-sublink">
+                        Sent Messages
+                    </a>
+
+                    <a href="../messages/compose/index.html" class="sidebar-sublink">
+                        Compose Message
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- NOTIFICATIONS -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="notifications-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../notifications/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♢</span>
+                        <span>Notifications</span>
+                        <span class="sidebar-count">3</span>
+
+                    </a>
+
+                    <label for="notifications-menu" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../notifications/index.html" class="sidebar-sublink">
+                        All Notifications
+                    </a>
+
+                    <a href="../notifications/unread/index.html" class="sidebar-sublink">
+                        Unread
+                    </a>
+
+                    <a href="../notifications/settings/index.html" class="sidebar-sublink">
+                        Notification Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ACCOUNT -->
+            <div class="sidebar-heading">ACCOUNT</div>
+
+            <!-- PROFILE -->
+            <div class="sidebar-dropdown">
+
+                <input type="checkbox" id="profile-menu" class="dropdown-checkbox">
+
+                <div class="sidebar-link-wrapper">
+
+                    <a href="../profile/index.html" class="sidebar-link">
+
+                        <span class="sidebar-icon">♙</span>
+                        <span>Profile</span>
+
+                    </a>
+
+                    <label for="profile-menu" class="dropdown-trigger">▾</label>
+
+                </div>
+
+                <div class="sidebar-dropdown-content">
+
+                    <a href="../profile/index.html" class="sidebar-sublink">
+                        Profile Settings
+                    </a>
+
+                    <a href="../profile/edit/index.html" class="sidebar-sublink">
+                        Edit Profile
+                    </a>
+
+                    <a href="../profile/password/index.html" class="sidebar-sublink">
+                        Change Password
+                    </a>
+
+                    <a href="../profile/settings/index.html" class="sidebar-sublink">
+                        Settings
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+        <div class="sidebar-bottom">
+
+            <a href="../../index.html" class="sidebar-link">
+
+                <span class="sidebar-icon">←</span>
+                <span>Back to Website</span>
+
+            </a>
+
+            <div class="sidebar-user">
+
+                <div class="sidebar-user-avatar">
+                    R
+                </div>
+
+                <div class="sidebar-user-info">
+
+                    <strong>Receptionist</strong>
+                    <span>Receptionist</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="admin-main">
+
+        <!-- HEADER -->
+        <header class="admin-header">
+
+            <div class="admin-header-left">
+
+                <button class="sidebar-toggle">
+                    ☰
+                </button>
+
+                <span class="header-label">
+                    APPOINTMENTS
+                </span>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <button class="header-icon-button">
+                    ⌕
+                </button>
+
+                <button class="header-icon-button">
+
+                    ♢
+
+                    <span class="header-notification-dot"></span>
+
+                </button>
+
+
+                <div class="header-profile">
+
+                    <button class="profile-toggle">
+
+                        <div class="header-profile-avatar">
+                            R
+                        </div>
+
+                        <div class="header-profile-info">
+
+                            <strong>Receptionist</strong>
+                            <span>Receptionist</span>
+
+                        </div>
+
+                        <span class="dropdown-arrow">
+                            ▾
+                        </span>
+
+                    </button>
+
+
+                    <div class="dropdown-menu">
+
+                        <a href="../profile/index.html">
+                            Profile
+                        </a>
+
+                        <a href="../profile/settings/index.html">
+                            Settings
+                        </a>
+
+                        <a href="../../index.html">
+                            Logout
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+        <div class="admin-content">
+
+
+            <!-- PAGE HEADER -->
+            <section class="admin-page-header">
+
+                <div>
+
+                    <h1>
+                        Appointments
+                    </h1>
+
+                    <p>
+                        View, schedule, and manage client appointments.
+                    </p>
+
+                </div>
+
+
+                <div class="admin-page-actions">
+
+                    <a href="add/index.html" class="primary-button">
+
+                        + New Appointment
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- APPOINTMENT STATS -->
+            <section class="dashboard-stats">
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-card-content">
+
+                            <span class="stat-label">
+                                Total Appointments
+                            </span>
+
+                            <strong class="stat-value">
+                                24
+                            </strong>
+
+                            <span class="stat-description">
+                                This month
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-card-content">
+
+                            <span class="stat-label">
+                                Today's Appointments
+                            </span>
+
+                            <strong class="stat-value">
+                                5
+                            </strong>
+
+                            <span class="stat-description">
+                                Scheduled today
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-card-content">
+
+                            <span class="stat-label">
+                                Upcoming
+                            </span>
+
+                            <strong class="stat-value">
+                                12
+                            </strong>
+
+                            <span class="stat-description">
+                                Next 7 days
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-card-content">
+
+                            <span class="stat-label">
+                                Pending
+                            </span>
+
+                            <strong class="stat-value">
+                                4
+                            </strong>
+
+                            <span class="stat-description">
+                                Need confirmation
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- APPOINTMENT LIST -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            APPOINTMENT MANAGEMENT
+                        </span>
+
+                        <h2>
+                            Appointment List
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Appointment ID</th>
+                                <th>Client</th>
+                                <th>Consultant</th>
+                                <th>Service</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <tr>
+
+                                <td>
+                                    CP-482931
+                                </td>
+
+                                <td>
+                                    John Davis
+                                </td>
+
+                                <td>
+                                    David Wilson
+                                </td>
+
+                                <td>
+                                    Business Strategy
+                                </td>
+
+                                <td>
+                                    Sep 28, 2026
+                                </td>
+
+                                <td>
+                                    10:00 AM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-confirmed">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="../appointments/show/index.html" class="edit-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    CP-731204
+                                </td>
+
+                                <td>
+                                    Anna Miller
+                                </td>
+
+                                <td>
+                                    Sarah Wilson
+                                </td>
+
+                                <td>
+                                    Career Consultation
+                                </td>
+
+                                <td>
+                                    Sep 29, 2026
+                                </td>
+
+                                <td>
+                                    1:30 PM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-pending">
+                                        Pending
+                                    </span>
+
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="show/index.html" class="edit-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    CP-614825
+                                </td>
+
+                                <td>
+                                    Michael Brown
+                                </td>
+
+                                <td>
+                                    David Wilson
+                                </td>
+
+                                <td>
+                                    Leadership Coaching
+                                </td>
+
+                                <td>
+                                    Sep 30, 2026
+                                </td>
+
+                                <td>
+                                    9:00 AM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-confirmed">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="show/index.html" class="edit-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    CP-905417
+                                </td>
+
+                                <td>
+                                    Sarah Wilson
+                                </td>
+
+                                <td>
+                                    James Anderson
+                                </td>
+
+                                <td>
+                                    Marketing Consultation
+                                </td>
+
+                                <td>
+                                    Oct 1, 2026
+                                </td>
+
+                                <td>
+                                    2:00 PM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-pending">
+                                        Pending
+                                    </span>
+
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="show/index.html" class="edit-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    CP-482927
+                                </td>
+
+                                <td>
+                                    David Anderson
+                                </td>
+
+                                <td>
+                                    Emily Johnson
+                                </td>
+
+                                <td>
+                                    Business Strategy
+                                </td>
+
+                                <td>
+                                    Oct 2, 2026
+                                </td>
+
+                                <td>
+                                    11:00 AM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-confirmed">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="show/index.html" class="edit-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    CP-482926
+                                </td>
+
+                                <td>
+                                    Robert Taylor
+                                </td>
+
+                                <td>
+                                    David Wilson
+                                </td>
+
+                                <td>
+                                    Financial Consulting
+                                </td>
+
+                                <td>
+                                    Oct 3, 2026
+                                </td>
+
+                                <td>
+                                    3:30 PM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-cancelled">
+                                        Cancelled
+                                    </span>
+
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="show/index.html" class="edit-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>
+                                    CP-482925
+                                </td>
+
+                                <td>
+                                    Emily Carter
+                                </td>
+
+                                <td>
+                                    Sarah Wilson
+                                </td>
+
+                                <td>
+                                    Career Consultation
+                                </td>
+
+                                <td>
+                                    Oct 4, 2026
+                                </td>
+
+                                <td>
+                                    9:30 AM
+                                </td>
+
+                                <td>
+
+                                    <span class="status-badge status-confirmed">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                                <td class="table-actions">
+
+                                    <a href="show/index.html" class="edit-button">
+                                        View
+                                    </a>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- QUICK ACTIONS -->
+            <section class="admin-panel">
+
+                <div class="admin-panel-header">
+
+                    <div>
+
+                        <span class="panel-label">
+                            QUICK ACTIONS
+                        </span>
+
+                        <h2>
+                            Appointment Actions
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="settings-summary">
+
+
+                    <div class="settings-summary-item">
+
+                        <div>
+
+                            <strong>
+                                Add Appointment
+                            </strong>
+
+                            <span>
+                                Schedule a new client appointment
+                            </span>
+
+                        </div>
+
+                        <a href="add/index.html" class="secondary-button">
+
+                            Add Appointment
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <div>
+
+                            <strong>
+                                View Calendar
+                            </strong>
+
+                            <span>
+                                Check consultant schedules and availability
+                            </span>
+
+                        </div>
+
+                        <a href="../calendar/index.html" class="secondary-button">
+
+                            Open Calendar
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="settings-summary-item">
+
+                        <div>
+
+                            <strong>
+                                Manage Clients
+                            </strong>
+
+                            <span>
+                                View and update client information
+                            </span>
+
+                        </div>
+
+                        <a href="../clients/index.html" class="secondary-button">
+
+                            View Clients
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
